@@ -1,8 +1,14 @@
-var ConvertLib = artifacts.require("./ConvertLib.sol");
-var MetaCoin = artifacts.require("./MetaCoin.sol");
+var IexecOracle = artifacts.require("./IexecOracle.sol");
+var HelloWorld = artifacts.require("./HelloWorld.sol");
+
 
 module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+    return deployer.deploy(IexecOracle)
+            .then(() => IexecOracle.deployed())
+    .then(instance => {
+        console.log("IexecOracle deployed at address :" + instance.address)
+    return deployer.deploy(HelloWorld, instance.address);
+})
+    .then(() => HelloWorld.deployed())
+    .then(instance => console.log("HelloWorld deployed at address :" + instance.address));
 };
