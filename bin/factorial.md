@@ -1,4 +1,4 @@
-fact.py dans /bin
+factorial.py
 * usage :
 python factorial.py N <br>
  with N = [0-10000]
