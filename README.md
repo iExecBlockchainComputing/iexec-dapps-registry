@@ -1,5 +1,6 @@
 fact.py dans /bin
 * usage :
-python fact.py N ; with N = [0-10000]
+python factorial.py N <br>
+ with N = [0-10000]
 * create binary :
-pyinstaller --onefile fact.py
+pyinstaller --onefile factorial.py
