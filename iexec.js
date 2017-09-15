@@ -1,4 +1,4 @@
 module.exports = {
-  name: 'HelloWorld',
-  oracleAddress: '0x195ff5c89df68ac9af742549fa724145103d005c',
+  name: 'Echo',
+  constructorArgs: ['0x552075c9e40b050c8b61339b770e2a21e9014b3c'],
 };
