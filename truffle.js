@@ -17,5 +17,12 @@ module.exports = {
             gasPriceMultiplier: 3,
             gas: 4700000
         },
+        rinkeby: {
+            host: "https://kovan.infura.io/berv5GTB5cSdOJPPnqOq",
+            port: 8545,
+            network_id: "42",
+            gasPriceMultiplier: 2,
+            gas: 4700000,
+        },
     }
 };
