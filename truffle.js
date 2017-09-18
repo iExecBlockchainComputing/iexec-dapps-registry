@@ -17,7 +17,7 @@ module.exports = {
             gasPriceMultiplier: 3,
             gas: 4700000
         },
-        rinkeby: {
+        kovan: {
             host: "https://kovan.infura.io/berv5GTB5cSdOJPPnqOq",
             port: 8545,
             network_id: "42",
