@@ -11,7 +11,7 @@ module.exports = {
             network_id: "3",
             iexecOracleAddress: "0x552075c9e40b050c8b61339b770e2a21e9014b3c",
             // gasPriceMultiplier: 2,  // use factor 2 of the network estimated gasPrice
-            // gasLimitMultiplier: 2,  // use factor 2 of the network estimated gasLimit
+            // gasLimitMultiplier: 4,  // use factor 4 of the network estimated gasLimit
             // gasPrice: 21000000000  // manually set the gasPrice in gwei. Prefer "gasPriceMultiplier"
             // gas: 400000  // manually set the gas limit in gwei. Prefer "gasLimitMultiplier"
         },
