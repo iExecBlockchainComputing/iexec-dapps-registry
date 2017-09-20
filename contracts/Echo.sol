@@ -1,8 +1,8 @@
 pragma solidity ^0.4.11;
 import "./IexecOracleAPI.sol";
-contract HelloWorld is IexecOracleAPI{
+contract Echo is IexecOracleAPI{
 
-  function HelloWorld (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress){
+  function Echo (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress){
 
   }
 
