@@ -3,7 +3,7 @@ module.exports = {
         development: {
             host: "http://localhost",
             port: 8545,
-            network_id: "*" // Match any network id
+            network_id: "42" // Match any network id
         },
         ropsten: {
             host: "https://ropsten.infura.io/berv5GTB5cSdOJPPnqOq",
