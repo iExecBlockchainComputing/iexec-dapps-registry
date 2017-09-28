@@ -4,7 +4,7 @@ module.exports = {
             host: "http://localhost:8545",
             port: 8545,
             network_id: "42",
-            gasLimitMultiplier: 5
+            gasLimitMultiplier: 4
         },
         ropsten: {
             host: "https://ropsten.infura.io/berv5GTB5cSdOJPPnqOq",
