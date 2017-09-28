@@ -2,7 +2,6 @@ pragma solidity ^0.4.11;
 import "./IexecOracleAPI.sol";
 import "./strings.sol";
 contract Stockfish is IexecOracleAPI{
-
     using strings for *;
 
     event Logs(string status, address indexed user); // logs for the front-end or smart contract to react correctly
@@ -39,6 +38,39 @@ contract Stockfish is IexecOracleAPI{
         iexecSubmit("stockfish",chessRegister[msg.sender].game);
     }
 
+    function undoMove() {
+        var game = chessRegister[msg.sender].game.toSlice();
+        uint8 nbmoves;
+        for( nbmoves=0; nbmoves<2; nbmoves++) { // delete the player move and the IA move
+            game.split(" ".toSlice());
+        }
+        chessRegister[msg.sender].game = game.toString();
+        Logs("Task finished !", msg.sender);
+    }
+
+    function flushGame() {
+        chessRegister[msg.sender].game = "";
+        Logs("Task finished !", msg.sender);
+    }
+
+    //overwrite IexecOracleAPI iexecSubmitCallback
+    function iexecSubmitCallback(bytes32 submitTxHash, address user, string appName, string stdout) returns (bool){
+        require(msg.sender == iexecOracleAddress);
+        IexecSubmitCallback(submitTxHash,user,appName,stdout);
+        pushResult(user,stdout);
+        return true;
+    }
+
+    function pushResult(address userAddr, string newAIMove) internal {
+        if (chessRegister[userAddr].game.toSlice().len() != 0)
+        chessRegister[userAddr].game = " ".toSlice().concat(chessRegister[userAddr].game.toSlice());
+        chessRegister[userAddr].game = newAIMove.toSlice().concat(chessRegister[userAddr].game.toSlice());
+        Logs("Task finished !",userAddr);
+    }
+
+    function getResult() constant returns (string game) {
+        return (chessRegister[msg.sender].game);
+    }
 
 
 }
