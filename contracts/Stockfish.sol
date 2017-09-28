@@ -2,9 +2,9 @@ pragma solidity ^0.4.11;
 import "./IexecOracleAPI.sol";
 import "./strings.sol";
 contract Stockfish is IexecOracleAPI{
-
-
     using strings for *;
+
+    event Logs(string status, address indexed user); // logs for the front-end or smart contract to react correctly
 
     struct Chess {
     string game;
@@ -28,7 +28,7 @@ contract Stockfish is IexecOracleAPI{
     function setParam(string userMove)  {
         bool validity = checkValidity(userMove);
         if (!validity) {
-            Launch("ERROR", msg.sender);
+            Logs("ERROR", msg.sender);
             throw;
         }
         if (chessRegister[msg.sender].game.toSlice().len() != 0)
@@ -40,7 +40,8 @@ contract Stockfish is IexecOracleAPI{
 
     function undoMove() {
         var game = chessRegister[msg.sender].game.toSlice();
-        for(var nbmoves=0; nbmoves<2; nbmoves++) { // delete the player move and the IA move
+        uint8 nbmoves;
+        for( nbmoves=0; nbmoves<2; nbmoves++) { // delete the player move and the IA move
             game.split(" ".toSlice());
         }
         chessRegister[msg.sender].game = game.toString();
