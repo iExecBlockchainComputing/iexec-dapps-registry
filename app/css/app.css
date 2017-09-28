@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(240,240,240);
+}
+
+#bodycontainer {
+  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#moveBox {
+  color: grey;
+  text-align: center;
+} 

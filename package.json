@@ -1,0 +1,29 @@
+{
+  "name": "stockfish",
+  "version": "1.0.0",
+  "description": "iexec stockfish poc",
+  "main": "truffle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
+  },
+  "homepage": "https://github.com/iExecBlockchainComputing/bridge_stockfish#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
+    "truffle": "^3.4.9",
+    "file-loader": "0.11.1",
+    "webpack": "2.5.1"
+  },
+  "dependencies": {
+    "web3": "0.20.2"
+  }
+}
