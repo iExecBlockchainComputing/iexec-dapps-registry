@@ -1,7 +1,6 @@
 module.exports = {
     name: 'Factorial',
-    oracleAddress: '0x552075c9e40b050c8b61339b770e2a21e9014b3c',
-    // ropsten   oracleAddress: '0x552075c9e40b050c8b61339b770e2a21e9014b3c',
-    // kovan     oracleAddress: '0xe6b658facf9621eff76a0d649c61dba4c8de85fb',
-    // rinkeby   oracleAddress: '0x0b1ea4ff347e05ca175e3d3cfb4499bc4ad5ada5',
+    constructorArgs: ['0xb34406538112bd2b3036b2c417c7cff827777a11'], // oracle v0.1.2 ropsten
+    // constructorArgs: ['0x98275d4b6511ef05ed063d127dd82b72588326c9'], // oracle v0.1.2 rinkeby
+    // constructorArgs: ['0xb81d38d843cb526a3d0c3130d568fe09799135aa'], // oracle v0.1.2 kovan
 };
