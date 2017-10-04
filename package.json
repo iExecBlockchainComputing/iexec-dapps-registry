@@ -1,0 +1,22 @@
+{
+  "name": "iexec-dapp-samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iexec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
+  },
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "dependencies": {
+    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.0"
+  }
+}
