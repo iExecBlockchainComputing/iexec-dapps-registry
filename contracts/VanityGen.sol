@@ -2,7 +2,7 @@ pragma solidity ^0.4.11;
 import "iexec-oracle-contract/contracts/IexecOracleAPI.sol";
 contract VanityGen is IexecOracleAPI{
 
-    function VanityGen (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,0ie){
+    function VanityGen (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,0){
 
     }
 
