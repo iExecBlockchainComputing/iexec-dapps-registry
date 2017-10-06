@@ -4,7 +4,7 @@
   "description": "",
   "main": "iexec.js",
   "dependencies": {
-    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.0"
+    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#dev"
   },
   "devDependencies": {},
   "scripts": {
