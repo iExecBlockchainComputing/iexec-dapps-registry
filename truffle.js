@@ -9,7 +9,7 @@ module.exports = {
             host: "https://ropsten.infura.io/berv5GTB5cSdOJPPnqOq",
             port: 8545,
             network_id: "3",
-            iexecOracleAddress: "0x7314dc4d7794b5e7894212ca1556ae8e3de58621",//oracle v0.1.3
+            iexecOracleAddress: "0x18a1f533c78dc10906f105fa5a5b6a0c258a7753",//oracle v0.1.3
             // gasPriceMultiplier: 2,  // use factor 2 of the network estimated gasPrice
             // gasLimitMultiplier: 4,  // use factor 4 of the network estimated gasLimit
             // gasPrice: 21000000000  // manually set the gasPrice in gwei. Prefer "gasPriceMultiplier"
@@ -19,13 +19,13 @@ module.exports = {
             host: "https://rinkeby.infura.io/berv5GTB5cSdOJPPnqOq",
             port: 8545,
             network_id: "4",
-            iexecOracleAddress: "0xf1e6ad3a7ef0c86c915f0fedf80ed851809bea90",//oracle v0.1.3
+            iexecOracleAddress: "0x2475825f2d3bda9c3cc8c7d0413a2c5ff17bafbf",//oracle v0.1.3
         },
         kovan: {
             host: "https://kovan.infura.io/berv5GTB5cSdOJPPnqOq",
             port: 8545,
             network_id: "42",
-            iexecOracleAddress: "0xc57538846ec405ea25deb00e0f9b29a432d53507",//oracle v0.1.3
+            iexecOracleAddress: "0x5559bae073bc9802e8eeefb101a9a77bcbfa6296",//oracle v0.1.3
         },
     }
 };
