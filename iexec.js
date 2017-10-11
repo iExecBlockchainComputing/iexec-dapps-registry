@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Echo',
-  constructorArgs: ['0x00b24fcfaa2d0c5a69887c8b1cefb937bdee84f6'], // oracle v1.0.3 ropsten
-  // constructorArgs: ['0xb34406538112bd2b3036b2c417c7cff827777a11'], // oracle v1.0.3 rinkeby
-  // constructorArgs: ['0x56ba3ef8e60c4f8e86c99225e5dade84578a178e'], // oracle v1.0.3 kovan
+  constructorArgs: ['0x065097b71b2e372eee4e31374b0262fa08238754'], // oracle v1.0.4 ropsten
+  // constructorArgs: ['0x9752f4bb6ab182a98e7347936e2172e7c0821338'], // oracle v1.0.4 rinkeby
+  // constructorArgs: ['0x77040475d5cf05e9dd44f96d7dab3b7da7adbc6a'], // oracle v1.0.4 kovan
 };
