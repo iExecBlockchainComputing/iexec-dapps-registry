@@ -1,13 +1,34 @@
-# iexec dapps samples
+# iexec IPFS Database Bridge
 
-This is the registry for sample iexec dapps, used by the iexec-sdk cli.
+Storing a significant number of records on the Ethereum blockchain is prohibitively expensive due to the gas costs per byte and is a big challange that often hinders the development of applications that need to create, read, update, and delete various kinds and numbers of records. 
+Although iexec does not deal directly with data storage, it can serve as a middleware-type componenet that can bridge the blockchain with storage protocols such as IPFS.
 
-Each branch name of this repo can be used as an argument to iexec init command.
+As IPFS can store any kind of file, it is capable of storing file-based database files such as SQLite file to allow for storage of entire databases and retrieval of such databases on demand.
 
-ex:
+This iexec application serves as a bridge in such an architecture, to accept query requests, find the relevant DB on IPFS, run quries on the DB, and return the results to the smart contract developer in the form of an IPFS hash. 
 
-```bash
-iexec init
-iexec init factorial
-iexec init echo
-```
+An example workflow is described below:
+
+* Pre-requisites: 
+	* User has previously created a SQLite DB and placed the db file on IPFS, and so also has a hash of this database.
+	* User has developed queries and has also stored such queries on IPFS, and so also has the hashes associated to these queries.
+
+1. User sends DB Hash of SQLite DB on IPFS to Ethereum smart contract:
+Example DB Hash: e0d123e5f316bef78bfdf5a008837577 
+
+2. User sends INSERT, SELECT, UPDATE, OR DELETE query hash to Ethereum smart contract for running it on the SQLite DB:
+Example Query Hash: a09455733316bef78bfdf5a498576332 
+
+3. Upon user request, Ethereum Smart Contract sends query request along with DB and query hashes to iexec
+
+4. iexec does the work of downloading the database from IPFS using the db file hash, as well as downloading the full query text from IPFS using the query hash 
+
+5. iexec runs the query on the downloaded database
+
+6. iexec get the results of the query and stores the results on IPFS 
+
+7. iexec returns the result to the smart contract in the form on an IPFS hash
+
+8. User can see query results by using the results hash see full results stored on IPFS
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
