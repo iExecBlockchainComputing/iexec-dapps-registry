@@ -33,7 +33,6 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 8. User can see query results by using the results hash see full results stored on IPFS
 
 <br>
-<br>
 
 
 ![alt text](https://github.com/ZeroPointThree17/iexec-dapp-samples/blob/dapp-challenge/images/iexec-ipfs-db-bridge.png?raw=true "iexec IPFS Database Bridge")
