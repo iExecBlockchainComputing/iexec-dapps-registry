@@ -13,6 +13,7 @@ An example workflow is described below:
 	* User has previously created a SQLite DB and placed the db file on IPFS, and so also has a hash of this database.
 	* User has developed queries and has also stored such queries on IPFS, and so also has the hashes associated to these queries.
 
+* Steps:
 1. User sends DB Hash of SQLite DB on IPFS to Ethereum smart contract:
 Example DB Hash: e0d123e5f316bef78bfdf5a008837577 
 
@@ -31,4 +32,4 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 8. User can see query results by using the results hash see full results stored on IPFS
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/ZeroPointThree17/iexec-dapp-samples/blob/dapp-challenge/images/iexec-ipfs-db-bridge.png?raw=true "iexec IPFS Database Bridge")
