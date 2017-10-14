@@ -26,9 +26,9 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 5. iexec runs the query on the downloaded database
 
-6. iexec get the results of the query and stores the results on IPFS 
+6. iexec gets the results of the query and stores the results on IPFS. Also, stores update database back to IPFS if applicable.
 
-7. iexec returns the result to the smart contract in the form on an IPFS hash
+7. iexec returns the result to the smart contract in the form on an IPFS hash. Also, returns updated DB hash if database was updated.
 
 8. User can see query results by using the results hash see full results stored on IPFS
 
