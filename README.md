@@ -22,7 +22,7 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 3. Upon user request, Ethereum Smart Contract sends query request along with DB hash and query hash to iexec
 
-4. iexec does the work of downloading the database from IPFS using the db file hash, as well as downloading the full query text from IPFS using the query hash 
+4. iexec does the work of downloading the database from IPFS using the DB file hash, as well as downloading the full query text from IPFS using the query hash 
 
 5. iexec runs the query on the downloaded database
 
