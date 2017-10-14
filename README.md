@@ -20,7 +20,7 @@ Example DB Hash: e0d123e5f316bef78bfdf5a008837577
 2. User sends INSERT, SELECT, UPDATE, OR DELETE query hash to Ethereum smart contract for running it on the SQLite DB:
 Example Query Hash: a09455733316bef78bfdf5a498576332 
 
-3. Upon user request, Ethereum Smart Contract sends query request along with DB and query hashes to iexec
+3. Upon user request, Ethereum Smart Contract sends query request along with DB hash and query hash to iexec
 
 4. iexec does the work of downloading the database from IPFS using the db file hash, as well as downloading the full query text from IPFS using the query hash 
 
