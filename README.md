@@ -1,6 +1,6 @@
 # iexec IPFS Database Bridge
 
-## Dapp Description
+## DApp Description
 
 Storing a significant number of records on the Ethereum blockchain is prohibitively expensive due to the gas costs per byte and is a big challange that often hinders the development of applications that need to create, read, update, and delete various kinds and numbers of records. 
 Although iexec does not deal directly with data storage, it can serve as a middleware-type componenet that can bridge the blockchain with storage protocols such as IPFS.
@@ -41,10 +41,10 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 ![alt text](https://github.com/ZeroPointThree17/iexec-dapp-samples/blob/dapp-challenge/images/iexec-ipfs-db-bridge.png?raw=true "iexec IPFS Database Bridge")
 
-##Why is it built on Ethereum?
+# #Why is it built on Ethereum?
 
 Ethereum provides the smart contracts to send requests to iexec. Ethereum is also in major need of off-chain computation and storage capabilities to complement its smart contract capabilities, so this iexec app helps to gill those resource gaps.
 
-##Why does it use iexec?
+## Why does it use iexec?
 
 This iexec application allows for clients to use Ethereum contracts to work with databases. The intermediary that runs the required queries on the database usually must do its work on a centralized server that the user must set up and maintain. With this set up, the user does not have to host the database on their own servers (since it exists on IPFS), and the query transactions also do not have to run on any specified server (since iexec will take care of this processing).
