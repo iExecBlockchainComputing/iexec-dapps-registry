@@ -41,7 +41,7 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 ![alt text](https://github.com/ZeroPointThree17/iexec-dapp-samples/blob/dapp-challenge/images/iexec-ipfs-db-bridge.png?raw=true "iexec IPFS Database Bridge")
 
-# #Why is it built on Ethereum?
+## Why is it Built on Ethereum?
 
 Ethereum provides the smart contracts to send requests to iexec. Ethereum is also in major need of off-chain computation and storage capabilities to complement its smart contract capabilities, so this iexec app helps to gill those resource gaps.
 
