@@ -11,7 +11,7 @@ An example workflow is described below:
 
 * Pre-requisites: 
 	* User has previously created a SQLite DB and placed the DB file on IPFS, and so also has an IPFS hash of this database file.
-	* User has developed queries and has also stored such queries on IPFS, and so also has the IPFS hashes associated to these queries.
+	* User has developed SQL queries for this DB and has also stored these queries on IPFS, and so also has the IPFS hashes associated to these queries.
 
 * Steps:
 1. User sends DB Hash of SQLite DB on IPFS to Ethereum smart contract:
