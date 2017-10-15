@@ -3,7 +3,7 @@
 Storing a significant number of records on the Ethereum blockchain is prohibitively expensive due to the gas costs per byte and is a big challange that often hinders the development of applications that need to create, read, update, and delete various kinds and numbers of records. 
 Although iexec does not deal directly with data storage, it can serve as a middleware-type componenet that can bridge the blockchain with storage protocols such as IPFS.
 
-As IPFS can store any kind of file, it is capable of storing file-based database files such as SQLite file to allow for storage of entire databases and retrieval of such databases on demand.
+As IPFS can store any kind of file, it is capable of storing file-based database files such as SQLite files to allow for storage of entire databases and retrieval of such databases on demand.
 
 This iexec application serves as a bridge in such an architecture, to accept query requests, find the relevant DB on IPFS, run quries on the DB, and return the results to the smart contract developer in the form of an IPFS hash. 
 
