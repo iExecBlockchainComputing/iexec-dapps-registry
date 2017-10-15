@@ -43,7 +43,7 @@ Example Query Hash: a09455733316bef78bfdf5a498576332
 
 ## Why is it Built on Ethereum?
 
-Ethereum provides the smart contracts to send requests to iexec. Ethereum is also in major need of off-chain computation and storage capabilities to complement its smart contract capabilities, so this iexec app helps to gill those resource gaps.
+Ethereum provides the smart contracts to send requests to iexec. Ethereum is also in major need of off-chain computation and storage capabilities to complement its smart contract capabilities, so this iexec app helps to fill those resource gaps.
 
 ## Why does it use iexec?
 
