@@ -3,6 +3,7 @@ const oracleJSON = require('iexec-oracle-contract/build/contracts/IexecOracle.js
 const ROPSTEN_ORACLE_ADDRESS = oracleJSON.networks['3'].address;
 const RINKEBY_ORACLE_ADDRESS = oracleJSON.networks['4'].address;
 const KOVAN_ORACLE_ADDRESS = oracleJSON.networks['42'].address;
+const LOCAL_ORACLE_ADDRESS = 'LOCAL_ORACLE_ADDRESS_VALUE';
 
 module.exports = {
     networks: {
