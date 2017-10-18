@@ -1,5 +1,5 @@
 pragma solidity ^0.4.11;
-import "./IexecOracleAPI.sol";
+import "iexec-oracle-contract/contracts/IexecOracleAPI.sol";
 import "./strings.sol";
 contract Stockfish is IexecOracleAPI{
     using strings for *;
