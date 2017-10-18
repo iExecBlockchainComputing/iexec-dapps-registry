@@ -24,6 +24,7 @@
     "webpack": "2.5.1"
   },
   "dependencies": {
-    "web3": "0.20.2"
+    "web3": "0.20.2",
+    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.4"
   }
 }
