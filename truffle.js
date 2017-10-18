@@ -9,7 +9,8 @@ module.exports = {
         development: {
             host: "http://localhost:8545",
             port: 8545,
-            network_id: "*" // Match any network id
+            network_id: "42",// Match any network id
+            constructorArgs: [LOCAL_ORACLE_ADDRESS],
         },
         ropsten: {
             host: "https://ropsten.infura.io/berv5GTB5cSdOJPPnqOq",
