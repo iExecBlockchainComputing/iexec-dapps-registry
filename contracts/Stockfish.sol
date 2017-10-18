@@ -37,7 +37,7 @@ contract Stockfish is IexecOracleAPI{
         chessRegister[msg.sender].game = " ".toSlice().concat(chessRegister[msg.sender].game.toSlice()); // separate moves
         chessRegister[msg.sender].game = userMove.toSlice().concat(chessRegister[msg.sender].game.toSlice());
         //iexecSubmit(string appName, string param)
-        iexecSubmit("stockfish",chessRegister[msg.sender].game);
+       //iexecSubmit("stockfish",chessRegister[msg.sender].game);
     }
 
     function undoMove() {
