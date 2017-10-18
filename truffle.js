@@ -1,3 +1,9 @@
+const oracleJSON = require('iexec-oracle-contract/build/contracts/IexecOracle.json');
+
+const ROPSTEN_ORACLE_ADDRESS = oracleJSON.networks['3'].address;
+const RINKEBY_ORACLE_ADDRESS = oracleJSON.networks['4'].address;
+const KOVAN_ORACLE_ADDRESS = oracleJSON.networks['42'].address;
+
 module.exports = {
     networks: {
         development: {
