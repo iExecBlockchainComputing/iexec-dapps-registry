@@ -4,7 +4,7 @@
 
 This Dapp allow to verify identity based on standard picture including his ID (Passport or Licence driver). Before, We trained a neural network to perform authenfication of the image.
 
-This iexec application serves as a bridge in such an architecture, to accept a picture and return the result of the authentificatino.
+This iexec application serves as a bridge in such an architecture, to accept a picture and return the result of the authentification.
 
 ## Implementation Presentation
 
