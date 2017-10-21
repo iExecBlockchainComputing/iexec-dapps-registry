@@ -20,3 +20,9 @@ An example workflow is described below:
 4. iexec returns the result to the smart contract.
 
 6. User can check the result of the authenfication.
+
+## Why is it built on Ethereum
+Ethereum is the world computer so having an identity solution on Ethereum is ideal.
+
+## Why does is it use iExec
+Iexec is perfect as a bridge to be able to perform Neural Network computation on the blockchain.
