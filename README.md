@@ -14,6 +14,8 @@ The dApp will use iExec in order to run the computations needed to test programs
 
 ## A presentation of the implementation
 
+![alt text](https://github.com/Andy92Pac/iexec-dapp-samples/blob/dapp-challenge/img/schema.png?raw=true "IExec dapp challenge schema")
+
 As stated earlier, a smart contract will allow the client to express all the specifications and the tests that need to be validate to accept the program. Those specifications could include date limit, bug acceptance percentage, etc... The max amount that the company is willing to pay for the development is locked using a stable coin. Once the client is done setting those parameters and the tests that are going to run to test the program, the developers can start working on the program.
 When the development is done, the program is deployed on IExec and the tests are launched via a call to the smart contract. 
 The results of the testing are then sent back to the smart contract and the latter take care of the rest. A percentage or the totality of the amount locked in the smart contract is sent to the developers of the program depending of the results of the computations done on IExec.
