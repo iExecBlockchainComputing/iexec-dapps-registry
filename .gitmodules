@@ -1,0 +1,9 @@
+[submodule "lib/ds-test"]
+	path = lib/ds-test
+	url = https://github.com/dapphub/ds-test
+[submodule "lib/iexec-oracle-contract"]
+	path = lib/iexec-oracle-contract
+	url = https://github.com/iExecBlockchainComputing/iexec-oracle-contract
+[submodule "lib/ds-thing"]
+	path = lib/ds-thing
+	url = https://github.com/dapphub/ds-thing
