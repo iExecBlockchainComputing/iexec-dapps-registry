@@ -1,6 +1,5 @@
 pragma solidity ^0.4.11;
 import "iexec-oracle-contract/contracts/IexecOracleAPI.sol";
-import 'zeppelin-solidity/contracts/ownership/Ownable.sol'
 
 contract DappOnlyOwner is IexecOracleAPI, Ownable{
 
