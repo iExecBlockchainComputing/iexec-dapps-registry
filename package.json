@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
   "dependencies": {
-    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.9"
+    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.9",
+    "zeppelin-solidity": "^1.3.0"
   }
 }
