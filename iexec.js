@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Echo',
-  app: {
+  data: {
     type: 'BINARY',
     cpu: 'AMD64',
     os: 'LINUX',
