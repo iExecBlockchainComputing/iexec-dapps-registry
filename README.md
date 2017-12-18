@@ -10,9 +10,12 @@ python3 apps/sudokuOCR input [-o output]
 
 ## Example:
 
-> python3 apps/sudokuOCR.py ~/Code/Projects/sudokuOCR/imgs/grid.jpg
+> python3 apps/sudokuOCR.py figures/grid.jpg -o figures/completed.jpg
 
-> Solution: 534678912672195348198342567859761423426853791713924856961537284287419635345286179
+> Solution: 782419356539786124146523879651834792824971563397652418463195287975248631218367945
+
+![figures/grid.jpg](figures/grid.jpg "grid.jpg")
+![figures/completed.jpg](figures/completed.jpg "completed.jpg")
 
 ## Dependencies:
 * python3
