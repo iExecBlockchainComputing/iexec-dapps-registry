@@ -16,6 +16,8 @@ python3 apps/fluxe naca4 [-a angleOfAttack] [-g gridSize] [-o output]
 
 > python3 apps/fluxe.py 2400 -a 25 -g 128 -o example.pdf
 
+![output](figures/example.png)
+
 ## Dependencies:
 * python3
 	* argparse
