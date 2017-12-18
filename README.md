@@ -14,10 +14,10 @@
 4. dapp metrics page (history, user rank etc)
 
 #### game-mode:
-*currenty plan:*
+*current plan:*
 1. bet on number or range (0-100) 
 
-*future plan:*
+*futures plan:*
 1. fixed bet
      - 1.lottery (price pool)
      - 2.random winner of all participates 
