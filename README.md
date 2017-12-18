@@ -3,7 +3,7 @@
 This Dapp provides a sudoku solver with OCR.
 
 ## Usage:
-python3 apps/sudokuOCR <input> -o <output>
+python3 apps/sudokuOCR input [-o output]
 * The input must be the path to an image containing a sudoku grid.
 * The (optional) output is the path to the completed grid.
   Default: ./completed.png
