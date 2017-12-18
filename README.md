@@ -1,4 +1,4 @@
-# sudokuCLI
+# sudokuOCR
 
 This Dapp provides a sudoku solver with OCR.
 
