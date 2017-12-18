@@ -5,4 +5,7 @@ module.exports = {
     cpu: 'AMD64',
     os: 'LINUX',
   },
+  work: {
+    cmdline: 'Hello World',
+  }
 };
