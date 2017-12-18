@@ -14,10 +14,14 @@
 4. dapp metrics page (history, user rank etc)
 
 #### game-mode:
-
+*currenty plan:*
 1. bet on number or range (0-100) 
-2. random winner of all participates (fixed bet)
-3. bet on things like BTC price next hour, day etc
+
+*future plan:*
+1. fixed bet
+     - 1.lottery (price pool)
+     - 2.random winner of all participates 
+2. bet on things like BTC price next hour, day etc
 
 #### Front-end:
 
