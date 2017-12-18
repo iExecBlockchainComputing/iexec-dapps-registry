@@ -1,13 +1,23 @@
-# iexec dapps samples
+# sudokuCLI
 
-This is the registry for sample iexec dapps, used by the iexec-sdk cli.
+This Dapp provides a sudoku solver with OCR.
 
-Each branch name of this repo can be used as an argument to iexec init command.
+## Usage:
+python3 apps/sudokuOCR <input> -o <output>
+* The input must be the path to an image containing a sudoku grid.
+* The (optional) output is the path to the completed grid.
+  Default: ./completed.png
 
-ex:
+## Example:
 
-```bash
-iexec init
-iexec init factorial
-iexec init echo
-```
+> python3 apps/sudokuOCR.py ~/Code/Projects/sudokuOCR/imgs/grid.jpg
+> Solution: 534678912672195348198342567859761423426853791713924856961537284287419635345286179
+
+## Dependencies:
+* python3
+	* argparse
+	* cv2
+	* numpy
+	* PIL
+	* pytesseract
+* [tesseract](https://github.com/tesseract-ocr/tesseract)
