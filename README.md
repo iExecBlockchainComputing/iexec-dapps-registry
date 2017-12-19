@@ -11,4 +11,6 @@ iexec init factorial # download and init factorial dapp
 iexec init echo # download and init echo dapp
 ```
 
-You are warmly welcome to push your dapp on a new branch in this repo. You may even request to be listed on the [iExec dapp store](https://iex.ec)
+Start a Pull Request with your code onto a new branch of this repo to let other developers discover it by running ```iexec init yourDappName```.
+
+Finally, you should checkout the [iExec Dapp Challenge](https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee) as well as submit us a request to be listed on the [iExec dapp store](https://dapps.iex.ec/)
