@@ -1,5 +1,5 @@
 {
-  "name": "iexec-dapp-init",
+  "name": "iexec-dapp-ffmpeg",
   "version": "1.0.0",
   "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
   "main": "iexec.js",
@@ -16,7 +16,4 @@
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
-  "dependencies": {
-    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.9"
-  }
 }
