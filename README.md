@@ -7,7 +7,7 @@ You can see a full description of the ffmpeg dapp on [iExec Dev Letter #11](http
 
 ## Howto
 
-The ffmpeg dapp creation explained step by step [on katacoda tutorial](https://www.katacoda.com/sulliwane/scenarios/ffmpeg).
+The ffmpeg dapp creation is explained step by step [on katacoda tutorial](https://www.katacoda.com/sulliwane/scenarios/ffmpeg).
  
 ## Example
 ```
