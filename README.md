@@ -2,15 +2,12 @@
 
 ## Description
 
-You can see a full description of the ffmpeg dapp on our medium blog :
- * [ The ffmpeg dapp on iExec Dev Letter #11  ](https://medium.com/iex-ec/iexec-dev-letter-11-daad1c8b9b75)
- 
+You can see a full description of the ffmpeg dapp on[iExec Dev Letter #11](https://medium.com/iex-ec/iexec-dev-letter-11-daad1c8b9b75).
 
-https://medium.com/iex-ec/iexec-dev-letter-11-daad1c8b9b75
 
 ## Howto
 
- * [ The ffmpeg dapp creation explained step by step ](https://www.katacoda.com/sulliwane/scenarios/ffmpeg)
+The ffmpeg dapp creation explained step by step [on katacoda tutorial](https://www.katacoda.com/sulliwane/scenarios/ffmpeg).
  
 ## Example
 ```
