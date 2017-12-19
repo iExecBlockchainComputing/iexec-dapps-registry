@@ -1,13 +1,11 @@
-# iexec dapps samples
+# vanitygen
 
-This is the registry for sample iexec dapps, used by the iexec-sdk cli.
+## Description
+Vanitygen is a command-line vanity bitcoin address generator.
 
-Each branch name of this repo can be used as an argument to iexec init command.
-
-ex:
-
+## Howto
 ```bash
-iexec init
-iexec init factorial
-iexec init echo
+iexec init vanitygen
+iexec deploy
+iexec submit
 ```

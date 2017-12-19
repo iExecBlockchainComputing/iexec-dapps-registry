@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
-  "dependencies": {
-    "iexec-oracle-contract": "github:iExecBlockchainComputing/iexec-oracle-contract#v1.0.4"
-  }
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/vanitygen#readme"
 }
