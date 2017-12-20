@@ -1,13 +1,19 @@
-# iexec dapps samples
+# Dapp only admin
+## Description
 
-This is the registry for sample iexec dapps, used by the iexec-sdk cli.
+Dapp smart contract has a onlyOwner modifier to narrow submit to the dapp provider
 
-Each branch name of this repo can be used as an argument to iexec init command.
-
-ex:
-
-```bash
-iexec init
-iexec init factorial
-iexec init echo
+## Dapp params
 ```
+module.exports = {
+    name: 'DappOnlyOwner',
+    data: {
+      type: 'BINARY',
+      cpu: 'AMD64',
+      os: 'LINUX',
+    },
+};
+```
+
+
+## [Examples](./examples)
