@@ -1,14 +1,3 @@
-# Dapp ffmpeg
-
-## Description
-
-You can see a full description of the ffmpeg dapp on [iExec Dev Letter #11](https://medium.com/iex-ec/iexec-dev-letter-11-daad1c8b9b75).
-
-
-## Dapp params
-
-
-```
 module.exports = {
     name: 'Ffmpeg',
     data: {
@@ -21,5 +10,3 @@ module.exports = {
         dirinuri:'http://techslides.com/demos/sample-videos/small.mp4',
     }
 };
-```
-## [Examples](./examples)
