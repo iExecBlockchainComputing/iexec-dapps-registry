@@ -1,11 +1,12 @@
 module.exports = {
-  name: 'MyContract',
+  name: 'Figlet',
   data: {
     type: 'BINARY',
     cpu: 'AMD64',
     os: 'LINUX',
   },
   work: {
-    cmdline: '10',
+    cmdline:'-f big.flf iExec',
+    dirinuri:'http://www.figlet.org/fonts/big.flf',
   }
 };
