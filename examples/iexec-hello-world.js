@@ -1,8 +1,3 @@
-# echo
-## Description
-Echo application implemented using bash script.
-## Dapp params
-```
 module.exports = {
   name: 'Echo',
   data: {
@@ -14,7 +9,3 @@ module.exports = {
     cmdline: 'Hello World',
   }
 };
-```
-
-
-## [Examples](./examples)
