@@ -1,6 +1,10 @@
 # figlet
 ## Description
 http://www.figlet.org/
+```
+cd apps
+./Figlet -f big.flf iExec
+```
 ## Dapp params
 ```
 module.exports = {
