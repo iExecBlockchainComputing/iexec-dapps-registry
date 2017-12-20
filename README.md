@@ -23,6 +23,6 @@ Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-sa
 ## Description
 My Dapp description here...
 ## Dapp params
-An examples of a iexec.js conf
+An example of a iexec.js conf
 ## [Examples](./examples)
-A like to all iexec.js conf examples for the dapp.
+A link to all iexec.js conf examples for the dapp.
