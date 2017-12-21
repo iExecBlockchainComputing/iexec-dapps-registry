@@ -4,6 +4,10 @@
 
 A dapp build on top of iexec that allowed user to make bet that are absolutely transparent and provable fairness.
 
+## Who we are:
+1. dh: full stack dev, UI/UX/design experience
+2. yq: senior dev, EVM/smart contract/protocol dev
+
 ## Implementation Presentation
 
 1. design an algorithm that will generate a true random number among DAPPs, the process is approved to be fair and agreed by all participants. This will involve some calculations and verifications for each participant.
@@ -17,13 +21,14 @@ Decentralization is the key to create a fair betting game, smart contract provid
 
 ## Why does it use iexec?
 
-iexec's dapp store is the ideal platform for this DAPP to be listed and open to all users of iexec. Much easier to use and participate than a stand alone smart contract.
+iexec's dapp store is the ideal platform for this DAPP to be listed and open to all users of iexec. Much easier to use and participate than a stand alone smart contract. Also to generate and verify a true random number involes a bit of calculation and we need to make sure it is honest and transparent.
 
-#### game-mode:
+#### roadmap:
 *current plan:*
-1. bet on number or range (0-100)
+1. bet on number or range (0-100) for multiple participants (~ 4 weeks)
 
-*futures plan:*
+(not for dapp-challenge but we might adding those depend on the time we finish the 1st plan)
+*futures plan:* (4-8 weeks)
 1. fixed bet
      - 1.lottery (price pool)
      - 2.random winner of all participates 
@@ -33,10 +38,6 @@ iexec's dapp store is the ideal platform for this DAPP to be listed and open to 
 
 1. A page list all bet with time limt to participate
 2. for each bet there is a rule and outcome for each result.
-
-#### smart-contract:
-
-each bet is a smart contract that will automatically excuted
 
 #### true random number algorithm:
 
