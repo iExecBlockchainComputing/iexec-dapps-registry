@@ -6,6 +6,6 @@ module.exports = {
     os: 'LINUX',
   },
   work: {
-    cmdline: '--activate',
+    cmdline: '--desactivate',
   }
 };
