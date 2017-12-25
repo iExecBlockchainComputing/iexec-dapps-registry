@@ -33,7 +33,7 @@ contract TimeClock is IexecOracleAPI{
 
     function badgeOut() payable public {
         // check if employee has badge-in. if badge-in, entering time of employee is valorized
-        if( entreeByEmployee[msg.sender] != 0 ){
+        if( employeeTimeClock[msg.sender] != 0 ){
             //retreived the employee entering time
             uint badgeInTime = entreeByEmployee[msg.sender];
             //reset the employee entering time
