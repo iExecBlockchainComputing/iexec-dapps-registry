@@ -35,7 +35,7 @@ contract TimeClock is IexecOracleAPI{
         // check if employee has badge-in. if badge-in, entering time of employee is valorized
         if( employeeTimeClock[msg.sender] != 0 ){
             //retreived the employee entering time
-            uint badgeInTime = entreeByEmployee[msg.sender];
+            uint badgeInTime = employeeTimeClock[msg.sender];
             //reset the employee entering time
             employeeTimeClock[msg.sender] = 0;
             //calcule how much to pay employee. simple 1 sec = 1 wei
