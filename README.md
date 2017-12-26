@@ -27,9 +27,9 @@ iexec's dapp store is the ideal platform for this DAPP to be listed and open to 
 *current plan:*
 1. bet on number or range (0-100) for multiple participants (~ 4 weeks)
 2. 
-     - A page list all bet with time limit to participate (~ 2 weeks)
+     - A page list all bet with time limit to participate (~ 4 weeks)
      - for each bet there is a rule and outcome for each result.
-3. metrics page (history, user rank etc) (~ 2 weeks)
+3. metrics page (history, user rank etc) (~ 4 weeks)
 
 (not for dapp-challenge but we might adding those depend on the time we finish the 1st plan)
 *futures plan:* (4-8 weeks)
