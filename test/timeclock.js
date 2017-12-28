@@ -1,5 +1,4 @@
 var IexecOracle = artifacts.require("./IexecOracle.sol");
-var IexecOracleAPI = artifacts.require("./IexecOracleAPITest.sol");
 var IexecOracleEscrow = artifacts.require("./IexecOracleEscrow.sol");
 var TimeClock = artifacts.require("./TimeClock.sol");
 var RLC = artifacts.require("../node_modules/rlc-token//contracts/RLC.sol");
@@ -86,7 +85,7 @@ contract('TimeClock', function(accounts) {
     })
     .then(instance => {
             aIexecOracleInstance = instance;
-        return IexecOracleAPI.new(aIexecOracleInstance.address, 0, "aDappName", {
+        return TimeClock.new(aIexecOracleInstance.address, 0, "timeclock", {
             from: provider
         });
 
@@ -99,7 +98,7 @@ contract('TimeClock', function(accounts) {
     });
 
 
-    it("Test provider and dapp of IexecOracleAPI are set correctly in IexecOracle", function() {
+    it("Test provider and dapp of TimeClock are set correctly in IexecOracle", function() {
         this.timeout(testTimemout);
         return aIexecOracleInstance.getProvider.call(aTimeClockInstance.address)
             .then(providerStored => {
@@ -107,6 +106,6 @@ contract('TimeClock', function(accounts) {
     });
     });
 
-    
+
 
 });
