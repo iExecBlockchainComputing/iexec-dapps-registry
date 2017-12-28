@@ -16,7 +16,7 @@ contract TimeClock is IexecOracleAPI{
         alarmActivated= true;
     }
 
-    function getEmployeeBadgeInTime(address employee) constant public returns uint {
+    function getEmployeeBadgeInTime(address employee) constant public returns (uint employeeBadgeInTime) {
       return employeeTimeClock[employee];
     }
 
