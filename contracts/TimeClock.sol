@@ -48,8 +48,8 @@ contract TimeClock is IexecOracleAPI{
             //calcule how much to pay employee. simple 1 sec = 1 wei
             uint weiToPay =  now - badgeInTime;
             // send eth to employee
-            msg.sender.transfer(DailyPay);
-            DailyPay(msg.sender,DailyPay);
+            msg.sender.transfer(weiToPay);
+            DailyPay(msg.sender,weiToPay);
             // update the total of employee present at office
             employeeAtOffice--;
             // if no more employees at office => activate alarm
