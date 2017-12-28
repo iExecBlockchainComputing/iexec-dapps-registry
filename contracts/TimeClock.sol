@@ -13,7 +13,7 @@ contract TimeClock is IexecOracleAPI{
 
     bool public alarmActivated;
 
-    function TimeClock (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
+    function TimeClock (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME) public{
         alarmActivated= true;
     }
 
@@ -60,7 +60,7 @@ contract TimeClock is IexecOracleAPI{
     }
 
     // to refill balance to pay employees
-    function () payable {}
+    function () payable public {}
 
 // function will be call after the off-chain computation has been done
     function iexecSubmitCallback(bytes32 submitTxHash, address user, string stdout, string uri) public returns  (bool){
