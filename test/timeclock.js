@@ -247,8 +247,8 @@ contract('TimeClock', function(accounts) {
       let amountPay;
       this.timeout(testTimemout);
       if (isTestRPC) this.skip("This test is only for geth");
-      // work 15 sec before badge-out
-      Extensions.sleep(15000);
+      // work 8 sec before badge-out
+      Extensions.sleep(8000);
       return aTimeClockInstance.badgeOut({
           from: dappUser,
           gas: amountGazProvided
