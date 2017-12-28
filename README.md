@@ -21,3 +21,48 @@ module.exports = {
 
 ## [Examples](./examples)
 
+## Tests
+
+make sure the development network host in truffle.js is well configured :
+```
+module.exports = {
+  networks: {
+    development: {
+      host: 'localhost',
+      port: 8545,
+      network_id: '*', // Match any network id,
+      constructorArgs: [LOCAL_ORACLE_ADDRESS],
+      server: 'https://localhost:443'
+    },
+```
+
+### testrpc Tests
+
+Install the latest testrpc
+```
+npm install -g ethereumjs-testrpc
+
+```
+start your testrpc with
+```
+testrpc
+```
+You must see somting like this atb the end of the log
+
+```
+Listening on localhost:8545
+```
+Your testrpc network simultaor is ready, you can launch your truffle test with :
+```
+iexec truffle test
+```
+
+
+### Local geth node Tests
+
+Pull the the following docker image
+```
+docker pull iexechub/iexec-geth-local
+
+```
+WIP ...

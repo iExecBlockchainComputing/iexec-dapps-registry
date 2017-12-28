@@ -99,6 +99,13 @@ contract('TimeClock', function(accounts) {
       });
   });
 
+  it("Geth mode example : test only launch when geth is used", function() {
+    if (isTestRPC) this.skip("This test is only for geth");
+  });
+
+  it("TestRPC mode example : test only launch when testrpc is used", function() {
+    if (!isTestRPC) this.skip("This test is only for TestRPC");
+  });
 
   it("Test provider and dapp of TimeClock are set correctly in IexecOracle", function() {
     return aIexecOracleInstance.getProvider.call(aTimeClockInstance.address)
@@ -106,6 +113,19 @@ contract('TimeClock', function(accounts) {
         assert.strictEqual(dappProvider, providerStored, "dappProvider must be registered in IexecOracle for the aTimeClockInstance contract");
       });
   });
+
+
+  it("Test badgeIn by dappUser and Submit Log for off-chain generated", function() {
+    return aTimeClockInstance.badgeIn({
+          from: dappUser,
+          gas:amountGazProvided
+    })
+    .then(txMined => {
+      assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+    });
+  });
+
+
 
 
 });
