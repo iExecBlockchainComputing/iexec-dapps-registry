@@ -159,7 +159,7 @@ contract('TimeClock', function(accounts) {
         assert.strictEqual(employeeAtOfficeCall.toNumber(), 1, '1 employee present at office');
         //simulate bridge callback after off-chain computation done
         // function submitCallback(bytes32 submitTxHash, address user, address dapp, IexecLib.StatusEnum status, string stdout, string stderr, string uri) stopInEmergency public {
-        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aTimeClockInstance.address, IexecOracle.Status.COMPLETED, "OFF", "uri unused here", {
+        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aTimeClockInstance.address, IexecOracle.Status.COMPLETED, "OFF", "","uri unused here", {
           from: bridge,
           gas: amountGazProvided
         });
