@@ -292,17 +292,17 @@ contract('TimeClock', function(accounts) {
             .then(alarmActivatedCall => {
               assert.isTrue(alarmActivatedCall, 'alarm has activated thanks to the last badge out employee');
               //has the employee been paid ?
-              return Extensions.getEventsPromise(aTimeClockInstance.DailyPay({}, {
-                fromBlock: previousBlockNumber
-              }));
-            })
-            .then(events => {
+            //  return Extensions.getEventsPromise(aTimeClockInstance.DailyPay({}, {
+            //    fromBlock: previousBlockNumber
+          //    }));
+            });
+          //  .then(events => {
               //check event DailyPay is well triggered
               // the Log is composed of : DailyPay(address indexed employee, uint amount);
-              assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
-              console.log("DailyPay employee ["+dappUser+"] received : " + events[0].args.amount +" wei ");
+          //    assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
+        //      console.log("DailyPay employee ["+dappUser+"] received : " + events[0].args.amount +" wei ");
               //assert.NotEqual(events[0].args.amount, 0, "dappUser must have received some wei");
-            });
+        //    });
 
         });
 
