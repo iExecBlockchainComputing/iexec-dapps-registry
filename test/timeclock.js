@@ -249,10 +249,15 @@ contract('TimeClock', function(accounts) {
       if (isTestRPC) this.skip("This test is only for geth");
       // work 8 sec before badge-out
       Extensions.sleep(8000);
-      return aTimeClockInstance.badgeOut({
-          from: dappUser,
-          gas: amountGazProvided
-        }).then(txMined => {
+      return web3.eth.getBalancePromise(dappUser)
+        .then(balance => {
+          initialDappUserBalance = balance;
+          return aTimeClockInstance.badgeOut({
+            from: dappUser,
+            gas: amountGazProvided
+          });
+        })
+        .then(txMined => {
           submitTxHash = txMined.tx;
           assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
           return Promise.all([
