@@ -51,7 +51,7 @@ contract TimeClock is IexecOracleAPI{
         }
     }
 
-
+    // function will be call after the off-chain computation has been done
     function iexecSubmitCallback(bytes32 submitTxHash, address user, string stdout, string uri) public returns  (bool){
         require(msg.sender == iexecOracleAddress);
         IexecSubmitCallback(submitTxHash,user,stdout,uri);
