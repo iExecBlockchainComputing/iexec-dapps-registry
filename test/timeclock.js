@@ -48,8 +48,8 @@ contract('TimeClock', function(accounts) {
         [dappProvider, dappUser, bridge, rlcCreator])
       .then(() => web3.eth.getBalancePromise(dappProvider))
       .then(balance => assert.isTrue(
-        web3.toWei(web3.toBigNumber(90), "ether").lessThan(balance),
-        "dappProvider should have at least 35 ether, not " + web3.fromWei(balance, "ether")))
+        web3.toWei(web3.toBigNumber(40), "ether").lessThan(balance),
+        "dappProvider should have at least 40 ether, not " + web3.fromWei(balance, "ether")))
       .then(() => Extensions.refillAccount(dappProvider, dappUser, 10))
       .then(() => Extensions.refillAccount(dappProvider, bridge, 10))
       .then(() => Extensions.refillAccount(dappProvider, rlcCreator, 10))
@@ -241,6 +241,9 @@ contract('TimeClock', function(accounts) {
 
     it("Test badge-out function call", function() {
       let previousBlockNumber;
+      //if (isTestRPC) this.skip("This test is only for geth");
+      // work 10 sec before badge-out
+      Extensions.sleep(10000);
       return aTimeClockInstance.badgeOut({
           from: dappUser,
           gas: amountGazProvided
@@ -301,7 +304,7 @@ contract('TimeClock', function(accounts) {
           // the Log is composed of : DailyPay(address indexed employee, uint amount);
           assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
           console.log("DailyPay employee [" + dappUser + "] received : " + events[0].args.amount + " wei ");
-          assert.NotEqual(events[0].args.amount, 0, "dappUser must have received some wei");
+          assert.notEqual(events[0].args.amount, 0, "dappUser must have received some wei");
         });
     });
 
