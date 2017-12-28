@@ -23,6 +23,11 @@ module.exports = {
 
 ## Tests
 
+
+```
+iexec init timeclock
+cd iexec-timeclock
+```
 make sure the development network host in truffle.js is well configured :
 ```
 module.exports = {
@@ -63,6 +68,5 @@ iexec truffle test
 Pull the the following docker image
 ```
 docker pull iexechub/iexec-geth-local
-
 ```
 WIP ...

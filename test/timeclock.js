@@ -134,8 +134,10 @@ contract('TimeClock', function(accounts) {
         assert.strictEqual(events[0].args.user, dappUser, "dapp user address is wrong");
         assert.strictEqual(events[0].args.dapp, aTimeClockInstance.address, "dapp address is wrong");
         assert.strictEqual(events[0].args.provider, dappProvider, "dappProvider address is wrong ");
-        assert.strictEqual(events[0].args.args, "--desactivate", " first badge in a --desactivate is sent to the alarm");
-      });
+        assert.strictEqual(events[0].args.args, "--desactivate", " with first badge in a --desactivate action is sent to the alarm");
+        return aTimeClockInstance.employeeAtOffice.call();
+      })
+      .then(employeeAtOfficeCall => assert.strictEqual(employeeAtOfficeCall.toNumber(),1,'1 employee present at office'));
   });
 
 

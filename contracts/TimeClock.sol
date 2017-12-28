@@ -8,10 +8,10 @@ contract TimeClock is IexecOracleAPI{
 
     mapping (address => uint) employeeTimeClock;
 
-    uint employeeAtOffice;
+    uint public employeeAtOffice;
 
     bool public alarmActivated;
-    
+
     function TimeClock (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
         alarmActivated= false;
     }
