@@ -220,16 +220,29 @@ contract('TimeClock', function(accounts) {
         })
         .then(alarmActivatedCall => {
           assert.isFalse(alarmActivatedCall, 'alarm has been desactivated thanks to the first badge in');
-        });
+          //load some fund to the aTimeClockInstance smart contract
+          return Extensions.refillAccount(dappProvider, aTimeClockInstance.address, 5);
+        })
+        .then(() => web3.eth.getBalancePromise(aTimeClockInstance.address))
+        .then(balance => assert.strictEqual(balance.toString(10), web3.toWei('5', 'ether').toString(10), "aTimeClockInstance has 10 ether to pay employees"););
     });
 
-    it("Test getEmployeeBadgeInTime not null", function() {
+    it("Test getEmployeeBadgeInTime not null after badge In", function() {
       return aTimeClockInstance.getEmployeeBadgeInTime.call(dappUser)
         .then(dappUserBadgeInTime => {
           console.log("dappUserBadgeInTime is :");
           console.log(dappUserBadgeInTime.toNumber());
           assert.isBelow(0, dappUserBadgeInTime.toNumber(), "badge in time must be valorized");
         });
+    });
+
+    it("Test badge out function call", function() {
+      return aTimeClockInstance.badgeOut({
+        from: dappUser,
+        gas: amountGazProvided
+      }).then(txMined => {
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+      });
     });
 
   });
