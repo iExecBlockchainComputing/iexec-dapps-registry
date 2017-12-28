@@ -186,4 +186,52 @@ contract('TimeClock', function(accounts) {
   });
 
 
+
+
+  describe("Test badgeOut function by dappUser", function() {
+
+    beforeEach("Do a badgeIn call by dappUser before testing the badgeOut function", function() {
+      let submitTxHashBadgeIn;
+      return aTimeClockInstance.badgeIn({
+        from: dappUser,
+        gas: amountGazProvided
+      })
+      .then( txMined => {
+        submitTxHashBadgeIn =txMined.tx;
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+        return aTimeClockInstance.employeeAtOffice.call();
+      })
+      .then(employeeAtOfficeCall => {
+        assert.strictEqual(employeeAtOfficeCall.toNumber(), 1, '1 employee present at office');
+        return aIexecOracleInstance.submitCallback(submitTxHashBadgeIn, dappUser, aTimeClockInstance.address, IexecOracle.Status.COMPLETED, "OFF", "", "uri unused here", {
+          from: bridge,
+          gas: amountGazProvided
+        });
+      })
+      .then(txMined => {
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+        return aTimeClockInstance.alarmActivated.call();
+      })
+      .then(alarmActivatedCall => {
+        assert.isFalse(alarmActivatedCall, 'alarm has been desactivated thanks to the first badge in');
+      });
+    });
+
+    it("Alarm has been desactivated thanks to the first badge in", function() {
+      return aTimeClockInstance.alarmActivated.call()
+        .then(alarmActivatedCall => {
+          assert.isFalse(alarmActivatedCall, 'alarm has been desactivated thanks to the first badge in');
+        });
+    });
+
+  });
+
+
+
+
+
+
+
+
+
 });

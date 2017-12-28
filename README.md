@@ -28,7 +28,7 @@ module.exports = {
 iexec init timeclock
 cd iexec-timeclock
 ```
-make sure the development network host in truffle.js is well configured :
+make sure the development network host in truffle.js is well configured ('localhost' and not 'http://localhost:8545'):
 ```
 module.exports = {
   networks: {
