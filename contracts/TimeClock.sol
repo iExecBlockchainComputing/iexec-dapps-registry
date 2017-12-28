@@ -5,6 +5,7 @@ contract TimeClock is IexecOracleAPI{
     uint public constant DAPP_PRICE = 0;
     string public constant DAPP_NAME = "timeclock";
 
+    event DailyPay(address indexed employee, uint amount);
 
     mapping (address => uint) employeeTimeClock;
 
@@ -47,7 +48,8 @@ contract TimeClock is IexecOracleAPI{
             //calcule how much to pay employee. simple 1 sec = 1 wei
             uint weiToPay =  now - badgeInTime;
             // send eth to employee
-            msg.sender.transfer(weiToPay);
+            msg.sender.transfer(DailyPay);
+            DailyPay(msg.sender,DailyPay);
             // update the total of employee present at office
             employeeAtOffice--;
             // if no more employees at office => activate alarm
