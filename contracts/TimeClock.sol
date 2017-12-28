@@ -13,7 +13,7 @@ contract TimeClock is IexecOracleAPI{
     bool public alarmActivated;
 
     function TimeClock (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
-        alarmActivated= false;
+        alarmActivated= true;
     }
 
 

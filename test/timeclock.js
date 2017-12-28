@@ -114,8 +114,23 @@ contract('TimeClock', function(accounts) {
       });
   });
 
+  it("Test initial employeeAtOffice ", function() {
+    return aTimeClockInstance.employeeAtOffice.call()
+      .then(employeeAtOfficeCall => {
+        assert.strictEqual(employeeAtOfficeCall.toNumber(), 0, 'no employee at office at start');
+      });
+  });
+
+  it("Test initial alarm state ", function() {
+    return aTimeClockInstance.alarmActivated.call()
+      .then(alarmActivatedCall => {
+        assert.isTrue(alarmActivatedCall, 'alarm is activated by default');
+      });
+  });
+
   it("Test badgeIn function by dappUser", function() {
     let previousBlockNumber;
+    let submitTxHash;
     return Extensions.getCurrentBlockNumber()
       .then(block => {
         previousBlockNumber = block;
@@ -125,19 +140,33 @@ contract('TimeClock', function(accounts) {
         });
       })
       .then(txMined => {
+        submitTxHash = txMined.tx;
         assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
         return Extensions.getEventsPromise(aIexecOracleInstance.Submit({}, {
           fromBlock: previousBlockNumber
         }));
       })
       .then(events => {
+        //check event Submit for off-chain computing is well triggered
         assert.strictEqual(events[0].args.user, dappUser, "dapp user address is wrong");
         assert.strictEqual(events[0].args.dapp, aTimeClockInstance.address, "dapp address is wrong");
         assert.strictEqual(events[0].args.provider, dappProvider, "dappProvider address is wrong ");
         assert.strictEqual(events[0].args.args, "--desactivate", " with first badge in a --desactivate action is sent to the alarm");
         return aTimeClockInstance.employeeAtOffice.call();
       })
-      .then(employeeAtOfficeCall => assert.strictEqual(employeeAtOfficeCall.toNumber(),1,'1 employee present at office'));
+      .then(employeeAtOfficeCall => {
+        // check employee is now 1
+        assert.strictEqual(employeeAtOfficeCall.toNumber(), 1, '1 employee present at office');
+        //simulate bridge callback after off-chain computation done
+        // function submitCallback(bytes32 submitTxHash, address user, address dapp, IexecLib.StatusEnum status, string stdout, string stderr, string uri) stopInEmergency public {
+        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aTimeClockInstance.address, IexecOracle.Status.COMPLETED, "OFF", "uri unused here", {
+          from: bridge,
+          gas: amountGazProvided
+        });
+      })
+      .then(txMined => {
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+      });
   });
 
 
