@@ -24,6 +24,7 @@ contract('TimeClock', function(accounts) {
   var dappProvider, dappUser, bridge, rlcCreator;
   var amountGazProvided = 4000000;
   let isTestRPC;
+  let testTimemout = 0;
   let aRLCInstance;
   let aIexecOracleEscrowInstance;
   let aTimeClockInstance;
@@ -241,6 +242,7 @@ contract('TimeClock', function(accounts) {
 
     it("Test badge-out function call . Geth MODE", function() {
       let previousBlockNumber;
+      this.timeout(testTimemout);
       if (isTestRPC) this.skip("This test is only for geth");
       // work 15 sec before badge-out
       Extensions.sleep(15000);

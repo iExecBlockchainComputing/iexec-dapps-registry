@@ -41,6 +41,9 @@ module.exports = {
     },
 ```
 
+some tests are specific to testrpc mode (play with evm time) and others are for local geth used.
+The isTestRPC variable is used to skip or not test according to the current network used.
+
 ### testrpc Tests
 
 Install the latest testrpc
