@@ -63,6 +63,8 @@ contract('TimeClock', function(accounts) {
       })
       .then(instance => {
         aRLCInstance = instance;
+        console.log("aRLCInstance.address is ");
+        console.log(aRLCInstance.address);
         return aRLCInstance.unlock({
           from: rlcCreator,
           gas: amountGazProvided
@@ -76,17 +78,23 @@ contract('TimeClock', function(accounts) {
       })
       .then(instance => {
         aIexecOracleEscrowInstance = instance;
+        console.log("aIexecOracleEscrowInstance.address is ");
+        console.log(aIexecOracleEscrowInstance.address);
         return IexecOracle.new(aIexecOracleEscrowInstance.address, 0, {
           from: bridge
         });
       })
       .then(instance => {
         aIexecOracleInstance = instance;
+        console.log("aIexecOracleInstance.address is ");
+        console.log(aIexecOracleInstance.address);
         return TimeClock.new(aIexecOracleInstance.address, 0, "timeclock", {
           from: dappProvider
         });
       })
       .then(instance => {
+        console.log("aTimeClockInstance.address is ");
+        console.log(aTimeClockInstance.address);
         aTimeClockInstance = instance;
       });
   });
