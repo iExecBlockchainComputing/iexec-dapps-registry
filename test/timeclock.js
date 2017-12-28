@@ -313,11 +313,11 @@ contract('TimeClock', function(accounts) {
           // the Log is composed of : DailyPay(address indexed employee, uint amount);
           assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
           console.log("DailyPay employee [" + dappUser + "] received : " + events[0].args.amount + " wei ");
-          amountPay =events[0].args.amount;
+          amountPay = events[0].args.amount;
           assert.notEqual(amountPay, 0, "dappUser must have received some wei");
           return web3.eth.getBalancePromise(dappUser);
         }).then(balance => {
-          assert.strictEqual(balance.minus(web3.toWei(amountPay,'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
+          assert.strictEqual(balance.minus(web3.toWei(amountPay, 'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
         });
     });
 
@@ -332,7 +332,7 @@ contract('TimeClock', function(accounts) {
       return web3.eth.getBalancePromise(dappUser)
         .then(balance => {
           initialDappUserBalance = balance;
-            // simulate wait of 15 seconds before badge-out, 15 seconds of work = 15 wei paid ...
+          // simulate wait of 15 seconds before badge-out, 15 seconds of work = 15 wei paid ...
           return web3.evm.increaseTimePromise(0);
         })
         .then(_increaseBefore => {
@@ -407,14 +407,13 @@ contract('TimeClock', function(accounts) {
           // the Log is composed of : DailyPay(address indexed employee, uint amount);
           assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
           console.log("DailyPay employee [" + dappUser + "] received : " + events[0].args.amount + " wei ");
-          amountPay =events[0].args.amount;
+          amountPay = events[0].args.amount;
           assert.notEqual(amountPay, 0, "dappUser must have received some wei");
           return web3.eth.getBalancePromise(dappUser);
         }).then(balance => {
-          assert.strictEqual(balance.minus(web3.toWei(amountPay,'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
+          assert.strictEqual(balance.minus(web3.toWei(amountPay, 'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
         });
     });
-
 
   });
 
