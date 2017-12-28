@@ -114,15 +114,28 @@ contract('TimeClock', function(accounts) {
       });
   });
 
-
-  it("Test badgeIn by dappUser and Submit Log for off-chain generated", function() {
-    return aTimeClockInstance.badgeIn({
+  it("Test badgeIn function by dappUser", function() {
+    let previousBlockNumber;
+    return Extensions.getCurrentBlockNumber()
+      .then(block => {
+        previousBlockNumber = block;
+        return aTimeClockInstance.badgeIn({
           from: dappUser,
-          gas:amountGazProvided
-    })
-    .then(txMined => {
-      assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
-    });
+          gas: amountGazProvided
+        });
+      })
+      .then(txMined => {
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+        return Extensions.getEventsPromise(aIexecOracleInstance.Submit({}, {
+          fromBlock: previousBlockNumber
+        }));
+      })
+      .then(events => {
+        assert.strictEqual(events[0].args.user, dappUser, "dapp user address is wrong");
+        assert.strictEqual(events[0].args.dapp, aTimeClockInstance.address, "dapp address is wrong");
+        assert.strictEqual(events[0].args.provider, dappProvider, "dappProvider address is wrong ");
+        assert.strictEqual(events[0].args.args, "--desactivate", " first badge in a --desactivate is sent to the alarm");
+      });
   });
 
 
