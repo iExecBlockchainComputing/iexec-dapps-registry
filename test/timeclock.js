@@ -242,6 +242,9 @@ contract('TimeClock', function(accounts) {
 
     it("Test badge-out function call . Geth MODE", function() {
       let previousBlockNumber;
+      let gasCostOfBadgeOutCall;
+      let initialDappUserBalance;
+      let amountPay;
       this.timeout(testTimemout);
       if (isTestRPC) this.skip("This test is only for geth");
       // work 15 sec before badge-out
@@ -252,10 +255,14 @@ contract('TimeClock', function(accounts) {
         }).then(txMined => {
           submitTxHash = txMined.tx;
           assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
-          return Extensions.getCurrentBlockNumber();
+          return Promise.all([
+            Extensions.gasTxUsedCost(txMined),
+            Extensions.getCurrentBlockNumber()
+          ]);
         })
-        .then(block => {
-          previousBlockNumber = block;
+        .then(result => {
+          gasCostOfBadgeOutCall = result[0];
+          previousBlockNumber = result[1];
           return Extensions.getEventsPromise(aIexecOracleInstance.Submit({}, {
             fromBlock: previousBlockNumber
           }));
@@ -306,17 +313,28 @@ contract('TimeClock', function(accounts) {
           // the Log is composed of : DailyPay(address indexed employee, uint amount);
           assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
           console.log("DailyPay employee [" + dappUser + "] received : " + events[0].args.amount + " wei ");
-          assert.notEqual(events[0].args.amount, 0, "dappUser must have received some wei");
+          amountPay =events[0].args.amount;
+          assert.notEqual(amountPay, 0, "dappUser must have received some wei");
+          return web3.eth.getBalancePromise(dappUser);
+        }).then(balance => {
+          assert.strictEqual(balance.minus(web3.toWei(amountPay,'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
         });
     });
 
 
     it("Test badge-out function call . TestRPC MODE", function() {
       let previousBlockNumber;
+      let gasCostOfBadgeOutCall;
+      let initialDappUserBalance;
+      let amountPay;
       if (!isTestRPC) this.skip("This test is only for TestRPC");
       let increaseBefore;
-      // simulate wait of 15 seconds before badge-out, 15 seconds of work = 15 wei paid ...
-      return web3.evm.increaseTimePromise(0)
+      return web3.eth.getBalancePromise(dappUser)
+        .then(balance => {
+          initialDappUserBalance = balance;
+            // simulate wait of 15 seconds before badge-out, 15 seconds of work = 15 wei paid ...
+          return web3.evm.increaseTimePromise(0);
+        })
         .then(_increaseBefore => {
           increaseBefore = _increaseBefore;
           return web3.evm.increaseTimePromise(15);
@@ -331,10 +349,14 @@ contract('TimeClock', function(accounts) {
         .then(txMined => {
           submitTxHash = txMined.tx;
           assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
-          return Extensions.getCurrentBlockNumber();
+          return Promise.all([
+            Extensions.gasTxUsedCost(txMined),
+            Extensions.getCurrentBlockNumber()
+          ]);
         })
-        .then(block => {
-          previousBlockNumber = block;
+        .then(result => {
+          gasCostOfBadgeOutCall = result[0];
+          previousBlockNumber = result[1];
           return Extensions.getEventsPromise(aIexecOracleInstance.Submit({}, {
             fromBlock: previousBlockNumber
           }));
@@ -385,7 +407,11 @@ contract('TimeClock', function(accounts) {
           // the Log is composed of : DailyPay(address indexed employee, uint amount);
           assert.strictEqual(events[0].args.employee, dappUser, "dappUser must have been pay after badge-out");
           console.log("DailyPay employee [" + dappUser + "] received : " + events[0].args.amount + " wei ");
-          assert.notEqual(events[0].args.amount, 0, "dappUser must have received some wei");
+          amountPay =events[0].args.amount;
+          assert.notEqual(amountPay, 0, "dappUser must have received some wei");
+          return web3.eth.getBalancePromise(dappUser);
+        }).then(balance => {
+          assert.strictEqual(balance.minus(web3.toWei(amountPay,'wei')).add(gasCostOfBadgeOutCall).toString(10), initialDappUserBalance.toString(10), "dappUser has been paid");
         });
     });
 
