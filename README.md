@@ -69,4 +69,15 @@ Pull the the following docker image
 ```
 docker pull iexechub/iexec-geth-local
 ```
-WIP ...
+start container
+```
+docker run -d --name iexec-geth-local --entrypoint=./startupGeth.sh -p 8545:8545 iexechub/iexec-geth-local
+```
+wait to see in logs the word : LOCAL_GETH_WELL_INITIALIZED :
+```
+docker logs -f iexec-geth-local
+```
+Your local geth network  is ready, you can launch your truffle test with :
+```
+iexec truffle test
+```

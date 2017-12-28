@@ -20,6 +20,9 @@ contract TimeClock is IexecOracleAPI{
       return employeeTimeClock[employee];
     }
 
+
+
+
     function badgeIn() payable public{
         //employee can't badge-in two time without badge-out
         require(employeeTimeClock[msg.sender]  == 0);
@@ -54,7 +57,10 @@ contract TimeClock is IexecOracleAPI{
         }
     }
 
-    // function will be call after the off-chain computation has been done
+    // to refill balance to pay employees
+    function () payable {}
+
+// function will be call after the off-chain computation has been done
     function iexecSubmitCallback(bytes32 submitTxHash, address user, string stdout, string uri) public returns  (bool){
         require(msg.sender == iexecOracleAddress);
         IexecSubmitCallback(submitTxHash,user,stdout,uri);
