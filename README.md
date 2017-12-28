@@ -21,7 +21,7 @@ module.exports = {
 
 ## [Examples](./examples)
 
-## Tests
+## [Tests](./test/timeclock.js)
 
 
 ```
