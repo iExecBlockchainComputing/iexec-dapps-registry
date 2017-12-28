@@ -16,6 +16,10 @@ contract TimeClock is IexecOracleAPI{
         alarmActivated= true;
     }
 
+    function getEmployeeBadgeInTime(address employee) constant return uint {
+      return employeeTimeClock[employee];
+    }
+
 
     function badgeIn() payable public{
         //employee can't badge-in two time without badge-out

@@ -223,6 +223,14 @@ contract('TimeClock', function(accounts) {
         });
     });
 
+    it("Test getEmployeeBadgeInTime not null", function() {
+      return aTimeClockInstance.getEmployeeBadgeInTime.call(dappUser)
+        .then(dappUserBadgeInTime => {
+          console.log("dappUserBadgeInTime is :");
+          console.log(dappUserBadgeInTime.toNumber());
+          assert.isBelow(0, dappUserBadgeInTime.toNumber(), "badge in time must be valorized");
+        });
+    });
 
   });
 
