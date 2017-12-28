@@ -93,9 +93,9 @@ contract('TimeClock', function(accounts) {
         });
       })
       .then(instance => {
+        aTimeClockInstance = instance;
         console.log("aTimeClockInstance.address is ");
         console.log(aTimeClockInstance.address);
-        aTimeClockInstance = instance;
       });
   });
 
