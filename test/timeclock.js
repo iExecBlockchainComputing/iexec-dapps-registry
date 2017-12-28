@@ -88,7 +88,7 @@ contract('TimeClock', function(accounts) {
         aIexecOracleInstance = instance;
         console.log("aIexecOracleInstance.address is ");
         console.log(aIexecOracleInstance.address);
-        return TimeClock.new(aIexecOracleInstance.address, 0, "timeclock", {
+        return TimeClock.new(aIexecOracleInstance.address, {
           from: dappProvider
         });
       })
