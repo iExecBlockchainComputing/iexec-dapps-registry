@@ -3,6 +3,7 @@
 
 Badge-in, badge-out, get pay in eth and switch on et twitch off the office alarm with iExec.
 
+![TimeClock](./TimeClock.gif)
 
 ## Dapp params
 ```
