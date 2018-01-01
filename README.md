@@ -22,7 +22,7 @@ Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-sa
 # S-Chain (a Dapp for supply chain)
 ## Description
 
-######*Summary*
+###### *Summary*
 
 The purpose of this application is to transfer value to the different stakeholders inside a supply-chain. The idea is to rely on the immutability and transparecy provided by the blockchain technology to inform the main actors (or stakeholders) of the chain what is the current state of its goods.
 
@@ -30,7 +30,7 @@ Furthermore, it should allow strategically deployed sensors to interact with eac
 
 This Dapp is going to be developed by a team of the Engineering Department at Universidad de Montevideo, Uruguay, as part of a research project on [industry 4.0](https://home.kpmg.com/xx/en/home/insights/2017/10/the-industry-4-0-revolution-is-here.html) and disruptive technologies, led by the CINOI (see Team, below). 
 
-######*Motivation*
+###### *Motivation*
 
 On a country such as Uruguay, where agricultural activity is very important, what drives this project are the following points:
 
@@ -40,7 +40,7 @@ On a country such as Uruguay, where agricultural activity is very important, wha
 * Reach business oportunities to scale the system on a sustainable fashion.
 * Take the advantages of immutability, single global truth and decentralization provided by the blockchain to overcome current centralized IoT system issues.
 
-######*Background*
+###### *Background*
 
 Despite the recent innovative solutions on IoT infrastructure on the blockchain, for example  Streamr, they seem to focus on a wider target rather than on applications for the supply chain.
 
@@ -50,7 +50,7 @@ Our approch would be somewhat similar, but at the same time, more reliable since
 
 Moreover, the equipment deployed to control the assets' state (sensors and actuators) are going to be autonomus and won't be influenced by earning any reward from the network. Only the current owner of the goods sees the real benefit of the system in the information available on the network and the reduction of management costs.
 
-######*Initial Scope*
+###### *Initial Scope*
 
 To achive our goals, two types of users are to be defined. Smart sensors (for temperature, humidity, weight, among others) and actuators are going to run their own Ethereum accounts, as well as humans (or the supply chain stakeholders).
 
@@ -60,7 +60,7 @@ Meanwhile, those interested in the status of what is being transported could rea
 
 These contracts will represent the assests or goods of the supply chain and their state on real time. Even though the issues found on scalability and network latency of the blockchain, considering the transport of goods aren't instanteneous, this should not affect much the overall eficiency of the initial system.
 
-######*Planning*
+###### *Planning*
 
 Owning to the fact that this is a research project, the amount of resources are limited until progress has been achived. For that matter, there will be serveral trials during the first three months of 2018. Whether it succeeds, more people may come to work on it and more resources would be avaliable.
 
