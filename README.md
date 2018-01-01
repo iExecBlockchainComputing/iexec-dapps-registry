@@ -35,8 +35,8 @@ This Dapp is going to be developed by a team of the Engineering Department at Un
 On a country such as Uruguay, where agricultural activity is very important, what drives this project are the following points:
 
 * Reduction of costs due to lack of control of goods in every stage. 
-* Creating of value in the form of information about the characteristics of assets collected by sensors during the whole chain.
-* Enable the stakeholders with relevant data to fill their compliance reports and develop statistics around to understand how improvements could be made.
+* Creation of value in the form of information about the characteristics of assets collected by sensors during the whole chain.
+* Enable the stakeholders with relevant data to fill their compliance reports and develop statistics around them to understand how improvements could be made.
 * Reach business oportunities to scale the system on a sustainable fashion.
 * Take the advantages of immutability, single global truth and decentralization provided by the blockchain to overcome current centralized IoT system issues.
 
@@ -68,9 +68,9 @@ Initially, the considered roadmap will be the one shown bellow.
 
 > 01/05/18 - 01/15/18 : **Learning**
 
-Develop and improve the neccessary skills to work with smart contracts and define which hardware (Ardunio, Raspberry-Pi , emmbed systems or linux embedded) needed for the sensors and actuators. Determine the supply chain to be used as test case.
+Develop and improve the neccessary skills to work with smart contracts and define which hardware (Ardunio, Raspberry-Pi , emmbed systems or linux embedded) are needed for the sensors and actuators. Determine the supply chain to be used as test case.
 
-The considered supply chain so far is transport of fruits and vegetables inside Uruguay (from the farm to the city's grocery store).
+**Note :** The considered supply chain so far is the transport of fruits and vegetables inside Uruguay (from the farm to the city's grocery store).
 
 > 01/16/18 - 02/02/18 : **Implementing**
 
@@ -86,11 +86,11 @@ Check whether the main goals were achived, study the results and difficulties en
 
 **Trello board**
 
-At the end of every week this [Trello board](https://trello.com/b/wXZNnXtR/s-chain-a-dapp-for-supply-chain) is going to be updated to show how the project is going, what activities are in progress and what has been done.
+At the end of every week this [Trello board](https://trello.com/b/wXZNnXtR/s-chain-a-dapp-for-supply-chain) is going to be updated to show how the project is advancing, what activities are in progress and what has been done.
 
-######*Team*
+###### *Team*
 
-The team if formed by a group of engineering students members of the [CINOI - FIUM](http://fium.um.edu.uy/produccion-academica/cinoi/). The technical development will be done by a group of Telematic engineering students, while the relevant information and business analysis will be carried out by Industrial engineers.
+The team if formed by a group of engineering students from [FIUM](http://fium.um.edu.uy/) and members of the [CINOI](http://fium.um.edu.uy/produccion-academica/cinoi/). The technical development will be done by a group of Telematic engineering students, while the relevant information and business analysis will be carried out by Industrial engineers.
 
 ## Dapp params
 On progress
