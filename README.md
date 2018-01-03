@@ -47,10 +47,10 @@ by 1/31 Launching the user interface.One can load any data and ask calculation.
 by 2/10 Applying to Dapps store.  
 
 ##Component diagram
-please take look at component-diagram
+please take look at component.png
 
 ##Sequential diagram of the solution
-please take look at seqential-diagram
+please take look at sequence.png
 
 ##Bonus: a dapp smart contract with truffle tests
 
