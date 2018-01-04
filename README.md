@@ -35,7 +35,7 @@ A link to all iexec.js conf examples for the dapp.
 
 #Dapp-Challenge-Format
 ##Idea proposal
-Generally ML needs much amount of calculation especially NN. Tensorflow is a NN library which is cut out for distributed NN calculation among several machines.Enabling this package on iExec makes a trustless and scalable NN calculation without huge machines. 
+Generally machine leaning needs much amount of calculation especially Neural Net (NN). Tensorflow is a NN library which is cut out for distributed NN calculation among several machines.Enabling this package on iExec makes a trustless and scalable NN calculation without having a huge machine. 
 This is neither an ensembling learnig nor a deployment on a single machine.
 This is distributed and parallel computing which can shorten the run time.
 
@@ -60,7 +60,6 @@ To be easily forked for extensions,these point should be made sure of
 (2)Simple codes and documents for connections between tensorflow packages and iExec SDK.
 (3)Example codes of famous tests (MNIST,cifar10)
 
-
 Reference: 
 [Tensorflow Document](http://download.tensorflow.org/paper/whitepaper2015.pdf)
 [Tensorflow Code sample](https://www.tensorflow.org/deploy/distributed)
@@ -69,9 +68,9 @@ Reference:
 ##Roadmap
 by 1/19 Deploying mnist task on iexec blockchain.
 
-by 1/31 Launching the user interface.One can load any data and ask calculation.
+by 1/31 Launching the user interface.One can load any data and ask calculations.
 
-by 2/10 Challenging to auto scaling.
+by 2/10 Challenge to auto scaling.
         Applying to Dapps store.  
 
 ##Component diagram
@@ -81,6 +80,4 @@ please take look at component.png
 please take look at sequence.png
 
 ##Bonus: a dapp smart contract with truffle tests
-
-
 
