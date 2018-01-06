@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'MyContract',
+  name: 'TensorflowOnIexec',
   data: {
     type: 'BINARY',
     cpu: 'AMD64',
