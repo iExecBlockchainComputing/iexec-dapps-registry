@@ -28,7 +28,7 @@ The purpose of this application is to transfer value to the different stakeholde
 
 Furthermore, it should allow strategically deployed sensors to interact with each other in order to manage the enviroment in which the goods are being tranported and possibly predict how they are going to be when arriving at their destination.
 
-This Dapp is going to be developed by a team of the Engineering Department at Universidad de Montevideo, Uruguay, as part of a research project on [industry 4.0](https://home.kpmg.com/xx/en/home/insights/2017/10/the-industry-4-0-revolution-is-here.html) and disruptive technologies, led by the CINOI (see Team, below). 
+This Dapp is going to be developed by a team of the Engineering Department at Universidad de Montevideo, Uruguay, as part of a research project on [industry 4.0](https://home.kpmg.com/xx/en/home/insights/2017/10/the-industry-4-0-revolution-is-here.html) and disruptive technologies which is led by the CINOI (see Team, below). 
 
 ###### *Motivation*
 
@@ -54,11 +54,15 @@ Moreover, the equipment deployed to control the assets' state (sensors and actua
 
 To achive our goals, two types of users are to be defined. Smart sensors (for temperature, humidity, weight, among others) and actuators are going to run their own Ethereum accounts, as well as humans (or the supply chain stakeholders).
 
-The intended workflow is that all the relevant information given by the sensors are going to be processed using the computational resources provided by Iexec (running programms written in Java, Python or Go), so if some value exceeds a given threshold, this will create an event which shall set new parameters to the actuators (e.g. air conditioner). All the communication between this two is carried out through smart contracts deployed on Ethereum (at the beginig, on a test or private network).
+The intended workflow is that all the relevant information given by the sensors are going to be processed using the computational resources provided by Iexec (running programms written in Java, Python, NodeJS or Go), so if some value exceeds a given threshold, this will create an event which shall set new parameters to the actuators (e.g. air conditioner). All the communication between this two is carried out through smart contracts deployed on Ethereum (at the beginig, on a test or private network).
 
 Meanwhile, those interested in the status of what is being transported could reach the data over the blockchain since this is going to form part of a smart contracts.
 
 These contracts will represent the assests or goods of the supply chain and their state on real time. Even though the issues found on scalability and network latency of the blockchain, considering the transport of goods aren't instanteneous, this should not affect much the overall eficiency of the initial system.
+
+The following image show a diagram of the architecture to build. More details about the operations flow will be posted soon.
+
+![Alt text](./general_arch.svg?raw=true "General architecture")
 
 ###### *Planning*
 
