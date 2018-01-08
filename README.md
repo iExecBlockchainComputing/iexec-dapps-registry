@@ -62,7 +62,7 @@ These contracts will represent the assests or goods of the supply chain and thei
 
 The following image show a diagram of the architecture to build. More details about the operations flow will be posted soon.
 
-![Alt text](./general_arch.svg?raw=true "General architecture")
+![General architecture](./general_arch.png "General architecture")
 
 ###### *Planning*
 
