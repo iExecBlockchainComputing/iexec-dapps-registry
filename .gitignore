@@ -29,3 +29,4 @@ node_modules
 
 #other 
 general_arch.epgz
+build/contracts/*
