@@ -7,17 +7,24 @@ This enables smart contracts to delegate gas intensive computations and thus sav
 #Idea Proposal
 
 
-It would be ideal if smart contract deverlopers could just run general purpose code that is computationally intensive off-chain instead of on the blockchain. This is, however, a security risk for the people running the calculations of their personal computers. We believe that side-effect-free Haskell functions allows for a large multitude of possible programs that can be run while ensuring that there is no legal or security risk for the person selling their computational ressources. Ensuring and proofing the security of all possible programs that can be run on the servers running the offchain-computations is part of the project (TODO: write some more).
+It would be ideal if smart contract deverlopers could just run general purpose code that is computationally intensive off-chain instead of on the blockchain.
+ This is, however, a security risk for the people running the calculations of their personal computers. 
+We believe that side-effect-free Haskell functions allows for a large multitude of possible programs that can be run while 
+ensuring that there is no legal or security risk for the person selling their computational ressources.
+ Ensuring and proofing the security of all possible programs that can be run on the servers running the offchain-computations is part of the project
+ (TODO: write some more).
 
 There are many use-cases for this, we propose three of them here:
  
 1) Operations on numeric array 
 
-One possible use-case for this would be performing operations on arrays. For-loops are heavily used in Solidity but can be very expensive in terms of gas.
+One possible use-case for this would be performing operations on arrays. 
+For-loops are heavily used in Solidity but can be very expensive in terms of gas.
 Most of such easy computations can be compactly reformulated in Haskell (example below). 
 By pulling those computations off the blockchain, a lot of gas and thus money can be saved.
 
-Example of for-loop in solidity and an equivalent functional program, which calulates the total payout for each users, if user i has correctly betted the amount bets[i]: 
+Example of for-loop in solidity and an equivalent functional program, which calulates 
+the total payout for each users, if user i has correctly betted the amount bets[i]: 
 
 Solidity:
 
@@ -43,7 +50,8 @@ Spawning an offchain-computation on iexec could be wrapped like this:
 
 iexecSubmit("bets = [1,20,3,4,5]; let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2")
 
-For larger arrays the cost of RLC could be much lower than the cost of gas. Here the values of the array bets are hardcoded, but they can come from any uint array in the smart contract.
+For larger arrays the cost of RLC could be much lower than the cost of gas. 
+Here the values of the array bets are hardcoded, but they can come from any uint array in the smart contract.
 
 
 2) String operations
@@ -59,7 +67,8 @@ In this example all O are replaced by X in the solidity string text. All string 
 3) Date API
 
 
-A third use-case is to calculate dates exactly, taking into consideration leap seconds and time zones. For example, it would then be possible to get the exact date as a string given the unix time stamp:
+A third use-case is to calculate dates exactly, taking into consideration leap seconds and time zones. 
+For example, it would then be possible to get the exact date as a string given the unix time stamp:
 
 iexecSubmit("formatTime defaultTimeLocale \"%c\".toSlice().concat(stringUtils.uintToBytes(now).toSlice()))
 
@@ -79,8 +88,10 @@ To use the example
  
 iexecSubmit("bets = [1,20,3,4,5]; let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2") 
 
-with dynamic arrays it would first be necessary to convert an array, for example uint array uint[] bets  = [1,20,3,4,5]; into the string "[1,20,3,4,5]". The returned string "[90, 1800,270,360,450]" would then have to be turned into a uint array again, which would cost gas. 
-For complex operations our solution might still be cheaper, but it would be good to find a way around this. If the Iexec API would allow to give arrays as parameters and return arrays as parameters, this would be much simpler.
+with dynamic arrays it would first be necessary to convert an array, for example uint array uint[] bets  = [1,20,3,4,5]; into the string "[1,20,3,4,5]". 
+The returned string "[90, 1800,270,360,450]" would then have to be turned into a uint array again, which would cost gas. 
+For complex operations our solution might still be cheaper, but it would be good to find a way around this. 
+If the Iexec API would allow to give arrays as parameters and return arrays as parameters, this would be much simpler.
 The function could then be called simply as 
 
 iexecSubmit(bets, "let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2"). 
@@ -90,7 +101,9 @@ Independently of that, a wrapper function
 iexecArrayOperation(bets, "let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2")
 
  will be made available by out wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function.
-Additionally the wrapper function would ensure that it is not necessary to manually concatenate the strings in a complicated manner. One way to do this might be to have an iexecSubmic function with several string parameters, and $x in the last parameter is replaced by the first parameter and $y in the last parameter is replaced by the second parameter. Example function call: 
+Additionally the wrapper function would ensure that it is not necessary to manually concatenate the strings in a complicated manner. 
+One way to do this might be to have an iexecSubmic function with several string parameters, and $x in the last parameter is replaced by 
+the first parameter and $y in the last parameter is replaced by the second parameter. Example function call: 
 
 iexecSubmit(text, "replace \"O\" \"X\" $x)
 
