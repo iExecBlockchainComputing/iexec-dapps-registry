@@ -75,9 +75,12 @@ Depending on the configured job the worker can run the flow in:
     * content diffing
     * sentiment analysis
 # Component diagram
-![component diagram](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Component Diagram")
+![component diagram](https://raw.githubusercontent.com/skunkworkscryptolab/iexec-dapp-samples/scrapto/img/scrapto-component.png "Component Diagram")
 # Sequential diagram
-![sequential diagram](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Sequential Diagram")
+![sequential diagram](https://raw.githubusercontent.com/skunkworkscryptolab/iexec-dapp-samples/scrapto/img/scrapto-sequence.png "Sequential Diagram")
+
+# Resources
+* Our visual tool and headless worker repo can be found here: https://github.com/skunkworkscryptolab/scrapto-client-worker.
 
 # Copyright
 Our visual tool extension is a fork of the amazing work done by: https://github.com/furstenheim/web-scraper-chrome-extension/
