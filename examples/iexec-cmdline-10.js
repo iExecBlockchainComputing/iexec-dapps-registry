@@ -1,11 +1,11 @@
 module.exports = {
-  name: 'MyContract',
+name:'Scrapto',
   data: {
     type: 'BINARY',
     cpu: 'AMD64',
     os: 'LINUX',
   },
   work: {
-    cmdline: '10',
+    cmdline: 'demo_id_job',
   }
 };
