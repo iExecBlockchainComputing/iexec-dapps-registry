@@ -120,7 +120,8 @@ Two extremes: Either allow only functions written by us and allow any Haskell co
 
 
 
-##Roadmap
+#Roadmap
+
  * Implement the three mentioned use cases
 
  * Research how parameters could be passed and returned in the cheapest way
@@ -145,15 +146,17 @@ Version 3.0:
 ##Component diagram
 
 Wrapper Smart Contract
-Wraps the variables and the pure code to haskell code, converts the haskell string output into the proper format.
+
+Wraps the solidity variables and the code-string to the full code-string and converts the haskell string output into the proper format in the callback function.
 
 Offchain-app
+
 Input: Haskell code as string, or any solidity data types + haskell code as string
 output: string
 
 ##Sequential diagram of the solution
 
-1. User Smart Contract (calling SC) calls our Wrapper Smart Contract by ForeignFunctionCall
+1. User Smart Contract calls our Wrapper Smart Contract by ForeignFunctionCall
 
 2. Our Wrapper Smart Contract takes care of converting all required data into a string containing the haskell code and spawns an off-chain computation, by calling the IExcec submit function via the IExcec API
 
