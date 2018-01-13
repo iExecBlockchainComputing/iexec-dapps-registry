@@ -18,6 +18,7 @@ By pulling those computations off the blockchain, a lot of gas and thus money ca
 Example of for-loop in solidity and an equivalent functional program, which calulates the total payout for each users, if user i has correctly betted the amount bets[i]: 
 
 Solidity:
+
 for(uint j=0;j<=betIndex;j++) {
  sum = sum + bets[j];
 }
@@ -27,6 +28,7 @@ for(uint j=0;j<=betIndex;j++) {
 }
 
 Haskell: 
+
 > bets = [1,20,3,4,5]
 
 > let sum = fold (+) bets
