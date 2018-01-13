@@ -1,4 +1,6 @@
 Abstract
+
+
 We propose an API for off-chain execution of programs in the side-effect-free fragment of Haskell.
 This enables smart contracts to delegate gas intensive computations and thus save money.
 
