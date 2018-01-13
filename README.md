@@ -45,6 +45,8 @@ For larger arrays the cost of RLC could be much lower than the cost of gas. Here
 
 
 2) String operations
+
+
 Another use-case could be string operations, eg. replace:
 
 iexecSubmit("replace \"O\" \"X\" ".toSlice().concat(text.toSlice()))
@@ -53,6 +55,8 @@ In this example all O are replaced by X in the solidity string text. All string 
 
 
 3) Date API
+
+
 A third use-case is to calculate dates exactly, taking into consideration leap seconds and time zones. For example, it would then be possible to get the exact date as a string given the unix time stamp:
 
 iexecSubmit("formatTime defaultTimeLocale \"%c\".toSlice().concat(stringUtils.uintToBytes(now).toSlice()))
@@ -63,6 +67,7 @@ The example above uses https://github.com/Arachnid/solidity-stringutils and http
 
 
 #Challenges/Problems
+
 
 These are the main challenges of the project:
 
@@ -82,7 +87,7 @@ Independently of that, a wrapper function
 
 iexecArrayOperation(bets, "let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2")
 
- will be made available by out wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function
+ will be made available by out wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function.
 Additionally the wrapper function would ensure that it is not necessary to manually concatenate the strings in a complicated manner. One way to do this might be to have an iexecSubmic function with several string parameters, and $x in the last parameter is replaced by the first parameter and $y in the last parameter is replaced by the second parameter. Example function call: 
 
 iexecSubmit(text, "replace \"O\" \"X\" $x)
@@ -94,6 +99,8 @@ iexecSubmit(stringUtils.uintToBytes(now), "formatTime defaultTimeLocale \"%c\ $x
 These wrapper functions will also be written by us if they are not made available at a deeper level.
 
 2) Ensuring that all functions are side-effect free and there is no IO operations except at the beginning and at the end. 
+
+
 Two extremes: Either allow only functions written by us and allow any Haskell code. TODO: Max
 
 
