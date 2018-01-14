@@ -38,17 +38,17 @@ for(uint j=0;j<=betIndex;j++) {
 
 Haskell: 
 
-> bets = [1,20,3,4,5]
+let bets = [1,20,3,4,5]
 
-> let sum = fold (+) bets
+let su =  sum bets
 
-> let bets2 = map (%b. b*3000) bets
+let payout =  map  ((round) . (/su) . (*3000)) bets
 
-> map (%b. round b / sum ) bets2
+
 
 Spawning an offchain-computation on iexec could be wrapped like this:
 
-iexecSubmit("bets = [1,20,3,4,5]; let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2")
+iexecSubmit("bets = [1,20,3,4,5]; let su =  sum bets;let payout =  map  ((round) . (/su) . (*3000)) bets")
 
 For larger arrays the cost of RLC could be much lower than the cost of gas. 
 Here the values of the array bets are hardcoded, but they can come from any uint array in the smart contract.
@@ -86,7 +86,7 @@ These are the main challenges of the project:
 
 To use the example
  
-iexecSubmit("bets = [1,20,3,4,5]; let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2") 
+iexecSubmit("bets = [1,20,3,4,5]; let su =  sum bets;let payout =  map  ((round) . (/su) . (*3000)) bets")
 
 with dynamic arrays it would first be necessary to convert an array, for example uint array uint[] bets  = [1,20,3,4,5]; into the string "[1,20,3,4,5]". 
 The returned string "[90, 1800,270,360,450]" would then have to be turned into a uint array again, which would cost gas. 
@@ -94,11 +94,11 @@ For complex operations our solution might still be cheaper, but it would be good
 If the Iexec API would allow to give arrays as parameters and return arrays as parameters, this would be much simpler.
 The function could then be called simply as 
 
-iexecSubmit(bets, "let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2"). 
+iexecSubmit(bets, "let su =  sum bets;let payout =  map  ((round) . (/su) . (*3000)) bets"). 
 
 Independently of that, a wrapper function 
 
-iexecArrayOperation(bets, "let sum = fold (+) bets;let bets2 = map (%b. b*3000) bets; map (%b. round b / sum ) bets2")
+iexecArrayOperation(bets, "let su =  sum bets;let payout =  map  ((round) . (/su) . (*3000)) bets")
 
  will be made available by out wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function.
 Additionally the wrapper function would ensure that it is not necessary to manually concatenate the strings in a complicated manner. 
