@@ -1,10 +1,10 @@
-##Abstract
+####Abstract
 
 
 We propose an API for off-chain execution of programs in the side-effect-free fragment of Haskell.
 This enables smart contracts to delegate gas intensive computations and thus save money.
 
-##Idea Proposal
+####Idea Proposal
 
 
 It would be ideal if smart contract deverlopers could just run general purpose code that is computationally intensive off-chain instead of on the blockchain.
@@ -16,7 +16,7 @@ ensuring that there is no legal or security risk for the person selling their co
 
 There are many use-cases for this, we propose three of them here:
  
-#Operations on numeric array 
+##Operations on numeric array 
 
 One possible use-case for this would be performing operations on arrays. 
 For-loops are heavily used in Solidity but can be very expensive in terms of gas.
@@ -58,7 +58,7 @@ For larger arrays the cost of RLC could be much lower than the cost of gas.
 Here the values of the array bets are hardcoded, but they can come from any uint array in the smart contract.
 
 
-#String operations
+##String operations
 
 
 Another use-case could be string operations, eg. replace:
@@ -68,7 +68,7 @@ Another use-case could be string operations, eg. replace:
 In this example all O are replaced by X in the solidity string text. All string operations in Haskell could be used that way.
 
 
-3) Date API
+##Date API
 
 
 A third use-case is to calculate dates exactly, taking into consideration leap seconds and time zones. 
@@ -81,12 +81,12 @@ Other possible functions include estimating unix time from dates as string and a
 The example above uses https://github.com/Arachnid/solidity-stringutils and https://github.com/pipermerriam/ethereum-string-utils for string manipulation.
 
 
-##Challenges/Problems
+####Challenges/Problems
 
 
 These are the main challenges of the project:
 
-#Getting the input data into the correct format
+##Getting the input data into the correct format
 
 To use the example
  
@@ -117,14 +117,14 @@ or
 
 These wrapper functions will also be written by us if they are not made available at a deeper level.
 
-#Ensuring that all functions are side-effect free and there is no IO operations except at the beginning and at the end. 
+##Ensuring that all functions are side-effect free and there is no IO operations except at the beginning and at the end. 
 
 
 Two extremes: Either allow only functions written by us and allow any Haskell code. TODO: Max
 
 
 
-##Roadmap
+####Roadmap
 
 
 Release 1.0:
@@ -140,7 +140,7 @@ Release 4.0:
 * Proofing and benchmark the cost-efficiency of our proposed API for the three use-cases; Documentation and communicating the API to the community
 
 
-##Component diagram
+####Component diagram
 
 Offchain-app
 
@@ -154,7 +154,7 @@ Wrapper Smart Contract
 Wraps the solidity variables and the code-string to the full code-string and converts the haskell string output into the proper format in the callback function.
 
 
-##Sequential diagram of the solution
+####Sequential diagram of the solution
 
 1. User Smart Contract calls our Wrapper Smart Contract by ForeignFunctionCall
 
