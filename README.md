@@ -167,6 +167,12 @@ Wraps the solidity variables and the code-string to the full code-string and con
 4. The wrapper Smart Contract converts the computation's result into the required format and returns it to the User Smart Contract.
 
 ##Bonus: a dapp smart contract with truffle tests
- 
+
+The following code on github includes solidity code and truffle tests for  a simple game that can be played on the Ethereum blockchain.
+There are two teams, Red and Blue. Players can add money to the stack of Red or Blue and independently of which team gets money from the player, the player can bet which team wins.
+A team wins if it has more than 50% or less than 25% of the total ETH sent to the team.
+
+
+https://github.com/ahoelzl/smartContract 
 
 
