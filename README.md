@@ -78,7 +78,7 @@ For example, it would then be possible to get the exact date as a string given t
 
 Other possible functions include estimating unix time from dates as string and adding/substracting specific time intervals to/from dates.
 
->The example above uses https://github.com/Arachnid/solidity-stringutils and https://github.com/pipermerriam/ethereum-string-utils for string manipulation.
+The example above uses https://github.com/Arachnid/solidity-stringutils and https://github.com/pipermerriam/ethereum-string-utils for string manipulation.
 
 
 #Challenges/Problems
@@ -126,37 +126,33 @@ Two extremes: Either allow only functions written by us and allow any Haskell co
 
 #Roadmap
 
- * Implement the three mentioned use cases
 
- * Research how parameters could be passed and returned in the cheapest way
+Release 1.0:
+* All Haskell code can be called with one string parameter from smart contracts.
 
- * Benchmark starting at which level of complexity calling iexecSublit is cheaper then calculating everything on-chain
-
- * Research how to ensure that all functions are side-effect free
-
- * Document the existing API so that it can be used and extended by other people
-
-
-Version 1.0:
-* The three mentioned use-cases can be called with one string parameter from smart contracts.
-
-Version 2.0:
+Release 2.0:
 * The parameter wrapping (eg. from uint array to string) is done in a wrapper smart contract or possibly directly in the iexecSubmit function. 
 
-Version 3.0:
-* Additional Haskell functions are available if they are guaranteed to be save.
+Release 3.0:
+* Haskell code is only run when it is ensured that is side-effect free
+
+Release 4.0:
+* Documentation and communicating the API to the community
 
 
 ##Component diagram
+
+Offchain-app
+
+Input: Haskell code as string, or any solidity data types + haskell code as string
+
+Output: String
+
 
 Wrapper Smart Contract
 
 Wraps the solidity variables and the code-string to the full code-string and converts the haskell string output into the proper format in the callback function.
 
-Offchain-app
-
-Input: Haskell code as string, or any solidity data types + haskell code as string
-output: string
 
 ##Sequential diagram of the solution
 
