@@ -137,7 +137,7 @@ Release 3.0:
 * Haskell code is only run when it is ensured that is side-effect free
 
 Release 4.0:
-* Documentation and communicating the API to the community
+* Proofing and benchmark the cost-efficiency of our proposed API for the three use-cases; Documentation and communicating the API to the community
 
 
 ##Component diagram
