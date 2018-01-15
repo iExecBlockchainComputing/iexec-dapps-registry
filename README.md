@@ -1,24 +1,3 @@
-# iExec dapp samples
-## 1 branch = 1 dapp
-
-Each branch of this repo is a sample iExec dapp, and can be easily played with by using the [iexec sdk cli](https://github.com/iExecBlockchainComputing/iexec-sdk) like this:
-```iexec init branchName```
-
-
-```bash
-iexec init # current branch containing minimum working config
-iexec init factorial # download and init factorial dapp
-iexec init echo # download and init echo dapp
-```
-
-Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add you dapp to this repo.
-
-## [iExec Dapp Challenge](https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee)
-
- * Go checkout the [iExec Dapp Challenge](https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee)
- * Go submit a request to be listed on the [iExec dapp store](https://dapps.iex.ec/)
-
----
 # S-Chain (a Dapp for supply chain)
 ## Description
 
@@ -63,6 +42,8 @@ These contracts will represent the assests or goods of the supply chain and thei
 The following image show a diagram of the architecture to build. More details about the operations flow will be posted soon.
 
 ![General architecture](./general_arch.png "General architecture")
+
+To view a digram of the model in which data is going to be structured [go to this folder](./design). As you may see, this is a mixture between an ER and a component digram. The reason is that we plan to use smart contracts as some sort of database schema, and build models on the top to interact with the data stored on the blockchain.
 
 ###### *Planning*
 

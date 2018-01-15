@@ -1,126 +1,173 @@
 pragma solidity ^0.4.18;
 
+import "./zeppelin/ownership/Ownable.sol";
+import "./Property.sol";
+
 
 /**
- *@title Goods
+ *@title GoodsManagement
  *@author Gaston Rial
- *@dev This contract represents goods and asigns it properties
+ *@dev This contract represents a list of goods
  */
-contract GoodsManagement {
+contract GoodsManagement is Ownable{
   
-  /**@dev Struct definitions */
-  /**@dev Struct: Goods
-   * Description: This holds the features of every good or asset in a shipment 
-   */
-  struct Goods {
-    uint id;
-    uint numberOfProperties;
-    uint price; // In wei or other currency
-    address owner;
-  }
-
-  /**@dev Struct: Property
-   * Description: This holds the features of every property (to be updated by the sensors)
-   *  of the goods
-   */
-  struct Property {
-    bytes16 name; // Has to be unique
-    bytes16 unit;
-    uint value;
-    uint updateTime; // seconds since unix epoch
-  }
-    
   /**@dev State variables */
-  /**@notice public variables have getter declared when the code is compile
-   * To use them, call the contract instance with the name of the variable as if it was a function
-   */
-  mapping ( uint => Goods ) public idToGoods;
-  mapping( uint => mapping( bytes16 => Property) ) public goodsIdToProperties; // From the id of a good it gets the id of a property and then the property itself
-  uint public goodsCounter; // retains the number of registered goods in the system
+  /**@dev Description: This holds the features of every good or asset in a shipment */
+  struct GoodsStruct {
+
+    uint price; // In wei or other currency
+    uint shipmentId;
+    uint index;
+  
+  }
+  
+  mapping ( uint => GoodsStruct ) private goodsStructs;
+  uint[] private goodsIndex;
+  Property public propertyInstance;
 
   /**@dev Events */
-  event createGoodsEvent( uint indexed _id, uint _price );
+  event createGoodsEvent( uint indexed _id, uint indexed _index, uint _price );
 
-  /**@dev Modifiers */
-  /**@dev Checks whether the goods exists and the property is not defined
-   * Use to not oerwrite an existing property
-   */
-  modifier validateGoodsWithoutProperty(uint _goodsId, bytes16 _propertyName) {
-    /**@dev Check whether goods exists */
-    require( idToGoods[_goodsId].id != 0 && idToGoods[_goodsId].id == _goodsId );
-    /**@dev Check that the property was not defined to this goods */
-    require(goodsIdToProperties[_goodsId][_propertyName].name  == 0x0 ); // Has to be the default value
-    _;
-  }
-  
-  /**@dev Checks whether the good exists and has the property defined */
-  modifier validateGoodsWithProperty(uint _goodsId, bytes16 _propertyName) {
-    /**@dev Check whether goods exists */
-    require( idToGoods[_goodsId].id != 0 && idToGoods[_goodsId].id == _goodsId );
-    /**@dev Check that the property was defined to this goods */
-    require(goodsIdToProperties[_goodsId][_propertyName].name != 0x0);
+  event deleteGoodsEvent(uint indexed _goodsId,uint indexed _index);
+  /**@dev modifiers */
+  modifier goodsExist ( uint _id, bool _condition ) { // whether condition == true, then check if exist. Else, check that does not exist
+
+    uint checkIndex = goodsStructs[_id].index;
+    if(_condition) {
+    /** In order to update, retrieve or delete*/
+    require( goodsIndex.length != 0 && goodsIndex[checkIndex] == _id);     
+
+    } else {
+     /** In order to create */
+     require( goodsIndex.length == 0 || goodsIndex[checkIndex] != _id); 
+
+    }
     _;
   }
 
+  modifier goodsHasProperty(uint _id,uint _propertyId) {
+   /** Check that the given property belongs to the goods */
+    var (,,,,,,,goodsId,) = propertyInstance.getProperty(_propertyId);
+    require(_id == goodsId);
+    _;
+  }
 
   /**@dev Constructor */
-  function GoodsManagement() public {
-    goodsCounter = 1; // First value, update counter with the number of the first goosdsIs
+  function GoodsManagement(address _owner) public {
+    owner = _owner;
+    propertyInstance = new Property(owner); 
   }
 
   /**@dev Function: createGoods
-   * Description: Set new goods 
+   *      Description: Set new goods 
    */
-  function createGoods( uint _price ) public {
-    Goods storage newGoods = idToGoods[goodsCounter];
-    newGoods.id = goodsCounter;
-    newGoods.price = _price;
-    newGoods.numberOfProperties = 1;
-    newGoods.owner = msg.sender;
-    goodsCounter++;
-    createGoodsEvent( newGoods.id, _price );
-  }
-
-  /**@dev Function: createProperty
-   * Description: Set new property to an existing good
-   */
-  function createProperty(uint _goodsId,bytes16 _name, bytes16 _unit, uint _value)
+  function createGoods( uint _id, uint _price, uint _shipmentId) 
   public 
-  validateGoodsWithoutProperty( _goodsId , _name ){
-    Goods storage goods = idToGoods[_goodsId];
-    uint id = goods.numberOfProperties;
-    Property memory property = Property( _name, _unit, _value, now);
-    goodsIdToProperties[_goodsId][_name] = property;
-    goods.numberOfProperties++;
+  onlyOwner() 
+  goodsExist(_id,false)
+  returns (uint index){
+
+    goodsStructs[_id].price = _price;
+    goodsStructs[_id].shipmentId = _shipmentId;
+    goodsStructs[_id].index = goodsIndex.push(_id)-1;
+    createGoodsEvent( _id,goodsStructs[_id].index,_price );
+    return goodsIndex.length-1;
+
   }
 
-  /**@dev Function: getPropertiesOfGoods
-   * Description: Public getter to check the properties of a good
-   * Returns: The required property's values 
+  /**@dev Function: addProperty
+   *      Description: Set new property to an existing good
    */
-  function getPropertiesOfGoods(uint _goodsId, bytes16 _propertyName  ) 
+  function addProperty(uint _id, uint _propertyId, bytes16 _name , bytes16 _unit , address _sensor, int _lowerTh ,int _upperTh)
+  public
+  onlyOwner() 
+  goodsExist(_id,true)
+  returns (uint _propertyIndex){
+
+    uint index = propertyInstance.createProperty(_propertyId, _name ,_unit ,_sensor );
+    propertyInstance.setThreshold(_propertyId,_lowerTh , _upperTh);
+    propertyInstance.associateGoods(_propertyId,_id);
+    return index;
+  }
+
+  /**@dev Function: removeProperty
+   *      Description: delete a property from some existing goods
+   */
+  function removeProperty(uint _id, uint _propertyId)
+  public
+  onlyOwner() 
+  goodsExist(_id,true)
+  goodsHasProperty(_id,_propertyId)
+  returns (uint _propertyIndex){
+
+    return propertyInstance.deleteProperty(_propertyId);
+  
+  }
+
+  /**@dev Function: getGoods
+  *       Description: retrieve goods struct by id
+  */
+  function getGoods(uint _id)
+  public 
+  view
+  goodsExist(_id,true)
+  returns(uint price,
+    uint shipmentId,
+    uint index){
+
+    return (goodsStructs[_id].price,
+    goodsStructs[_id].shipmentId,
+    goodsStructs[_id].index);
+  
+  }
+
+ /**@dev Function: getGoodsId
+  *       Description: retrieve goods id by index
+  */
+  function getGoodsId(uint _index) 
+  public
+  view
+  returns (uint id){
+    return goodsIndex[_index];
+  }
+  
+  /**@dev Function: getGoodsCount 
+  *       Description: Get the counter of indexes
+  */
+  function getGoodsCount()
+  public 
   view 
-  public 
-  validateGoodsWithProperty( _goodsId , _propertyName )
-  returns 
-  (bytes16 name,
-    bytes16 unit,
-    uint value,
-    uint updateTime) {
+  returns ( uint count){
     
-    return (goodsIdToProperties[_goodsId][_propertyName].name,
-            goodsIdToProperties[_goodsId][_propertyName].unit,
-            goodsIdToProperties[_goodsId][_propertyName].value,
-            goodsIdToProperties[_goodsId][_propertyName].updateTime);
+    return goodsIndex.length;
+
   }
 
-  /**@dev Function: updateProperty
-   * Description: Set new property to an existing good
-   */
-  function updateProperty(uint _goodsId,bytes16 _propertyName, uint _value, uint _unixTime )
-  public 
-  validateGoodsWithProperty( _goodsId , _propertyName ){
-    goodsIdToProperties[_goodsId][_propertyName].value = _value;
-    goodsIdToProperties[_goodsId][_propertyName].updateTime = _unixTime;
+  /**@dev Function: deleteGoods
+  *       Description: Remove existing references to goods
+  */
+  function deleteGoods(uint _goodsId)
+  public
+  onlyOwner()
+  goodsExist(_goodsId,true)
+  returns (uint _index){
+
+    uint idToMove = goodsIndex[goodsIndex.length-1];
+    uint indexToDelete = goodsStructs[_goodsId].index; 
+    goodsIndex[indexToDelete] = idToMove;
+    goodsStructs[idToMove].index = indexToDelete;
+    goodsIndex.length--;
+    deleteGoodsEvent(_goodsId,_index);
+    return indexToDelete; 
+
   }
+
+
+  /**@dev Function: kill*/
+  function kill()
+  public 
+  onlyOwner(){
+    selfdestruct(owner);
+  }
+
 }
