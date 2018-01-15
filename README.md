@@ -43,7 +43,7 @@ The following image show a diagram of the architecture to build. More details ab
 
 ![General architecture](./general_arch.png "General architecture")
 
-To view a digram of the model in which data is going to be structured [go to this folder](./design). As you may see, this is a mixture between an ER and a component digram. The reason is that we plan to use smart contracts as some sort of database schema, and build models on the top to interact with the data stored on the blockchain.
+To view a digram of the model in which data is going to be structured [go to this folder](./design/smartContractRelationships.jpg). As you may see, this is a mixture between an ER and a component digram. The reason is that we plan to use smart contracts as some sort of database schema, and build models on the top to interact with the data stored on the blockchain.
 
 ###### *Planning*
 
