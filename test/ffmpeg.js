@@ -108,4 +108,66 @@ contract('Ffmpeg', function(accounts) {
     if (!isTestRPC) this.skip("This test is only for TestRPC");
   });
 
+
+
+  it("Test iexecSubmit function", function() {
+    let previousBlockNumber;
+    let submitTxHash;
+    return Extensions.getCurrentBlockNumber()
+      .then(block => {
+        previousBlockNumber = block;
+        return aFfmpegInstance.iexecSubmit("{ \"cmdline\": \"-i small.mp4 small.avi\", \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\" }", {
+          from: dappUser,
+          gas: amountGazProvided
+        });
+      })
+      .then(txMined => {
+        submitTxHash = txMined.tx;
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+        return Extensions.getEventsPromise(aIexecOracleInstance.Submit({}, {
+          fromBlock: previousBlockNumber
+        }));
+      })
+      .then(events => {
+        //check event Submit for off-chain computing is well triggered
+        //the Log is composed of : Submit(tx.origin, msg.sender,dappRegistry[msg.sender].provider, param);
+        assert.strictEqual(events[0].args.user, dappUser, "dapp user address is wrong");
+        assert.strictEqual(events[0].args.dapp, aFfmpegInstance.address, "dapp address is wrong");
+        assert.strictEqual(events[0].args.provider, dappProvider, "dappProvider address is wrong ");
+        assert.strictEqual(events[0].args.args, "{ \"cmdline\": \"-i small.mp4 small.avi\", \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\" }", "submit task params");
+        //simulate bridge callback after off-chain computation done
+        // function submitCallback(bytes32 submitTxHash, address user, address dapp, IexecLib.StatusEnum status, string stdout, string stderr, string uri) stopInEmergency public {
+        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aFfmpegInstance.address, IexecOracle.Status.COMPLETED, "", "", "uri_with_the_result_to_download", {
+          from: bridge,
+          gas: amountGazProvided
+        });
+      })
+      .then(txMined => {
+        assert.isBelow(txMined.receipt.gasUsed, amountGazProvided, "should not use all gas");
+        return Extensions.getEventsPromise(aIexecOracleInstance.SubmitCallback({}, {
+          fromBlock: previousBlockNumber
+        }));
+      })
+      .then(events => {
+        //check event IexecSubmitCallback is well triggered in IexecOracle
+        // the Log is composed of : SubmitCallback(submitTxHash,user,stdout,uri);
+        assert.strictEqual(events[0].args.submitTxHash, submitTxHash, "submitTxHash is wrong");
+        assert.strictEqual(events[0].args.user, dappUser, "dappUser address is wrong");
+        assert.strictEqual(events[0].args.stdout, "", " ");
+        assert.strictEqual(events[0].args.uri, "uri_with_the_result_to_download", "uri_with_the_result_to_download");
+        return Extensions.getEventsPromise(aFfmpegInstance.IexecSubmitCallback({}, {
+          fromBlock: previousBlockNumber
+        }));
+      })
+      .then(events => {
+        //check event IexecSubmitCallback is well triggered in the dapp aFfmpegInstance
+        // the Log is composed of : IexecSubmitCallback(submitTxHash,user,stdout,uri);
+        assert.strictEqual(events[0].args.submitTxHash, submitTxHash, "submitTxHash is wrong");
+        assert.strictEqual(events[0].args.user, dappUser, "dappUser address is wrong");
+        assert.strictEqual(events[0].args.stdout, "", " ");
+        assert.strictEqual(events[0].args.uri, "uri_with_the_result_to_download", "uri_with_the_result_to_download");
+      });
+  });
+
+
 });
