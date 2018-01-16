@@ -1,10 +1,10 @@
 {
   "name": "iexec-dapp-init",
   "version": "1.0.0",
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description": "This is a submission to the iExec dapp-challenge.",
   "main": "iexec.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "iexec test"
   },
   "repository": {
     "type": "git",
