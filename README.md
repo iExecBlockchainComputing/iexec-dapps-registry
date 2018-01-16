@@ -23,3 +23,51 @@ module.exports = {
 };
 ```
 ## [Examples](./examples)
+
+
+## [Tests](./test/ffmpeg.js)
+
+```
+iexec init ffmpeg
+cd iexec-ffmpeg
+```
+
+### testrpc Tests
+
+Install the latest testrpc
+```
+npm install -g ethereumjs-testrpc
+
+```
+start your testrpc with
+```
+testrpc
+```
+You must see someting like this at the end of the log
+
+```
+Listening on localhost:8545
+```
+Your testrpc network simulator is ready, you can launch your truffle test with :
+```
+iexec truffle test
+```
+
+### Local geth node Tests
+
+Pull the the following docker image
+```
+docker pull iexechub/iexec-geth-local
+```
+start container
+```
+docker run -d --name iexec-geth-local --entrypoint=./startupGeth.sh -p 8545:8545 iexechub/iexec-geth-local
+```
+wait to see in logs the word : LOCAL_GETH_WELL_INITIALIZED :
+```
+docker logs -f iexec-geth-local
+```
+Your local geth network is ready, you can launch your truffle test with :
+```
+iexec truffle test
+```
