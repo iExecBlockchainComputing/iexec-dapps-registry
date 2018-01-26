@@ -1,6 +1,10 @@
 
 ##Abstract
+Both Deep Learning and the Blockchain technology are new and interesting fields.
+By creating an easy and fun to use application we want to make it easy for people to get first experience with these technologies.
+The idea is simple: The user uploads a photo he took and an artwork he likes. The Distributed App turns the photo into an artwork with the style of the uploaded image.
 
+TODO: Catchy example image
 
 ##Idea proposal
 Deep Learning and Blockchain technology currently face an unprecedented hype with an increasing number 
@@ -19,9 +23,9 @@ Everything is based on the iexec platform, so RLC token is all they need.
 
 The technology is based on a Paper by Gatys et al. 2015, A neural algorithm of artistic style:
 https://arxiv.org/abs/1508.06576 
-The technique has several important advantages for the iexec platform:
- 1. We can limit the uncertainty to a minimum (todo: really a difference to training a network? -> where are random numbers in a normal network? Only for weight init?)
- 2. The process is strongly deterministic, so the result of two runs on two devices must lead to identical outputs for the same inputs and parameters.
+The technique has an important advantage for the iexec platform:
+We can limit the uncertainty to a minimum: The only random component is in the initialization of the output image. Instead of generating a new noise image for every run, we reuse one noise image.
+The process is deterministic, so the result of two runs on two devices must lead to identical outputs for the same inputs and parameters.
 
 ##Roadmap
 
