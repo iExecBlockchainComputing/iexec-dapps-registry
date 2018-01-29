@@ -6,47 +6,38 @@ This enables smart contracts to delegate gas intensive computations and thus sav
 
 ####Idea Proposal
 
-As computational power on the blockchain is expensive (due to high gas consumption) it is favorable
-to pull computations off the blockchain.
+As computational power on the blockchain is expensive (due to high gas consumption) it is favorable to pull computations off the blockchain.
 In this proposal we want to adress two problems (A and B):
 
 A) 
-There are many ideas how to pull off onchain executions off the chain.
+There are many use cases for substituting onchain calculations with cheaper offchain calculations. 
 But it is too much boiler-plate and deployment effort to generate a unique DApp
 for each of these problems.
 Should we really have a specific single purpose DApp that computes
-the human readable date from unix timestamp.
-And then another one that computes the median of a list of integers.
-Ah, I need a new DApp for my lottery that calculates the average of a list of integers...
+the human readable date from unix timestamps, another one that computes the median of a list of integers and another that that calculates the average of a list of integers? Each of these ideas also has to be submitted as an app to the Iexec app store and the code of each of these dapps has to be reviewed individually, even though most of it is just boilerplate code.
 
-Common, this can't be real. You guys at IExec do not want to review all these boring code snippets
-wrapped into a distributed app. 
-And we don't want to write these wrappers!!
 
-So what we propose is a general framework for executing such code snippets.
+What we propose is a general framework for executing such code snippets.
 
 
 B)
-But we shouldn't forget that with power comes responsability. 
-We have to guarantee security for the providers of computational power,
-one of the main objectives of the IExec project.
+But we shouldn't forget that with power comes responsibility. 
+We have to guarantee security for the providers of computational power, so that no malicious code can be executed on the servers running the calulcations
+
 In other words, we are trying to solve an optimisation problem: between expressiveness and security.
 
 In our opinion, side-effect free programs are the sweet spot on this scale.
-Such programs are amonst others not allowed to access the internet, write to disk
-or call system functions. But they ARE allowed to compute any desired function that only
-depends on its parameters and return its result.
+Such programs are amonst others not allowed to access the internet, write to disk or call system functions. But they ARE allowed to compute any desired function that only depends on its parameters and return its result.
 
 
-Of course, such a proposal is only then useful if there is a simple mechanical check for the absence of side effects.
-In comparison to imperative programming languages such as C++ or Java, the functional programming language Haskell provides such facilities.
+Of course, such a proposal is only useful if there is a simple mechanical check for the absence of side effects.
+In contrast to imperative programming languages such as C++ or Java, the functional programming language Haskell provides such facilities.
 Every program in Haskell has a unique type that reveals
-whether the program is side effect free. Qed.
+whether the program is side effect free. 
 
 When brainstorming for this challenge we made the same mistake and came up with
 countless simple single purpose applications.
-At some point we realized that all of these snippets are side effect free programs,
-which will now serve as mere demonstrators for the proposed frame work.
+At some point we realized that all of these snippets are side effect free programs, which will now serve as mere demonstrators for the proposed frame work.
 We will briefly sketch three of them in the next section.
 
 ##Operations on numeric array
@@ -117,8 +108,6 @@ The example above uses https://github.com/Arachnid/solidity-stringutils and http
 ####Technical Challenges/Problems
 
 
-There is one main obstacle:
-
 ##Getting the input data into the correct format
 
 To use the example
@@ -141,23 +130,18 @@ Independently of that, a wrapper function
 
  will be made available by our wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function.
 The wrapper function additionally would ensure that it is not necessary to manually concatenate the strings in a complicated manner.
-One way to do this might be to have an iexecSubmic function with several string parameters, and $x in the last parameter is replaced by
-the first parameter and $y in the last parameter is replaced by the second parameter. Example function call:
+
+The call to out wrapper function could for example look like this:
 
 >iexecSubmit(text, "replace \"O\" \"X\" $x")
 
-or
-
->iexecSubmit(stringUtils.uintToBytes(now), "formatTime defaultTimeLocale \"%c\" $x")
-
-These wrapper functions will also be written by us if they are not made available at a deeper level.
 
 
 ####Roadmap
 
 
 Alpha:
-* All Haskell code can be called with one string parameter from smart contracts.
+* All Haskell code can be called with one string parameter from a wrapper  smart contracts.
 
 Beta:
 * The parameter wrapping (eg. from uint array to string) is done in a wrapper smart contract or possibly directly in the iexecSubmit function.
@@ -171,11 +155,16 @@ Post-release:
 
 ####Component diagram
 
+Verifier
+Input: haskell code as a string
+Output: The type of the function containing this code. If it is a pure function,the code can be executed, if it is not return an exception
+
+
 Offchain-app
 
 Input: Haskell code as string, or any solidity data types + haskell code as string
 
-Output: String if the program is side-effect free, "Program invalid because of side-effects" otherwise.
+Output: String of the output of the program.
 
 
 Wrapper Smart Contract
@@ -192,7 +181,7 @@ Wraps the solidity variables and the code-string to the full code-string and con
 
 
 3. IExcec reads the block and finds out that there was a call to our iexec project and the binary in the apps folder starts to run with the given parameters.
-In the "analysis phase" the Haskell interpreter is instructed to infer the type of the provided Haskell program.
+In the "verification phase" the Haskell interpreter is instructed to infer the type of the provided Haskell program.
 If it is side effect free and thus regarded as safe, it is executed using the Haskell interpreter (in an "execution phase")
 and its result is written back as the return string to the calling smart contract.
 
