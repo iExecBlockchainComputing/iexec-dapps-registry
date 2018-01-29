@@ -11,7 +11,7 @@ In this proposal we want to adress two problems (A and B):
 
 A) 
 There are many use cases for substituting onchain calculations with cheaper offchain calculations. 
-But it is too much boiler-plate and deployment effort to generate a unique DApp
+But it is too much boiler-plate code and deployment effort to generate a unique DApp
 for each of these problems.
 Should we really have a specific single purpose DApp that computes
 the human readable date from unix timestamps, another one that computes the median of a list of integers and another that that calculates the average of a list of integers? Each of these ideas also has to be submitted as an app to the Iexec app store and the code of each of these dapps has to be reviewed individually, even though most of it is just boilerplate code.
@@ -22,7 +22,7 @@ What we propose is a general framework for executing such code snippets.
 
 B)
 But we shouldn't forget that with power comes responsibility. 
-We have to guarantee security for the providers of computational power, so that no malicious code can be executed on the servers running the calulcations
+We have to guarantee security for the providers of computational power, so that no malicious code can be executed on the servers running the calulcations.
 
 In other words, we are trying to solve an optimisation problem: between expressiveness and security.
 
@@ -156,6 +156,7 @@ Post-release:
 ####Component diagram
 
 Verifier
+
 Input: haskell code as a string
 Output: The type of the function containing this code. If it is a pure function,the code can be executed, if it is not return an exception
 
@@ -195,3 +196,8 @@ A team wins if it has more than 50% or less than 25% of the total ETH sent to th
 
 
 https://github.com/ahoelzl/smartContract
+
+
+##Team
+
+ahoelzl: Working as a data scientist and cryptocurrency enthusiast.
