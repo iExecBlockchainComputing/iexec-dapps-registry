@@ -11,10 +11,8 @@ In this proposal we want to adress two problems (A and B):
 
 A) 
 There are many use cases for substituting onchain calculations with cheaper offchain calculations. 
-But it is too much boiler-plate code and deployment effort to generate a unique DApp
-for each of these problems.
-Should we really have a specific single purpose DApp that computes
-the human readable date from unix timestamps, another one that computes the median of a list of integers and another that that calculates the average of a list of integers? Each of these ideas also has to be submitted as an app to the Iexec app store and the code of each of these dapps has to be reviewed individually, even though most of it is just boilerplate code.
+But it is too much boiler-plate code and deployment effort to generate a unique DApp for each of these problems.
+Should we really have a specific single purpose DApp that computes the human readable date from unix timestamps, another one that computes the median of a list of integers and another that that calculates the average of a list of integers? Each of these ideas also has to be submitted as an app to the Iexec app store and the code of each of these dapps has to be reviewed individually, even though most of it is just boilerplate code.
 
 
 What we propose is a general framework for executing such code snippets.
@@ -144,10 +142,11 @@ Alpha:
 * All Haskell code can be called with one string parameter from a wrapper  smart contracts.
 
 Beta:
-* The parameter wrapping (eg. from uint array to string) is done in a wrapper smart contract or possibly directly in the iexecSubmit function.
+* Haskell code is only run when it is ensured that is side-effect free
+
 
 Release:
-* Haskell code is only run when it is ensured that is side-effect free
+* The parameter wrapping (eg. from uint array to string) is done in a wrapper smart contract or possibly directly in the iexecSubmit function.
 
 Post-release:
 * Proofing and benchmarking the cost-efficiency of our proposed API for the three use-cases; Documentation and communicating the API to the community
@@ -157,7 +156,7 @@ Post-release:
 
 Verifier
 
-Input: haskell code as a string
+Input: Haskell code as a string
 Output: The type of the function containing this code. If it is a pure function,the code can be executed, if it is not return an exception
 
 
@@ -200,4 +199,4 @@ https://github.com/ahoelzl/smartContract
 
 ##Team
 
-ahoelzl: Working as a data scientist and cryptocurrency enthusiast.
+We are a team of four people. Two of us are working in the area of data science/machine learning, one PhD student in the field of formal verification and interactive theorem solving and one postdoc in the same field.
