@@ -1,19 +1,16 @@
-# IExec dApp for outsourcing 
+# Jupyter add-on
 
-## Goal of the dapp
+# Concept
 
-Today, more and more companies resort to outsourcing in order to have tasks of certain fields taken care of without having to hire anybody inside the company. One field where the outsourcing play a quite important part is IT and particularly the development of programs. Indeed, a lot of companies pay others companies that are specialized in development of IT solutions to take care of their needs in this domain. Unfortunately, it is not uncommon to see litigation happens between the concerned companies about the work that has been done. This may be due to several reasons like a bad work done by the client doing the specifications or a misunderstanding from the developers. The goal of our dapp is to limit the number of litigation and make the outsourcing safer for both parts by using smart contracts.
+Jupyter is an ide that is used a lot in the python programming community. Being used in a browser, developers can write add-ons/extensions to expand the functionnality of this ide. Python language is used by data scientists to do tasks that require a lot of computing power in order to get the results in a limited amount of time. Unfortunately, a lot of those persons can't afford a machine allowing those computations. What we aim to do is develop an extension for jupyter allowing to deport these heavy computations to iExec. This would allow the users to do the usual little work locally and let iExec do the heavy part of the job and return the result in a smaller amount of time than it would have took if it was run locally.
 
-## Why is it built on Ethereum
+# Process
 
-The dApp will be built on Ethereum to allow the use of smart contracts. A smart contract will take care of expressing all the specifications and tests that need to be passed in order to confirm that the program developed is conform. All those informations could be stored off chain.
+The process would be really simple. The user would work as usual on jupyter. When he will have a task that he would like deport to iExec, he would just have to select the cell and then click on a button that would then send the task. The goal will be to make the process the more transparent possible so it won't change the way he uses jupyter. The only changement will be that he will pay some RLC and he will get the result of the computation way faster.  
+# Roadmap
 
-## Why does it use iExec
++ V1 : End of February
+In the first version, it will be possible to send any computing task to iExec but all the code will have to be in the cell, so any variable that is declared outside of the cell will be unknown.
 
-The dApp will use iExec in order to run the computations needed to test programs. The result of those computations will be sent back to the smart contract to define the percentage of acceptance of the work done by the developers.
-
-## A presentation of the implementation
-
-As stated earlier, a smart contract will allow the client to express all the specifications and the tests that need to be validate to accept the program. Those specifications could include date limit, bug acceptance percentage, etc... The max amount that the company is willing to pay for the development is locked using a stable coin. Once the client is done setting those parameters and the tests that are going to run to test the program, the developers can start working on the program.
-When the development is done, the program is deployed on IExec and the tests are launched via a call to the smart contract. 
-The results of the testing are then sent back to the smart contract and the latter take care of the rest. A percentage or the totality of the amount locked in the smart contract is sent to the developers of the program depending of the results of the computations done on IExec.
++ V2 : March - April
+In the second version, we will try to let the user have only the heavy computing part in the deported cell. There are multiple ways to do it effectively and we're currently trying to find the best one to make it the more transparent possible for the user.
