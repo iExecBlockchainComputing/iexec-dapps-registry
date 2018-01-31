@@ -5,7 +5,8 @@ Privacy, transparence, and performance is ensured by the use of
 blockchain, and the IExec platform. The workhorse of our solution
 is a novel deep learning algorithm.
 
-TODO: Catchy example image
+![Example Image](https://petapixel.com/assets/uploads/2015/08/neuralartwork.jpg "Example Image")
+
 
 ## Idea proposal
 
