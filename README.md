@@ -24,16 +24,25 @@ iExec in conjunction with smart contracts provides trusted computation and will 
 
 ### Architecture
 ![Components](images/component_diagram.png)
-Fig. 1: Components in the Ownerchain system
+*Fig. 1: Components in the OwnerChain system*
 
-The mobile client is the gateway for the user to register his bike to the system and buy/sell his bike using cryptocurrencies.
-Third party verificator services are used to authenticate the user & the bike.
-The iexec offchain app will serve as a trusted middleman to check legitimacy of requests and interact with smart contracts.
-The Ownerchain smart contract will store ownership information and handle ownership transactions. IPFS will serve as a store for additional bike data.
-The web frontend will serve as a simple way to view stored information on the ownerchain, submit buy/sell requests & offer some admin functionalities.
+
+
+Figure 1 shows a diagram of the components of the OwnerChain system:
+
+- The mobile client is the gateway for the user to register their bike to the system and buy or sell it using cryptocurrencies.
+- Third party verification services are used to authenticate the user and the bike.
+- The iExec off-chain app will serve as a trusted middleman to check legitimacy of requests and interact with the smart contracts.
+- The OwnerChain smart contract will store ownership information and handle ownership transactions.
+- IPFS will serve as a store for additional bike data.
+- The web frontend will serve as a simple way to view stored information on the OwnerChain, submit buy and sell requests as well as offer some admin functionalities.
+
+
 
 ![Bike registration sequence](images/sequence_diagramm.png)
-Fig. 2: Bike registration sequence diagram
+*Fig. 2: Bike registration sequence diagram*
+
+
 
 Verifying the user ID is done via a third party app, such as Civic, which returns an identity token uniquely identifying the user. Using our OwnerChain app, the user scans the bike frame number and assembles further information about the bike (e.g., bike brand, year of purchase and similar information). Users will be required to include some proof of ownership, such as purchase receipts or a national bike registry entry.
 
@@ -51,8 +60,8 @@ The app will contain features to easily buy and sell bikes or transfer ownership
   - API access point for mobile app 
 - implementation of simple web frontend: *Q2 2018*
    - web frontend for buy/sell/lookup functionality
-   - offer simple bike registration procedure in interaction with iexec offchain app (replaced by mobile app later on)
-- mobile app beta: *Q3 2018*
+   - offer simple bike registration procedure in interaction with iExec off-chain app (to be replaced by a mobile app later on)
+- implement mobile app beta: *Q3 2018*
   - implement UI (upload forms for bike data) 
   - integrate identity verification 
   - interaction with offchain app
