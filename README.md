@@ -55,15 +55,15 @@ Implementation with IExcec
 
 ## Component diagram
 
-Web-interface:
+### Web-interface:
 
 Allows the user to upload the two images and to download the result image
 
-Wrapper smart contract:
+### Wrapper smart contract:
 
 call the iexec offline app with the proper parameters
 
-Offline App:
+### Offline App:
 
 Computes the result image using the algorithm introduced above
 
