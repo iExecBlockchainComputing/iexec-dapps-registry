@@ -1,5 +1,4 @@
 # Personal Art Generator
-## Abstract
 
 We propose a one-click solution for creating personalized artwork.
 Privacy, transparence, and performance is ensured by the use of
@@ -54,13 +53,42 @@ The process is deterministic, so the result of two runs on two devices must lead
 
 Implementation with IExcec
 
-
-
 ## Component diagram
 
+Web-interface:
+
+Allows the user to upload the two images and to download the result image
+
+Wrapper smart contract:
+
+call the iexec offline app with the proper parameters
+
+Offline App:
+
+Computes the result image using the algorithm introduced above
 
 ## Sequential diagram of the solution
 
+Step 1: The user uploads two images on the web-interface
+
+Step 2: The wrapper smart contracs starts the computation of the offline app to create the result image.
+
+Step 3: When the image has been created, the link of the resulting image is sent to the wrapper smart contract
+
+Step 4: The user can then download this image from the web interface
+
+
+## Bonus: a DApp smart contract with truffle tests
+
+The following code on github includes Solidity code and truffle tests for a simple game that can be played on the Ethereum blockchain. There are two teams, Red and Blue. Players can add money to the stack of Red or Blue and regardless of which team gets money from the player, the player can bet which team wins. A team wins if it has either more than 50% or less than 25% of the total ETH sent to the team.
+
+https://github.com/ahoelzl/smartContract
+
+Team
+
+The MAOH Team
+
+We are an international Munich-based team of four people. Two of us are working as software engineers in the area of data science/machine learning and the other two are a PhD student and a postdoc in the field of formal verification and interactive theorem proving. In our opinion, our team represents the right mixture of academia and industry.
 
 [1] https://arxiv.org/abs/1508.06576
 
