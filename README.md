@@ -62,12 +62,19 @@ in the graph is not bigger.
 if and only if there is one.
 
 References:
+
 [1] https://outlierventures.io/convergence-wp-thanks
+
 [2] https://www.ibm.com/blockchain/supply-chain/
+
 [3] https://www.airbus.com/newsroom/news/en/2017/03/Blockchain.html
+
 [4] https://www.isa-afp.org/entries/Dijkstra_Shortest_Path.html
+
 [5] https://www.isa-afp.org/entries/EdmondsKarp_Maxflow.html
+
 [6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
+
 [7] https://www21.in.tum.de/~lammich/grat/
 
 # How are we going to proceed?
