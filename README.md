@@ -118,9 +118,9 @@ Output: Assignment (of values to the variables) representing the solution of the
 
 Step 1: User uploads the files representing the problems to iexec using the command line and calls the algorithm he wants to run
 
-Step2: The offline app computes the formally verified solution to the given problem
+Step 2: The offline app computes the formally verified solution to the given problem
 
-Step3: The user gets the link to the result on the command line. Due to the nature of out project he can be sure that this is the optimal solution.
+Step 3: The user gets the link to the result on the command line. Due to the nature of out project he can be sure that this is the optimal solution.
 
 # Roadmap
 
