@@ -19,10 +19,24 @@ Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-sa
  * Go submit a request to be listed on the [iExec dapp store](https://dapps.iex.ec/)
 
 ---
-# My Dapp name
+# Hector on IExec - Global Climate Module
+
 ## Description
-My Dapp description here...
+
+Hector, an open-source, object-oriented, reduced-form global climate carbon-cycle model, is written in C++. This model runs essentially instantaneously while still representing the most critical global-scale earth system processes. Hector has a three-part main carbon cycle: a one-pool atmosphere, land, and ocean. The model’s terrestrial carbon cycle includes primary production and respiration fluxes, accommodating arbitrary geographic divisions into, e.g., ecological biomes or political units. Hector actively solves the inorganic carbon system in the surface ocean, directly calculating air– sea fluxes of carbon and ocean pH. Hector reproduces the global historical trends of atmospheric [CO2], radiative forcing, and surface temperatures. The model simulates all four Representative Concentration Pathways (RCPs) with equivalent rates of change of key variables over time compared to current observations, MAGICC, and models from CMIP5 (Hartin et al., 2015). Hector’s flexibility, open-source nature, and modular design facilitates a broad range of research in various areas.
+
 ## Dapp params
-An example of a iexec.js conf
+
+module.exports = {
+    name: 'HECTOR',
+    data: {
+      type: 'BINARY',
+      cpu: 'AMD64',
+      os: 'LINUX',
+    },
+    work: {
+      cmdline: '10',
+    }
+}
+
 ## [Examples](./examples)
-A link to all iexec.js conf examples for the dapp.
