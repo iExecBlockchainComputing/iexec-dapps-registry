@@ -66,3 +66,7 @@ code {
   height: 16px;
   margin-right: 10px;
 }
+
+#navbar {
+  z-index: 1;
+}

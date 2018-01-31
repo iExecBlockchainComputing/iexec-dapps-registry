@@ -24,6 +24,7 @@ contract Property is Ownable{
     address sensor; // Address of the account 
     uint goodsId; // Identifier of goods
     uint index;
+  
   }
 
   mapping(uint => PropertyStruct) private propertyStructs; // From key to Property
@@ -60,13 +61,13 @@ contract Property is Ownable{
     require( propertyStructs[_id].sensor == msg.sender );
     _;
   }
-
+  
   /**@dev Constructor */
-  function Property ( address _owner ) public {
-    owner = _owner;
+  function Property ( address _admin ) public {
+    owner = _admin;
   }
 
-  /** @dev Function: createProperty
+/** @dev Function: createProperty
   *        Description: Insert a new property 
   */
   function createProperty( uint _id, bytes16 _name , bytes16 _unit , address _sensor ) 
@@ -82,6 +83,7 @@ contract Property is Ownable{
     propertyStructs[_id].upperTh = 0;
     propertyStructs[_id].index = propertyIndex.push(_id)-1;    
     createPropertyEvent( _id, propertyStructs[_id].index, _name , _unit , _sensor);
+
     return propertyIndex.length-1;
 
   }
@@ -196,6 +198,7 @@ function associateGoods( uint _id, uint _goodsId)
     return indexToDelete;
 
   }
+
   /**@dev Function: kill */
   function kill()
   public 

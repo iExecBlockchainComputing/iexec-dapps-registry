@@ -5,6 +5,7 @@ import './zeppelin/lifecycle/Killable.sol';
 contract Authentication is Killable {
   struct User {
     bytes32 name;
+    bytes32 email;
   }
 
   mapping (address => User) private users;
@@ -32,7 +33,7 @@ contract Authentication is Killable {
     return (users[msg.sender].name);
   }
 
-  function signup(bytes32 name)
+  function signup(bytes32 name, bytes32 _email)
   public
   payable
   onlyValidName(name)
@@ -45,6 +46,7 @@ contract Authentication is Killable {
     if (users[msg.sender].name == 0x0)
     {
         users[msg.sender].name = name;
+        users[msg.sender].email = _email;
 
         return (users[msg.sender].name);
     }
@@ -52,7 +54,7 @@ contract Authentication is Killable {
     return (users[msg.sender].name);
   }
 
-  function update(bytes32 name)
+  function update(bytes32 name,bytes32 _email)
   public
   payable
   onlyValidName(name)
@@ -63,6 +65,7 @@ contract Authentication is Killable {
     if (users[msg.sender].name != 0x0)
     {
         users[msg.sender].name = name;
+        users[msg.sender].email = _email;
 
         return (users[msg.sender].name);
     }

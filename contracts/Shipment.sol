@@ -19,8 +19,8 @@ contract Shipment is Ownable{
     uint creationTime; // When was created 
     bytes16 origin;
     bytes16 destination;
-    int latitud;  // Current location
-    int longitud; // Current location
+    int latitude;  // Current location
+    int longitude; // Current location
     uint weight;
     uint chainId;
     uint index;
@@ -29,15 +29,15 @@ contract Shipment is Ownable{
 
   mapping(uint => ShipmentStruct) private shipmentStructs;
   uint[] private shipmentIndex;
-  GoodsManagement public  goodsManagementInstance; // Instance of GoodsManagement
+  address public  goodsManagementInstance; // Instance of GoodsManagement
 
 
 
   /**@dev Events */
   /**@dev Description: event to be trigger when a new shipment is created */
-  event createShipmentEvent( uint creationTime,uint indexed _id, bytes16 _origin,bytes16  _destination, uint indexed _index);
+  event createShipmentEvent( uint creationTime, uint indexed _id, bytes16 _origin, bytes16  _destination, uint indexed _index);
   
-  event updateShipmentLocationEvent( uint _currentTime , uint _id , int _latitud , int _longitud ,uint _weight );
+  event updateShipmentLocationEvent( uint _currentTime , uint _id , int _latitude , int _longitude ,uint _weight);
   
   event deleteShipmentEvent(uint indexed _id, uint indexed _index);
   
@@ -59,16 +59,17 @@ contract Shipment is Ownable{
 
   modifier shipmentHasGoods(uint _id,uint _goodsId) {
    /** Check that the given property belongs to the goods */
-    var (,shipmentId,) = goodsManagementInstance.getGoods(_goodsId);
+    GoodsManagement goodsManagementContract = GoodsManagement(goodsManagementInstance);
+    var (,shipmentId,) = goodsManagementContract.getGoods(_goodsId);
     require(_id == shipmentId);
     _;
   }
 
   /**@dev Constructor */
-  function Shipment( address _owner )
+  function Shipment( address _admin )
   public{
-    owner = _owner;
-    goodsManagementInstance = new GoodsManagement(owner); 
+    owner = _admin;
+    goodsManagementInstance = new GoodsManagement(_admin); 
   }
   
   /**@dev Function: createShipment
@@ -97,13 +98,13 @@ contract Shipment is Ownable{
   /**@dev Function: addGoods
   *       Description: insert goods of a given shipment
   */
-  function addGoods(uint _id, uint _goodsId, uint _price)
+  function addGoods(uint _id, uint _goodsId, address _currentOwner)
   public 
   onlyOwner()
   shipmentExist(_id,true)
   returns (uint _goodsIndex) {
-
-    return goodsManagementInstance.createGoods(_goodsId,_price,_id);
+    GoodsManagement goodsManagementContract =  GoodsManagement(goodsManagementInstance);
+    return goodsManagementContract.createGoods(_goodsId,_id,_currentOwner);
 
   }
 
@@ -116,23 +117,23 @@ contract Shipment is Ownable{
   shipmentExist(_id,true)
   shipmentHasGoods(_id,_goodsId)
   returns (uint _goodsIndex) {
-
-    return goodsManagementInstance.deleteGoods(_goodsId);
+    GoodsManagement goodsManagementContract =  GoodsManagement(goodsManagementInstance);
+    return goodsManagementContract.deleteGoods(_goodsId);
 
   }
 
   /**@dev Function: updateShipmentLocation
    *      Description: This function is call when a shipment has change its place 
    */
-  function updateShipmentLocation( uint _id, int _latitud, int _longitud, uint _weight )
+  function updateShipmentLocation( uint _id, int _latitude, int _longitude, uint _weight )
   public 
   onlyOwner() 
   shipmentExist(_id,true){
 
-    shipmentStructs[_id].latitud = _latitud;
-    shipmentStructs[_id].longitud = _longitud;
+    shipmentStructs[_id].latitude = _latitude;
+    shipmentStructs[_id].longitude = _longitude;
     shipmentStructs[_id].weight = _weight;
-    updateShipmentLocationEvent( now , _id , _latitud , _longitud , _weight );
+    updateShipmentLocationEvent( now , _id , _latitude , _longitude , _weight );
   
   }
 
@@ -161,12 +162,12 @@ contract Shipment is Ownable{
   view 
   public 
   shipmentExist(_id,true) 
-  returns (int latitud,
-    int longitud,
+  returns (int latitude,
+    int longitude,
     uint weight) {
     
-    return (shipmentStructs[_id].latitud,
-            shipmentStructs[_id].longitud,
+    return (shipmentStructs[_id].latitude,
+            shipmentStructs[_id].longitude,
             shipmentStructs[_id].weight);
   
   }

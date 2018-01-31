@@ -10,10 +10,10 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onProfileFormSubmit: (name) => {
+    onProfileFormSubmit: (name,email) => {
       event.preventDefault();
 
-      dispatch(updateUser(name))
+      dispatch(updateUser(name,email))
     }
   }
 }

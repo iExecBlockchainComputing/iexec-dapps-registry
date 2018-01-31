@@ -1,163 +1,162 @@
 pragma solidity ^0.4.18;
 
-
-import "./zeppelin/ownership/Ownable.sol";
-import "./Chain.sol";
-
-
+import "./Authentication.sol";
+import "./Shipment.sol";
 /**
  *@title SupplyChain
  *@author Gastón Rial
  *@dev This contract represents the organization compose by every stake holder of the supply chain.
  * It serves the purpose of registration of new members of the chain and validation of shipments. 
  */
-contract SupplyChain is Ownable {
+contract SupplyChain is Authentication {
 
   /**@dev State variables */
-  struct MemberStruct {
+  struct ChainStruct{
 
     bytes16 name;
-    bytes32 email;
-    uint index; // Way to store and search for an existing member
+    uint creationTime;
+    uint index;
 
   }
-  
-  mapping ( address => MemberStruct ) private memberStructs;
-  address[] private memberIndex;
+
+  mapping(uint => ChainStruct) private chainStructs;
+  uint[] private chainIndex;
+
   mapping(address => mapping(uint => bool)) public chainIsActive; // Map member to 
-  Chain public chainInstance; 
+  address public shipmentInstance;
 
-  /**@dev Events*/
-  event createMemberEvent(address indexed _memberId, uint indexed _index); // Alerts about the creation of a new member
 
-  event deleteMemberEvent(address indexed _memberId, uint indexed _index); // Alerts about the removal of an existing member
+  /**@dev Events */
+  event createChainEvent(uint indexed _id , uint indexed _index,  uint _creationTime); // Alerts about the creation of a new chain
+
+  event deleteChainEvent(uint indexed _id , uint indexed _index);
 
   /**@dev modifiers */
-  modifier memberExist ( address _id, bool _condition ) { // whether condition == true, then check if exist. Else, check that does not exist
+  modifier chainExist ( uint _id, bool _condition ) { // whether condition == true, then check if exist. Else, check that does not exist
 
-    uint checkIndex = memberStructs[_id].index;
+    uint checkIndex = chainStructs[_id].index;
     if(_condition) {
     /** In order to update, retrieve or delete*/
-    require( memberIndex.length != 0 && memberIndex[checkIndex] == _id);     
+    require( chainIndex.length != 0 && chainIndex[checkIndex] == _id);     
 
     } else {
      /** In order to create */
-     require( memberIndex.length == 0 || memberIndex[checkIndex] != _id); 
+     require( chainIndex.length == 0 || chainIndex[checkIndex] != _id); 
 
     }
     _;
   }
 
-  modifier memberHasChain(address _member, uint _chainId){
+  modifier memberHasChain(uint _chainId){
 
-    require(chainIsActive[_member][_chainId]);
+    require(chainIsActive[msg.sender][_chainId]);
     _;
 
   }
 
-  modifier memberHasNotChain(address _member, uint _chainId){
+  modifier memberHasNotChain(uint _chainId){
 
-    require(!chainIsActive[_member][_chainId]);
+    require(!chainIsActive[msg.sender][_chainId]);
     _;
-
-  }
-
-  /**@dev constructor */
-  function SupplyChain() 
-  public {
-    chainInstance = new Chain(owner);
-  }
-
-  /**
-   *@dev Function: createMember
-   *     Description: Adds new member to list of supply chain owners
-   */
-  function createMember ( address _member, bytes16 _name, bytes32 _email) 
-  public 
-  onlyOwner()
-  memberExist(_member , false)
-  returns (uint index) {
-    
-    memberStructs[_member].name = _name;
-    memberStructs[_member].email = _email;
-    memberStructs[_member].index = memberIndex.push(_member)-1;
-    createMemberEvent(_member,memberStructs[_member].index);
-    return memberIndex.length-1;
 
   }
   
-  /**@dev Function: addChain
-  *       Description: Creates a new member
-  */
-  function addChain( uint _chainId , bytes16 _name ) 
-  public 
-  onlyOwner()
-  returns (uint chainIndex){
+  /**@dev Constructor*/
+  function SupplyChain () public {
+    shipmentInstance = new Shipment(msg.sender);
+  }
 
-    return chainInstance.createChain(_chainId ,_name);
-    
+  /**@dev Function: createChain
+  *       Description: Creates a new chain
+  */
+  function createChain( uint _id , bytes16 _name ) 
+  public 
+  onlyExistingUser()
+  chainExist(_id,false)
+  returns (uint index){
+
+    chainStructs[_id].name = _name;
+    chainStructs[_id].creationTime = now;
+    chainStructs[_id].index = chainIndex.push(_id)-1;
+    createChainEvent(_id,chainStructs[_id].index,chainStructs[_id].creationTime);
+    return chainIndex.length-1;
+
   } 
 
   /**@dev Function: addMemberToAChain */
-  function addMemberToAChain(address _member , uint _chainId) 
+  function addMemberToAChain( uint _chainId) 
   public
-  onlyOwner()
-  memberHasNotChain(_member , _chainId)
+  onlyExistingUser()
+  memberHasNotChain( _chainId)
   {
 
-    chainIsActive[_member][_chainId]= true;
+    chainIsActive[msg.sender][_chainId]= true;
 
   }
 
   /**@dev Function: removeMemberfromAChain */
-  function removeMemberfromAChain(address _member , uint _chainId) 
+  function removeMemberfromAChain( uint _chainId) 
   public
-  onlyOwner()
-  memberHasChain(_member , _chainId)
+  onlyExistingUser()
+  memberHasChain(_chainId)
   {
 
-    chainIsActive[_member][_chainId]= false;
+    chainIsActive[msg.sender][_chainId]= false;
     
   }
 
-  /**@dev Function: getMember */
-  function getMember( address _member ) 
+  /**@dev Function: getChain
+  *       Description: This method retrieves all the data concerning a particular chain
+  */
+  function getChain(uint _id) 
+  view
   public
-  view 
-  memberExist(_member,true)
-  returns (bytes16 name,
-    bytes32 email,
+  chainExist(_id,true)
+  returns( bytes16 name,
+    uint creationTime,
     uint index) {
-
-    return (memberStructs[_member].name,
-    memberStructs[_member].email,
-    memberStructs[_member].index);
+    
+    return (chainStructs[_id].name,
+            chainStructs[_id].creationTime,
+            chainStructs[_id].index);
 
   }
 
-  /**@dev Function: getMemberId */
-  function getMemberId(uint _index) 
+    /**@dev Function: getChainId
+  *       Description: retrieve id from index 
+  */
+  function getChainId(uint _index) 
+  public 
+  view 
+  returns (uint id){
+    return chainIndex[_index];
+  }
+
+  /**@dev Function: getChainCount
+          Description Return the number of registered chains 
+  */
+  function getChainCount()
   public 
   view
-  returns(address _member){
-    return memberIndex[_index];
+  returns (uint count){
+    return chainIndex.length-1;
   }
 
-  /**@dev Function: deleteMember
-  *       Description: Deletes an existing member
+  /**@dev Function: deleteChain
+  *       Description: Remove existing references to chain
   */
-  function deleteMember(address _member)
+  function deleteChain(uint _id)
   public
   onlyOwner()
-  memberExist(_member,true)
+  chainExist(_id,true)
   returns (uint _index){
 
-    address idToMove = memberIndex[memberIndex.length-1];
-    uint indexToDelete = memberStructs[_member].index;
-    memberIndex[indexToDelete] = idToMove;
-    memberStructs[idToMove].index = indexToDelete;
-    memberIndex.length--;
-    deleteMemberEvent(_member,_index);
+    uint idToMove = chainIndex[chainIndex.length-1];
+    uint indexToDelete = chainStructs[_id].index;
+    chainIndex[indexToDelete] = idToMove;
+    chainStructs[idToMove].index = indexToDelete;
+    chainIndex.length--;
+    deleteChainEvent(_id,_index);
     return indexToDelete; 
 
   }
@@ -166,8 +165,8 @@ contract SupplyChain is Ownable {
   *      Description: Erases the contract state from the EVM
   */
   function kill() 
-  public 
-  onlyOwner(){
+  public
+  onlyExistingUser {
 
     selfdestruct(msg.sender);
 

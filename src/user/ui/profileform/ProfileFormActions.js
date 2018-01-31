@@ -11,7 +11,7 @@ function userUpdated(user) {
   }
 }
 
-export function updateUser(name) {
+export function updateUser(name,email) {
   let web3 = store.getState().web3.web3Instance
 
   // Double-check web3's status.
@@ -36,7 +36,7 @@ export function updateUser(name) {
           authenticationInstance = instance
 
           // Attempt to login user.
-          authenticationInstance.update(name, {from: coinbase})
+          authenticationInstance.update(name,email, {from: coinbase})
           .then(function(result) {
             // If no error, update user.
 
