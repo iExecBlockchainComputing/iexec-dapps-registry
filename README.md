@@ -55,7 +55,7 @@ Aside of the technical challenge. The legal issue of the treatment of the data w
 Last of all, this is also about the enforcement of automated and potentially "smart" algorithms. In other words, given the possibiliy for a learning algortihms run by through the smart-contract to be autonomous in decision making (providing that rules have been implemented through a share governance process), what is the legal right concerning this algorithm ?
 
 #### Data access and arbitration
-**++Data Access++**
+**Data Access**
 There are 3 layers of acces:
 * access for the energy consumer/producer
 * access for the energy provider
@@ -64,11 +64,11 @@ There are 3 layers of acces:
 The aim is not to have to bother with specific access right to the data given that all three protagonists are stakeholders, and thus has the right to access the data they own or for which they've got the usage right to use (for billing or grid operation for instance). That is why we need agnostic infrastructure for data governance and management, that can be provided through blockchain technolgy.
 Moreover, if specific rights are required, rights automation can be embeded within the smartcontract that can automatically deal with specific rights providing that identities of the user is consistent.
 
-**++Data Visualization++**
+**Data Visualization**
 The DApp will provide an interface for data visualization and energy management.
 The aim would be to embed the governance process and rules administration with the DApp interface.
 
-**++Arbitration++**
+**Arbitration**
 Arbitration is both a governance issue and a legal issue.
 On the governance part, transparency allows to assure that rules are respected and, in case of conflict, to enforce the contract bounding the stakeholders together.
 On the legal part, transparency, ledger and proof of identity helps resolving conflicting energy measures between the energy provider and the grid operator.
@@ -89,8 +89,8 @@ Q4 2018 :
 ### Diagram
 **Component diagram**
 
-![](https://framapic.org/U4ZlN5OLnY1u/Lq9iHMUFog0i)
+![](https://github.com/DAISEE/iexec-dapp-samples/blob/init/diagrams/component_diagram.png?raw=true)
 
 **Sequential diagram**
 
-![](https://framapic.org/hlr2mENalG5H/HRDvRXR8VNxX)
+![](https://github.com/DAISEE/iexec-dapp-samples/blob/init/diagrams/sequential_diagram.png?raw=true)
