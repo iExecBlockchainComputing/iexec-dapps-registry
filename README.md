@@ -35,7 +35,7 @@ Before creating this proposal, we came up with countless simple single-purpose a
 At some point, we realized that all of those snippets are side-effect free programs, which will now serve as mere demonstrators for the proposed framework.
 We will briefly sketch three of them in the next section.
 
-## Operations on numeric array
+### Operations on numeric array
 
 For-loops are heavily used in Solidity but can be very expensive in terms of gas.
 Most of these can be compactly formulated in Haskell (example below).
@@ -75,7 +75,7 @@ Here, the values of the array bets are hardcoded, but they can come from any uin
 
 For larger arrays, the cost of RLC could be much lower than the cost of gas.
 
-## String operations
+### String operations
 
 
 Another use-case could be string operations, eg. replace:
@@ -85,7 +85,7 @@ Another use-case could be string operations, eg. replace:
 In this example all “O” are replaced by “X” in the solidity string text. All other string operations in Haskell could be used in the same way.
 
 
-## Date API
+### Date API
 
 
 A third use-case is to calculate dates exactly, taking into consideration leap seconds and time zones.
