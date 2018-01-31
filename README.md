@@ -61,23 +61,7 @@ in the graph is not bigger.
 * The SAT implementation returns a configuration meeting all the constraints
 if and only if there is one.
 
-References:
-
-[1] https://outlierventures.io/convergence-wp-thanks
-
-[2] https://www.ibm.com/blockchain/supply-chain/
-
-[3] https://www.airbus.com/newsroom/news/en/2017/03/Blockchain.html
-
-[4] https://www.isa-afp.org/entries/Dijkstra_Shortest_Path.html
-
-[5] https://www.isa-afp.org/entries/EdmondsKarp_Maxflow.html
-
-[6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
-
-[7] https://www21.in.tum.de/~lammich/grat/
-
-# How are we going to proceed?
+## How are we going to realize our proposal?
 
 In short:
 1. Query
@@ -96,43 +80,66 @@ target programming language we could use (Haskell, OCaml, Scala). Let us stress
 that the generated code possesses the same properties that were proved in Isabelle.
 The last step is to deploy the generated code into the IExec application.
 
+## References:
+
+[1] https://outlierventures.io/convergence-wp-thanks
+
+[2] https://www.ibm.com/blockchain/supply-chain/
+
+[3] https://www.airbus.com/newsroom/news/en/2017/03/Blockchain.html
+
+[4] https://www.isa-afp.org/entries/Dijkstra_Shortest_Path.html
+
+[5] https://www.isa-afp.org/entries/EdmondsKarp_Maxflow.html
+
+[6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
+
+[7] https://www21.in.tum.de/~lammich/grat/
+
+
 # Component Diagram
 
 
 ### Wrapper smart contract
 
-Wraps the input and outputs of the calls to the offline app
+The wrapper wraps the inputs and outputs of the calls to the offline app.
 
 ### Offline App for A1:
 
-Input: Graph with weights on edges
+Input: Graph with weights on its edges.
 
-Output: Shortest path
+Output: Shortest path.
 
 ### Offline App for A2:
 
-Input: Graph with weight on edges
+Input: Graph with weights on its edges.
 
-Output: integer representing the flow of the network
+Output: Integer representing the maximal flow of the network.
 
 ### Offline App for A3:
 
-Input: Propositional logic formulas reprenting the contrains
+Input: Propositional logic formulas representing the constraints.
 
-Output: Assignment (of values to the variables) representing the solution of the constraint problem
+Output: Assignment (of values to the variables) representing the solution of the constraint problem.
 
 # Sequential diagram of the solution
 
-Step 1: User uploads the files representing the problems to iexec using the command line and calls the algorithm he wants to run
+Step 1: The user uploads the files representing the problem to iExec via the command line and calls the algorithm they want to execute.
 
-Step 2: The offline app computes the formally verified solution to the given problem
+Step 2: The offline app computes the formally verified solution to the given problem.
 
-Step 3: The user gets the link to the result on the command line. Due to the nature of out project he can be sure that this is the optimal solution.
+Step 3: The user gets the link to the result on the command line. Due to the nature of our project, the user can be sure that this is the correct solution.
 
 # Roadmap
 
-Beta: All algorithms work and can be called via iexec
+Beta: All algorithms work and can be called via iExec.
 
-Release: Performance imporvements if needed
+Release: Performance improvements if needed.
 
 
+# Team
+
+The MAOH Team
+
+We are an international Munich-based team of four people. Two of us are working as software engineers in the area of data science/machine learning and the other two are a PhD student and a postdoc in the field of formal verification and interactive theorem proving.
+In our opinion, our team represents the right mixture of academia and industry.
