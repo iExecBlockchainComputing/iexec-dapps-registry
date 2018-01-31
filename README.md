@@ -1,7 +1,8 @@
 # R wordcloud
-## Description
-R is a free programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years
+## R Description
+R is a free programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years.
 
+## Dapp Description
 On the r-base docker image, wordcloud library and needed dependencies have been added in the iexechub/r-wordcloud image. 
 
 You can see the corresponding [Dockerfile](./apps/Dockerfile) of this [iexechub/r-wordcloud image](https://hub.docker.com/r/iexechub/r-wordcloud/).
