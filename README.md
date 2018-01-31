@@ -22,14 +22,14 @@ We have to guarantee security for the providers of computational power, so that 
 
 In other words, we are trying to find the sweet spot between expressiveness and security.
 
-In our opinion, both can be achieved by allowing only the definition of side-effect free programs. Such programs are not allowed to access the internet, write to disk or call system functions. Thus, these kind of programs cannot pose a security risk for the host machine.
+In our opinion, side-effect-free programs are the sweet spot in the above-mentioned optimization problem. Such programs are not allowed to access the internet, write to disk or call system functions. Thus, this kind of programs cannot pose a security risk for the host machine.
 
 
 Of course, such a proposal is only useful if there is a simple mechanical check for the absence of side-effects.
 The functional programming language Haskell provides such tools.
 Every function in Haskell has a unique type that reveals
 whether the function is side-effect free.
-In order to check if the entire program is side-effect free, it is sufficient to check the type of the main function.
+In order to check whether the entire program is side-effect free, it is sufficient to check the type of the main function.
 
 Before creating this proposal, we came up with countless simple single-purpose applications for the iExec challenge.
 At some point, we realized that all of those snippets are side-effect free programs, which will now serve as mere demonstrators for the proposed framework.
@@ -41,7 +41,7 @@ For-loops are heavily used in Solidity but can be very expensive in terms of gas
 Most of these can be compactly formulated in Haskell (example below).
 By pulling the computations off the blockchain, a lot of gas and thus money can be saved.
 
-The following shows a typical example of a for-loop in Solidity. Imagine a betting game, where each user gets a payout depending on the number of correct guesses. The Solidity script calculates the total payout for each user.
+The following shows a typical example of a for-loop in Solidity. Imagine a betting game in which each user gets a payout depending on the number of correct guesses. The Solidity script calculates the total payout for each user.
 
 Let bets[i] be the number of correct guesses of User i.
 
@@ -137,13 +137,13 @@ Release:
 * The parameter wrapping (eg. from uint array to string) is done in a wrapper smart contract or possibly directly in the iexecSubmit function.
 
 Post-release:
-* Proofing and benchmarking the cost-efficiency of our proposed API for the three use-cases. 
+* Proofing and benchmarking the cost-efficiency of our proposed API for the three use-cases.
 * Documenting and communicating the API to the community.
 
 
 # Component diagram
 
-Verifier
+Verifier - takes the the input code, asks GHC, an open-source Haskell compiler, to type-check the program (if it does not type-check -> exception) and checks whether the type corresponds to a side-effect-free program (e.g., does not contain the IO monad) if not -> exception.
 
 Input: Haskell code as a string
 Output: The type of the function containing this code. If it is a pure function, the code can be executed. If it is not, return an exception.
@@ -188,6 +188,7 @@ https://github.com/ahoelzl/smartContract
 
 # Team
 
-We are an international Munich based team of four people. Two of us are working as Software Engineers in the area of Data Science/Machine Learning, one is a PhD student in the field of Formal Verification and Interactive Theorem Solving and one a Postdoc in the same field.
-In our opinion, this is the right mixture of academia and industry.
+The MAOH Team
 
+We are an international Munich-based team of four people. Two of us are working as software engineers in the area of data science/machine learning and the other two are a PhD student and a postdoc in the field of formal verification and interactive theorem proving.
+In our opinion, our team represents the right mixture of academia and industry.
