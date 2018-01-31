@@ -76,4 +76,4 @@ module.exports = {
     }
 }
 
-## [Examples] - coming ...
+## [Examples] - coming soon
