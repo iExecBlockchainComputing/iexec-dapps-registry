@@ -28,7 +28,7 @@ implies astronomical costs for the user.
 Executing them off-chain seems to be a potent workaround to this problem.
 
 Therefore, we propose to solve the problems 1-3 by running the following algorithms
-in the IExec cloud:
+in the iExec cloud:
 A1. Dijkstra's Algorithm for the shortest path in a graph
 A2. Edmonds-Karp's Algorithm for the maximum flow in a flow network
 A3. SAT Algorithm for solving the configuration problem.
@@ -61,7 +61,7 @@ in the graph is not bigger.
 * The SAT implementation returns a configuration meeting all the constraints
 if and only if there is one.
 
-## How are we going to realize our proposal?
+### How are we going to realize our proposal?
 
 In short:
 1. Query
@@ -78,9 +78,9 @@ implementations are and potentially improve the code. We expect if some then rat
 mild modifications. While extracting the code, we have a couple of choices which
 target programming language we could use (Haskell, OCaml, Scala). Let us stress
 that the generated code possesses the same properties that were proved in Isabelle.
-The last step is to deploy the generated code into the IExec application.
+The last step is to deploy the generated code into the iExec application.
 
-## References:
+### References:
 
 [1] https://outlierventures.io/convergence-wp-thanks
 
