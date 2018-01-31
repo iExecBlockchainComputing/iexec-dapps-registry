@@ -89,19 +89,24 @@ target programming language we could use (Haskell, OCaml, Scala). Let us stress
 that the generated code possesses the same properties that were proved in Isabelle.
 The last step is to deploy the generated code into the IExec application.
 
-##Component Diagram
-Wrapper smart contract:
+##Component Diagram#
+
+Wrapper smart contract
+
 Wraps the input and outputs of the calls to the offline app
 
 Offline App for A1:
+
 Input: Graph with weights on edges
 Output: Shortest path
 
 Offline App for A2:
+
 Input: Graph with weight on edges
 Output: integer representing the flow of the network
 
 Offline App for A3:
+
 Input: Propositional logic formulas reprenting the contrains
 Output: Assignment (of values to the variables) representing the solution of the constraint problem
 
