@@ -1,9 +1,9 @@
-# Abstract
+## Abstract
 
 We propose to provide verified algorithms that would serve as building blocks
 for smart contracts implementing supply chains.
 
-# Idea proposal
+## Idea proposal
 
 Various ambitious projects implemented as a smart contract were recently proposed
 such as decentralized supply chains. Venture capitalists go even further and talk about
@@ -97,7 +97,7 @@ The last step is to deploy the generated code into the iExec application.
 [7] https://www21.in.tum.de/~lammich/grat/
 
 
-# Component Diagram
+## Component Diagram
 
 
 ### Wrapper smart contract
@@ -122,7 +122,7 @@ Input: Propositional logic formulas representing the constraints.
 
 Output: Assignment (of values to the variables) representing the solution of the constraint problem.
 
-# Sequential diagram of the solution
+## Sequential diagram of the solution
 
 Step 1: The user uploads the files representing the problem to iExec via the command line and calls the algorithm they want to execute.
 
@@ -130,16 +130,16 @@ Step 2: The offline app computes the formally verified solution to the given pro
 
 Step 3: The user gets the link to the result on the command line. Due to the nature of our project, the user can be sure that this is the correct solution.
 
-# Roadmap
+## Roadmap
 
 Beta: All algorithms work and can be called via iExec.
 
 Release: Performance improvements if needed.
 
 
-# Team
+## Team
 
-The MAOH Team
+### The MAOH Team
 
 We are an international Munich-based team of four people. Two of us are working as software engineers in the area of data science/machine learning and the other two are a PhD student and a postdoc in the field of formal verification and interactive theorem proving.
 In our opinion, our team represents the right mixture of academia and industry.
