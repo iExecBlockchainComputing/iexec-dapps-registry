@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'MyContract',
+  name: 'HECTOR',
   data: {
     type: 'BINARY',
     cpu: 'AMD64',
