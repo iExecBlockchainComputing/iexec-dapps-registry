@@ -1,11 +1,11 @@
 module.exports = {
-  name: 'Blender',
+  name: 'RWordcloud',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=ikester/blender',
+    envvars: 'XWDOCKERIMAGE=iexechub/r-wordcloud',
   },
   work: {
-    cmdline: '/host/buggy2.1.blend -o /host/frame_### -f 1',
-    dirinuri:'https://github.com/sulliwane/files/raw/master/buggy2.1.blend',
+      cmdline: 'Rscript iExecWordcloud.R',
+      dirinuri: 'zip link TBD',
   }
 };
