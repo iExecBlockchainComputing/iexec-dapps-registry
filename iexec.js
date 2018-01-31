@@ -6,6 +6,6 @@ module.exports = {
   },
   work: {
       cmdline: 'Rscript iExecWordcloud.R',
-      dirinuri: 'zip link TBD',
+      dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/r-wordcloud/apps/iExecWordcloudInputs.zip',
   }
 };
