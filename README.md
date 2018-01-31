@@ -1,16 +1,17 @@
-# Jupyter add-on
+# Decentralized git
 
 # Concept
 
-Jupyter is an ide that is used a lot in the python programming community. Being used in a browser, developers can write add-ons/extensions to expand the functionnality of this ide. Python language is used by data scientists to do tasks that require a lot of computing power in order to get the results in a limited amount of time. Unfortunately, a lot of those persons can't afford a machine allowing those computations. What we aim to do is develop an extension for jupyter allowing to deport these heavy computations to iExec. This would allow the users to do the usual little work locally and let iExec do the heavy part of the job and return the result in a smaller amount of time than it would have took if it was run locally.
+Git is by far the most widely used modern version control system today. It is used by a lot of developers around the world allowing them to keep track of their work and to share it with others. Github is one of the most popular application of git. Everyone can use it freely as long as they don't mind their code being public and avalaible to everyone to see. But there are some projects you don't want to share with everybody. If this is the case, it will cost money every month. What we want to develop is a platform like github but decentralized allowing anyone to store the source code on decentralized cloud storage. All the computations that are needed to update the code will be done on iExec. The use of the blockchain will mean more security concerning who has the rights to see the source code. The other advantage of this decentralized git is that the user will pay each time he has to use the versionning control but not when he doesn't use it.
 
 # Process
 
-The process would be really simple. The user would work as usual on jupyter. When he will have a task that he would like deport to iExec, he would just have to select the cell and then click on a button that would then send the task. The goal will be to make the process the more transparent possible so it won't change the way he uses jupyter. The only changement will be that he will pay some RLC and he will get the result of the computation way faster.  
+For the user, the process will be similar to what he is used to do with github. We will provide a cli allowing him to do all the operations possible with git. The work will then be submitted to iExec that would do the task and then store the result on the decentralized cloud storage of the user.
+
 # Roadmap
 
-+ V1 : End of February
-In the first version, it will be possible to send any computing task to iExec but all the code will have to be in the cell, so any variable that is declared outside of the cell will be unknown.
++ V1 : March
+In the first version, we aim to have the primary functions of git done so the users could start using this decentralized git with the cli. Versionning control systems are really complex so there will be a big part of research to begin with.
 
-+ V2 : March - April
-In the second version, we will try to let the user have only the heavy computing part in the deported cell. There are multiple ways to do it effectively and we're currently trying to find the best one to make it the more transparent possible for the user.
++ V2 : April
+In the second version, we want to give the user the ability to share the source code permissions to anyone he wants. In parallel we will develop a user interface to give a more user friendly experience.
