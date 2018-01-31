@@ -1,5 +1,5 @@
 ## DAISEE
-The DApp is about designing, developping and deploying an app for for both the energy flow allocation and energy billing within the context of self electricity consumption, based on a concrete experimental field.
+The DApp is about designing, developping and deploying an app for both the energy flow allocation and energy billing within the context of self electricity consumption, based on a concrete experimental field.
 This DApp development opportunity is partly the result of iExec and Urban Solar Energy meeting that validated a common interest in the topic.
 
 ### Ideal Proposal
