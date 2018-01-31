@@ -1,9 +1,9 @@
-#### Abstract
+# Abstract
 
 We propose an API for the off-chain execution of programs in the side-effect-free fragment of Haskell.
 This enables smart contracts to delegate gas intensive computations and thus save money.
 
-#### Idea Proposal
+# Idea Proposal
 
 As computational power on the blockchain is expensive (due to high gas consumption), it is favorable to pull computations off the blockchain.
 In this proposal, we want to address two problems (A and B):
@@ -75,7 +75,7 @@ Here, the values of the array bets are hardcoded, but they can come from any uin
 
 For larger arrays, the cost of RLC could be much lower than the cost of gas.
 
-##String operations
+## String operations
 
 
 Another use-case could be string operations, eg. replace:
@@ -98,10 +98,10 @@ Other possible functions include converting string dates to Unix timestamps and 
 The example above uses the Solidity libraries https://github.com/Arachnid/solidity-stringutils and https://github.com/pipermerriam/ethereum-string-utils for string manipulation.
 
 
-####Technical Challenges/Problems
+# Technical Challenges/Problems
 
 
-##Getting the input data into the correct format
+## Getting the input data into the correct format
 
 To use the example
 
@@ -123,7 +123,7 @@ Independently of this feature, a wrapper function
 
 will be made available by our wrapper smart contract that takes care of converting the parameters into the right format for the iexecSubmit function.
 
-#### Roadmap
+# Roadmap
 
 
 Alpha:
@@ -141,7 +141,7 @@ Post-release:
 * Documenting and communicating the API to the community.
 
 
-#### Component diagram
+# Component diagram
 
 Verifier
 
@@ -163,7 +163,7 @@ Wraps the Solidity variables and the String containing the code into a String co
 Converts the returned result string into Solidity variables in the callback function.
 
 
-#### Sequential diagram of the solution
+# Sequential diagram of the solution
 
 1. User Smart Contract calls our Wrapper Smart Contract by ForeignFunctionCall
 
@@ -176,7 +176,7 @@ Its result is written back as the return string to the calling smart contract.
 
 4. The Wrapper Smart Contract converts the computation’s result into the required format and returns it to the User Smart Contract.
 
-## Bonus: a DApp smart contract with truffle tests
+# Bonus: a DApp smart contract with truffle tests
 
 The following code on github includes Solidity code and truffle tests for a simple game that can be played on the Ethereum blockchain.
 There are two teams, Red and Blue. Players can add money to the stack of Red or Blue and regardless of which team gets money from the player, the player can bet which team wins.
@@ -186,7 +186,7 @@ A team wins if it has either more than 50% or less than 25% of the total ETH sen
 https://github.com/ahoelzl/smartContract
 
 
-## Team
+# Team
 
 We are an international Munich based team of four people. Two of us are working as Software Engineers in the area of Data Science/Machine Learning, one is a PhD student in the field of Formal Verification and Interactive Theorem Solving and one a Postdoc in the same field.
 In our opinion, this is the right mixture of academia and industry.
