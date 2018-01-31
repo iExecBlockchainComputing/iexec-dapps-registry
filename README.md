@@ -1,5 +1,5 @@
-
-# Abstract
+# Personal Art Generator
+## Abstract
 
 We propose a one-click solution for creating personalized artwork.
 Privacy, transparence, and performance is ensured by the use of
@@ -8,7 +8,7 @@ is a novel deep learning algorithm.
 
 TODO: Catchy example image
 
-# Idea proposal
+## Idea proposal
 
 Most of us have seen similiar images in the internet before and wished to have their favorite picture rendered in the style of a Monet. 
 Problem is, if you are not experienced with developing Neural Networks, it is infeasible to create such an engine on your own.
@@ -48,7 +48,7 @@ The technique has an important advantage for the iexec platform:
 We can limit the uncertainty to a minimum: The only random component is in the initialization of the output image. Instead of generating a new noise image for every run, we reuse one noise image.
 The process is deterministic, so the result of two runs on two devices must lead to identical outputs for the same inputs and parameters.
 
-##Roadmap
+## Roadmap
 
 1cut:   Implementation without IExec
 
@@ -56,10 +56,10 @@ Implementation with IExcec
 
 
 
-##Component diagram
+## Component diagram
 
 
-##Sequential diagram of the solution
+## Sequential diagram of the solution
 
 
 [1] https://arxiv.org/abs/1508.06576
