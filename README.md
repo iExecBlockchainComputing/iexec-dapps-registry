@@ -1,9 +1,9 @@
-##Abstract
+# Abstract
 
 We propose to provide verified algorithms that would serve as building blocks
 for smart contracts implementing supply chains.
 
-##Idea proposal
+# Idea proposal
 
 Various ambitious projects implemented as a smart contract were recently proposed
 such as decentralized supply chains. Venture capitalists go even further and talk about
@@ -70,7 +70,7 @@ References:
 [6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
 [7] https://www21.in.tum.de/~lammich/grat/
 
-##How are we going to proceed?
+# How are we going to proceed?
 
 In short:
 1. Query
@@ -89,32 +89,32 @@ target programming language we could use (Haskell, OCaml, Scala). Let us stress
 that the generated code possesses the same properties that were proved in Isabelle.
 The last step is to deploy the generated code into the IExec application.
 
-##Component Diagram
+# Component Diagram
 
 
-#Wrapper smart contract
+### Wrapper smart contract
 
 Wraps the input and outputs of the calls to the offline app
 
-#Offline App for A1:
+### Offline App for A1:
 
 Input: Graph with weights on edges
 
 Output: Shortest path
 
-#Offline App for A2:
+### Offline App for A2:
 
 Input: Graph with weight on edges
 
 Output: integer representing the flow of the network
 
-#Offline App for A3:
+### Offline App for A3:
 
 Input: Propositional logic formulas reprenting the contrains
 
 Output: Assignment (of values to the variables) representing the solution of the constraint problem
 
-##Sequential diagram of the solution
+# Sequential diagram of the solution
 
 Step 1: User uploads the files representing the problems to iexec using the command line and calls the algorithm he wants to run
 
@@ -122,7 +122,7 @@ Step2: The offline app computes the formally verified solution to the given prob
 
 Step3: The user gets the link to the result on the command line. Due to the nature of out project he can be sure that this is the optimal solution.
 
-##Roadmap
+# Roadmap
 
 Beta: All algorithms work and can be called via iexec
 
