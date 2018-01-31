@@ -61,7 +61,16 @@ in the graph is not bigger.
 * The SAT implementation returns a configuration meeting all the constraints
 if and only if there is one.
 
-##Roadmap
+References:
+[1] https://outlierventures.io/convergence-wp-thanks
+[2] https://www.ibm.com/blockchain/supply-chain/
+[3] https://www.airbus.com/newsroom/news/en/2017/03/Blockchain.html
+[4] https://www.isa-afp.org/entries/Dijkstra_Shortest_Path.html
+[5] https://www.isa-afp.org/entries/EdmondsKarp_Maxflow.html
+[6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
+[7] https://www21.in.tum.de/~lammich/grat/
+
+##How are we going to proceed?
 
 In short:
 1. Query
@@ -80,11 +89,32 @@ target programming language we could use (Haskell, OCaml, Scala). Let us stress
 that the generated code possesses the same properties that were proved in Isabelle.
 The last step is to deploy the generated code into the IExec application.
 
-References:
-[1] https://outlierventures.io/convergence-wp-thanks
-[2] https://www.ibm.com/blockchain/supply-chain/
-[3] https://www.airbus.com/newsroom/news/en/2017/03/Blockchain.html
-[4] https://www.isa-afp.org/entries/Dijkstra_Shortest_Path.html
-[5] https://www.isa-afp.org/entries/EdmondsKarp_Maxflow.html
-[6] https://www21.in.tum.de/~lammich/pub/cade2017.pdf
-[7] https://www21.in.tum.de/~lammich/grat/
+##Component Diagram
+Wrapper smart contract:
+Wraps the input and outputs of the calls to the offline app
+
+Offline App for A1:
+Input: Graph with weights on edges
+Output: Shortest path
+
+Offline App for A2:
+Input: Graph with weight on edges
+Output: integer representing the flow of the network
+
+Offline App for A3:
+Input: Propositional logic formulas reprenting the contrains
+Output: Assignment (of values to the variables) representing the solution of the constraint problem
+
+##Sequential diagram of the solution
+
+Step 1: User uploads the files representing the problems to iexec using the command line and calls the algorithm he wants to run
+Step2: The offline app computes the formally verified solution to the given problem
+Step3: The user gets the link to the result on the command line. Due to the nature of out project he can be sure that this is the optimal solution.
+
+##Roadmap
+
+Beta: All algorithms work and can be called via iexec
+
+Release: Performance imporvements if needed
+
+
