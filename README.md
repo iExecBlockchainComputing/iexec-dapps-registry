@@ -35,7 +35,7 @@ A3. SAT Algorithm for solving the configuration problem.
 
 Moreover we want to go beyond the usual Implement & Run paradigm.
 
-The Main Goal:
+###The Main Goal:
 We want to provide as strong as possible guarantees that the implementation of the
 algorithms A1-A3 is correct.
 
