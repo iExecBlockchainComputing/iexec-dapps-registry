@@ -55,7 +55,7 @@ Aside of the technical challenge. The legal issue of the treatment of the data w
 Last of all, this is also about the enforcement of automated and potentially "smart" algorithms. In other words, given the possibiliy for a learning algortihms run by through the smart-contract to be autonomous in decision making (providing that rules have been implemented through a share governance process), what is the legal right concerning this algorithm ?
 
 #### Data access and arbitration
-**Data Access**
+**Data Access**  
 There are 3 layers of acces:
 * access for the energy consumer/producer
 * access for the energy provider
@@ -64,24 +64,24 @@ There are 3 layers of acces:
 The aim is not to have to bother with specific access right to the data given that all three protagonists are stakeholders, and thus has the right to access the data they own or for which they've got the usage right to use (for billing or grid operation for instance). That is why we need agnostic infrastructure for data governance and management, that can be provided through blockchain technolgy.
 Moreover, if specific rights are required, rights automation can be embeded within the smartcontract that can automatically deal with specific rights providing that identities of the user is consistent.
 
-**Data Visualization**
+**Data Visualization**  
 The DApp will provide an interface for data visualization and energy management.
 The aim would be to embed the governance process and rules administration with the DApp interface.
 
-**Arbitration**
+**Arbitration**  
 Arbitration is both a governance issue and a legal issue.
 On the governance part, transparency allows to assure that rules are respected and, in case of conflict, to enforce the contract bounding the stakeholders together.
 On the legal part, transparency, ledger and proof of identity helps resolving conflicting energy measures between the energy provider and the grid operator.
 
 ### Roadmap
-This participation to the DApp challenge is part of the DAISEE experimentation and research program, in the case of application to two fields exepriment (Prats de Mollo and Urban Solar Energy).
+This participation to the DApp challenge is part of the DAISEE experimentation and research program, in the case of application to two fields experiment (Prats de Mollo and Urban Solar Energy).
 The first application and test will be held in the case of the Urban Solar Energy project.
 
 Q2 2018 :
 * Hardware deployment for data collection and design and prototype of data infrastructure (Smart contract and DApp)
 
 Q3 2018 :
-* Data collection and experimentation of the prototype while investigatin the legal compliance
+* Data collection and experimentation of the prototype while investigating the legal compliance
 
 Q4 2018 :
 * DApp interface for energy management and billing compliant with legal data framework.
