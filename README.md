@@ -9,7 +9,7 @@ You can see the corresponding [Dockerfile](./apps/Dockerfile) of this [iexechub/
 
 ## [Dapp params](./iexec.js)
 
-With create a wordcloud of the iExec Whitepaper : [iExec-WPv2.0-English.pdf](http://iex.ec/app/uploads/2017/04/iExec-WPv2.0-English.pdf).
+We create a wordcloud of the iExec Whitepaper : [iExec-WPv2.0-English.pdf](http://iex.ec/app/uploads/2017/04/iExec-WPv2.0-English.pdf).
 We have create a [R script](./apps/iExecWordcloud.R) to analyse the pdf content and generate a png image. 
 
 Those 2 inputs will be packed into [iExecWordcloudInputs.zip](./apps/iExecWordcloudInputs.zip) and set in the [dirinuri](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/blob/r-wordcloud/iexec.js#L9) field of iexec.js.
