@@ -2,7 +2,7 @@
 
 We propose a one-click solution for creating personalized artwork.
 Privacy, transparence, and performance is ensured by the use of
-blockchain, and the IExec platform. The workhorse of our solution
+blockchain, and the iExec platform. The workhorse of our solution
 is a novel deep learning algorithm.
 
 ![Example Image](https://petapixel.com/assets/uploads/2015/08/neuralartwork.jpg "Example Image")
@@ -64,13 +64,10 @@ This program will be written in Keras and implement the model described in "A ne
 
 ## Sequential diagram of the solution
 
-Step 1: The user uploads two images using the web-interface
-
-Step 2: The wrapper smart contracs starts the computation of the offline app to create the result image.
-
-Step 3: When the image has been created, the link of the resulting image is sent to the wrapper smart contract
-
-Step 4: The user can then download this image from the web interface 
+- Step 1: The user uploads two images using the web-interface
+- Step 2: The wrapper smart contracs starts the computation of the offline app to create the result image.
+- Step 3: When the image has been created, the link of the resulting image is sent to the wrapper smart contract
+- Step 4: The user can then download this image from the web interface 
 
 
 ## Bonus: a DApp smart contract with truffle tests
