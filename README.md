@@ -21,37 +21,30 @@ This is clearly a situation you want to avoid.
 
 By using crypto currencies, we can obviously solve the first problem.
 On top of that, IExec DApps now enable us to solve the second problem:
-The images are not stored on a central server and thus cannot be compromised
+The images are not stored on a central server and thus cannot be compromised.
 
-Deep Learning and Blockchain technology currently face an unprecedented hype with an increasing number 
-of people who are interested in getting deeper into these technologies.
-Especially for Non-technicals it is still difficult to get a feeling of potential applications and 
-the underlying mechanics.
+So, here is how it works: Simply provide the Art Generator with your favorite artwork and an arbitrary photo.
+The two images are transported securely in an end-to-end fashion to the iExec nodes.
+Only there, they are decrypted and processed before the resulting image is returned - again in an encrypted way.
 
-To bridge this gap, we provide users with a product that is easy-to-use and fun.
-More specifically, we present a Neural Art Generator which generates custom made artwork for the user.
-The usage is simple: Provide the Art Generator with a favorite artwork and an arbitrary photo you took.
-The Art Generator will turn your photo into an artwork with the style of the art image you provided.
+While our foremost motivation for using the iExec platform is privacy, we also get scalability on top.
+That is, running as a distributed service, the system scales well with an increasing number of jobs.
 
-We plan to deploy the backend of this Art Generator as an IExec DApp. 
-Running as a distributed service, the system scales well with a growing number of jobs.
-Also, cryptocurrencies  users do not need to enter credit card details in order to pay for the service:
-Everything is based on the iexec platform, so RLC token is all they need.
+Now, let's give a very coarse overview of the art rendering:
+We use a pretrained ImageNet network for feature extraction in both images.
+By comparing feature maps, we can define two loss functions: one compares the style of two images, the other the content of two images.
+First, we initialize the future artwork image with white noise.
+Now, we can use gradient descent to iteratively change the pixels of the artwork, so that they get more and more similiar to the images with each step.
+After several iterations, we get an image with the style of the art image and the content of the photo.
 
-The technology is best explained in the paper "A neural algorithm of artistic style" 
+For more information, please refer to the paper "A neural algorithm of artistic style" 
 by Gatys et al. 2015 [1].
-
-
-In contrast to other 
-The technique has an important advantage for the iexec platform:
-We can limit the uncertainty to a minimum: The only random component is in the initialization of the output image. Instead of generating a new noise image for every run, we reuse one noise image.
-The process is deterministic, so the result of two runs on two devices must lead to identical outputs for the same inputs and parameters.
 
 ## Roadmap
 
-1cut:   Implementation without IExec
-
-Implementation with IExcec
+- First Cut: Implementation without IExec using Keras
+- Testing Phase: Find a parameter set that works well for a set of examples
+- Deployment Phase: Create Wrapper Smart Contract and deploy the DApp on the iExec framework
 
 ## Component diagram
 
@@ -61,21 +54,22 @@ Allows the user to upload the two images and to download the result image
 
 ### Wrapper smart contract:
 
-call the iexec offline app with the proper parameters
+Calls the iexec offline app with the proper parameters
 
 ### Offline App:
 
-Computes the result image using the algorithm introduced above
+Computes the result image using the algorithm introduced above.
+This program will be written in Keras and implement the model described in "A neural algorithm of artistic style" by Gatys et al. 2015 [1].
 
 ## Sequential diagram of the solution
 
-Step 1: The user uploads two images on the web-interface
+Step 1: The user uploads two images using the web-interface
 
 Step 2: The wrapper smart contracs starts the computation of the offline app to create the result image.
 
 Step 3: When the image has been created, the link of the resulting image is sent to the wrapper smart contract
 
-Step 4: The user can then download this image from the web interface
+Step 4: The user can then download this image from the web interface 
 
 
 ## Bonus: a DApp smart contract with truffle tests
@@ -84,9 +78,7 @@ The following code on github includes Solidity code and truffle tests for a simp
 
 https://github.com/ahoelzl/smartContract
 
-Team
-
-The MAOH Team
+## The MAOH Team
 
 We are an international Munich-based team of four people. Two of us are working as software engineers in the area of data science/machine learning and the other two are a PhD student and a postdoc in the field of formal verification and interactive theorem proving. In our opinion, our team represents the right mixture of academia and industry.
 
