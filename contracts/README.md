@@ -1,0 +1,1 @@
+The shown bicycle contract is an exemplary prototype for the bicycle contract. This contract and the corresponding OwnerChain contract will be reworked, as some notions will change. For example, the original draft focused heavily on manufacturers, a user group which will not be present in the first version of the OwnerChain DApp.
