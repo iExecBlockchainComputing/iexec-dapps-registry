@@ -117,6 +117,10 @@ For example, let’s say May, our first full, unassisted month in operations, go
 
 ![alt tag](https://i.imgur.com/aPwGPgK.png)
 
+## Frontend Preview
+![alt tag](https://i.imgur.com/PRP8Eiv.png)
+![alt tag](https://i.imgur.com/CIQlGxp.png)
+
 
 ## Dapp params
 An example of a iexec.js conf
