@@ -5,7 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=ikester/blender',
   },
   work: {
-    cmdline: '/host/buggy2.1.blend -o /host/frame_### -f 1',
-    dirinuri:'https://github.com/sulliwane/files/raw/master/buggy2.1.blend',
+    cmdline: 'iexec-rlc.blend -o iexec-rlc -f 1',
+    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend',
   }
 };
