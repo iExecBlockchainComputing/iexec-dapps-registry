@@ -38,11 +38,11 @@ By creating a customizable, social, & transparent way to donate directly to an i
 
 This application is submitted by the SetOcean team, a blockchain & mixed realities agency-incubator based in sunny Fort Lauderdale, Florida. The following five team members could be involved in wide-ranging capacities from technical adviser to full-time:
 
-Jesus Najera - Product designer & learning blockchain engineer: https://github.com/setzeus
-Oscar Lafarga - Product manager, lead tech, & full-stack dev: https://github.com/otech47
-Balin Sinnott - Swift & kotlin senior engineer: https://github.com/bsin1
-Bernardo Garciarivas - Senior frontend-engineer: https://github.com/brgarciarivas
-Jordan Bruner - Web backend & API engineer: https://github.com/jordanbruner13
+  - Jesus Najera: product designer & learning blockchain engineer: https://github.com/setzeus
+  - Oscar Lafarga: product manager, lead tech, & full-stack dev: https://github.com/otech47
+  - Balin Sinnott: swift & kotlin senior engineer: https://github.com/bsin1
+  - Bernardo Garciarivas: senior frontend-engineer: https://github.com/brgarciarivas
+  - Jordan Bruner: web backend & API engineer: https://github.com/jordanbruner13
 
 ## Detailed Overview
 The standard smart contract in EthScholar dapp is the Scholarship contract. But our dapp exists as a chain of less common EthScholar contracts. An EthScholar contract, or block, in simple terms, is a block of x batched Scholarship contracts. At the beginning, this x is represented by the initial themes within EthScholar, which is a total of five referenced in the previous paragraph but is likely to change. 
