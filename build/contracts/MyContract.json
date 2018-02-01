@@ -1,0 +1,436 @@
+{
+  "contractName": "MyContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "submitTxHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "stdout",
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "name": "iexecSubmitCallback",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DAPP_PRICE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "param",
+          "type": "string"
+        }
+      ],
+      "name": "iexecSubmit",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DAPP_NAME",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_iexecOracleAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "submitTxHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "stdout",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "name": "IexecSubmitCallback",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60405160208061076c833981016040528080519060200190919050508060006040805190810160405280600481526020017f696e6974000000000000000000000000000000000000000000000000000000008152506000836000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff16635993ef5384846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083815260200180602001828103825283818151815260200191508051906020019080838360005b83811015610162578082015181840152602081019050610147565b50505050905090810190601f16801561018f5780820380516001836020036101000a031916815260200191505b509350505050602060405180830381600087803b15156101ae57600080fd5b6102c65a03f115156101bf57600080fd5b5050506040518051905015156101d457600080fd5b5050505050610584806101e86000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100675780633c0aef301461014b5780638cd213b914610174578063c878f958146101c6575b600080fd5b341561007257600080fd5b61013160048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610254565b604051808215151515815260200191505060405180910390f35b341561015657600080fd5b61015e6103ed565b6040518082815260200191505060405180910390f35b6101c4600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506103f2565b005b34156101d157600080fd5b6101d961051f565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102195780820151818401526020810190506101fe565b50505050905090810190601f1680156102465780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b157600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561033e578082015181840152602081019050610323565b50505050905090810190601f16801561036b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103a4578082015181840152602081019050610389565b50505050905090810190601f1680156103d15780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b600081565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156104aa57808201518184015260208101905061048f565b50505050905090810190601f1680156104d75780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b15156104f457600080fd5b6125ee5a03f1151561050557600080fd5b5050505060405180519050151561051b57600080fd5b5050565b6040805190810160405280600481526020017f696e697400000000000000000000000000000000000000000000000000000000815250815600a165627a7a723058203ad58bfd842836fbab63e8da1c58eacc04f060ed5ec703ac1d057a1a060c776e0029",
+  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100675780633c0aef301461014b5780638cd213b914610174578063c878f958146101c6575b600080fd5b341561007257600080fd5b61013160048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610254565b604051808215151515815260200191505060405180910390f35b341561015657600080fd5b61015e6103ed565b6040518082815260200191505060405180910390f35b6101c4600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506103f2565b005b34156101d157600080fd5b6101d961051f565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102195780820151818401526020810190506101fe565b50505050905090810190601f1680156102465780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b157600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561033e578082015181840152602081019050610323565b50505050905090810190601f16801561036b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103a4578082015181840152602081019050610389565b50505050905090810190601f1680156103d15780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b600081565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156104aa57808201518184015260208101905061048f565b50505050905090810190601f1680156104d75780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b15156104f457600080fd5b6125ee5a03f1151561050557600080fd5b5050505060405180519050151561051b57600080fd5b5050565b6040805190810160405280600481526020017f696e697400000000000000000000000000000000000000000000000000000000815250815600a165627a7a723058203ad58bfd842836fbab63e8da1c58eacc04f060ed5ec703ac1d057a1a060c776e0029",
+  "sourceMap": "86:254:0:-;;;223:114;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;288:19;164:1;319:9;;;;;;;;;;;;;;;;;;426:23:3;397:19;378:18;;:38;;;;;;;;;;;;;;;;;;464:18;;;;;;;;;;;426:57;;501:11;:35;;;537:9;547:8;501:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;493:64:3;;;;;;;;272:292;;;;223:114:0;86:254;;;;;;",
+  "deployedSourceMap": "86:254:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:185:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;171:41:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252:3;870:4;907:18;;;;;;;;;;;893:32;;:10;:32;;;885:41;;;;;;;;969:4;936:49;;;956:12;974:6;981:3;936:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:4:3;995:11;;761:252;;;;;;:::o;130:35:0:-;164:1;130:35;:::o;570:185:3:-;630:23;668:18;;;;;;;;;;;630:57;;705:11;:18;;;730:9;741:5;705:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;697:51:3;;;;;;;;570:185;;:::o;171:41:0:-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.11;\nimport \"iexec-oracle-contract/contracts/IexecOracleAPI.sol\";\ncontract MyContract is IexecOracleAPI{\n\n    uint public constant DAPP_PRICE = 0;\n    string public constant DAPP_NAME = \"init\";\n    \n    function MyContract (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){\n\n    }\n\n}\n",
+  "sourcePath": "/home/vagrant/iexecdev/iexec-init/contracts/MyContract.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/vagrant/iexecdev/iexec-init/contracts/MyContract.sol",
+      "exportedSymbols": {
+        "MyContract": [
+          22
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".11"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 795,
+          "absolutePath": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+          "file": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+          "scope": 23,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "25:60:0"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            794
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            22,
+            794
+          ],
+          "name": "MyContract",
+          "scope": 23
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IexecOracleAPI",
+                  "referencedDeclaration": 794,
+                  "type": "contract IexecOracleAPI"
+                },
+                "id": 3,
+                "name": "UserDefinedTypeName",
+                "src": "109:14:0"
+              }
+            ],
+            "id": 4,
+            "name": "InheritanceSpecifier",
+            "src": "109:14:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DAPP_PRICE",
+              "scope": 22,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "130:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 6,
+                "name": "Literal",
+                "src": "164:1:0"
+              }
+            ],
+            "id": 7,
+            "name": "VariableDeclaration",
+            "src": "130:35:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DAPP_NAME",
+              "scope": 22,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string memory",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string storage pointer"
+                },
+                "id": 8,
+                "name": "ElementaryTypeName",
+                "src": "171:6:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "696e6974",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"init\"",
+                  "value": "init"
+                },
+                "id": 9,
+                "name": "Literal",
+                "src": "206:6:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "171:41:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "name": "MyContract",
+              "payable": false,
+              "scope": 22,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_iexecOracleAddress",
+                      "scope": 21,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 11,
+                        "name": "ElementaryTypeName",
+                        "src": "244:7:0"
+                      }
+                    ],
+                    "id": 12,
+                    "name": "VariableDeclaration",
+                    "src": "244:27:0"
+                  }
+                ],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "243:29:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 19,
+                "name": "ParameterList",
+                "src": "329:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 794,
+                      "type": "type(contract IexecOracleAPI)",
+                      "value": "IexecOracleAPI"
+                    },
+                    "id": 14,
+                    "name": "Identifier",
+                    "src": "273:14:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 12,
+                      "type": "address",
+                      "value": "_iexecOracleAddress"
+                    },
+                    "id": 15,
+                    "name": "Identifier",
+                    "src": "288:19:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 7,
+                      "type": "uint256",
+                      "value": "DAPP_PRICE"
+                    },
+                    "id": 16,
+                    "name": "Identifier",
+                    "src": "308:10:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 10,
+                      "type": "string memory",
+                      "value": "DAPP_NAME"
+                    },
+                    "id": 17,
+                    "name": "Identifier",
+                    "src": "319:9:0"
+                  }
+                ],
+                "id": 18,
+                "name": "ModifierInvocation",
+                "src": "273:56:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 20,
+                "name": "Block",
+                "src": "329:8:0"
+              }
+            ],
+            "id": 21,
+            "name": "FunctionDefinition",
+            "src": "223:114:0"
+          }
+        ],
+        "id": 22,
+        "name": "ContractDefinition",
+        "src": "86:254:0"
+      }
+    ],
+    "id": 23,
+    "name": "SourceUnit",
+    "src": "0:341:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-20T16:10:37.901Z"
+}
