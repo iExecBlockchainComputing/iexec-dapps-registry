@@ -73,6 +73,50 @@ Historical State
 
 Exactly 60,000 Ethereum blocks after the EthScholarship Contract #0 (origin block) was committed, the second block, our example EthScholarship Contract #1 is committed to our EthScholarship dapp. The five Scholarship smart contracts are now changed to a state of historical. When a Scholarship contracts’ state is changed to historical, both the total donations & the bonus pool funds are released; the total donations are released to their respective applicants, & the bonus pool funds are released to the single “popular” winner per Scholarship theme. Accordingly, all five bonus pool funds are also released to all applicants within those Scholarship themes.
 
+## Roadmap
+EthScholar Goal
+The goal of the iExec grant is to provide enough runway to allow the SetOcean team to allocate two full-time (40 hr / week) contractors to build EthScholar to the point that it’s self-funded. We do not plan on scaling or selling this as a business - this is merely an idea we’d be privileged to work on simply covering our expenses. 
+
+To that end, this means that by the end of month nine of kickoff, EthScholar must bring in enough revenue to cover our staffing & operational costs. Let’s approximate this monthly as two full-time employees (2 * $3.25K)  & one part-time contractor ($1.5K), plus splitting our current office lease ($1K), plus a couple grand of operational expenses such as hosting, utilities & equipment ($1K). This roughly equals $10K. 
+
+Therefore the goal of the iExec grant is to build & scale EthScholar, a scholarship charity dapp, to the point that monthly revenues are approximately ~$12.5K ($2.5K buffer). Since we’re essentially not looking to increase monthly margins, it might make sense to scale this number only as the team scales. Once our monthly burn is reached, the rest of the “donor fee” is added to the EthScholar & Scholarship bonus pool fund.
+
+We propose an initial donation % fee of 10% which means that in order to hit our goal of self-sustaining dapp we’d need monthly donations of approximately $100K. We will decrease this team % as demand increases but for this roadmap the goal is to reach a self-sustaining model first without seeking additional financing. The goal is to hit this monthly donation figure of $100K in the month of May. The $100K in monthly donations will be a direct function of (donors) * (avg. donation). We propose the timeline listed below:
+
+Feb. 1st - Mar. 31st	 Design, Engineer, Test & Deploy on Testnet Alpha (v0.0 - v0.9)
+Apr 1st - Apr 30th	EthScholarhips live & committed every 1000 Eth blocks  (~2 weeks). Beta (v1.0 - 1.9)
+May 1st - May 31st	Marketable MVP & Product/Market Fit  MVP (v2.0 - 2.9)
+June 1st - Sept 30th	Multi-lingual support, video applications, & donor-to-scholar messaging (3.0 - 3.9)
+Oct 1st - Dec 31st	Auto-generated tax donor Form 8283s for donor’s benefit. (4.0 - 4.9)
+Alpha (February 1st - March 31st)
+
+Two Months to Design, Engineer, Test & Deploy on Testnet
+
+The goal of this phase to successfully deploy (on a testnet) the EthScholar dapp that passes all user-tests & Truffletests. 
+
+The resources allocated for this phase will be one full-time blockchain engineer/product designer ($3250/M) & one part-time full-stack engineer/PM ($1500/M). In addition to shared office space, operations & shared technical resources ($500/M). 
+
+$5.25K / Month * 2 ~ $10.5K for Alpha Phase
+
+Beta (April 16th - May 30th)
+One Month Polishing & Deploying on Ethereum Network 
+
+The goal of this phase is to successfully deploy the EthScholar origin block with an additional block committed with some ether donations released to at least five applications. The main EthScholar smart contract is live. EthScholarhips live & committed every 1000 Eth blocks
+
+The resources allocated for this phase will be one part-time blockchain engineer/product designer ($1625/M) & one part-time marketer/customer service rep ($1500/M). In addition to shared office space, operations & shared technical resources ($500/M). 
+
+$3.625K / Month * 1 ~ $3.625K for MVP Phase
+
+3 Months Alpha & Beta MVP						~Total   $14,125
+
+
+The goal is hit a breakeven total donation fee of $10K (Two full-time employees @ $3.5/M + One part-time @ $1.5/M + Operations & Marketing @ $1K + a $1K buffer). This donation fee is ideally as low as possible, however, in the beginning, it follows that in order to guarantee continued operations, we’ll need to err on the side of caution (possibly going up to 10%). Once the team’s breakeven number is met, the rest of EthScholar fees from incoming donations for the current round are added to the EthScholar bonus pool as well as the corresponding Scholarship contract bonus pool. 
+
+For example, let’s say May, our first full, unassisted month in operations, goes way better than expected with $200K in total monthly donations. Since we were reasonably uncertain about covering our breakeven, we set a relatively high donation fee of 10%. With a monthly breakeven goal of 10K, this required a total monthly donations of only $100K. Does it make sense to only charge a donation fee to those who donate early? No. So what happens to the rest of the donation fees stemming from the additional $200K? Since the EthScholar team no longer needs those funds to operate, the extra $10K ($200K in donations * 10% donation fee - $10K) in donation fees are split in half & allocated to the current EthScholar contract bonus pool as well as their respective Scholarship contracts. $5K goes to the EthScholar contract & is awarded to the one of the five Scholarships that “wins” the current round; the second $5K is distributed evenly among all five Scholarships. 
+
+
+
+
 
 ## Dapp params
 An example of a iexec.js conf
