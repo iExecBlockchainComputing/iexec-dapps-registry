@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'RWordcloud',
+  name: 'R',
   app: {
     type: 'DOCKER',
     envvars: 'XWDOCKERIMAGE=iexechub/r-wordcloud',
