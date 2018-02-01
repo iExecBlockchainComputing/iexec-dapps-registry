@@ -83,12 +83,12 @@ Therefore the goal of the iExec grant is to build & scale EthScholar, a scholars
 
 We propose an initial donation % fee of 10% which means that in order to hit our goal of self-sustaining dapp we’d need monthly donations of approximately $100K. We will decrease this team % as demand increases but for this roadmap the goal is to reach a self-sustaining model first without seeking additional financing. The goal is to hit this monthly donation figure of $100K in the month of May. The $100K in monthly donations will be a direct function of (donors) * (avg. donation). We propose the timeline listed below:
 
-Feb. 1st - Mar. 31st	 Design, Engineer, Test & Deploy on Testnet Alpha (v0.0 - v0.9)
-Apr 1st - Apr 30th	EthScholarhips live & committed every 1000 Eth blocks  (~2 weeks). Beta (v1.0 - 1.9)
-May 1st - May 31st	Marketable MVP & Product/Market Fit  MVP (v2.0 - 2.9)
-June 1st - Sept 30th	Multi-lingual support, video applications, & donor-to-scholar messaging (3.0 - 3.9)
-Oct 1st - Dec 31st	Auto-generated tax donor Form 8283s for donor’s benefit. (4.0 - 4.9)
-Alpha (February 1st - March 31st)
+  - Feb. 1st - Mar. 31st	 Design, Engineer, Test & Deploy on Testnet Alpha (v0.0 - v0.9)
+  - Apr 1st - Apr 30th	EthScholarhips live & committed every 1000 Eth blocks  (~2 weeks). Beta (v1.0 - 1.9)
+  - May 1st - May 31st	Marketable MVP & Product/Market Fit  MVP (v2.0 - 2.9)
+  - June 1st - Sept 30th	Multi-lingual support, video applications, & donor-to-scholar messaging (3.0 - 3.9)
+  - Oct 1st - Dec 31st	Auto-generated tax donor Form 8283s for donor’s benefit. (4.0 - 4.9)
+  - Alpha (February 1st - March 31st)
 
 Two Months to Design, Engineer, Test & Deploy on Testnet
 
