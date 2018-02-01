@@ -53,8 +53,8 @@ Additionally, both the EthScholar contract & each individual Scholarship contrac
 
 ## Example Walkthrough
 In order to forego additional complexity associated with origin blocks, our following example will be for the second EthScholar smart contract recorded in our dapp. At the beginning, Scholarships will change states & automatically commit to the EthScholar dapp every 60,000 Ethereum network blocks. We chose 60,000 blocks as an initial condition because given an average Ethereum block confirmation time of ~20 seconds 60,000 blocks is approximately two weeks (24*60*60*14/20).
-Before second block is committed (~ two weeks)
 
+Before second block is committed (~ two weeks)
 Let’s say the EthScholar dapp origin block (EthScholar smart contract #0) was committed alongside Ethereum block #4984541. At the beginning, by default, we’re assigning an EthScholar smart contract a block time of 60,000 Ethereum blocks. Meaning EthScholar smart contract #1 will automatically be committed when the Ethereum block #5044541 is committed. 
 During these two weeks, a batch of five Scholarship smart contracts that initially differentiate only by their theme go through two separate states respectively: upcoming & live. The first state for our five Scholarship contracts, upcoming, changes happen halfway through the two weeks -- one week, or, 30,000 blocks after the previous EtherScholar contract was last committed to be exact.
 
@@ -66,7 +66,7 @@ Live State
 	In the later Live State, the five Scholarship smart contracts accepts Donor ether, accepts Scholar applications,  & updates accordingly. There are now only 30K Ethereum blocks remaining until the next EthScholar contract is submitted. 
 	Continuing our last example, in it’s live state the ES Scholarship #1 now has some level funding, has a fixed set of conditions for applicants, &  now accepts applications for potential scholars. For this example, let’s say we have a second Donor Bob & Scholar Carl. First, let’s say Scholar Carl applies to the ES Scholarship #1 contract by signing the contract with multiple inputs at a single; he does this by sending ether with the inputs packed in the message. The EthScholar fee covers his ether sent since we do not want applicants to pay for applying to scholarships. Next, Donor Bob checks the EthScholar web app, clicks on “live EthScholar Scholarships,” clicks into the “Environmental Studies” Scholarship & see Scholar Carls application. Donor Bob then donates to Scholar Carl by sending 10 ether attached with a message conveying the scholar of choice to the ES Scholarship #1; he pays a lower donation fee of 5%. Since Donor Alice’s donor fees covered the teams burn-rate, all of Donor Bob’s donor fee, .5 ether, is split with .25 ether going to the general EthScholar #1 contract bonus pool fund, & .25 ether distributed among the five underlying Scholarship contracts. This means our ES Scholarship #1 contract ends up receiving .05 ether into its bonus pool fund.
   
-	Historical State
+Historical State
 Exactly 60,000 Ethereum blocks after the EthScholarship Contract #0 (origin block) was committed, the second block, our example EthScholarship Contract #1 is committed to our EthScholarship dapp. The five Scholarship smart contracts are now changed to a state of historical. When a Scholarship contracts’ state is changed to historical, both the total donations & the bonus pool funds are released; the total donations are released to their respective applicants, & the bonus pool funds are released to the single “popular” winner per Scholarship theme. Accordingly, all five bonus pool funds are also released to all applicants within those Scholarship themes.
 
 
