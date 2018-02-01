@@ -2,7 +2,7 @@ module.exports = {
   name: 'R',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=iexechub/r-wordcloud',
+    envvars: 'XWDOCKERIMAGE=r-base',
   },
   work: {
       cmdline: 'Rscript HelloWorld.R',
