@@ -1,0 +1,24 @@
+#!/bin/bash
+
+BASE_DIR="$(pwd)"
+
+wget https://openmole.org/openmole.tar.gz
+tar zxf openmole.tar.gz
+rm openmole.tar.gz
+
+cd openmole || exit 1
+
+mkdir -p java_om && tar zxf runtime/jvm-x64.tar.gz -C java_om
+JAVA_HOME="$(pwd)/java_om/jre"
+PATH="${JAVA_HOME}/bin:${PATH}"
+
+export JAVA_HOME PATH
+java -version
+
+wget https://raw.githubusercontent.com/openmole/openmole-market/7-dev/pi/Pi.oms
+pi_avg=$(./openmole --password "" --script ./Pi.oms | tail -n1 | sed -e 's/.*\([0-9]\+\.[0-9]\+\).*/\1/g')
+
+echo "${pi_avg}"
+
+cd "${BASE_DIR}" && rm -rf openmole
+

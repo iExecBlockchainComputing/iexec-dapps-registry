@@ -1,11 +1,11 @@
 module.exports = {
-name:'OpenMOLEPi',
+  name: 'MyContract',
   data: {
     type: 'BINARY',
     cpu: 'AMD64',
     os: 'LINUX',
   },
   work: {
-    cmdline: '',
+    cmdline: '10',
   }
 };

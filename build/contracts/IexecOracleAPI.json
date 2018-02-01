@@ -1,0 +1,1522 @@
+{
+  "contractName": "IexecOracleAPI",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "submitTxHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "stdout",
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "name": "iexecSubmitCallback",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "param",
+          "type": "string"
+        }
+      ],
+      "name": "iexecSubmit",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_iexecOracleAddress",
+          "type": "address"
+        },
+        {
+          "name": "dappPrice",
+          "type": "uint256"
+        },
+        {
+          "name": "dappName",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "submitTxHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "stdout",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "uri",
+          "type": "string"
+        }
+      ],
+      "name": "IexecSubmitCallback",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b604051610639380380610639833981016040528080519060200190919080519060200190919080518201919050506000836000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff16635993ef5384846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561013b578082015181840152602081019050610120565b50505050905090810190601f1680156101685780820380516001836020036101000a031916815260200191505b509350505050602060405180830381600087803b151561018757600080fd5b6102c65a03f1151561019857600080fd5b5050506040518051905015156101ad57600080fd5b50505050610479806101c06000396000f30060606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100515780638cd213b914610135575b600080fd5b341561005c57600080fd5b61011b60048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610187565b604051808215151515815260200191505060405180910390f35b610185600480803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610320565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101e457600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b83811015610271578082015181840152602081019050610256565b50505050905090810190601f16801561029e5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102d75780820151818401526020810190506102bc565b50505050905090810190601f1680156103045780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156103d85780820151818401526020810190506103bd565b50505050905090810190601f1680156104055780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b151561042257600080fd5b6125ee5a03f1151561043357600080fd5b5050505060405180519050151561044957600080fd5b50505600a165627a7a72305820a54f986d06adeb4b48df8cb3498494a744d094cf168047995fe1bd9d051d87860029",
+  "deployedBytecode": "0x60606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100515780638cd213b914610135575b600080fd5b341561005c57600080fd5b61011b60048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610187565b604051808215151515815260200191505060405180910390f35b610185600480803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610320565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101e457600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b83811015610271578082015181840152602081019050610256565b50505050905090810190601f16801561029e5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102d75780820151818401526020810190506102bc565b50505050905090810190601f1680156103045780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846000604051602001526040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156103d85780820151818401526020810190506103bd565b50505050905090810190601f1680156104055780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b151561042257600080fd5b6125ee5a03f1151561043357600080fd5b5050505060405180519050151561044957600080fd5b50505600a165627a7a72305820a54f986d06adeb4b48df8cb3498494a744d094cf168047995fe1bd9d051d87860029",
+  "sourceMap": "88:927:3:-;;;272:292;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;426:23;397:19;378:18;;:38;;;;;;;;;;;;;;;;;;464:18;;;;;;;;;;;426:57;;501:11;:35;;;537:9;547:8;501:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;493:64:3;;;;;;;;272:292;;;;88:927;;;;;;",
+  "deployedSourceMap": "88:927:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:185;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252;870:4;907:18;;;;;;;;;;;893:32;;:10;:32;;;885:41;;;;;;;;969:4;936:49;;;956:12;974:6;981:3;936:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:4:3;995:11;;761:252;;;;;;:::o;570:185::-;630:23;668:18;;;;;;;;;;;630:57;;705:11;:18;;;730:9;741:5;705:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;697:51:3;;;;;;;;570:185;;:::o",
+  "source": "pragma solidity ^0.4.18;\n//v1.1.1\nimport \"./IexecOracle.sol\";\nimport './IexecLib.sol';\n\ncontract IexecOracleAPI{\n\n\n    address iexecOracleAddress;\n    event IexecSubmitCallback(bytes32 submitTxHash, address indexed user, string stdout, string uri);\n\n    //constructor\n    function IexecOracleAPI(address _iexecOracleAddress, uint256 dappPrice, string dappName) public {\n        iexecOracleAddress=_iexecOracleAddress;\n        IexecOracle iexecOracle = IexecOracle(iexecOracleAddress);\n        require(iexecOracle.registerDappAndProvider(dappPrice,dappName));\n    }\n\n    function iexecSubmit(string param) payable public {\n        IexecOracle iexecOracle = IexecOracle(iexecOracleAddress);\n        require(iexecOracle.submit.value(msg.value)(param));\n    }\n\n    function iexecSubmitCallback(bytes32 submitTxHash, address user, string stdout, string uri) public returns  (bool){\n        require(msg.sender == iexecOracleAddress);\n        IexecSubmitCallback(submitTxHash,user,stdout,uri);\n        return true;\n    }\n}\n",
+  "sourcePath": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+      "exportedSymbols": {
+        "IexecOracleAPI": [
+          794
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 698,
+        "name": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 697,
+          "absolutePath": "iexec-oracle-contract/contracts/IexecOracle.sol",
+          "file": "./IexecOracle.sol",
+          "scope": 795,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 699,
+        "name": "ImportDirective",
+        "src": "34:27:3"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 33,
+          "absolutePath": "iexec-oracle-contract/contracts/IexecLib.sol",
+          "file": "./IexecLib.sol",
+          "scope": 795,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 700,
+        "name": "ImportDirective",
+        "src": "62:24:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            794
+          ],
+          "name": "IexecOracleAPI",
+          "scope": 795
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "iexecOracleAddress",
+              "scope": 794,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "type": "address"
+                },
+                "id": 701,
+                "name": "ElementaryTypeName",
+                "src": "119:7:3"
+              }
+            ],
+            "id": 702,
+            "name": "VariableDeclaration",
+            "src": "119:26:3"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "IexecSubmitCallback"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "name": "submitTxHash",
+                      "scope": 712,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 703,
+                        "name": "ElementaryTypeName",
+                        "src": "177:7:3"
+                      }
+                    ],
+                    "id": 704,
+                    "name": "VariableDeclaration",
+                    "src": "177:20:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "name": "user",
+                      "scope": 712,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 705,
+                        "name": "ElementaryTypeName",
+                        "src": "199:7:3"
+                      }
+                    ],
+                    "id": 706,
+                    "name": "VariableDeclaration",
+                    "src": "199:20:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "name": "stdout",
+                      "scope": 712,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 707,
+                        "name": "ElementaryTypeName",
+                        "src": "221:6:3"
+                      }
+                    ],
+                    "id": 708,
+                    "name": "VariableDeclaration",
+                    "src": "221:13:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "name": "uri",
+                      "scope": 712,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 709,
+                        "name": "ElementaryTypeName",
+                        "src": "236:6:3"
+                      }
+                    ],
+                    "id": 710,
+                    "name": "VariableDeclaration",
+                    "src": "236:10:3"
+                  }
+                ],
+                "id": 711,
+                "name": "ParameterList",
+                "src": "176:71:3"
+              }
+            ],
+            "id": 712,
+            "name": "EventDefinition",
+            "src": "151:97:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "IexecOracleAPI",
+              "payable": false,
+              "scope": 794,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_iexecOracleAddress",
+                      "scope": 740,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 713,
+                        "name": "ElementaryTypeName",
+                        "src": "296:7:3"
+                      }
+                    ],
+                    "id": 714,
+                    "name": "VariableDeclaration",
+                    "src": "296:27:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "dappPrice",
+                      "scope": 740,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 715,
+                        "name": "ElementaryTypeName",
+                        "src": "325:7:3"
+                      }
+                    ],
+                    "id": 716,
+                    "name": "VariableDeclaration",
+                    "src": "325:17:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "dappName",
+                      "scope": 740,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 717,
+                        "name": "ElementaryTypeName",
+                        "src": "344:6:3"
+                      }
+                    ],
+                    "id": 718,
+                    "name": "VariableDeclaration",
+                    "src": "344:15:3"
+                  }
+                ],
+                "id": 719,
+                "name": "ParameterList",
+                "src": "295:65:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 720,
+                "name": "ParameterList",
+                "src": "368:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 702,
+                              "type": "address",
+                              "value": "iexecOracleAddress"
+                            },
+                            "id": 721,
+                            "name": "Identifier",
+                            "src": "378:18:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 714,
+                              "type": "address",
+                              "value": "_iexecOracleAddress"
+                            },
+                            "id": 722,
+                            "name": "Identifier",
+                            "src": "397:19:3"
+                          }
+                        ],
+                        "id": 723,
+                        "name": "Assignment",
+                        "src": "378:38:3"
+                      }
+                    ],
+                    "id": 724,
+                    "name": "ExpressionStatement",
+                    "src": "378:38:3"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        726
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "iexecOracle",
+                          "scope": 740,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "contract IexecOracle",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "IexecOracle",
+                              "referencedDeclaration": 696,
+                              "type": "contract IexecOracle"
+                            },
+                            "id": 725,
+                            "name": "UserDefinedTypeName",
+                            "src": "426:11:3"
+                          }
+                        ],
+                        "id": 726,
+                        "name": "VariableDeclaration",
+                        "src": "426:23:3"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "contract IexecOracle",
+                          "type_conversion": true
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 696,
+                              "type": "type(contract IexecOracle)",
+                              "value": "IexecOracle"
+                            },
+                            "id": 727,
+                            "name": "Identifier",
+                            "src": "452:11:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 702,
+                              "type": "address",
+                              "value": "iexecOracleAddress"
+                            },
+                            "id": 728,
+                            "name": "Identifier",
+                            "src": "464:18:3"
+                          }
+                        ],
+                        "id": 729,
+                        "name": "FunctionCall",
+                        "src": "452:31:3"
+                      }
+                    ],
+                    "id": 730,
+                    "name": "VariableDeclarationStatement",
+                    "src": "426:57:3"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1599,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 731,
+                            "name": "Identifier",
+                            "src": "493:7:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "bool",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "registerDappAndProvider",
+                                  "referencedDeclaration": 260,
+                                  "type": "function (uint256,string memory) external returns (bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 726,
+                                      "type": "contract IexecOracle",
+                                      "value": "iexecOracle"
+                                    },
+                                    "id": 732,
+                                    "name": "Identifier",
+                                    "src": "501:11:3"
+                                  }
+                                ],
+                                "id": 733,
+                                "name": "MemberAccess",
+                                "src": "501:35:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 716,
+                                  "type": "uint256",
+                                  "value": "dappPrice"
+                                },
+                                "id": 734,
+                                "name": "Identifier",
+                                "src": "537:9:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 718,
+                                  "type": "string memory",
+                                  "value": "dappName"
+                                },
+                                "id": 735,
+                                "name": "Identifier",
+                                "src": "547:8:3"
+                              }
+                            ],
+                            "id": 736,
+                            "name": "FunctionCall",
+                            "src": "501:55:3"
+                          }
+                        ],
+                        "id": 737,
+                        "name": "FunctionCall",
+                        "src": "493:64:3"
+                      }
+                    ],
+                    "id": 738,
+                    "name": "ExpressionStatement",
+                    "src": "493:64:3"
+                  }
+                ],
+                "id": 739,
+                "name": "Block",
+                "src": "368:196:3"
+              }
+            ],
+            "id": 740,
+            "name": "FunctionDefinition",
+            "src": "272:292:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "iexecSubmit",
+              "payable": true,
+              "scope": 794,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "param",
+                      "scope": 763,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 741,
+                        "name": "ElementaryTypeName",
+                        "src": "591:6:3"
+                      }
+                    ],
+                    "id": 742,
+                    "name": "VariableDeclaration",
+                    "src": "591:12:3"
+                  }
+                ],
+                "id": 743,
+                "name": "ParameterList",
+                "src": "590:14:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 744,
+                "name": "ParameterList",
+                "src": "620:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        746
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "iexecOracle",
+                          "scope": 763,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "contract IexecOracle",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "IexecOracle",
+                              "referencedDeclaration": 696,
+                              "type": "contract IexecOracle"
+                            },
+                            "id": 745,
+                            "name": "UserDefinedTypeName",
+                            "src": "630:11:3"
+                          }
+                        ],
+                        "id": 746,
+                        "name": "VariableDeclaration",
+                        "src": "630:23:3"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "contract IexecOracle",
+                          "type_conversion": true
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 696,
+                              "type": "type(contract IexecOracle)",
+                              "value": "IexecOracle"
+                            },
+                            "id": 747,
+                            "name": "Identifier",
+                            "src": "656:11:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 702,
+                              "type": "address",
+                              "value": "iexecOracleAddress"
+                            },
+                            "id": 748,
+                            "name": "Identifier",
+                            "src": "668:18:3"
+                          }
+                        ],
+                        "id": 749,
+                        "name": "FunctionCall",
+                        "src": "656:31:3"
+                      }
+                    ],
+                    "id": 750,
+                    "name": "VariableDeclarationStatement",
+                    "src": "630:57:3"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1599,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 751,
+                            "name": "Identifier",
+                            "src": "697:7:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "bool",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "function (string memory) payable external returns (bool)",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "value",
+                                      "referencedDeclaration": null,
+                                      "type": "function (uint256) returns (function (string memory) payable external returns (bool))"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "submit",
+                                          "referencedDeclaration": 484,
+                                          "type": "function (string memory) payable external returns (bool)"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 746,
+                                              "type": "contract IexecOracle",
+                                              "value": "iexecOracle"
+                                            },
+                                            "id": 752,
+                                            "name": "Identifier",
+                                            "src": "705:11:3"
+                                          }
+                                        ],
+                                        "id": 753,
+                                        "name": "MemberAccess",
+                                        "src": "705:18:3"
+                                      }
+                                    ],
+                                    "id": 754,
+                                    "name": "MemberAccess",
+                                    "src": "705:24:3"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "value",
+                                      "referencedDeclaration": null,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 1596,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 755,
+                                        "name": "Identifier",
+                                        "src": "730:3:3"
+                                      }
+                                    ],
+                                    "id": 756,
+                                    "name": "MemberAccess",
+                                    "src": "730:9:3"
+                                  }
+                                ],
+                                "id": 757,
+                                "name": "FunctionCall",
+                                "src": "705:35:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 742,
+                                  "type": "string memory",
+                                  "value": "param"
+                                },
+                                "id": 758,
+                                "name": "Identifier",
+                                "src": "741:5:3"
+                              }
+                            ],
+                            "id": 759,
+                            "name": "FunctionCall",
+                            "src": "705:42:3"
+                          }
+                        ],
+                        "id": 760,
+                        "name": "FunctionCall",
+                        "src": "697:51:3"
+                      }
+                    ],
+                    "id": 761,
+                    "name": "ExpressionStatement",
+                    "src": "697:51:3"
+                  }
+                ],
+                "id": 762,
+                "name": "Block",
+                "src": "620:135:3"
+              }
+            ],
+            "id": 763,
+            "name": "FunctionDefinition",
+            "src": "570:185:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "iexecSubmitCallback",
+              "payable": false,
+              "scope": 794,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "submitTxHash",
+                      "scope": 793,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 764,
+                        "name": "ElementaryTypeName",
+                        "src": "790:7:3"
+                      }
+                    ],
+                    "id": 765,
+                    "name": "VariableDeclaration",
+                    "src": "790:20:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "user",
+                      "scope": 793,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 766,
+                        "name": "ElementaryTypeName",
+                        "src": "812:7:3"
+                      }
+                    ],
+                    "id": 767,
+                    "name": "VariableDeclaration",
+                    "src": "812:12:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "stdout",
+                      "scope": 793,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 768,
+                        "name": "ElementaryTypeName",
+                        "src": "826:6:3"
+                      }
+                    ],
+                    "id": 769,
+                    "name": "VariableDeclaration",
+                    "src": "826:13:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "uri",
+                      "scope": 793,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 770,
+                        "name": "ElementaryTypeName",
+                        "src": "841:6:3"
+                      }
+                    ],
+                    "id": 771,
+                    "name": "VariableDeclaration",
+                    "src": "841:10:3"
+                  }
+                ],
+                "id": 772,
+                "name": "ParameterList",
+                "src": "789:63:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 793,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 773,
+                        "name": "ElementaryTypeName",
+                        "src": "870:4:3"
+                      }
+                    ],
+                    "id": 774,
+                    "name": "VariableDeclaration",
+                    "src": "870:4:3"
+                  }
+                ],
+                "id": 775,
+                "name": "ParameterList",
+                "src": "869:6:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1599,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 776,
+                            "name": "Identifier",
+                            "src": "885:7:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1596,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 777,
+                                    "name": "Identifier",
+                                    "src": "893:3:3"
+                                  }
+                                ],
+                                "id": 778,
+                                "name": "MemberAccess",
+                                "src": "893:10:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 702,
+                                  "type": "address",
+                                  "value": "iexecOracleAddress"
+                                },
+                                "id": 779,
+                                "name": "Identifier",
+                                "src": "907:18:3"
+                              }
+                            ],
+                            "id": 780,
+                            "name": "BinaryOperation",
+                            "src": "893:32:3"
+                          }
+                        ],
+                        "id": 781,
+                        "name": "FunctionCall",
+                        "src": "885:41:3"
+                      }
+                    ],
+                    "id": 782,
+                    "name": "ExpressionStatement",
+                    "src": "885:41:3"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 712,
+                              "type": "function (bytes32,address,string memory,string memory)",
+                              "value": "IexecSubmitCallback"
+                            },
+                            "id": 783,
+                            "name": "Identifier",
+                            "src": "936:19:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 765,
+                              "type": "bytes32",
+                              "value": "submitTxHash"
+                            },
+                            "id": 784,
+                            "name": "Identifier",
+                            "src": "956:12:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 767,
+                              "type": "address",
+                              "value": "user"
+                            },
+                            "id": 785,
+                            "name": "Identifier",
+                            "src": "969:4:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 769,
+                              "type": "string memory",
+                              "value": "stdout"
+                            },
+                            "id": 786,
+                            "name": "Identifier",
+                            "src": "974:6:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 771,
+                              "type": "string memory",
+                              "value": "uri"
+                            },
+                            "id": 787,
+                            "name": "Identifier",
+                            "src": "981:3:3"
+                          }
+                        ],
+                        "id": 788,
+                        "name": "FunctionCall",
+                        "src": "936:49:3"
+                      }
+                    ],
+                    "id": 789,
+                    "name": "ExpressionStatement",
+                    "src": "936:49:3"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 775
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "74727565",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "true"
+                        },
+                        "id": 790,
+                        "name": "Literal",
+                        "src": "1002:4:3"
+                      }
+                    ],
+                    "id": 791,
+                    "name": "Return",
+                    "src": "995:11:3"
+                  }
+                ],
+                "id": 792,
+                "name": "Block",
+                "src": "875:138:3"
+              }
+            ],
+            "id": 793,
+            "name": "FunctionDefinition",
+            "src": "761:252:3"
+          }
+        ],
+        "id": 794,
+        "name": "ContractDefinition",
+        "src": "88:927:3"
+      }
+    ],
+    "id": 795,
+    "name": "SourceUnit",
+    "src": "0:1016:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-31T22:23:17.802Z"
+}
