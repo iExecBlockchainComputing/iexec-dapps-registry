@@ -6,7 +6,12 @@ This workflow exposes how to compute an estimation of Pi usign a Monte-Carlo est
 
 ## Deployment
 
-`iexec deploy`
-`iexec submit`
-`iexec result txID --save` # will return an approximate value of Pi in stdout.txt`
+```shell
+iexec wallet create
+iexec wallet getETH
+iexec wallet getRLC
+iexec deploy # if you've modified the app
+iexec submit
+iexec result <txID> --save # will return an approximate value of Pi in stdout.txt
+```
 
