@@ -115,7 +115,7 @@ The goal is hit a breakeven total donation fee of $10K (Two full-time employees 
 For example, let’s say May, our first full, unassisted month in operations, goes way better than expected with $200K in total monthly donations. Since we were reasonably uncertain about covering our breakeven, we set a relatively high donation fee of 10%. With a monthly breakeven goal of 10K, this required a total monthly donations of only $100K. Does it make sense to only charge a donation fee to those who donate early? No. So what happens to the rest of the donation fees stemming from the additional $200K? Since the EthScholar team no longer needs those funds to operate, the extra $10K ($200K in donations * 10% donation fee - $10K) in donation fees are split in half & allocated to the current EthScholar contract bonus pool as well as their respective Scholarship contracts. $5K goes to the EthScholar contract & is awarded to the one of the five Scholarships that “wins” the current round; the second $5K is distributed evenly among all five Scholarships. 
 
 
-
+![alt tag](https://i.imgur.com/aPwGPgK.png)
 
 
 ## Dapp params
