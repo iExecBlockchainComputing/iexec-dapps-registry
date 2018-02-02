@@ -2,10 +2,30 @@ library(tm)
 library(pdftools)
 library(wordcloud)
 library(RColorBrewer)
+library(RCurl)
+library(dqmagic)
+args = commandArgs(trailingOnly=TRUE)
 
+# test if there is at least one argument: if not, return an error
+if (length(args) != 1) {
+  stop("At least one argument : pdf file url must be supplied.n", call.=FALSE)
+}
+
+if (! url.exists(args[1])){
+    stop(c("wrong url:", args[1]), call.=FALSE)
+}
+
+
+download.file(url=args[1], destfile='wordcloudInput.pdf', method='curl')
+
+file_type("./wordcloudInput.pdf", mime_type = TRUE)
+
+if (file_type("./wordcloudInput.pdf", mime_type = TRUE) != "application/pdf"){
+   stop("mime_type file must be application/pdf", call.=FALSE)
+}
 
 #pdf location
-file_location ="./iExec-WPv2.0-English.pdf"
+file_location ="./wordcloudInput.pdf"
 
 #load pdf file
 txt = pdf_text(file_location)
@@ -40,6 +60,6 @@ number_occurances = rowSums(dtm)
 number_occurances = sort(number_occurances,decreasing = TRUE)
 
 #plot
-png("iExecWordcloud.png", width=1280,height=800)
+png("wordcloudResult.png", width=1280,height=800)
 wordcloud(names(number_occurances),number_occurances,scale=c(8,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=brewer.pal(8, "Dark2"))
 dev.off()
