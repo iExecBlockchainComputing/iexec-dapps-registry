@@ -1,5 +1,10 @@
-# Blender
+# Docker With Script
 ## Description
-Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.
+
+Just illustrate how to use a custom script in your docker image on iExec.
+
+To run this custom [Script](./apps/customScript.sh), we start on the ubuntu:trusty docker image and the script in it.
+
+You can see the corresponding Dockerfile. This docker image has been pushed into this docker repository iexechub/docker-with-script.
 
 ## [Dapp params](./iexec.js)

@@ -1,11 +1,11 @@
 module.exports = {
-  name: 'Blender',
+  name: 'DockerWithScript',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=ikester/blender',
+    envvars: 'XWDOCKERIMAGE=iexechub/docker-with-script',
   },
   work: {
-    cmdline: 'iexec-rlc.blend -o iexec-rlc -f 1',
-    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend',
+    cmdline: '/bin/bash customeScript.sh ShowMethisText',
+    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/docker-with-script/apps/text.txt',
   }
 };
