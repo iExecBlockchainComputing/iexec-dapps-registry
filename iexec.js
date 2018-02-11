@@ -5,7 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=iexechub/docker-with-script',
   },
   work: {
-    cmdline: '/bin/bash customeScript.sh ShowMethisText',
+    cmdline: 'customScript.sh ShowMethisText',
     dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/docker-with-script/apps/text.txt',
   }
 };
