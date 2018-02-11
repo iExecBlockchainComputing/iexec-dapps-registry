@@ -9,5 +9,10 @@ echo "just echo your param you give me in cmdline of iexec.js"
 echo $1
 echo "---------------------------------\n"
 echo "i cat a file present in the docker image"
-cat MyFileInTheImage.txt
+cat /host/MyFileInTheImage.txt
 echo "---------------------------------\n"
+echo "ls:"
+ls
+echo "---------------------------------\n"
+echo "find:"
+find -name MyFileInTheImage.txt .
