@@ -14,7 +14,7 @@ RUN chmod 755 /host/MyFileInTheImageInHost.txt
 COPY MyFileInTheImageInRoot.txt MyFileInTheImageInRoot.txt
 RUN chmod 755 MyFileInTheImageInRoot.txt
 
-COPY MyFileInTheImageInIexec.txt /iExec/MyFileInTheImageIniExec.txt
+COPY MyFileInTheImageIniExec.txt /iExec/MyFileInTheImageIniExec.txt
 RUN chmod 755 /iExec/MyFileInTheImageIniExec.txt
 
 
