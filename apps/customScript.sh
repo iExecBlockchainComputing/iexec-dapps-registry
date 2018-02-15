@@ -15,6 +15,16 @@ echo "---------------------------------\n"
 echo "i cat a file present in the docker image in /tmp"
 cat /tmp/MyFileInTheImageInTmp.txt
 echo "---------------------------------\n"
+echo "i cat a file MyFileInTheImageInRoot.txt"
+cat MyFileInTheImageInRoot.txt
+echo "---------------------------------\n"
+echo "i cat a file /iExec/MyFileInTheImageInRoot.txt"
+cat /iExec/MyFileInTheImageInRoot.txt
+echo "---------------------------------\n"
+echo "---------------------------------\n"
+echo "i cat a file /iExec/MyFileInTheImageIniExec.txt"
+cat /iExec/MyFileInTheImageIniExec.txt
+echo "---------------------------------\n"
 echo "ls:"
 ls
 echo "---------------------------------\n"
