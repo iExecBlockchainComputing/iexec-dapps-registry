@@ -1,11 +1,10 @@
 module.exports = {
   name: 'MyContract',
-  data: {
-    type: 'BINARY',
-    cpu: 'AMD64',
-    os: 'LINUX',
+  app: {
+    type: 'DOCKER',
+    envvars: 'XWDOCKERIMAGE=docker-image-name',
   },
   work: {
-    cmdline: '10',
+    cmdline: 'cli arguments',
   }
 };
