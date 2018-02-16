@@ -6,4 +6,4 @@ echo "--------------just echo your param you give me in cmdline of iexec.js-----
 echo $1
 echo "-------------cat /iExec/MyFileIniExecDir.txt --------------------\n"
 cat /iExec/MyFileIniExecDir.txt
-
+touch seeYouInMyZip.txt
