@@ -1,9 +1,8 @@
 module.exports = {
     name: 'Ffmpeg',
-    data: {
-        type: 'BINARY',
-        cpu: 'AMD64',
-        os: 'LINUX',
+    app: {
+      type: 'DOCKER',
+      envvars: 'XWDOCKERIMAGE=jrottenberg/ffmpeg:scratch',
     },
     work: {
         cmdline:'-i small.mp4 small.avi',
