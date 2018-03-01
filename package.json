@@ -1,7 +1,7 @@
 {
   "name": "sudokuCLI",
   "version": "1.0.0",
-  "description": "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card.",
+  "description": "A sudoku is a logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution. Our sudoku solving algorithm can solve any valid Sudoku puzzle that have a unique solution.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
-  "author": "",
+  "author": {
+    "name": "Hadrien Croubois"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/sudokuCLI#readme"
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/sudokuCLI#readme",
+  "logo": ""
 }
