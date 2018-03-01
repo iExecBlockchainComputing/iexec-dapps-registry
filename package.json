@@ -1,19 +1,16 @@
 {
-  "name": "iexec-dapp-init",
+  "name": "?",
   "version": "1.0.0",
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description": "?",
   "main": "iexec.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
+  "author": {
+    "name": "?"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme"
+  "license": "?",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
+  "logo": "logo.png"
 }

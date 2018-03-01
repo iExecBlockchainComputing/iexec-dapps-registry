@@ -19,10 +19,8 @@ Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-sa
  * Go submit a request to be listed on the [iExec dapp store](https://dapps.iex.ec/)
 
 ---
+![dapp logo](./logo.png)
 # My Dapp name
 ## Description
 My Dapp description here...
-## Dapp params
-An example of a iexec.js conf
-## [Examples](./examples)
-A link to all iexec.js conf examples for the dapp.
+## [Dapp params](./iexec.js)
