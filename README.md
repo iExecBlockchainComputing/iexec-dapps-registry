@@ -1,4 +1,4 @@
-# iExec dapp samples
+# iExec dapps registry
 ## 1 branch = 1 dapp
 To create your own iExec dapp, use the [iExec sdk cli](https://github.com/iExecBlockchainComputing/iexec-sdk) to [init](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/init) a new project:
 ```bash
