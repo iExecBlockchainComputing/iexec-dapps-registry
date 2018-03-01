@@ -1,7 +1,7 @@
 {
-  "name": "iexec-dapp-samples",
+  "name": "factorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. n! is the product of all positive integers less than or equal to n.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "François Branciard"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/factorial#readme"
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/factorial#readme",
+  "logo": "logo.png"
 }
