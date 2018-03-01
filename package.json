@@ -1,7 +1,7 @@
 {
-  "name": "iexec-dapp-init",
+  "name": "sudokuCLI",
   "version": "1.0.0",
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description": "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
