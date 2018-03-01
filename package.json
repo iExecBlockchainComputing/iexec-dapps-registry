@@ -1,7 +1,7 @@
 {
-  "name": "iexec-dapp-blender",
+  "name": "blender",
   "version": "1.0.0",
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description": "Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Ugo Plouviez"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme"
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "logo": "logo.png"
 }
