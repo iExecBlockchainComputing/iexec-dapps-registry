@@ -1,7 +1,7 @@
 {
   "name": "stockfish",
   "version": "1.0.0",
-  "description": "iexec stockfish poc",
+  "description": "Stockfish is a free and open-source UCI chess engine. Stockfish is one of the strongest chess engines in the world. It is also much stronger than the best human chess grandmasters.",
   "main": "truffle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "iExec"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/stockfish#readme"
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/stockfish#readme",
+  "logo": "logo.png"
 }
