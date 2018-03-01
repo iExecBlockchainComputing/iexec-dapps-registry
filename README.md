@@ -1,4 +1,4 @@
-![dapp logo](./logo.png)
+![dapp logo](./logo.jpg)
 # R wordcloud
 ## Description
 A Wordcloud is a graphic representation of words, typically those used in a document or website, in which the words are arranged artistically in close proximity and the size of each word's type is proportional to the word's frequency or to the size of a numeric variable associated with the word, such as the population associated with the name of a country.
