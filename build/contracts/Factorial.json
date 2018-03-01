@@ -433,6 +433,12 @@
     "networks": {
         "3": {
             "address": "0xd2b9d3ecc76b6d43277fd986afdb8b79685d4d1a"
+        },
+        "4": {
+            "address": "0x392ea5ebbe94ce8fac71720bf8b7a37301341fe2"
+        },
+        "42": {
+            "address": "0x0cca8579d3527a16e5abfc633c60b02ebc62a28c"
         }
     },
     "schemaVersion": "1.0.1",
