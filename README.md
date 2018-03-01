@@ -36,6 +36,6 @@ After running ```iexec deploy```, commit these files/folders:
  * ```./build/contracts/name.json```
  * ```./apps/```
 
-Finally, start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add you dapp to this repo.
+Finally, start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add your dapp to this repo.
 
 This is the **FIRST** step toward being listed on the [iExec dapp store](https://dapps.iex.ec/).
