@@ -1,19 +1,41 @@
 # iExec dapp samples
 ## 1 branch = 1 dapp
-
-Each branch of this repo is a sample iExec dapp, and can be easily played with by using the [iexec sdk cli](https://github.com/iExecBlockchainComputing/iexec-sdk) like this:
-```iexec init branchName```
-
-
+To create your own iExec dapp, use the [iExec sdk cli](https://github.com/iExecBlockchainComputing/iexec-sdk) to [init](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/init) a new project:
 ```bash
-iexec init # current branch containing minimum working config
-iexec init factorial # download and init factorial dapp
-iexec init echo # download and init echo dapp
+iexec init
 ```
 
-Start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add you dapp to this repo.
+Then, edit with care both ```iexec.js``` and ```package.json```:
 
-## [iExec Dapp Challenge](https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee)
+```js
+// iexec.js
+{
+  name: '', // project name
+  app: {}, // app description
+  work: {} // work description
+}
+```
+```json
+// package.json
+{
+  "name": "?",
+  "version": "?",
+  "description": "?",
+  "author": {
+    "name": "?"
+  },
+  "license": "?",
+  "homepage": "?",
+  "logo": "?"
+}
+```
+After running ```iexec deploy```, commit these files/folders:
+ * ```iexec.js```
+ * ```package.json```
+ * ```./contracts/```
+ * ```./build/contracts/name.json```
+ * ```./apps/```
 
- * Go checkout the [iExec Dapp Challenge](https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee)
- * Go submit a request to be listed on the [iExec dapp store](https://dapps.iex.ec/)
+Finally, start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add you dapp to this repo.
+
+This is the **FIRST** step toward being listed on the [iExec dapp store](https://dapps.iex.ec/).
