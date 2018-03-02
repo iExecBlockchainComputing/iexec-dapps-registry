@@ -13,10 +13,14 @@
   "author": {
     "name": "Ugo Plouviez"
   },
+  "social": {
+    "website": "https://www.blender.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/blender#readme"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "homepage": "https://katacoda.com/sulliwane/scenarios/run-dapp",
   "logo": "logo.png"
 }
