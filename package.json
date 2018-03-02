@@ -13,10 +13,14 @@
   "author": {
     "name": "François Branciard"
   },
+  "social": {
+    "website": "https://en.wikipedia.org/wiki/Factorial",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/factorial#readme"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/factorial#readme",
+  "homepage": "https://katacoda.com/sulliwane/scenarios/run-dapp",
   "logo": "logo.png"
 }
