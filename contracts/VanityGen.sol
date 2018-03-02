@@ -3,8 +3,9 @@ import "iexec-oracle-contract/contracts/IexecOracleAPI.sol";
 contract VanityGen is IexecOracleAPI{
 
     uint public constant DAPP_PRICE = 0;
+    string public constant DAPP_NAME = "vanitygen";
 
-    function VanityGen (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE){
+    function VanityGen (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
 
     }
 
