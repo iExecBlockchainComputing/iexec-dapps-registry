@@ -5,6 +5,7 @@ contract Stockfish is IexecOracleAPI{
     using strings for *;
     
     uint public constant DAPP_PRICE = 0;
+    string public constant DAPP_NAME = "stockfish";
 
     event Logs(string status, address indexed user); // logs for the front-end or smart contract to react correctly
 
@@ -14,7 +15,7 @@ contract Stockfish is IexecOracleAPI{
 
     mapping (address => Chess) chessRegister;
 
-    function Stockfish (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE){
+    function Stockfish (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
 
     }
 
