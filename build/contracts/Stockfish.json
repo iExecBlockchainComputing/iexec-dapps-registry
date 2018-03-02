@@ -6001,15 +6001,15 @@
     },
     "networks": {
         "3": {
-            "address": "0x1fb983390681b4c11936d627add1d22615966d79"
+            "address": "0xd496a84f2061aeb7a82832e17e7d840263eeb6f8"
         },
         "4": {
-            "address": "0xf77531e68b0f1e704f3233cbb13b1af27714944e"
+            "address": "0x7e7b82f276f4501d1c5bc919b2f9d7352ee5375e"
         },
         "42": {
-            "address": "0x41cae72e06fdf385298b587cd602f42fe3974125"
+            "address": "0xe4c591a10b3f2d23329b4931571229477d67e545"
         }
     },
     "schemaVersion": "1.0.1",
-    "updatedAt": "2018-03-02T11:23:32.362Z"
+    "updatedAt": "2018-03-02T15:19:34.207Z"
 }
