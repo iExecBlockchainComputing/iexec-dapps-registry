@@ -13,6 +13,10 @@
   "author": {
     "name": "Hadrien Croubois"
   },
+  "social": {
+    "website": "https://en.wikipedia.org/wiki/Sudoku",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/sudokuCLI#readme"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
