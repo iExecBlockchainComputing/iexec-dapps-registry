@@ -13,6 +13,10 @@
   "author": {
     "name": "Jeremy Toussaint"
   },
+  "social": {
+    "website": "http://ffmpeg.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/ffmpeg#readme"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
