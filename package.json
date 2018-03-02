@@ -13,10 +13,14 @@
   "author": {
     "name": "François Branciard"
   },
+  "social": {
+    "website": "https://datascienceplus.com/building-wordclouds-in-r/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/r-wordcloud#readme"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "homepage": "https://katacoda.com/sulliwane/scenarios/run-dapp",
   "logo": "logo.jpg"
 }
