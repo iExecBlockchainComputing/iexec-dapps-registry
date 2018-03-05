@@ -21,6 +21,6 @@ transferTransactions_tbl <- as_data_frame(transferTransactionsJson_flat)
 # create plot points
 #--------------------------------------------------------
 p <- ggplot(data=transferTransactions_tbl, aes(x=blockNumber,y=value))
-p <-p + geom_point(alpha = 1/100)
+p <-p + geom_point(alpha = 1/20)
 p <- p + ggtitle("ERC20 Transfer value") + xlab("blockNumber") + ylab("Transfer value")
 ggsave(plot=p, file="/host/transferTransactionsAnalyse.png")
