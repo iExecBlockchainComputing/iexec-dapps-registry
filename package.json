@@ -1,16 +1,16 @@
 {
-  "name": "?",
+  "name": "gimp",
   "version": "1.0.0",
-  "description": "?",
+  "description": "GIMP (GNU Image Manipulation Program) is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.",
   "main": "iexec.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
   "author": {
-    "name": "?"
+    "name": "Victor"
   },
-  "license": "?",
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
+  "license": "MIT",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gimp#readme",
   "logo": "logo.png"
 }

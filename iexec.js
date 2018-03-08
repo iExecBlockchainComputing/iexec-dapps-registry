@@ -1,10 +1,11 @@
 module.exports = {
-  name: 'MyContract',
+  name: 'Gimp',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=docker-image-name',
+    envvars: 'XWDOCKERIMAGE=jamesnetherton/gimp',
   },
   work: {
-    cmdline: 'cli arguments',
+    cmdline: `-i -b "$(cat make-logo.scm)(make-logo '(0 0 0))" -b '(gimp-quit 0)'`,
+    dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/apps/make-logo.scm',
   }
 };
