@@ -1,39 +1,49 @@
-(define (make-logo color)
-  ; Create an img and a layer
+(define (make-logo color font-size text)
+  ; (make-logo '(0 0 0) 100 \"iExec\")
   (gimp-palette-set-background color)
   (let* (
-      (width 500)
-      (height 500)
+      (width 10)
+      (height 10)
+      (triangle-size (* font-size 1.5))
       (image (car (gimp-image-new width height RGB)))
-      (iexec-layer (car (gimp-layer-new image width height RGBA-IMAGE "iExec layer" 100 NORMAL)))
-      (triangle-layer (car (gimp-layer-new image width height RGB "triangle layer" 100 NORMAL)))
     )
-    ; The following is done for all scripts
     (gimp-image-undo-disable image)
-    (gimp-image-add-layer image iexec-layer 0)
-    (gimp-image-add-layer image triangle-layer 1)
-
-    (gimp-drawable-fill triangle-layer BACKGROUND-FILL)
-
     (gimp-context-set-foreground '(255 255 255))
+
     (let* (
-        (iexec-text (car (gimp-text-fontname image iexec-layer 130 290 "iExec" 0 1 100 0 "Trebuchet MS Bold")))
+        (iexec-text-layer (car (gimp-text-fontname image -1 0 0 text 0 1 font-size PIXELS "Trebuchet MS Bold")))
+        (text-layer-width (car (gimp-drawable-width iexec-text-layer)))
+        (text-layer-height (car (gimp-drawable-height iexec-text-layer)))
+        (image-size (* text-layer-width 2))
       )
-    ; Anchor the selection
-    (gimp-floating-sel-anchor iexec-text)
+      (gimp-image-resize image image-size image-size 0 0)
+      (gimp-context-set-foreground '(254 229 0))
 
-    (gimp-context-set-foreground '(254 229 0))
       (let* (
-          (triangle-text (car (gimp-text-fontname image triangle-layer 190 50 "▶" 0 1 190 0 "Sans")))
+          (triangle-text-layer (car (gimp-text-fontname image -1 0 0 "▶" 0 1 triangle-size 0 "Sans")))
+          (triangle-layer-width (car (gimp-drawable-width triangle-text-layer)))
+          (triangle-layer-height (car (gimp-drawable-height triangle-text-layer)))
+          (background-layer (car (gimp-layer-new image image-size image-size RGB "iExec layer" 100 NORMAL)))
         )
-        ; Anchor the selection
-        (gimp-floating-sel-anchor triangle-text)
+        (gimp-image-add-layer image background-layer 2)
+        (gimp-drawable-fill background-layer BACKGROUND-FILL)
 
-        ; Call a plugin to blur the iExec logo
-        (plug-in-gauss-rle 1 image triangle-layer 50 1 1)
+        (gimp-layer-translate
+          iexec-text-layer
+          (- (/ image-size 2) (/ text-layer-width 2))
+          (+ (/ image-size 2) (* text-layer-height 0))
+        )
+        (gimp-layer-translate
+          triangle-text-layer
+          (- (/ image-size 2) (/ triangle-layer-width 2))
+          (- (/ image-size 2) (* triangle-layer-height 1))
+        )
+
+        ; Call a plugin to blur the pikachu triangle
+        (plug-in-gauss-rle 1 image triangle-text-layer 50 1 1)
 
         ; merge layers
-        (gimp-image-merge-down image iexec-layer 0)
+        (gimp-image-merge-visible-layers image EXPAND-AS-NECESSARY)
 
         ; show in gimp
         ; (gimp-display-new image)
@@ -41,9 +51,10 @@
 
         (let* (
            (layer (car (gimp-image-get-active-layer image)))
+           (filename (string-append text "-logo.png"))
           )
           ; Save image
-          (gimp-file-save RUN-NONINTERACTIVE image layer "iExec-logo.png" "iExec-logo.png")
+          (gimp-file-save RUN-NONINTERACTIVE image layer filename filename)
         )
       )
     )
