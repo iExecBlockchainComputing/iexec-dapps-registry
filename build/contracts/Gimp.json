@@ -431,6 +431,12 @@
         "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
     },
     "networks": {
+        "3": {
+            "address": "0x0e038863f0101901eb68a463ac2511bb84437df0"
+        },
+        "4": {
+            "address": "0x0755ca614d832b56744a6d6344a7663f702aa9dc"
+        },
         "42": {
             "address": "0x8b392b3b42d53671ed1bc5f0647d0291c77be00c"
         }
