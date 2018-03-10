@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Gimp',
+  name: 'ImageMagick',
   app: {
     type: 'DOCKER',
     envvars: 'XWDOCKERIMAGE=v4tech/imagemagick',
