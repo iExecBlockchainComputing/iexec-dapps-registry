@@ -1,7 +1,7 @@
 {
-  "name": "imagemagick",
+  "name": "audacity",
   "version": "1.0.0",
-  "description": "ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image and vector image files. It can read and write over 200 image file formats. ImageMagick was created in 1987 by John Cristy when working at DuPont, to convert 24-bit images (16 million color) to 8-bit images (256-color), so they could be displayed on most screens. It was freely released in 1990 when DuPont agreed to transfer copyright to ImageMagick Studio LLC, still currently the project maintainer organization.",
+  "description": "Audacity is a free open source digital audio editor and recording computer software application, available for Windows, macOS/OS X, Linux and other operating systems. Audacity was started in the fall of 1999 by Dominic Mazzoni and Roger Dannenberg at Carnegie Mellon University and was released on May 28, 2000 as version 0.8. In addition to recording audio from multiple sources, Audacity can be used for post-processing of all types of audio, including podcasts by adding effects such as normalization, trimming, and fading in and out.",
   "main": "iexec.js",
   "repository": {
     "type": "git",
