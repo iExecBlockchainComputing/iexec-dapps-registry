@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Gimp',
+  name: 'Lame',
   app: {
     type: 'DOCKER',
     envvars: 'XWDOCKERIMAGE=renyufu/lame',
