@@ -11,6 +11,9 @@
     "name": "Victor"
   },
   "license": "MIT",
+  "social": {
+    "website": "http://sox.sourceforge.net/"
+  },
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gimp#readme",
   "logo": "logo.png"
 }
