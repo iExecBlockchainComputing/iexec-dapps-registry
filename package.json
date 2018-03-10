@@ -1,7 +1,7 @@
 {
-  "name": "audacity",
+  "name": "lame",
   "version": "1.0.0",
-  "description": "Audacity is a free open source digital audio editor and recording computer software application, available for Windows, macOS/OS X, Linux and other operating systems. Audacity was started in the fall of 1999 by Dominic Mazzoni and Roger Dannenberg at Carnegie Mellon University and was released on May 28, 2000 as version 0.8. In addition to recording audio from multiple sources, Audacity can be used for post-processing of all types of audio, including podcasts by adding effects such as normalization, trimming, and fading in and out.",
+  "description": "LAME is a software encoder that converts audio to the MP3 file format. LAME is a free software project was first released in 1998, and has incorporated many improvements since then, including an improved psychoacoustic model. The LAME encoder outperforms early encoders like L3enc. LAME is required by some programs. In many programs released as free software (e.g., Audacity), LAME must be linked for MP3 support. This avoided including LAME itself, which used patented techniques, and so required patent licenses in many countries.",
   "main": "iexec.js",
   "repository": {
     "type": "git",
