@@ -2,10 +2,10 @@ module.exports = {
   name: 'Gimp',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=v4tech/imagemagick',
+    envvars: 'XWDOCKERIMAGE=bigpapoo/sox',
   },
   work: {
-    cmdline: `convert logo.png logo.jpg`,
+    cmdline: `mysox sound.mp3 -r 8000 -c2 sound.wav`,
     dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png',
   }
 };
