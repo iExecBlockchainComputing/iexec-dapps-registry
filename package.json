@@ -1,7 +1,7 @@
 {
-  "name": "gimp-logo-maker",
+  "name": "imagemagick",
   "version": "1.0.0",
-  "description": "Create your iExec like logo using Gimp in script mode. GIMP comes with a so-called batch mode that allows you to do image processing from the command line. It also makes it easy to apply the same set of operations to a number of images.",
+  "description": "ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image and vector image files. It can read and write over 200 image file formats. ImageMagick was created in 1987 by John Cristy when working at DuPont, to convert 24-bit images (16 million color) to 8-bit images (256-color), so they could be displayed on most screens. It was freely released in 1990 when DuPont agreed to transfer copyright to ImageMagick Studio LLC, still currently the project maintainer organization.",
   "main": "iexec.js",
   "repository": {
     "type": "git",
