@@ -1,0 +1,16 @@
+{
+  "name": "?",
+  "version": "1.0.0",
+  "description": "?",
+  "main": "iexec.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": {
+    "name": "?"
+  },
+  "license": "?",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
+  "logo": "logo.png"
+}
