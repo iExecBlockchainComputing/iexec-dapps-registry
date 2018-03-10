@@ -2,10 +2,10 @@ module.exports = {
   name: 'Gimp',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=v4tech/imagemagick',
+    envvars: 'XWDOCKERIMAGE=renyufu/lame',
   },
   work: {
-    cmdline: `convert logo.png logo.jpg`,
+    cmdline: `--help`,
     dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png',
   }
 };
