@@ -2,10 +2,10 @@ module.exports = {
   name: 'Gimp',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=jamesnetherton/gimp',
+    envvars: 'XWDOCKERIMAGE=v4tech/imagemagick',
   },
   work: {
-    cmdline: ` -i -b "$(cat make-logo.scm)(make-logo '(0 0 0) 200 \"iExec\") -b '(gimp-quit 0)'`,
-    dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/apps/make-logo.scm',
+    cmdline: `convert logo.png logo.jpg`,
+    dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png',
   }
 };
