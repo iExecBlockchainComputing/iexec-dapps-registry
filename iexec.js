@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Gimp',
+  name: 'Sox',
   app: {
     type: 'DOCKER',
     envvars: 'XWDOCKERIMAGE=bigpapoo/sox',
