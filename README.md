@@ -5,6 +5,28 @@ Badge-in, badge-out, get pay in eth and switch on et twitch off the office alarm
 
 ![TimeClock](./TimeClock.gif)
 
+
+
+
+
+Exemple of extending your dapp fonctionalities on chain : 
+
+Dapp smart contract must extend [IexecOracleAPI](https://github.com/iExecBlockchainComputing/iexec-oracle-contract/blob/master/contracts/IexecOracleAPI.sol) to trigger off-chain computation. As you can see, Factorial or Ffmpeg dapp example just implement this contract API with nothing else. Of course, more than just implement IexecOracleAPI, you can add business logic to your smart contract. You can also deal with the off-chain computation callback to react according to the new state or result received.
+
+We have made a dapp call [timeclock](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/timeclock) : badge-in, badge-out, get paid and activate office alarm.
+It shows that you can use and add blockchain smart contract features ( like payment, timestamping ). The Timeclock smart contract exposes 2 functions [badge-in](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/blob/timeclock/contracts/TimeClock.sol#L27), [badge-out](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/blob/timeclock/contracts/TimeClock.sol#L41). An employee that badge-in, will receive eth according to his work duration at badge-out.
+
+For the off-chain computation, we just simulate that the contract will activate or deactivate an off-chain Alarm on certain conditions. When the first employee arrives and badge-in, the smart contract deactivate the office alarm. When the last employee badge-out, the smart contract activate the office alarm.
+[The off-chain computation callback](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/blob/timeclock/contracts/TimeClock.sol#L66) change the boolean alarmActivted state of the smart contract. 
+You can improve this and think, for instance, to another blockchain interesting features: Authorisations. An admin can whitelist an employee addresses list in the smart contract. 
+
+To tests your smart contract features before deploying it on test nets, we have provided [truffle test examples](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/blob/timeclock/test/timeclock.js). You can deploy your smart contract and [test it](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/timeclock#tests) on testrpc or a custom local geth network.
+
+
+
+
+
+
 ## Dapp params
 ```
 module.exports = {
