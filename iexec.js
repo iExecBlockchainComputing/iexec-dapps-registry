@@ -6,6 +6,6 @@ module.exports = {
   },
   work: {
     cmdline: 'convert logo.png logo.jpg',
-    dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png',
+    dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/imagemagick/logo.png',
   }
 };
