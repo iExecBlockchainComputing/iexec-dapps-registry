@@ -1,4 +1,4 @@
 ![dapp logo](./logo.png)
-# OpenFOAM
+# Octave
 ## [Description](./package.json)
 ## [Dapp params](./iexec.js)
