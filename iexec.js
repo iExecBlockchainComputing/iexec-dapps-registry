@@ -5,6 +5,6 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=bigpapoo/sox',
   },
   work: {
-    cmdline: `mysox --help`,
+    cmdline: 'mysox --help',
   }
 };
