@@ -5,7 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=renyufu/lame',
   },
   work: {
-    cmdline: `--help`,
+    cmdline: '--help',
     dirinuri: 'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png',
   }
 };
