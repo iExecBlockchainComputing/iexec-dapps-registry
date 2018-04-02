@@ -6,6 +6,6 @@ module.exports = {
   },
   work: {
     cmdline: 'customScript.sh ShowMethisText',
-    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/docker-with-script/apps/text.txt',
+    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/docker-with-script/apps/dirinuri.zip',
   }
 };
