@@ -5,40 +5,39 @@ c3688624ef2b: Pulling fs layer
 848fe4263b3b: Pulling fs layer
 23b4459d3b04: Pulling fs layer
 36ab3b56c8f1: Pulling fs layer
-adc90e5beae8: Pulling fs layer
-63cf6450591d: Pulling fs layer
-621e19fd8128: Pulling fs layer
-a43406f10745: Pulling fs layer
-adc90e5beae8: Waiting
+e757f7608139: Pulling fs layer
+297385d9daa0: Pulling fs layer
+a5f94c5656fd: Pulling fs layer
+c6bc22058dfc: Pulling fs layer
 23b4459d3b04: Waiting
-63cf6450591d: Waiting
+297385d9daa0: Waiting
+a5f94c5656fd: Waiting
 36ab3b56c8f1: Waiting
-a43406f10745: Waiting
-621e19fd8128: Waiting
+e757f7608139: Waiting
+c6bc22058dfc: Waiting
+c3688624ef2b: Download complete
 848fe4263b3b: Verifying Checksum
 848fe4263b3b: Download complete
-c3688624ef2b: Download complete
 23b4459d3b04: Download complete
 36ab3b56c8f1: Verifying Checksum
 36ab3b56c8f1: Download complete
-63cf6450591d: Verifying Checksum
-63cf6450591d: Download complete
-621e19fd8128: Verifying Checksum
-621e19fd8128: Download complete
+297385d9daa0: Verifying Checksum
+297385d9daa0: Download complete
+a5f94c5656fd: Verifying Checksum
+a5f94c5656fd: Download complete
+c6bc22058dfc: Verifying Checksum
+c6bc22058dfc: Download complete
+e757f7608139: Download complete
 c954d15f947c: Verifying Checksum
 c954d15f947c: Download complete
-a43406f10745: Verifying Checksum
-a43406f10745: Download complete
-adc90e5beae8: Verifying Checksum
-adc90e5beae8: Download complete
 c954d15f947c: Pull complete
 c3688624ef2b: Pull complete
 848fe4263b3b: Pull complete
 23b4459d3b04: Pull complete
 36ab3b56c8f1: Pull complete
-adc90e5beae8: Pull complete
-63cf6450591d: Pull complete
-621e19fd8128: Pull complete
-a43406f10745: Pull complete
-Digest: sha256:3555610800c1af89beada20160b7aad9c6fc24986410d207ce7fde01d90e487a
+e757f7608139: Pull complete
+297385d9daa0: Pull complete
+a5f94c5656fd: Pull complete
+c6bc22058dfc: Pull complete
+Digest: sha256:541061a19bc96f0b1c45c7645da672042b57ba828ccf9b517e9e199ebaf8fc0e
 Status: Downloaded newer image for iexechub/docker-with-script:latest
