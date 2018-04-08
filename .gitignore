@@ -15,6 +15,7 @@ coverage
 .lock-wscript
 
 # Dependency directory
+package-lock.json
 node_modules
 
 # Compiled JS directory
@@ -33,6 +34,5 @@ node_modules
 # Build files
 build/
 
-# IEXEC contracts
-rlc-token/
-iexec-oracle-contract/
+# Wallet
+wallet.json

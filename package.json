@@ -4,7 +4,9 @@
   "description": "This is a submission to the iExec dapp-challenge.",
   "main": "iexec.js",
   "scripts": {
-    "test": "iexec test"
+    "build": "iexec compile",
+    "deploy": "iexec migrate --network localNode",
+    "test": "iexec test ./test/contract/*"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme"
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "dependencies": {
+    "iexec-oracle-contract": "^1.1.5"
+  }
 }
