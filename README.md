@@ -74,7 +74,6 @@ power. And because of that, we only need to focus on connecting miners with
 PoW-buyers through the DApp.
 
 ## Usage
- + Install dependencies : `npm install`
  + Initialize your IExec wallet :
 ```
 iexec wallet create # create a wallet
