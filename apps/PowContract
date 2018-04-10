@@ -14,7 +14,6 @@ def proof_of_work(header, difficulty):
             return nonce
     return None
 
-
 if __name__ == '__main__':
     if len(sys.argv) == 3:
         header = sys.argv[1]

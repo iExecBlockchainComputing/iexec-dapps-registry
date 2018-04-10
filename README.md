@@ -74,11 +74,20 @@ power. And because of that, we only need to focus on connecting miners with
 PoW-buyers through the DApp.
 
 ## Usage
- + Import Iexec contracts :
+ + Install dependencies : `npm install`
+ + Initialize your IExec wallet :
 ```
-git clone https://github.com/iExecBlockchainComputing/rlc-token.git
-git clone https://github.com/iExecBlockchainComputing/iexec-oracle-contract.git
+iexec wallet create # create a wallet
+iexec wallet getETH # get some ETH
+iexec wallet getRLC # get some RLC
+iexec wallet show
 ```
-
- + then, compile with : `iexec compile`
- + and run test with : `iexec test`
+ + Initialize your IExec account :
+```
+iexec account login
+iexec account allow 5
+iexec account show
+```
+ + Deploy with : `npm run deploy`
+ + Submit work : `iexec submit --chain ropsten`
+ + Check result : `iexec result <txHash> --chain ropsten`

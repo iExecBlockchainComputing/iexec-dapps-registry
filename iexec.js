@@ -6,6 +6,6 @@ module.exports = {
         os: 'LINUX',
     },
     work: {
-        cmdline:''
+        cmdline:'0x0 1' // for tests purposes
     }
 };

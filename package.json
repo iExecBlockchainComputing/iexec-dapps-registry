@@ -5,8 +5,8 @@
   "main": "iexec.js",
   "scripts": {
     "build": "iexec compile",
-    "deploy": "iexec migrate --network localNode",
-    "test": "iexec test ./test/contract/*"
+    "deploy": "iexec deploy --chain ropsten",
+    "test": "truffle test ./test/*"
   },
   "repository": {
     "type": "git",

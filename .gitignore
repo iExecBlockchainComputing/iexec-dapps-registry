@@ -34,5 +34,6 @@ node_modules
 # Build files
 build/
 
-# Wallet
+# IExec wallet & account
 wallet.json
+account.json
