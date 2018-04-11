@@ -1,11 +1,11 @@
 module.exports = {
-    name: 'PowContract',
+    name: 'ethminer',
     data: {
         type: 'BINARY',
         cpu: 'AMD64',
         os: 'LINUX',
     },
     work: {
-        cmdline:'0x0 1' // for tests purposes
+        cmdline:'-G -P eth.pool.minergate.com:45791 -u <your@email>'
     }
 };
