@@ -1,11 +1,26 @@
 #!/bin/bash
-echo "-------------This is my customScript in docker--------------------\n"
-echo "---------------i cat a file present in the dirinuri zip. see dirinuri line of iexec.js------------------\n"
-cat text.txt
-echo "---------------find image present in the dirinuri zip .see dirinuri line of iexec.js------------------\n"
-ls *.png
-echo "--------------just echo your param you give me in cmdline of iexec.js-------------------\n"
-echo $1
-echo "-------------cat /iExec/MyFileIniExecDir.txt --------------------\n"
-cat /iExec/MyFileIniExecDir.txt
-touch seeYouInMyZip.txt
+echo "----------------------Inside the docker----------------------------"
+
+unzip contracts.zip -d /oyente
+
+echo "-------------------------Unzipped----------------------------------"
+
+num=( $(find contracts -type f|wc -l) )
+
+echo ${num}
+
+arr=( $(find contracts -type f) )
+
+i=0
+
+while (($i <= $num-1)); do
+    echo $i
+    python oyente/oyente.py -s ${arr[i]} -ce
+    ((i++))
+done
+
+rm contracts.zip
+
+rm -rf contracts
+echo "-----------------------------Done---------------------------------"
+
