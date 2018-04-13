@@ -5,47 +5,49 @@ e9fb5affebb0: Pulling fs layer
 0f1378f511ad: Pulling fs layer
 96a961dc7843: Pulling fs layer
 16564141bc83: Pulling fs layer
-96a961dc7843: Waiting
-16564141bc83: Waiting
 5bcea5c4c520: Pulling fs layer
 2ba860a6ee33: Pulling fs layer
-5bcea5c4c520: Waiting
 fc1ec4218a7a: Pulling fs layer
-2ba860a6ee33: Waiting
 5b7f651050cb: Pulling fs layer
-fc1ec4218a7a: Waiting
 18230266f1ea: Pulling fs layer
-5b7f651050cb: Waiting
 551ddfd2ea33: Pulling fs layer
 a7c842730102: Pulling fs layer
 4f9267d969bb: Pulling fs layer
-18230266f1ea: Waiting
-a7c842730102: Waiting
-551ddfd2ea33: Waiting
+96a961dc7843: Waiting
 ef5e18300222: Pulling fs layer
-4f9267d969bb: Waiting
-ef5e18300222: Waiting
 bdb3f43c6f76: Pulling fs layer
+16564141bc83: Waiting
 1afbd0b1eb06: Pulling fs layer
-bdb3f43c6f76: Waiting
 95922e62ebf8: Pulling fs layer
+5bcea5c4c520: Waiting
 909b894eb433: Pulling fs layer
+2ba860a6ee33: Waiting
+fc1ec4218a7a: Waiting
+551ddfd2ea33: Waiting
+a7c842730102: Waiting
+5b7f651050cb: Waiting
+4f9267d969bb: Waiting
+18230266f1ea: Waiting
+bdb3f43c6f76: Waiting
 909b894eb433: Waiting
 95922e62ebf8: Waiting
-1afbd0b1eb06: Waiting
-e9fb5affebb0: Download complete
+0f1378f511ad: Verifying Checksum
 0f1378f511ad: Download complete
+e9fb5affebb0: Verifying Checksum
+e9fb5affebb0: Download complete
+96a961dc7843: Verifying Checksum
+96a961dc7843: Download complete
+16564141bc83: Verifying Checksum
+16564141bc83: Download complete
 c3b9c0688e3b: Verifying Checksum
 c3b9c0688e3b: Download complete
-96a961dc7843: Download complete
-16564141bc83: Download complete
-fc1ec4218a7a: Verifying Checksum
 fc1ec4218a7a: Download complete
-5b7f651050cb: Verifying Checksum
-5b7f651050cb: Download complete
 5bcea5c4c520: Verifying Checksum
 5bcea5c4c520: Download complete
+18230266f1ea: Verifying Checksum
 18230266f1ea: Download complete
+5b7f651050cb: Verifying Checksum
+5b7f651050cb: Download complete
 551ddfd2ea33: Verifying Checksum
 551ddfd2ea33: Download complete
 a7c842730102: Verifying Checksum
@@ -57,16 +59,19 @@ e9fb5affebb0: Pull complete
 0f1378f511ad: Pull complete
 96a961dc7843: Pull complete
 16564141bc83: Pull complete
-2ba860a6ee33: Verifying Checksum
-2ba860a6ee33: Download complete
-5bcea5c4c520: Pull complete
 bdb3f43c6f76: Verifying Checksum
 bdb3f43c6f76: Download complete
+2ba860a6ee33: Verifying Checksum
+2ba860a6ee33: Download complete
 95922e62ebf8: Verifying Checksum
 95922e62ebf8: Download complete
-ef5e18300222: Download complete
 909b894eb433: Verifying Checksum
 909b894eb433: Download complete
+ef5e18300222: Verifying Checksum
+ef5e18300222: Download complete
+5bcea5c4c520: Pull complete
+1afbd0b1eb06: Verifying Checksum
+1afbd0b1eb06: Download complete
 2ba860a6ee33: Pull complete
 fc1ec4218a7a: Pull complete
 5b7f651050cb: Pull complete
@@ -74,7 +79,6 @@ fc1ec4218a7a: Pull complete
 551ddfd2ea33: Pull complete
 a7c842730102: Pull complete
 4f9267d969bb: Pull complete
-1afbd0b1eb06: Download complete
 ef5e18300222: Pull complete
 bdb3f43c6f76: Pull complete
 1afbd0b1eb06: Pull complete
@@ -82,21 +86,8 @@ bdb3f43c6f76: Pull complete
 909b894eb433: Pull complete
 Digest: sha256:0c5f9b1fdb65c4ac9b2501adaead4a99d7b497fc84190a3d6255c03d20a44520
 Status: Downloaded newer image for iexechub/iexec-dapp-oyente:latest
-find: '/proc/1/map_files': Operation not permitted
-find: '/proc/7/map_files': Operation not permitted
-find: '/proc/1/map_files': Operation not permitted
-find: '/proc/8/map_files': Operation not permitted
 WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
 WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-INFO:root:contract /host/contracts/Migrations.sol:Migrations:
-INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 99.0%
-INFO:symExec:	  Parity Multisig Bug 2: 		 False
-INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
-INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
-INFO:symExec:	  Timestamp Dependency: 		 False
-INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
-INFO:symExec:	====== Analysis Completed ======
 INFO:root:contract /host/contracts/Ownable.sol:Ownable:
 INFO:symExec:	============ Results ===========
 INFO:symExec:	  EVM Code Coverage: 			 99.4%
@@ -108,9 +99,9 @@ INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
 INFO:symExec:	====== Analysis Completed ======
 WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
 WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-INFO:root:contract /host/contracts/PullPayment.sol:PullPayment:
+INFO:root:contract /host/contracts/SafeMath.sol:SafeMath:
 INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
 INFO:symExec:	  Parity Multisig Bug 2: 		 False
 INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
 INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
@@ -119,9 +110,18 @@ INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
 INFO:symExec:	====== Analysis Completed ======
 WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
 WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-INFO:root:contract /host/contracts/SafeMath.sol:SafeMath:
+INFO:root:contract /host/contracts/Ownable.sol:Ownable:
 INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  EVM Code Coverage: 			 99.4%
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /host/contracts/Pausable.sol:Pausable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.7%
 INFO:symExec:	  Parity Multisig Bug 2: 		 False
 INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
 INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
@@ -159,9 +159,59 @@ INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
 INFO:symExec:	====== Analysis Completed ======
 WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
 WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract /host/contracts/Migrations.sol:Migrations:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.0%
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /host/contracts/Ownable.sol:Ownable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.4%
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
 CRITICAL:root:/host/contracts/TokenSpender.sol:4:5: Warning: No visibility specified. Defaulting to "public".
     function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);
     ^----------------------------------------------------------------------------------------^
+
+CRITICAL:root:Solidity compilation failed.
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+INFO:root:contract /host/contracts/PullPayment.sol:PullPayment:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
+CRITICAL:root:/host/contracts/ERC20.sol:5:3: Warning: No visibility specified. Defaulting to "public".
+  function balanceOf(address who) constant returns (uint);
+  ^------------------------------------------------------^
+/host/contracts/ERC20.sol:6:3: Warning: No visibility specified. Defaulting to "public".
+  function allowance(address owner, address spender) constant returns (uint);
+  ^-------------------------------------------------------------------------^
+/host/contracts/ERC20.sol:8:3: Warning: No visibility specified. Defaulting to "public".
+  function transfer(address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------^
+/host/contracts/ERC20.sol:9:3: Warning: No visibility specified. Defaulting to "public".
+  function transferFrom(address from, address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------------------------^
+/host/contracts/ERC20.sol:10:3: Warning: No visibility specified. Defaulting to "public".
+  function approve(address spender, uint value) returns (bool ok);
+  ^--------------------------------------------------------------^
 
 CRITICAL:root:Solidity compilation failed.
 WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
@@ -230,53 +280,3 @@ INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
 INFO:symExec:	  Timestamp Dependency: 		 False
 INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
 INFO:symExec:	====== Analysis Completed ======
-WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
-WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-INFO:root:contract /host/contracts/Ownable.sol:Ownable:
-INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 99.4%
-INFO:symExec:	  Parity Multisig Bug 2: 		 False
-INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
-INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
-INFO:symExec:	  Timestamp Dependency: 		 False
-INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
-INFO:symExec:	====== Analysis Completed ======
-INFO:root:contract /host/contracts/Pausable.sol:Pausable:
-INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 99.7%
-INFO:symExec:	  Parity Multisig Bug 2: 		 False
-INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
-INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
-INFO:symExec:	  Timestamp Dependency: 		 False
-INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
-INFO:symExec:	====== Analysis Completed ======
-WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
-WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-INFO:root:contract /host/contracts/Ownable.sol:Ownable:
-INFO:symExec:	============ Results ===========
-INFO:symExec:	  EVM Code Coverage: 			 99.4%
-INFO:symExec:	  Parity Multisig Bug 2: 		 False
-INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
-INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
-INFO:symExec:	  Timestamp Dependency: 		 False
-INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
-INFO:symExec:	====== Analysis Completed ======
-WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
-WARNING:root:You are using solc version 0.4.21, The latest supported version is 0.4.19
-CRITICAL:root:/host/contracts/ERC20.sol:5:3: Warning: No visibility specified. Defaulting to "public".
-  function balanceOf(address who) constant returns (uint);
-  ^------------------------------------------------------^
-/host/contracts/ERC20.sol:6:3: Warning: No visibility specified. Defaulting to "public".
-  function allowance(address owner, address spender) constant returns (uint);
-  ^-------------------------------------------------------------------------^
-/host/contracts/ERC20.sol:8:3: Warning: No visibility specified. Defaulting to "public".
-  function transfer(address to, uint value) returns (bool ok);
-  ^----------------------------------------------------------^
-/host/contracts/ERC20.sol:9:3: Warning: No visibility specified. Defaulting to "public".
-  function transferFrom(address from, address to, uint value) returns (bool ok);
-  ^----------------------------------------------------------------------------^
-/host/contracts/ERC20.sol:10:3: Warning: No visibility specified. Defaulting to "public".
-  function approve(address spender, uint value) returns (bool ok);
-  ^--------------------------------------------------------------^
-
-CRITICAL:root:Solidity compilation failed.

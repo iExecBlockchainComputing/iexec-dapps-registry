@@ -1,5 +1,5 @@
 {
-  "name": "iexec-dapp-OyenteTest",
+  "name": "iexec-dapp-Oyente",
   "version": "1.0.0",
   "description": "Conduct an oyente analysis for your contracts.",
   "main": "iexec.js",
@@ -15,7 +15,7 @@
   },
   "social": {
     "website": "https://github.com/melonproject/oyente",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyenteTest/README.md"
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyente/README.md"
   },
   "license": "GPL-3.0",
   "bugs": {
