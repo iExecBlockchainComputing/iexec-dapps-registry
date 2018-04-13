@@ -1,5 +1,5 @@
 {
-  "name": "iexec-dapp-docker-with-script",
+  "name": "iexec-dapp-OyenteTest",
   "version": "1.0.0",
   "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
   "main": "iexec.js",
