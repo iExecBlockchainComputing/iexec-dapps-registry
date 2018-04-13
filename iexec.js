@@ -1,11 +1,11 @@
 module.exports = {
-  name: 'DockerWithScript',
+  name: 'OyenteTest',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=iexechub/docker-with-script',
+    envvars: 'XWDOCKERIMAGE=iexechub/iexec-dapp-oyente',
   },
   work: {
-    cmdline: 'customScript.sh ShowMethisText',
-    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/docker-with-script/apps/dirinuri.zip',
+    cmdline: 'bash /oyente/customScript.sh',
+    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyenteTest/contracts.zip?raw=true',
   }
 };

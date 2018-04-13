@@ -1,8 +1,0 @@
--------------This is my customScript in docker--------------------\n
----------------i cat a file present in the dirinuri zip. see dirinuri line of iexec.js------------------\n
-I am the text.txt content---------------find image present in the dirinuri zip .see dirinuri line of iexec.js------------------\n
-smile.png
---------------just echo your param you give me in cmdline of iexec.js-------------------\n
-ShowMethisText
--------------cat /iExec/MyFileIniExecDir.txt --------------------\n
-i am MyFileIniExecDir.txt content
