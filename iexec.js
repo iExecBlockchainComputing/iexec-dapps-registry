@@ -6,6 +6,6 @@ module.exports = {
   },
   work: {
     cmdline: 'bash /oyente/customScript.sh',
-    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyenteTest/contracts.zip?raw=true',
+    dirinuri:'https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyenteTest/apps/contracts.zip?raw=true',
   }
 };
