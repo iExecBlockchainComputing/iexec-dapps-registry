@@ -1,7 +1,7 @@
 # Oyente Test
 ## Description
 
-Just illustrate how to conduct a Oyente analysis in your docker image on iExec.
+Just illustrate how to conduct a Oyente analysis (provided by https://github.com/melonproject/oyente) in your docker image on iExec.
 
 To run this custom [Script](./apps/customScript.sh), we start on the ubuntu:trusty docker image and the script in it.
 
