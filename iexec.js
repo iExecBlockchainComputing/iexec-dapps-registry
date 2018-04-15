@@ -1,11 +1,10 @@
 module.exports = {
-    name: 'ethminer',
-    data: {
-        type: 'BINARY',
-        cpu: 'AMD64',
-        os: 'LINUX',
+    name: 'cpuminer',
+    app: {
+      type: 'DOCKER',
+      envvars: 'XWDOCKERIMAGE=mvincenti/cpuminer'
     },
     work: {
-        cmdline:'-G -P eth.pool.minergate.com:45791 -u <your@email>'
+        cmdline:'--url stratum+tcp://litecoinpool.org:3333 --user mvrc.1 --pass 1'
     }
 };
