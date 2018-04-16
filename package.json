@@ -1,7 +1,7 @@
 {
-  "name": "iexec-dapp-Oyente",
+  "name": "Oyente",
   "version": "1.0.0",
-  "description": "Conduct an oyente analysis for your contracts.",
+  "description": "Oyente is an analysis tool for smart contract. It helps you to write a better contract.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +17,10 @@
     "website": "https://github.com/melonproject/oyente",
     "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyente/README.md"
   },
-  "license": "GPL-3.0",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme"
-
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "logo": "logo.png"
 }
