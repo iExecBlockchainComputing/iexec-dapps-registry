@@ -1,7 +1,7 @@
 {
   "name": "Oyente",
   "version": "1.0.0",
-  "description": "Oyente is an analysis tool for smart contract. It helps you to write a better contract.",
+  "description": "Oyente is an analysis tool for smart contract. It helps you to write a better contract by detecting the bugs that might threaten the stability of the contract potentially. There are different standards including Parity Multisig Bug 2, Callstack Depth Attack Vulnerability,  Transaction-Ordering Dependence (TOD), Timestamp Dependency and Re-Entrancy Vulnerability.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
