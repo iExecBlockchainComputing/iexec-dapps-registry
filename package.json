@@ -1,7 +1,7 @@
 {
   "name": "stockpredictor",
   "version": "1.0.0",
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description": "Stockpredictor allows predicting the stock performance in the following 6 months. It retrieve financial data from third party data service (QUANDL) with a key which is encrypted and protected by Intel SGX.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
