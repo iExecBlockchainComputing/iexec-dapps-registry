@@ -7,7 +7,7 @@ ls /iexec/*.png
 echo "--------------just echo your param you give me in cmdline of iexec.js-------------------\n"
 echo $1
 echo "-------------cat /app/MyFileIniExecDir.txt --------------------\n"
-cat /app/MyFileIniExecDir.txt
+cat /app/MyFileInAppDir.txt
 
 echo "------------- launch scriptAtRoot.sh --------------------\n"
 bash scriptAtRoot.sh
