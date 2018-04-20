@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'Ffmpeg',
+    name: 'Tensorflow',
     data: {
         type: 'BINARY',
         cpu: 'AMD64',

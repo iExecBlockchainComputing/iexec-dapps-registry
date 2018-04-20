@@ -1,6 +1,6 @@
 var IexecOracle = artifacts.require("./IexecOracle.sol");
 var IexecOracleEscrow = artifacts.require("./IexecOracleEscrow.sol");
-var Ffmpeg = artifacts.require("./Ffmpeg.sol");
+var Tensorflow = artifacts.require("./Tensorflow.sol");
 var RLC = artifacts.require("../node_modules/rlc-token//contracts/RLC.sol");
 
 const Promise = require("bluebird");
@@ -19,7 +19,7 @@ Promise.promisifyAll(web3.evm, {
 });
 Extensions.init(web3, assert);
 
-contract('Ffmpeg', function(accounts) {
+contract('Tensorflow', function(accounts) {
 
   var dappProvider, dappUser, bridge, rlcCreator;
   var amountGazProvided = 4000000;
@@ -27,7 +27,7 @@ contract('Ffmpeg', function(accounts) {
   let testTimemout = 0;
   let aRLCInstance;
   let aIexecOracleEscrowInstance;
-  let aFfmpegInstance;
+  let aTensorflowInstance;
 
   IexecOracle.Status = {
     UNSET: 0,
@@ -89,14 +89,14 @@ contract('Ffmpeg', function(accounts) {
         aIexecOracleInstance = instance;
         console.log("aIexecOracleInstance.address is ");
         console.log(aIexecOracleInstance.address);
-        return Ffmpeg.new(aIexecOracleInstance.address, {
+        return Tensorflow.new(aIexecOracleInstance.address, {
           from: dappProvider
         });
       })
       .then(instance => {
-        aFfmpegInstance = instance;
-        console.log("aFfmpegInstance.address is ");
-        console.log(aFfmpegInstance.address);
+        aTensorflowInstance = instance;
+        console.log("aTensorflowInstance.address is ");
+        console.log(aTensorflowInstance.address);
       });
   });
 
@@ -116,7 +116,7 @@ contract('Ffmpeg', function(accounts) {
     return Extensions.getCurrentBlockNumber()
       .then(block => {
         previousBlockNumber = block;
-        return aFfmpegInstance.iexecSubmit("{ \"cmdline\": \"-i small.mp4 small.avi\", \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\" }", {
+        return aTensorflowInstance.iexecSubmit("{ \"cmdline\": \"-i small.mp4 small.avi\", \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\" }", {
           from: dappUser,
           gas: amountGazProvided
         });
@@ -132,12 +132,12 @@ contract('Ffmpeg', function(accounts) {
         //check event Submit for off-chain computing is well triggered
         //the Log is composed of : Submit(tx.origin, msg.sender,dappRegistry[msg.sender].provider, param);
         assert.strictEqual(events[0].args.user, dappUser, "dapp user address is wrong");
-        assert.strictEqual(events[0].args.dapp, aFfmpegInstance.address, "dapp address is wrong");
+        assert.strictEqual(events[0].args.dapp, aTensorflowInstance.address, "dapp address is wrong");
         assert.strictEqual(events[0].args.provider, dappProvider, "dappProvider address is wrong ");
         assert.strictEqual(events[0].args.args, "{ \"cmdline\": \"-i small.mp4 small.avi\", \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\" }", "submit task params");
         //simulate bridge callback after off-chain computation done
         // function submitCallback(bytes32 submitTxHash, address user, address dapp, IexecLib.StatusEnum status, string stdout, string stderr, string uri) stopInEmergency public {
-        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aFfmpegInstance.address, IexecOracle.Status.COMPLETED, "", "", "uri_with_the_result_to_download", {
+        return aIexecOracleInstance.submitCallback(submitTxHash, dappUser, aTensorflowInstance.address, IexecOracle.Status.COMPLETED, "", "", "uri_with_the_result_to_download", {
           from: bridge,
           gas: amountGazProvided
         });
@@ -155,12 +155,12 @@ contract('Ffmpeg', function(accounts) {
         assert.strictEqual(events[0].args.user, dappUser, "dappUser address is wrong");
         assert.strictEqual(events[0].args.stdout, "", " ");
         assert.strictEqual(events[0].args.uri, "uri_with_the_result_to_download", "uri_with_the_result_to_download");
-        return Extensions.getEventsPromise(aFfmpegInstance.IexecSubmitCallback({}, {
+        return Extensions.getEventsPromise(aTensorflowInstance.IexecSubmitCallback({}, {
           fromBlock: previousBlockNumber
         }));
       })
       .then(events => {
-        //check event IexecSubmitCallback is well triggered in the dapp aFfmpegInstance
+        //check event IexecSubmitCallback is well triggered in the dapp aTensorflowInstance
         // the Log is composed of : IexecSubmitCallback(submitTxHash,user,stdout,uri);
         assert.strictEqual(events[0].args.submitTxHash, submitTxHash, "submitTxHash is wrong");
         assert.strictEqual(events[0].args.user, dappUser, "dappUser address is wrong");

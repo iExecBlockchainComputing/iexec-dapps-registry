@@ -1,11 +1,11 @@
 pragma solidity ^0.4.11;
 import "iexec-oracle-contract/contracts/IexecOracleAPI.sol";
-contract Ffmpeg is IexecOracleAPI{
+contract Tensorflow is IexecOracleAPI{
 
     uint public constant DAPP_PRICE = 0;
-    string public constant DAPP_NAME = "Ffmpeg";
+    string public constant DAPP_NAME = "Tensorflow";
 
-    function Ffmpeg (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
+    function Tensorflow (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){
 
     }
 
