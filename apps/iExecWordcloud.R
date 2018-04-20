@@ -60,6 +60,6 @@ number_occurances = rowSums(dtm)
 number_occurances = sort(number_occurances,decreasing = TRUE)
 
 #plot
-png("wordcloudResult.png", width=1280,height=800)
+png("iexec/wordcloudResult.png", width=1280,height=800)
 wordcloud(names(number_occurances),number_occurances,scale=c(8,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=brewer.pal(8, "Dark2"))
 dev.off()
