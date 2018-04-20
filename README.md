@@ -15,7 +15,7 @@ module.exports = {
     os: 'LINUX',
   },
   work: {
-    cmdline:'-f big.flf iExec',
+    cmdline:'-f iexec/big.flf iExec',
     dirinuri:'http://www.figlet.org/fonts/big.flf',
   }
 };
