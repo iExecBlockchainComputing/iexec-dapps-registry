@@ -10,6 +10,10 @@
   "author": {
     "name": "Victor"
   },
+  "social": {
+    "website": "https://www.gimp.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/gimp"
+  },
   "license": "MIT",
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gimp#readme",
   "logo": "logo.png"
