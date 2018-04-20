@@ -1,26 +1,31 @@
 {
   "name": "ffmpeg",
   "version": "1.0.0",
-  "description": "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card.",
+  "description":
+    "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card. The project publishes a new release every three months on average. While release versions are available from the website for download, FFmpeg developers recommend that users compile the software from source using the latest build from their source code Git version control system.",
   "main": "iexec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+    "url":
+      "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
   "author": {
     "name": "Jeremy Toussaint"
   },
   "social": {
     "website": "http://ffmpeg.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/ffmpeg#readme"
+    "github":
+      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/ffmpeg#readme"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
+    "url":
+      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
-  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "homepage":
+    "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
   "logo": "logo.png"
 }
