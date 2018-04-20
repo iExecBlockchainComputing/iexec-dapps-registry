@@ -11,10 +11,14 @@ const LOCAL_ORACLE_ADDRESS = 'local_oracle_address_value';
 module.exports = {
   networks: {
     development: {
-      host: 'http://localhost:8545',
+      host: 'localhost',
       port: 8545,
       network_id: '*', // Match any network id,
       constructorArgs: [LOCAL_ORACLE_ADDRESS],
+      gasPrice: 21000000000,  // manually set the gasPrice in gwei. Prefer 'gasPriceMultiplier'
+      gas: 400000,  // manually set the gas limit in gwei. Prefer 'gasLimitMultiplier'
+      //gas: 4600000,
+      //gasPrice: 2e10,
       server: 'https://localhost:443'
     },
     ropsten: {
