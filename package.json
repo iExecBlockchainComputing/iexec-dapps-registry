@@ -1,5 +1,5 @@
 {
-  "name": "TensorflowOnIexec",
+  "name": "iexec-dapp-ffmpeg",
   "version": "1.0.0",
   "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
   "main": "iexec.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leohio/iexec-dapp-samples.git"
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
   "author": "",
   "license": "ISC",
