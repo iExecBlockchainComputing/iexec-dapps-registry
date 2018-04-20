@@ -10,6 +10,10 @@
   "author": {
     "name": "Eric"
   },
+  "social": {
+    "website": "https://www.gnu.org/software/octave/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/octave"
+  },
   "license": "MIT",
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/octave#readme",
   "logo": "logo.png"
