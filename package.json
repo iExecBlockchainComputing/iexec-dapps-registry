@@ -1,0 +1,24 @@
+{
+  "name": "iexec-dapp-init",
+  "version": "1.0.0",
+  "description": "This is a submission to the iExec dapp-challenge.",
+  "main": "iexec.js",
+  "scripts": {
+    "build": "iexec compile",
+    "deploy": "iexec deploy --chain ropsten",
+    "test": "truffle test ./test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
+  },
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples#readme",
+  "dependencies": {
+    "iexec-oracle-contract": "^1.1.5"
+  }
+}
