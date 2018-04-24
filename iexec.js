@@ -1,8 +1,8 @@
 module.exports = {
-  name: 'Ffmpeg',
+  name: 'Scilab',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=jrottenberg/ffmpeg:scratch',
+    envvars: 'XWDOCKERIMAGE=',
   },
   work: {
     cmdline: '-i /iexec/small.mp4 /iexec/small.avi',
