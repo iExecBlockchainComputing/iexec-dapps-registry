@@ -1,24 +1,21 @@
 {
-  "name": "scilab",
+  "name": "gmsh",
   "version": "1.0.0",
   "description":
     "Gmsh is a finite-element mesh generator developed by Christophe Geuzaine and Jean-François Remacle. Released under the GNU General Public License, Gmsh is free software. Gmsh contains 4 modules: for geometry description, meshing, solving and post-processing. Gmsh supports parametric input and has advanced visualization mechanisms. Since version 3.0, Gmsh supports full constructive solid geometry features, based on Open Cascade Technology.",
   "main": "iexec.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url":
       "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
   },
   "author": {
-    "name": "Vladimir"
+    "name": "Victor"
   },
   "social": {
-    "website": "http://www.scilab.org/",
+    "website": "http://gmsh.info/",
     "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/scilab#readme"
+      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gmsh#readme"
   },
   "license": "MIT",
   "bugs": {

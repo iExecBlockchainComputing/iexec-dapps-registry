@@ -1,11 +1,10 @@
 module.exports = {
-  name: 'Scilab',
+  name: 'Gmsh',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=',
+    envvars: 'XWDOCKERIMAGE=renumics/gmsh',
   },
   work: {
-    cmdline: '-i /iexec/small.mp4 /iexec/small.avi',
-    dirinuri: 'http://techslides.com/demos/sample-videos/small.mp4',
+    cmdline: 'gmsh -version',
   },
 };
