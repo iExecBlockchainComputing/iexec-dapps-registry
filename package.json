@@ -22,5 +22,8 @@
     "url": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/issues"
   },
   "homepage": "https://katacoda.com/sulliwane/scenarios/run-dapp",
-  "logo": "logo.png"
+  "logo": "logo.png",
+  "dependencies": {
+    "iexec-oracle-contract": "1.1.7"
+  }
 }

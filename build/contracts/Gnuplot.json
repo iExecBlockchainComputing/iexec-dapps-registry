@@ -1,0 +1,701 @@
+{
+    "contractName": "Gnuplot",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "submitTxHash",
+                    "type": "bytes32"
+                },
+                {
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "name": "stdout",
+                    "type": "string"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                }
+            ],
+            "name": "iexecSubmitCallback",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "DAPP_PRICE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "param",
+                    "type": "string"
+                }
+            ],
+            "name": "iexecSubmit",
+            "outputs": [],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "DAPP_NAME",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "name": "_iexecOracleAddress",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "submitTxHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "stdout",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "uri",
+                    "type": "string"
+                }
+            ],
+            "name": "IexecSubmitCallback",
+            "type": "event"
+        }
+    ],
+    "bytecode": "0x6060604052341561000f57600080fd5b604051602080610752833981016040528080519060200190919050508060006040805190810160405280600781526020017f676e75706c6f74000000000000000000000000000000000000000000000000008152506000836000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff16635993ef5384846040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561015957808201518184015260208101905061013e565b50505050905090810190601f1680156101865780820380516001836020036101000a031916815260200191505b509350505050602060405180830381600087803b15156101a557600080fd5b5af115156101b257600080fd5b5050506040518051905015156101c757600080fd5b5050505050610577806101db6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100675780633c0aef301461014b5780638cd213b914610174578063c878f958146101c6575b600080fd5b341561007257600080fd5b61013160048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610254565b604051808215151515815260200191505060405180910390f35b341561015657600080fd5b61015e6103ed565b6040518082815260200191505060405180910390f35b6101c4600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506103f2565b005b34156101d157600080fd5b6101d9610512565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102195780820151818401526020810190506101fe565b50505050905090810190601f1680156102465780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b157600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561033e578082015181840152602081019050610323565b50505050905090810190601f16801561036b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103a4578082015181840152602081019050610389565b50505050905090810190601f1680156103d15780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b600081565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156104a1578082015181840152602081019050610486565b50505050905090810190601f1680156104ce5780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b15156104eb57600080fd5b5af115156104f857600080fd5b5050505060405180519050151561050e57600080fd5b5050565b6040805190810160405280600781526020017f676e75706c6f7400000000000000000000000000000000000000000000000000815250815600a165627a7a72305820478d9eaa584a2c1710ea3018f58d0688b123293b1e593b8d92932fa2873b95cd0029",
+    "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806310a9f201146100675780633c0aef301461014b5780638cd213b914610174578063c878f958146101c6575b600080fd5b341561007257600080fd5b61013160048080356000191690602001909190803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610254565b604051808215151515815260200191505060405180910390f35b341561015657600080fd5b61015e6103ed565b6040518082815260200191505060405180910390f35b6101c4600480803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919050506103f2565b005b34156101d157600080fd5b6101d9610512565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156102195780820151818401526020810190506101fe565b50505050905090810190601f1680156102465780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b157600080fd5b8373ffffffffffffffffffffffffffffffffffffffff167f68d2eaa37ea3e53bbe55f11eb038084f280086b8f4c4552dbca1b5692efeb9138685856040518084600019166000191681526020018060200180602001838103835285818151815260200191508051906020019080838360005b8381101561033e578082015181840152602081019050610323565b50505050905090810190601f16801561036b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156103a4578082015181840152602081019050610389565b50505050905090810190601f1680156103d15780820380516001836020036101000a031916815260200191505b509550505050505060405180910390a260019050949350505050565b600081565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff1663d99a8dc334846040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019080838360005b838110156104a1578082015181840152602081019050610486565b50505050905090810190601f1680156104ce5780820380516001836020036101000a031916815260200191505b50925050506020604051808303818588803b15156104eb57600080fd5b5af115156104f857600080fd5b5050505060405180519050151561050e57600080fd5b5050565b6040805190810160405280600781526020017f676e75706c6f7400000000000000000000000000000000000000000000000000815250815600a165627a7a72305820478d9eaa584a2c1710ea3018f58d0688b123293b1e593b8d92932fa2873b95cd0029",
+    "sourceMap": "86:247:0:-;;;219:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;281:19;161:1;312:9;;;;;;;;;;;;;;;;;;426:23:3;397:19;378:18;;:38;;;;;;;;;;;;;;;;;;464:18;;;;;;;;;;;426:57;;501:11;:35;;;537:9;547:8;501:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;501:55:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;493:64;;;;;;;;272:292;;;;219:111:0;86:247;;;;;;",
+    "deployedSourceMap": "86:247:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:185:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;168:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;168:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;761:252:3;870:4;907:18;;;;;;;;;;;893:32;;:10;:32;;;885:41;;;;;;;;969:4;936:49;;;956:12;974:6;981:3;936:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;936:49:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;936:49:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:4;995:11;;761:252;;;;;;:::o;127:35:0:-;161:1;127:35;:::o;570:185:3:-;630:23;668:18;;;;;;;;;;;630:57;;705:11;:18;;;730:9;741:5;705:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;705:42:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;697:51;;;;;;;;570:185;;:::o;168:44:0:-;;;;;;;;;;;;;;;;;;;;:::o",
+    "source": "pragma solidity ^0.4.11;\nimport \"iexec-oracle-contract/contracts/IexecOracleAPI.sol\";\ncontract Gnuplot is IexecOracleAPI{\n\n    uint public constant DAPP_PRICE = 0;\n    string public constant DAPP_NAME = \"gnuplot\";\n\n    function Gnuplot (address _iexecOracleAddress) IexecOracleAPI(_iexecOracleAddress,DAPP_PRICE,DAPP_NAME){\n\n    }\n\n}\n",
+    "sourcePath": "/home/ugo/iexecdev/iexec-dapps-registry/contracts/Gnuplot.sol",
+    "ast": {
+        "absolutePath": "/home/ugo/iexecdev/iexec-dapps-registry/contracts/Gnuplot.sol",
+        "exportedSymbols": {
+            "Gnuplot": [
+                22
+            ]
+        },
+        "id": 23,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.4",
+                    ".11"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:24:0"
+            },
+            {
+                "absolutePath": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+                "file": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+                "id": 2,
+                "nodeType": "ImportDirective",
+                "scope": 23,
+                "sourceUnit": 795,
+                "src": "25:60:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "baseContracts": [
+                    {
+                        "arguments": [],
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 3,
+                            "name": "IexecOracleAPI",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 794,
+                            "src": "106:14:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IexecOracleAPI_$794",
+                                "typeString": "contract IexecOracleAPI"
+                            }
+                        },
+                        "id": 4,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "106:14:0"
+                    }
+                ],
+                "contractDependencies": [
+                    794
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 22,
+                "linearizedBaseContracts": [
+                    22,
+                    794
+                ],
+                "name": "Gnuplot",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": true,
+                        "id": 7,
+                        "name": "DAPP_PRICE",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 22,
+                        "src": "127:35:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "127:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 6,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "161:1:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": true,
+                        "id": 10,
+                        "name": "DAPP_NAME",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 22,
+                        "src": "168:44:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory",
+                            "typeString": "string memory"
+                        },
+                        "typeName": {
+                            "id": 8,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "168:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string storage pointer"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "676e75706c6f74",
+                            "id": 9,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "203:9:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_74fc091aee127929d87003f7708f3d5184e6b264437f0588ac1aeae07be65239",
+                                "typeString": "literal_string \"gnuplot\""
+                            },
+                            "value": "gnuplot"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 20,
+                            "nodeType": "Block",
+                            "src": "322:8:0",
+                            "statements": []
+                        },
+                        "documentation": null,
+                        "id": 21,
+                        "implemented": true,
+                        "isConstructor": true,
+                        "isDeclaredConst": false,
+                        "modifiers": [
+                            {
+                                "arguments": [
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 15,
+                                        "name": "_iexecOracleAddress",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 12,
+                                        "src": "281:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 16,
+                                        "name": "DAPP_PRICE",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 7,
+                                        "src": "301:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 17,
+                                        "name": "DAPP_NAME",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 10,
+                                        "src": "312:9:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_memory",
+                                            "typeString": "string memory"
+                                        }
+                                    }
+                                ],
+                                "id": 18,
+                                "modifierName": {
+                                    "argumentTypes": null,
+                                    "id": 14,
+                                    "name": "IexecOracleAPI",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 794,
+                                    "src": "266:14:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_contract$_IexecOracleAPI_$794_$",
+                                        "typeString": "type(contract IexecOracleAPI)"
+                                    }
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "266:56:0"
+                            }
+                        ],
+                        "name": "Gnuplot",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 13,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 12,
+                                    "name": "_iexecOracleAddress",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 21,
+                                    "src": "237:27:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 11,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "237:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "236:29:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 19,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "322:0:0"
+                        },
+                        "scope": 22,
+                        "src": "219:111:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 23,
+                "src": "86:247:0"
+            }
+        ],
+        "src": "0:334:0"
+    },
+    "legacyAST": {
+        "absolutePath": "/home/ugo/iexecdev/iexec-dapps-registry/contracts/Gnuplot.sol",
+        "exportedSymbols": {
+            "Gnuplot": [
+                22
+            ]
+        },
+        "id": 23,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.4",
+                    ".11"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:24:0"
+            },
+            {
+                "absolutePath": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+                "file": "iexec-oracle-contract/contracts/IexecOracleAPI.sol",
+                "id": 2,
+                "nodeType": "ImportDirective",
+                "scope": 23,
+                "sourceUnit": 795,
+                "src": "25:60:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "baseContracts": [
+                    {
+                        "arguments": [],
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 3,
+                            "name": "IexecOracleAPI",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 794,
+                            "src": "106:14:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IexecOracleAPI_$794",
+                                "typeString": "contract IexecOracleAPI"
+                            }
+                        },
+                        "id": 4,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "106:14:0"
+                    }
+                ],
+                "contractDependencies": [
+                    794
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 22,
+                "linearizedBaseContracts": [
+                    22,
+                    794
+                ],
+                "name": "Gnuplot",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": true,
+                        "id": 7,
+                        "name": "DAPP_PRICE",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 22,
+                        "src": "127:35:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "127:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 6,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "161:1:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": true,
+                        "id": 10,
+                        "name": "DAPP_NAME",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 22,
+                        "src": "168:44:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory",
+                            "typeString": "string memory"
+                        },
+                        "typeName": {
+                            "id": 8,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "168:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string storage pointer"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "676e75706c6f74",
+                            "id": 9,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "203:9:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_74fc091aee127929d87003f7708f3d5184e6b264437f0588ac1aeae07be65239",
+                                "typeString": "literal_string \"gnuplot\""
+                            },
+                            "value": "gnuplot"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 20,
+                            "nodeType": "Block",
+                            "src": "322:8:0",
+                            "statements": []
+                        },
+                        "documentation": null,
+                        "id": 21,
+                        "implemented": true,
+                        "isConstructor": true,
+                        "isDeclaredConst": false,
+                        "modifiers": [
+                            {
+                                "arguments": [
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 15,
+                                        "name": "_iexecOracleAddress",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 12,
+                                        "src": "281:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 16,
+                                        "name": "DAPP_PRICE",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 7,
+                                        "src": "301:10:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    {
+                                        "argumentTypes": null,
+                                        "id": 17,
+                                        "name": "DAPP_NAME",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 10,
+                                        "src": "312:9:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_memory",
+                                            "typeString": "string memory"
+                                        }
+                                    }
+                                ],
+                                "id": 18,
+                                "modifierName": {
+                                    "argumentTypes": null,
+                                    "id": 14,
+                                    "name": "IexecOracleAPI",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 794,
+                                    "src": "266:14:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_contract$_IexecOracleAPI_$794_$",
+                                        "typeString": "type(contract IexecOracleAPI)"
+                                    }
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "266:56:0"
+                            }
+                        ],
+                        "name": "Gnuplot",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 13,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 12,
+                                    "name": "_iexecOracleAddress",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 21,
+                                    "src": "237:27:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 11,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "237:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "236:29:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 19,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "322:0:0"
+                        },
+                        "scope": 22,
+                        "src": "219:111:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 23,
+                "src": "86:247:0"
+            }
+        ],
+        "src": "0:334:0"
+    },
+    "compiler": {
+        "name": "solc",
+        "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+    },
+    "networks": {
+        "3": {
+            "address": "0xfdebe05073563fce2cf7920fb9aa6cbeedd438c4"
+        },
+        "4": {
+            "address": "0x214887d89d0086a522a0ba0bac8dacb3498b092c"
+        },
+        "42": {
+            "address": "0x214887d89d0086a522a0ba0bac8dacb3498b092c"
+        }
+    },
+    "schemaVersion": "2.0.0",
+    "updatedAt": "2018-04-24T08:06:54.992Z"
+}
