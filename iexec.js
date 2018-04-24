@@ -5,6 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=wcurrie/gnuplot',
   },
   work: {
-    cmdline: '-e "set terminal png size 400,300; set output \'iexec/result.png\'; plot [-4:4] exp(-x**2 / 10)"',
+    cmdline: '/iexec/script.gp',
+    dirinuri:'https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/gp_example/apps/script.gp',
   }
 };
