@@ -1,0 +1,20 @@
+{
+  "name": "scikit-learn",
+  "version": "1.0.0",
+  "description": "Scikit-learn (formerly scikits.learn) is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.",
+  "main": "iexec.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": {
+    "name": "Eric"
+  },
+  "social": {
+    "website": "http://scikit-learn.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/scikit-learn#readme"
+  },
+  "license": "BSD License",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/scikit-learn#readme",
+  "logo": "logo.png"
+}
