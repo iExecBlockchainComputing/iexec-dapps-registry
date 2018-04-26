@@ -1,5 +1,5 @@
 {
-    "contractName": "ScikitLearn",
+    "contractName": "FacialRecognition",
     "abi": [
         {
             "constant": false,

@@ -1,8 +1,8 @@
 module.exports = {
-  name: 'ScikitLearn',
+  name: 'FacialRecognition',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=ericro/scikit-learn',
+    envvars: 'XWDOCKERIMAGE=ericro/face-recognition',
   },
   work: {
     cmdline: '',
