@@ -1,0 +1,23 @@
+{
+  "name": "Julia",
+  "version": "1.0.0",
+  "description": "Julia is a high-level, high-performance dynamic programming language for technical computing.",
+  "main": "iexec.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": {
+    "name": "Ugo Plouviez"
+  },
+  "social": {
+    "website": "https://julialang.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/julia#readme"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
+  "logo": "logo.png",
+  "dependencies": {
+    "iexec-oracle-contract": "1.1.7"
+  }
+}
