@@ -2,8 +2,8 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import numpy as np
 import time, json, os, logging
-
-from mnist import get_trainer,get_model
+import sys
+from iexecsetting import PS_HOST,WORKER,MODE,INDEX
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
@@ -24,6 +24,73 @@ LOG_DIR = FLAGS.log_dir
 MAX_STEPS = FLAGS.max_steps
 CHECKPOINT = FLAGS.checkpoint
 
+
+def get_model(x, keep_prob, training=True):
+  num_filters1 = 32
+  num_filters2 = 64
+
+  with tf.name_scope('cnn'):
+    with tf.name_scope('convolution1'):
+      x_image = tf.reshape(x, [-1,28,28,1])
+      
+      W_conv1 = tf.Variable(tf.truncated_normal([5,5,1,num_filters1],
+                                                stddev=0.1))
+      h_conv1 = tf.nn.conv2d(x_image, W_conv1,
+                             strides=[1,1,1,1], padding='SAME')
+      
+      b_conv1 = tf.Variable(tf.constant(0.1, shape=[num_filters1]))
+      h_conv1_cutoff = tf.nn.relu(h_conv1 + b_conv1)
+      
+      h_pool1 = tf.nn.max_pool(h_conv1_cutoff, ksize=[1,2,2,1],
+                               strides=[1,2,2,1], padding='SAME')
+
+    with tf.name_scope('convolution2'):
+      W_conv2 = tf.Variable(
+                  tf.truncated_normal([5,5,num_filters1,num_filters2],
+                                      stddev=0.1))
+      h_conv2 = tf.nn.conv2d(h_pool1, W_conv2,
+                             strides=[1,1,1,1], padding='SAME')
+      
+      b_conv2 = tf.Variable(tf.constant(0.1, shape=[num_filters2]))
+      h_conv2_cutoff = tf.nn.relu(h_conv2 + b_conv2)
+      
+      h_pool2 = tf.nn.max_pool(h_conv2_cutoff, ksize=[1,2,2,1],
+                               strides=[1,2,2,1], padding='SAME')
+
+    with tf.name_scope('fully-connected'):
+      h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*num_filters2])
+      num_units1 = 7*7*num_filters2
+      num_units2 = 1024
+      w2 = tf.Variable(tf.truncated_normal([num_units1, num_units2]))
+      b2 = tf.Variable(tf.constant(0.1, shape=[num_units2]))
+      hidden2 = tf.nn.relu(tf.matmul(h_pool2_flat, w2) + b2)
+
+    with tf.name_scope('output'):
+      if training:
+        hidden2_drop = tf.nn.dropout(hidden2, keep_prob)
+      else:
+        hidden2_drop = hidden2
+      w0 = tf.Variable(tf.zeros([num_units2, 10]))
+      b0 = tf.Variable(tf.zeros([10]))
+      p = tf.nn.softmax(tf.matmul(hidden2_drop, w0) + b0)
+
+  tf.summary.histogram("conv_filters1", W_conv1)
+  tf.summary.histogram("conv_filters2", W_conv2)
+
+  return p
+
+  
+def get_trainer(p, t, global_step):
+  with tf.name_scope('optimizer'):
+    loss = -tf.reduce_sum(t * tf.log(p), name='loss')
+    train_step = tf.train.AdamOptimizer(0.0001).minimize(loss, global_step=global_step)
+      
+  with tf.name_scope('evaluator'):
+    correct_prediction = tf.equal(tf.argmax(p, 1), tf.argmax(t, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction,
+                                      tf.float32), name='accuracy')
+
+  return train_step, loss, accuracy
 
 def export_model(last_checkpoint):
   # create a session with a new graph.
@@ -54,14 +121,12 @@ def export_model(last_checkpoint):
 
 def run_training():
   # Get cluster and node info
-  env = json.loads(os.environ.get('TF_CONFIG', '{}'))
   #cluster_info = env.get('cluster', None)
-  cluster_info = {"ps": ["192.168.11.2:2222"], 
-                  "worker":["192.168.40.137:2222"]}
+  cluster_info = {"ps": [PS_HOST], 
+                  "worker":[WORKER]}
 
   cluster_spec = tf.train.ClusterSpec(cluster_info)
-  #task_info = env.get('task', None)
-  task_info = {"type":"ps","index":0}
+  task_info = {"type":MODE,"index":INDEX}
   
   job_name, task_index = task_info['type'], task_info['index']
 
