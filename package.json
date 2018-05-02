@@ -1,0 +1,21 @@
+{
+  "name": "blast",
+  "version": "1.0.0",
+  "description": "BLAST for Basic Local Alignment Search Tool is one of the most widely used bioinformatics programs for sequence searching
+This is an algorithm for comparing primary biological sequence information, such as the amino-acid sequences of different proteins or the nucleotides of DNA sequences.",
+  "main": "iexec.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": {
+    "name": "Eric"
+  },
+  "social": {
+    "website": "https://blast.ncbi.nlm.nih.gov/Blast.cgi/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/blast#readme"
+  },
+  "license": "BSD License",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/blast#readme",
+  "logo": "logo.png"
+}
