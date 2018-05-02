@@ -1,11 +1,11 @@
 module.exports = {
-  name: 'Julia',
+  name: 'Scipy',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=julia',
+    envvars: 'XWDOCKERIMAGE=ugodock/scinumpy',
   },
   work: {
-    cmdline: 'julia iexec/example.jl',
-    dirinuri:'https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/julia/apps/example.jl',
+    cmdline: 'iexec/example.py',
+    dirinuri:'https://raw.githubusercontent.com/Ugo/iexec-dapps-registry/scipy/apps/example.py',
   }
 };

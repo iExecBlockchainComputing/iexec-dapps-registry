@@ -6,4 +6,4 @@ truffle.js
 node_modules
 
 /build/contracts/*
-!/build/contracts/Julia.json
+!/build/contracts/Scipy.json

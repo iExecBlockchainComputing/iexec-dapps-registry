@@ -6,4 +6,4 @@ plt.plot([1,2,3,4])
 plt.ylabel('some numbers')
 plt.show()
 
-plt.savefig('app/example.png')
+plt.savefig('iexec/example.png')

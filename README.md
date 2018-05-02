@@ -1,3 +1,5 @@
 ![dapp logo](./logo.png)
-## [Description](./package.json)
-## [Parameters](./iexec.js)
+# My Dapp name
+## Description
+My Dapp description here...
+## [Dapp params](./iexec.js)
