@@ -1,8 +1,8 @@
 module.exports = {
-  name: 'FacialRecognition',
+  name: 'Blast',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=ericro/face-recognition',
+    envvars: 'XWDOCKERIMAGE=ericro/blast',
   },
   work: {
     cmdline: '',
