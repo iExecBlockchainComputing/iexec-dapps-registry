@@ -47,6 +47,6 @@ d=as.double(args[4])
  
 df=createTrajectory(9500000, 0, 0, a, b, c, d)
  
-png("Clifford.png", units="px", width=1600, height=1600, res=300)
+png("/iexec/Clifford.png", units="px", width=1600, height=1600, res=300)
 ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt
 dev.off()
