@@ -6,6 +6,6 @@ module.exports = {
   },
   work: {
     cmdline: 'iexec/example.py',
-    dirinuri:'https://raw.githubusercontent.com/Ugo/iexec-dapps-registry/scipy/apps/example.py',
+    dirinuri:'https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/scipy/apps/example.py',
   }
 };
