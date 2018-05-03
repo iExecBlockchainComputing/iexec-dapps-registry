@@ -1,7 +1,7 @@
 {
-  "name": "Julia",
+  "name": "Scipy",
   "version": "1.0.0",
-  "description": "Julia is a high-level, high-performance dynamic programming language for technical computing.",
+  "description": "This application can run python script using the following libraries: numpy and scipy(scientific computing), pandas (data analysis tool) and matplotlib (2D plotting library).",
   "main": "iexec.js",
   "repository": {
     "type": "git",
@@ -11,8 +11,8 @@
     "name": "Ugo Plouviez"
   },
   "social": {
-    "website": "https://julialang.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/julia#readme"
+    "website": "https://www.python.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/scipy#readme"
   },
   "license": "MIT",
   "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
