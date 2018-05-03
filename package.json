@@ -1,7 +1,7 @@
 {
   "name": "Scipy",
   "version": "1.0.0",
-  "description": "This app has python available with the following libraries: numpy, scipy and matplotlib.",
+  "description": "This application can run python script using the following libraries: numpy and scipy(scientific computing), pandas (data analysis tool) and matplotlib (2D plotting library).",
   "main": "iexec.js",
   "repository": {
     "type": "git",
