@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "next-dapp1",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ericro/face-recognition"
+    }
+  },
+  "dataset": {
+    "name": "next-dataset",
+    "price": 2,
+    "params": {
+      "uri": "https://data.provider.com"
+    }
+  },
+  "category": {
+    "name": "CAT1",
+    "description": "my category N°1",
+    "workClockTimeRef": 100
+  },
+  "workerPool": {
+    "description": "Qarnot WorkerPool ",
+    "subscriptionLockStakePolicy": 100,
+    "subscriptionMinimumStakePolicy": 100,
+    "subscriptionMinimumScorePolicy": 100
+  }
+}
