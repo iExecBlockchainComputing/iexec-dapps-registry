@@ -6,5 +6,5 @@ module.exports = {
   },
   work: {
     cmdline: '1iEx'
-  },
+  }
 };
