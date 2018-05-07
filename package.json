@@ -1,0 +1,19 @@
+{
+  "name": "FindFace",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "iexec.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iExecBlockchainComputing/iexec-dapp-samples.git"
+  },
+  "author": {
+    "name": "Ugo Plouviez"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/init#readme",
+  "logo": "logo.png",
+  "dependencies": {
+    "iexec-oracle-contract": "1.1.7"
+  }
+}
