@@ -5,6 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=ugodock/find-face',
   },
   work: {
-    cmdline: 'cli arguments',
+    cmdline: 'iexec/team.jpg',
+    dirinuri:'https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/find-face/apps/team.jpg',
   }
 };
