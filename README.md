@@ -8,7 +8,7 @@ Once you created and deployed your iExec Dapp using the [iExec SDK](https://gith
 
 clic on the github "Fork" button
 
-![github fork](./github-fork.png)
+[![github fork](./github-fork.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2#fork-destination-box)
 
 ## 2. Create 2 new folders
 
@@ -62,6 +62,6 @@ Check that `deployed.json` respects below format:
 
 clic on this button to create a Pull Request:
 
-![github pull request](./github-pr.png)
+[![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
 
 **We'll review you Dapp and if it meets all the above criteria, it will be added to the iExec Dapp Regsitry!**
