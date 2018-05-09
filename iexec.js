@@ -5,7 +5,7 @@ module.exports = {
     envvars: 'XWDOCKERIMAGE=ugodock/blur-face',
   },
   work: {
-    cmdline: 'iexec/team.jpg',
-    dirinuri:'https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/find-face/apps/team.jpg',
+    cmdline: 'iexec/victor.mp4',
+    dirinuri:'https://raw.githubusercontent.com/Ugo/iexec-dapps-registry/ugoblur/apps/victor.mp4',
   }
 };
