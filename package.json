@@ -1,7 +1,7 @@
 {
   "name": "BlurFace",
   "version": "1.0.0",
-  "description": "BlurFace is a simple application that will automatically blur all the faces that can be detected in a video.",
+  "description": "BlurFace is a simple application that will automatically blur all the faces that can be detected in a video. It uses the algorithm defined in ageitgey/face_recognition to recognize the faces.",
   "main": "iexec.js",
   "repository": {
     "type": "git",
