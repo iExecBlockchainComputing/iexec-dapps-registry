@@ -1,8 +1,8 @@
 module.exports = {
-  name: 'FindFace',
+  name: 'BlurFace',
   app: {
     type: 'DOCKER',
-    envvars: 'XWDOCKERIMAGE=ugodock/find-face',
+    envvars: 'XWDOCKERIMAGE=ugodock/blur-face',
   },
   work: {
     cmdline: 'iexec/team.jpg',
