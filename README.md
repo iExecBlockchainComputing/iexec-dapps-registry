@@ -12,7 +12,7 @@ clic on the github "Fork" button
 
 ## 2. Create 2 new folders
 
-* **One** personal folder at the root **[MUST match with your github username or github organization]**. Ex: `/iExecBlockchainComputing`.
+* **One** personal folder at the root **[MUST match your github user or organization name]**. Ex: `/iExecBlockchainComputing`.
 
 * **One** folder for your dapp **[MUST match your dapp name]**. Ex: `/iExecBlockchainComputing/vanitygen`.
 
