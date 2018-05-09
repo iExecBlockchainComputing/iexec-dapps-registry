@@ -1,8 +1,8 @@
 # iExec Dapps Registry
 
-In order to apply for being listed on the [iExec Dapp Store](https://dapps.iex.ec/), your dapp needs to make it into this iExec Dapp Registry FIRST.
+In order to list your dapp on the [iExec Dapp Store](https://dapps.iex.ec/), you need to make into the iExec Dapp Registry FIRST. But relax, it's very easy:
 
-So once you created and deployed your iExec Dapp using the [iExec SDK](https://github.com/iExecBlockchainComputing/iexec-sdk), here are the 5 steps that remain to enter this registry:
+Once you created and deployed your iExec Dapp using the [iExec SDK](https://github.com/iExecBlockchainComputing/iexec-sdk), here are the 5 steps that remain to enter this registry:
 
 ## 1. Github Fork this repo
 
