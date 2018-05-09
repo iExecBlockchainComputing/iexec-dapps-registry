@@ -18,7 +18,7 @@ clic on the github "Fork" button
 
 ## 3. Commit `iexec.json`
 
-Check that `iexec.json` respects this format:
+Check that `iexec.json` respects below format:
 
 * **description**: Must be at least 150 letters long
 * **logo.png**: Must be 180px by 180px, square shape
@@ -46,7 +46,7 @@ Check that `iexec.json` respects this format:
 
 ## 4. Commit `deployed.json`
 
-Check that `deployed.json` respects this format:
+Check that `deployed.json` respects below format:
 
 * **Ropsten ID only => "3"**
 
