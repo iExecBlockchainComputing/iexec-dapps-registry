@@ -20,7 +20,7 @@ clic on the github "Fork" button
 
 Check that `iexec.json` respects this format:
 
-* **description**: Must be at least 150 letters long.
+* **description**: Must be at least 150 letters long
 * **logo.png**: Must be 180px by 180px, square shape
 
 ```json
