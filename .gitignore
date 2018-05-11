@@ -1,9 +1,8 @@
 account.json
 wallet.json
 package-lock.json
-truffle.js
 
 node_modules
 
 /build/contracts/*
-!/build/contracts/FindFace.json
+!/build/contracts/BlurFace.json
