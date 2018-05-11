@@ -3,23 +3,23 @@
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/FindFace",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/FindFace"
+    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/BlurFace",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/blurFace"
   },
   "logo": "logo.png",
   "app": {
-    "name": "FindFace",
+    "name": "BlurFace",
     "price": 1,
     "params": {
       "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=ugodock/find-face"
+      "envvars": "XWDOCKERIMAGE=ugodock/blur-face"
     }
   },
   "order": {
     "buy": {
       "params": "{
-        \"cmdline\": \"iexec/team.jpg\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/FindFace/team.jpg\"
+        \"cmdline\": \"iexec/victor.mp4\",
+        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4\"
       }"
     }
   }
