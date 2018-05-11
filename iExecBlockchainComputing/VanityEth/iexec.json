@@ -1,0 +1,25 @@
+{
+  "description": "Let's customize your personal ETH wallet adress. VanityEth accepts as input an hexa pattern (f00d, ace777, b0b, ..)",
+  "license": "MIT",
+  "author": "Jeremy James T",
+  "social": {
+    "website": "https://www.myetherwallet.com/",
+    "github": "https://github.com/MyEtherWallet/VanityEth#readme"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "VanityEth",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/vanityeth"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": "{
+        \"cmdline\": \"ace\"
+      }"
+    }
+  }
+}
