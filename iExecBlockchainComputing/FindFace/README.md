@@ -2,4 +2,4 @@
 # Find face
 ## Description
 This application is to extract human faces from a photo.
-## [Dapp params](./iexec.js)
+## [Dapp params](./iexec.json)
