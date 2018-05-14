@@ -1,0 +1,18 @@
+{
+  "description": "",
+  "license": "MIT",
+  "author": "Zied Guesmi",
+  "social": {
+    "website": "https://zied-guesmi.github.io/text2speech/",
+    "github": "https://github.com/Zied-Guesmi/text2speech"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "text2speech",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ziedguesmi/text2speech"
+    }
+  }
+}
