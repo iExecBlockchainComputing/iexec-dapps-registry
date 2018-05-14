@@ -12,7 +12,7 @@
     "price": 1,
     "params": {
       "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=ugodock/blur-face"
+      "envvars": "XWDOCKERIMAGE=iexechub/blur-face"
     }
   },
   "order": {

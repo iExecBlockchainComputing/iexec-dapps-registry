@@ -12,7 +12,7 @@
     "price": 1,
     "params": {
       "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=wcurrie/gnuplot"
+      "envvars": "XWDOCKERIMAGE=iexechub/gnuplot"
     }
   },
   "order": {
