@@ -1,0 +1,26 @@
+{
+  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "license": "MIT",
+  "name": "Francois Branciard",
+  "social": {
+    "website": "https://www.r-project.org/about.html",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/R-Clifford-Attractors"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "CliffordAttractors",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/r-clifford-attractors"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": "{
+        \"cmdline\": \"Rscript /iexec/CliffordAttractors.R -1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054\",
+        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R\"
+      }"
+    }
+  }
+}
