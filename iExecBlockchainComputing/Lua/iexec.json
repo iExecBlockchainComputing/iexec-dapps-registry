@@ -1,0 +1,26 @@
+{
+  "description": "Lua is a lightweight, multi-paradigm programming language designed primarily for embedded use in applications.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://www.lua.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Lua"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Lua",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=superpaintman/lua"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": "{
+        \"cmdline\": \"lua /iexec/hello.lua\",
+        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Lua/hello.lua\"
+      }"
+    }
+  }
+}
