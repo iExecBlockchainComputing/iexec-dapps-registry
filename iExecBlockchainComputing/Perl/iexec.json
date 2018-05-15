@@ -1,0 +1,26 @@
+{
+  "description": "Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://www.perl.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Perl"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Perl",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=perl:5.20"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": "{
+        \"cmdline\": \" perl /iexec/hello.pl\",
+        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Perl/hello.pl\"
+      }"
+    }
+  }
+}
