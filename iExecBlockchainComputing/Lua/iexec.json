@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"lua /iexec/hello.lua\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Lua/hello.lua\"
-      }"
+      "params": {
+        "cmdline": "lua /iexec/hello.lua",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Lua/hello.lua"
+      }
     }
   }
 }

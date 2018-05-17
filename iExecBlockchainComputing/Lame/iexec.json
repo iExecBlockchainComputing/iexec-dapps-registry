@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"--help\",
-        \"dirinuri\": \"https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png\"
-      }"
+      "params": {
+        "cmdline": "--help",
+        "dirinuri": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png"
+      }
     }
   }
 }

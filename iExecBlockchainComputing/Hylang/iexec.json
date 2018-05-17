@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"hy /iexec/hello.hy\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Hylang/hello.hy\"
-      }"
+      "params": {
+        "cmdline": "hy /iexec/hello.hy",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Hylang/hello.hy"
+      }
     }
   }
 }

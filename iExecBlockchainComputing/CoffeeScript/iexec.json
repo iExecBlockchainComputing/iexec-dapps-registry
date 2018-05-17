@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"coffee /iexec/hello.coffee\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/CoffeeScript/hello.coffee\"
-      }"
+      "params": {
+        "cmdline": "coffee /iexec/hello.coffee",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/CoffeeScript/hello.coffee"
+      }
     }
   }
 }

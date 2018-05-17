@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"/iexec/script.gp\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Gnuplot/script.gp\"
-      }"
+      "params": {
+        "cmdline": "/iexec/script.gp",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Gnuplot/script.gp"
+      }
     }
   }
 }

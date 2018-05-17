@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"escript /iexec/hello.erl\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Erlang/hello.erl\"
-      }"
+      "params": {
+        "cmdline": "escript /iexec/hello.erl",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Erlang/hello.erl"
+      }
     }
   }
 }

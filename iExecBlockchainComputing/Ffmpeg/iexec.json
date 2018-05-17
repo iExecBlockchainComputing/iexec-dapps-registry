@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"-i /iexec/small.mp4 /iexec/small.avi\",
-        \"dirinuri\": \"http://techslides.com/demos/sample-videos/small.mp4\",
-      }"
+      "params": {
+        "cmdline": "-i /iexec/small.mp4 /iexec/small.avi",
+        "dirinuri": "http://techslides.com/demos/sample-videos/small.mp4",
+      }
     }
   }
 }

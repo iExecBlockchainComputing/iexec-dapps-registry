@@ -17,9 +17,9 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"mysox --help\"
-      }"
+      "params": {
+        "cmdline": "mysox --help"
+      }
     }
   }
 }

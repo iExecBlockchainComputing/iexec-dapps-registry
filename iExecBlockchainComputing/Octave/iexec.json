@@ -17,9 +17,9 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"--version\"
-      }"
+      "params": {
+        "cmdline": "--version"
+      }
     }
   }
 }

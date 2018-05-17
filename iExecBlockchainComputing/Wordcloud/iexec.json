@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"Rscript iexec/iExecWordcloud.R https://iex.ec/app/uploads/2017/04/iExec-WPv2.0-English.pdf\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Wordcloud/iExecWordcloud.R\"
-      }"
+      "params": {
+        "cmdline": "Rscript iexec/iExecWordcloud.R https://iex.ec/app/uploads/2017/04/iExec-WPv2.0-English.pdf",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Wordcloud/iExecWordcloud.R"
+      }
     }
   }
 }

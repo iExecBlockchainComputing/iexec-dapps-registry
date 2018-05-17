@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"iexec/iexec-rlc.blend -o iexec/iexec-rlc -f 1\",
-        \"dirinuri\": \"https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend\"
-      }"
+      "params": {
+        "cmdline": "iexec/iexec-rlc.blend -o iexec/iexec-rlc -f 1",
+        "dirinuri": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend"
+      }
     }
   }
 }

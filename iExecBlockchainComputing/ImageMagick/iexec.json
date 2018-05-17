@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"convert iexec/logo.png iexec/logo.jpg\",
-        \"dirinuri\": \"https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/imagemagick/logo.png\"
-      }"
+      "params": {
+        "cmdline": "convert iexec/logo.png iexec/logo.jpg",
+        "dirinuri": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/imagemagick/logo.png"
+      }
     }
   }
 }

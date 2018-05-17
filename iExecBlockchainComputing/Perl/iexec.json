@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \" perl /iexec/hello.pl\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Perl/hello.pl\"
-      }"
+      "params": {
+        "cmdline": " perl /iexec/hello.pl",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Perl/hello.pl"
+      }
     }
   }
 }

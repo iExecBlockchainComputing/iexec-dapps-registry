@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"iexec/victor.mp4\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4\"
-      }"
+      "params": {
+        "cmdline": "iexec/victor.mp4",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4"
+      }
     }
   }
 }

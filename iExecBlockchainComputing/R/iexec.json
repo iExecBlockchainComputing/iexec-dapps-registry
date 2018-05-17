@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"Rscript iexec/HelloWorld.R\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R/HelloWorld.R\"
-      }"
+      "params": {
+        "cmdline": "Rscript iexec/HelloWorld.R",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R/HelloWorld.R"
+      }
     }
   }
 }

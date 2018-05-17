@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"--version\",
-        \"dirinuri\": \"https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/apps/make-logo.scm\"
-      }"
+      "params": {
+        "cmdline": "--version",
+        "dirinuri": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/apps/make-logo.scm"
+      }
     }
   }
 }

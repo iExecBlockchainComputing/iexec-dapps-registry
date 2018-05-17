@@ -17,10 +17,10 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"ruby /iexec/hello.rb\",
-        \"dirinuri\": \"https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Ruby/hello.rb\"
-      }"
+      "params": {
+        "cmdline": "ruby /iexec/hello.rb",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Ruby/hello.rb"
+      }
     }
   }
 }

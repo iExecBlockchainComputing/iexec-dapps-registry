@@ -17,9 +17,9 @@
   },
   "order": {
     "buy": {
-      "params": "{
-        \"cmdline\": \"\"
-      }"
+      "params": {
+        "cmdline": ""
+      }
     }
   }
 }
