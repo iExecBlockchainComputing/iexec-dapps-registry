@@ -14,5 +14,12 @@
       "type": "DOCKER",
       "envvars": "XWDOCKERIMAGE=ziedguesmi/text2speech"
     }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "dirinuri": "https://github.com/Zied-Guesmi/text2speech/blob/master/DATADIR.zip?raw=true"
+      }
+    }
   }
 }

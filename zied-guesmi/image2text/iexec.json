@@ -14,5 +14,12 @@
       "type": "DOCKER",
       "envvars": "XWDOCKERIMAGE=ziedguesmi/image2text"
     }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "dirinuri": "https://github.com/Zied-Guesmi/image2text/blob/master/DATADIR.zip?raw=true"
+      }
+    }
   }
 }
