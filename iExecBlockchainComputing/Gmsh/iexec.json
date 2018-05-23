@@ -1,12 +1,14 @@
 {
-  "description": "Gmsh is a finite-element mesh generator developed by Christophe Geuzaine and Jean-François Remacle. Released under the GNU General Public License, Gmsh is free software. Gmsh contains 4 modules: for geometry description, meshing, solving and post-processing. Gmsh supports parametric input and has advanced visualization mechanisms. Since version 3.0, Gmsh supports full constructive solid geometry features, based on Open Cascade Technology.",
+  "description":
+    "Gmsh is a finite-element mesh generator developed by Christophe Geuzaine and Jean-François Remacle. Released under the GNU General Public License, Gmsh is free software. Gmsh contains 4 modules: for geometry description, meshing, solving and post-processing. Gmsh supports parametric input and has advanced visualization mechanisms. Since version 3.0, Gmsh supports full constructive solid geometry features, based on Open Cascade Technology.",
   "license": "MIT",
   "author": "Victor",
   "social": {
     "website": "http://gmsh.info/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gmsh"
+    "github":
+      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gmsh"
   },
-  "logo": "logo.png",
+  "logo": "logo.jpg",
   "app": {
     "name": "Gmsh",
     "price": 1,
