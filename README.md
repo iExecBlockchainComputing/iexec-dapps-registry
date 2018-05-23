@@ -48,12 +48,12 @@ Check that `iexec.json` respects below format:
 
 Check that `deployed.json` respects below format:
 
-* **Ropsten ID only => "3"**
+* **Kovan ID only => "42"**
 
 ```json
 {
   "app": {
-    "3": "0xfd3753bc4e4c5624a5fbc41c2632bd731d7e96fb"
+    "42": "0xfd3753bc4e4c5624a5fbc41c2632bd731d7e96fb"
   }
 }
 ```
