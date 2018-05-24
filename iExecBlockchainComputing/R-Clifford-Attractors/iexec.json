@@ -4,9 +4,7 @@
   "license": "MIT",
   "name": "Francois Branciard",
   "social": {
-    "website": "https://www.r-project.org/about.html",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/R-Clifford-Attractors"
+    "website": "http://paulbourke.net/fractals/clifford/"
   },
   "logo": "logo.png",
   "app": {
