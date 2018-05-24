@@ -2,7 +2,7 @@
   "description":
     "In mathematics, a fractal is an abstract object used to describe and simulate naturally occurring objects. Artificially created fractals commonly exhibit similar patterns at increasingly small scales. It is also known as expanding symmetry or evolving symmetry. If the replication is exactly the same at every scale, it is called a self-similar pattern. An example of this is the Clifford Attractor.",
   "license": "MIT",
-  "name": "Francois Branciard",
+  "author": "Francois Branciard",
   "social": {
     "website": "http://paulbourke.net/fractals/clifford/"
   },
