@@ -1,10 +1,10 @@
-  {
-  "description": "Scala is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java.",
+{
+  "description":
+    "Scala is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java.",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://www.scala-lang.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Scala"
+    "website": "https://www.scala-lang.org/"
   },
   "logo": "logo.png",
   "app": {
@@ -19,7 +19,8 @@
     "buy": {
       "params": {
         "cmdline": "scala /iexec/hello.scala",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Scala/hello.scala"
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Scala/hello.scala"
       }
     }
   }

@@ -1,10 +1,10 @@
 {
-  "description": "Erlang (/ˈɜːrlæŋ/ UR-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
+  "description":
+    "Erlang (/ˈɜːrlæŋ/ UR-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "http://www.erlang.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Erlang"
+    "website": "http://www.erlang.org/"
   },
   "logo": "logo.png",
   "app": {
@@ -19,7 +19,8 @@
     "buy": {
       "params": {
         "cmdline": "escript /iexec/hello.erl",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Erlang/hello.erl"
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Erlang/hello.erl"
       }
     }
   }

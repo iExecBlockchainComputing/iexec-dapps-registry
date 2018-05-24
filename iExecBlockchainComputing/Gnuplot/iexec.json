@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "http://gnuplot.info/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Gnuplot"
+    "website": "http://gnuplot.info/"
   },
   "logo": "logo.jpg",
   "app": {

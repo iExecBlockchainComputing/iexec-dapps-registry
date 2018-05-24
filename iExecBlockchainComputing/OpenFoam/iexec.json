@@ -4,9 +4,7 @@
   "license": "MIT",
   "name": "Victor",
   "social": {
-    "website": "https://openfoam.org/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/OpenFoam"
+    "website": "https://openfoam.org/"
   },
   "logo": "logo.jpg",
   "app": {

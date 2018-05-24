@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Francois Branciard",
   "social": {
-    "website": "https://datascienceplus.com/building-wordclouds-in-r/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Wordcloud"
+    "website": "https://datascienceplus.com/building-wordclouds-in-r/"
   },
   "logo": "logo.png",
   "app": {

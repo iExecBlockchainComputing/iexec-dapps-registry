@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Eric",
   "social": {
-    "website": "http://scikit-learn.org/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/facial-recognition"
+    "website": "http://scikit-learn.org/"
   },
   "logo": "logo.jpg",
   "app": {

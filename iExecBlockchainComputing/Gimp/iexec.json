@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Victor",
   "social": {
-    "website": "https://www.gimp.org/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/gimp"
+    "website": "https://www.gimp.org/"
   },
   "logo": "logo.jpg",
   "app": {

@@ -1,10 +1,10 @@
 {
-  "description": "Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.",
+  "description":
+    "Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://python.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Python"
+    "website": "https://python.org/"
   },
   "logo": "logo.png",
   "app": {
@@ -19,7 +19,8 @@
     "buy": {
       "params": {
         "cmdline": "python /iexec/hello.py",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Python/hello.py"
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Python/hello.py"
       }
     }
   }

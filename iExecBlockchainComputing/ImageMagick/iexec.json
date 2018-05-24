@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Victor",
   "social": {
-    "website": "https://www.imagemagick.org/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/imagemagick"
+    "website": "https://www.imagemagick.org/"
   },
   "logo": "logo.jpg",
   "app": {

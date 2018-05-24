@@ -1,10 +1,10 @@
-  {
-  "description": "A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write..",
+{
+  "description":
+    "A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write..",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://www.ruby-lang.org/en/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Ruby"
+    "website": "https://www.ruby-lang.org/en/"
   },
   "logo": "logo.png",
   "app": {
@@ -19,7 +19,8 @@
     "buy": {
       "params": {
         "cmdline": "ruby /iexec/hello.rb",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Ruby/hello.rb"
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Ruby/hello.rb"
       }
     }
   }

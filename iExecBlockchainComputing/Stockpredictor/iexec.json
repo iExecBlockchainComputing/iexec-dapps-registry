@@ -4,9 +4,7 @@
   "license": "BSD License",
   "author": "Lei Zhang",
   "social": {
-    "website": "http://scikit-learn.org/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/scikit-learn#readme"
+    "website": "http://scikit-learn.org/"
   },
   "logo": "logo.jpg",
   "app": {

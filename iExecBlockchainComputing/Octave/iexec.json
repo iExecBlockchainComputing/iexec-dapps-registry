@@ -4,9 +4,7 @@
   "license": "MIT",
   "name": "Eric",
   "social": {
-    "website": "https://www.gnu.org/software/octave/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Octave"
+    "website": "https://www.gnu.org/software/octave/"
   },
   "logo": "logo.jpg",
   "app": {

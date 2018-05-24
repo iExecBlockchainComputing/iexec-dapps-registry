@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Victor",
   "social": {
-    "website": "http://lame.sourceforge.net/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/lame"
+    "website": "http://lame.sourceforge.net/"
   },
   "logo": "logo.jpg",
   "app": {

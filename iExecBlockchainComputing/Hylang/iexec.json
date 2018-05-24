@@ -1,10 +1,10 @@
 {
-  "description": "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree..",
+  "description":
+    "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree..",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "http://hylang.org/",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/Hylang"
+    "website": "http://hylang.org/"
   },
   "logo": "logo.png",
   "app": {
@@ -19,7 +19,8 @@
     "buy": {
       "params": {
         "cmdline": "hy /iexec/hello.hy",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Hylang/hello.hy"
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Hylang/hello.hy"
       }
     }
   }

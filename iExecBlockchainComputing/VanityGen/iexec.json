@@ -4,8 +4,7 @@
   "license": "MIT",
   "author": "François Branciard",
   "social": {
-    "website": "https://en.bitcoin.it/wiki/Vanitygen",
-    "github": "https://github.com/samr7/vanitygen"
+    "website": "https://en.bitcoin.it/wiki/Vanitygen"
   },
   "logo": "logo.png",
   "app": {

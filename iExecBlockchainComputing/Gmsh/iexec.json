@@ -4,9 +4,7 @@
   "license": "MIT",
   "author": "Victor",
   "social": {
-    "website": "http://gmsh.info/",
-    "github":
-      "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/gmsh"
+    "website": "http://gmsh.info/"
   },
   "logo": "logo.jpg",
   "app": {
