@@ -1,6 +1,6 @@
 {
   "description":
-    "Hy is a Lisp dialect that translates expressions into Python's abstract syntax tree..",
+    "Hy (alternately, Hylang) is a dialect of the Lisp programming language designed to interact with Python by translating expressions into Python's abstract syntax tree (AST). Hy was introduced at PyCon 2013 by Paul Tagliamonte.",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
