@@ -1,277 +1,161 @@
 [
   {
-    "type": "custom",
-    "button": false,
-    "name": "2 NEW DAPPS",
-    "author": "",
-    "excerpt": "",
-    "price": "Coming soon",
-    "link": "",
-    "logo": "https://image.ibb.co/kJQDn6/new_partenership.png",
-    "created": "2019-01-01T19:45:33.044Z"
-  },
-  {
-    "type": "custom",
-    "name": "The Dapp Challenge",
-    "author": "",
-    "excerpt": "",
-    "buttonText": "READ MORE",
-    "price": "",
-    "theme": "blackCard",
-    "link":
-      "https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee",
-    "logo": "https://image.ibb.co/hXKVKm/150k.jpg",
-    "created": "2019-01-02T19:45:33.044Z"
-  },
-  {
-    "type": "partner",
-    "name": "Request Network",
-    "author": {
-      "name": "Request Network Foundation"
-    },
-    "license": "MIT",
-    "excerpt":
-      "A decentralized network built on top of Ethereum, which allows anyone, anywhere to request a payment.",
-    "description":
-      "Request is a decentralized network that allows anyone to request a payment (a Request Invoice)for which the recipient can pay in a secure way. All of the information is stored in a decentralized authentic ledger. This results in cheaper, easier, and more secure payments, and it allows for a wide range of automation possibilities.",
-    "social": {
-      "website": "https://request.network",
-      "github": "https://github.com/RequestNetwork",
-      "twitter": "https://twitter.com/requestnetwork",
-      "medium": "https://blog.request.network/"
-    },
-    "created": "2017-12-02T19:45:33.044Z",
-    "logo": "https://image.ibb.co/nMuVjb/request.png"
-  },
-  {
-    "type": "partner",
-    "name": "Signals Network",
-    "author": {
-      "name": "Signals Network Inc"
-    },
-    "license": "MIT",
-    "excerpt":
-      "Signals is an easy to use platform where you can assemble crypto trading strategies driven by machine learning.",
-    "description":
-      "Signals is an easy to use platform where you can assemble crypto trading strategies driven by machine learning - with zero programming skills needed. You can also offer your strategy for copytrading or discover other successful strategies. The crypto currency market is booming and becomes more and more complex. At the same time, more and more people are becoming cryptotraders. Most people nowadays rely on nothing but their gut. We’re big fans of crypto trading, however we’re not gamblers. We don’t want to rely on human emotions and cognitive bias when we know that machine intelligence can solve this problem. Therefore we want to connect data science commmunity with developers and cryptocurrency traders and build a platform that would be easy to use for anyone.",
-    "social": {
-      "website": "https://signals.network/",
-      "github": "https://github.com/signalsnetwork",
-      "linkedin": "https://www.linkedin.com/company/18227093/",
-      "twitter": "https://twitter.com/signals_network",
-      "medium": "https://blog.signals.network/"
-    },
-    "created": "2017-12-03T19:45:33.044Z",
-    "logo": "https://image.ibb.co/kZeKcw/signals.png"
-  },
-  {
-    "type": "partner",
-    "name": "TandemX",
-    "author": {
-      "name": "Synergy Crowds"
-    },
-    "license": "MIT",
-    "excerpt":
-      "TandemX is an application that clusters a large bunch of digital currencies.",
-    "description":
-      "TandemX is an application that builds groups of digital currencies that have similar behavior, like price evolution. The user can watch 3 groups of currencies, based on their behavior: ascending, flat, descending. In the next future, the users will be able to configure the application through a wide range of parameters. This application was created and is proudly provided within the SynergyCrowds project initiative.",
-    "social": {
-      "linkedin": "https://www.linkedin.com/company/synergycrowds-blockchain"
-    },
-    "created": "2017-12-08T19:45:33.044Z",
-    "logo": "https://image.ibb.co/nP0gqG/synergy_crowds.png"
-  },
-  {
-    "type": "partner",
-    "app": "Flixxo",
-    "author": {
-      "name": "Flixxo"
-    },
-    "license": "",
-    "excerpt":
-      "A decentralized video distribution network, where users will be the owners and beneficiaries of their content.",
-    "description":
-      "Flixxo is a a decentralized video distribution network, where users will be the owners and beneficiaries of their content. The platform eliminates intermediaries by letting advertisers, viewers, and content creators engage with each other directly.",
-    "social": {
-      "website": "https://www.flixxo.com/"
-    },
-    "created": "2017-12-10T19:45:33.044Z",
-    "logo": "https://image.ibb.co/h6WSnw/flixxo.jpg"
-  },
-  {
-    "type": "partner",
-    "name": "Shopin",
-    "author": {
-      "name": "Shopin"
-    },
-    "license": "",
-    "excerpt":
-      "Shopin is a universal shopper profile that delivers the most personal shopping experience on retailers websites.",
-    "description":
-      "Shopin is a universal shopper profile that delivers the most personal shopping experience on retailers' websites based on shoppers' preferences and purchase history data. Shopin empowers retailers to offer better product recommendations, easier and more secure transactions, and more valuable customer rewards using blockchain and artificial intelligence (AI) technology. Shopin's vision is to create a more sustainable retail economy where retailers become stronger by working together and shoppers get rewarded based on the value of data that they fully own, share, and control. The company's AI-powered product recommendation engine benefits all retailers in the Shopin network by updating purchase history data in real-time. Unlike other loyalty point systems that expire, Shopin's cryptocurrency enables retailers to offer universal loyalty rewards at multiple retailers across the globe. Headquartered in New York, Shopin has raised $4.6M to date from Deep Fork Capital, Outbound Ventures, and angel investors from Google, ZocDoc and others. In early 2018, Shopin will hold a token sale to fully develop its product and scale operations. To learn more about Shopin and its upcoming token sale, visit www.shopin.com.",
-    "social": {
-      "website": "https://www.shopin.com/"
-    },
-    "created": "2018-01-15T16:05:05.120Z",
-    "logo": "https://image.ibb.co/kY4iNR/shopin.jpg"
-  },
-  {
-    "app": "Ffmpeg",
+    "name": "Ffmpeg",
     "org": "iExecBlockchainComputing",
     "created": "2017-12-06T19:45:33.044Z"
   },
   {
-    "app": "VanityGen",
+    "name": "VanityGen",
     "org": "iExecBlockchainComputing",
     "created": "2017-12-09T19:45:33.044Z"
   },
   {
-    "app": "VanityEth",
+    "name": "VanityEth",
     "org": "iExecBlockchainComputing",
     "created": "2017-12-09T19:45:33.044Z"
   },
   {
-    "app": "Blender",
+    "name": "Blender",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "BlurFace",
+    "name": "BlurFace",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "CoffeeScript",
+    "name": "CoffeeScript",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "Erlang",
+    "name": "Erlang",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "FacialRecognition",
+    "name": "FacialRecognition",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "FindFace",
+    "name": "FindFace",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "Factorial",
+    "name": "Factorial",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-01T19:45:33.044Z"
   },
   {
-    "app": "R",
+    "name": "R",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-15T19:45:33.044Z"
   },
   {
-    "app": "R-Clifford-Attractors",
+    "name": "R-Clifford-Attractors",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Ruby",
+    "name": "Ruby",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Scala",
+    "name": "Scala",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Scinumpy",
+    "name": "Scinumpy",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Gnuplot",
+    "name": "Gnuplot",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Wordcloud",
+    "name": "Wordcloud",
     "org": "iExecBlockchainComputing",
     "created": "2018-02-18T19:45:33.044Z"
   },
   {
-    "app": "Gimp",
+    "name": "Gimp",
     "org": "iExecBlockchainComputing",
     "created": "2018-03-15T19:45:33.044Z"
   },
   {
-    "app": "ImageMagick",
+    "name": "ImageMagick",
     "org": "iExecBlockchainComputing",
     "created": "2018-03-15T22:45:33.044Z"
   },
   {
-    "app": "Julia",
+    "name": "Julia",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Lua",
+    "name": "Lua",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Lame",
+    "name": "Lame",
     "org": "iExecBlockchainComputing",
     "created": "2018-03-28T12:45:33.044Z"
   },
   {
-    "app": "Sox",
+    "name": "Sox",
     "org": "iExecBlockchainComputing",
     "created": "2018-03-28T20:45:33.044Z"
   },
   {
-    "app": "OpenFoam",
+    "name": "OpenFoam",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-12T12:45:33.044Z"
   },
   {
-    "app": "Octave",
+    "name": "Octave",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-12T13:45:33.044Z"
   },
   {
-    "app": "Perl",
+    "name": "Perl",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Python",
+    "name": "Python",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Stockpredictor",
+    "name": "Stockpredictor",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-17T13:45:33.044Z"
   },
   {
-    "app": "Groovy",
+    "name": "Groovy",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Hylang",
+    "name": "Hylang",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T13:45:33.044Z"
   },
   {
-    "app": "Gmsh",
+    "name": "Gmsh",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-24T16:45:33.044Z"
   },
   {
-    "app": "Scikit-learn",
+    "name": "Scikit-learn",
     "org": "iExecBlockchainComputing",
     "created": "2018-04-26T16:45:33.044Z"
   }
