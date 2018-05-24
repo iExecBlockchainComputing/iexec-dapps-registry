@@ -1,6 +1,6 @@
 {
   "description":
-    "Erlang (/ˈɜːrlæŋ/ UR-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
+    "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs.",
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
