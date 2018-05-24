@@ -1,0 +1,25 @@
+{
+  "description": "A sudoku is a logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution. Our sudoku solving algorithm can solve any valid Sudoku puzzle that have a unique solution.",
+  "license": "MIT",
+  "author": "Hadrien Croubois",
+  "social": {
+    "website": "https://en.wikipedia.org/wiki/Sudoku",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/sudokuCLI"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "SudokuCLI",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/sudokucli"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "53..7....6..195....98....6.8...6...34..8.3..17...2...6.6....28....419..5....8..79"
+      }
+    }
+  }
+}
