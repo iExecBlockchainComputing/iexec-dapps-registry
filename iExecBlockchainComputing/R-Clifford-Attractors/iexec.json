@@ -1,10 +1,12 @@
 {
-  "description": "This is the registry for sample iexec dapps, used by the iexec-sdk cli.",
+  "description":
+    "In mathematics, a fractal is an abstract object used to describe and simulate naturally occurring objects. Artificially created fractals commonly exhibit similar patterns at increasingly small scales. It is also known as expanding symmetry or evolving symmetry. If the replication is exactly the same at every scale, it is called a self-similar pattern. An example of this is the Clifford Attractor.",
   "license": "MIT",
   "name": "Francois Branciard",
   "social": {
     "website": "https://www.r-project.org/about.html",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/R-Clifford-Attractors"
+    "github":
+      "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/R-Clifford-Attractors"
   },
   "logo": "logo.png",
   "app": {
@@ -18,8 +20,10 @@
   "order": {
     "buy": {
       "params": {
-        "cmdline": "Rscript /iexec/CliffordAttractors.R -1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R"
+        "cmdline":
+          "Rscript /iexec/CliffordAttractors.R -1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R"
       }
     }
   }
