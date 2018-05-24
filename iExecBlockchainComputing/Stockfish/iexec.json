@@ -1,0 +1,25 @@
+{
+  "description": "Stockfish is a free and open-source UCI chess engine. Stockfish is one of the strongest chess engines in the world. It is also much stronger than the best human chess grandmasters.",
+  "license": "MIT",
+  "author": "iExec",
+  "social": {
+    "website": "https://stockfishchess.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/tree/stockfish"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Stockfish",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/stockfish"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "uci"
+      }
+    }
+  }
+}
