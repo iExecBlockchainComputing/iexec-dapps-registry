@@ -1,10 +1,10 @@
 {
-  "description":
-    "Let's customize your personal ETH wallet adress.  Add unique flair when you tell people to send Ether. VanityEth accepts as input an hexa pattern (f00d, ace777, b0b, ..). Alternatively, vanitygen can be used to generate random addresses offline.",
+  "description": "Let's customize your personal ETH wallet adress. VanityEth accepts as input an hexa pattern (f00d, ace777, b0b, ..)",
   "license": "MIT",
   "author": "Jeremy James T",
   "social": {
-    "website": "https://www.myetherwallet.com/"
+    "website": "https://www.myetherwallet.com/",
+    "github": "https://github.com/MyEtherWallet/VanityEth#readme"
   },
   "logo": "logo.png",
   "app": {
@@ -17,6 +17,8 @@
   },
   "order": {
     "buy": {
+      "app": "0xab6f80a41ede28d55716b93faff54918e87ef28e",
+      "dataset": "0x0000000000000000000000000000000000000000",
       "params": {
         "cmdline": "ace"
       }
