@@ -17,6 +17,8 @@
   },
   "order": {
     "buy": {
+      "app": "0xabb3404aa42af18d041224bea118a06f55a45de0",
+      "dataset": "0x0000000000000000000000000000000000000000",
       "params": {
         "cmdline": "iexec/victor.mp4",
         "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4"
