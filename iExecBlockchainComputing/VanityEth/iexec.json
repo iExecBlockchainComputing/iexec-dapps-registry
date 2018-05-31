@@ -17,6 +17,8 @@
   },
   "order": {
     "buy": {
+      "app": "0xab6f80a41ede28d55716b93faff54918e87ef28e",
+      "dataset": "0xcc4859eadf58b1507a6dc0c031715c8089ec03aa",
       "params": {
         "cmdline": "ace"
       }
