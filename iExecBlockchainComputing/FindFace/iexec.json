@@ -17,6 +17,8 @@
   },
   "order": {
     "buy": {
+      "app": "0xff84550fb109a9a8a02f8b1a465105e7b906ab8a",
+      "dataset": "0x0000000000000000000000000000000000000000",
       "params": {
         "cmdline": "iexec/team.jpg",
         "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/FindFace/team.jpg"
