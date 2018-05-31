@@ -1,0 +1,25 @@
+{
+  "description": "image2speech is an Ethereum ready dapp that applies google applies google's tesseract-OCR engine to extract text from images and uses mimic tts engine to convert text to speech and save them in wav format.",
+  "license": "MIT",
+  "author": "Zied Guesmi",
+  "social": {
+    "website": "https://zied-guesmi.github.io/image2speech/",
+    "github": "https://github.com/Zied-Guesmi/image2speech"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "image2speech",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ziedguesmi/image2speech"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "dirinuri": "https://github.com/Zied-Guesmi/image2speech/blob/master/DATADIR.zip?raw=true"
+      }
+    }
+  }
+}
