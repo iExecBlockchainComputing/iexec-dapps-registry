@@ -1,9 +1,11 @@
 {
-  "description":
-    "BlurFace is a simple application that will automatically blur all the faces that can be detected in a video. It uses the algorithm defined in ageitgey/face_recognition to recognize the faces.",
+  "description": "BlurFace is a simple application that will automatically blur all the faces that can be detected in a video. It uses the algorithm defined in ageitgey/face_recognition to recognize the faces.",
   "license": "MIT",
   "author": "Ugo Plouviez",
-  "social": {},
+  "social": {
+    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/BlurFace",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/blurFace"
+  },
   "logo": "logo.png",
   "app": {
     "name": "BlurFace",
@@ -15,10 +17,11 @@
   },
   "order": {
     "buy": {
+      "app": "0xabb3404aa42af18d041224bea118a06f55a45de0",
+      "dataset": "0x0000000000000000000000000000000000000000",
       "params": {
         "cmdline": "iexec/victor.mp4",
-        "dirinuri":
-          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4"
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4"
       }
     }
   }
