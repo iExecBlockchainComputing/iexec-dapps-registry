@@ -1,10 +1,4 @@
 
-## [Description](./package.json)
-## [Parameters](./iexec.js)
-
-
-## [Description](./package.json)
-## [Parameters](./iexec.js)
 # iExec Dapps Registry
 
 In order to list your dapp on the [iExec Dapp Store](https://dapps.iex.ec/), you need to make it into the iExec Dapp Registry FIRST. But relax, it's very easy:
