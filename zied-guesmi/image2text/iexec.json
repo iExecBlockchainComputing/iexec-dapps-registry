@@ -1,0 +1,26 @@
+{
+  "description": "image2text is an Ethereum ready dapp that applies google's tesseract-OCR engine to extract text from images. So whether you are creating a billing app or converting images to searchable pdfs, image2text is the right tool.",
+  "license": "MIT",
+  "author": "Zied Guesmi",
+  "social": {
+    "website": "https://zied-guesmi.github.io/image2text/",
+    "github": "https://github.com/Zied-Guesmi/image2text"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "image2text",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ziedguesmi/image2text"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "",
+        "dirinuri": "https://github.com/Zied-Guesmi/image2text/blob/master/DATADIR.zip?raw=true"
+      }
+    }
+  }
+}
