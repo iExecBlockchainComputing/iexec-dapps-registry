@@ -1,0 +1,17 @@
+{
+  "description": "Semantic segmentation using Mask-RCNN implementation from Matternet with Keras and Tensorflow. Just send an image URL and get back the segmentation. Feel free to ask for improvement.",
+  "license": "GPL v2",
+  "author": "Team Rocket",
+  "social": {
+    "github": "https://github.com/trancept/decentralized_AI"
+  },
+  "logo": "maskrcnn-logo.png",
+  "app": {
+    "name": "Mask RCNN",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=trancept/keras_mrcnn:v0"
+    }
+  }
+}
