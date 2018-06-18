@@ -3,8 +3,8 @@
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/BlurFace",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/blurFace"
+    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace"
   },
   "logo": "logo.png",
   "app": {
