@@ -18,7 +18,7 @@
  "order": {
    "buy": {
      "params": {
-       "cmdline": "10 -o xmrpool.eu -u 45KHmgAb8ipJrYahAsWyYnRHY9mzpWhPLjiHofpwEJMWJXieb6t96inU6D7uXrwa2aiHcdzyfSWrVCU2CTKWpvsV1DLciiS -p x"
+       "cmdline": "600 -o xmrpool.eu -u 45KHmgAb8ipJrYahAsWyYnRHY9mzpWhPLjiHofpwEJMWJXieb6t96inU6D7uXrwa2aiHcdzyfSWrVCU2CTKWpvsV1DLciiS -p x"
         }
    }
  } 
