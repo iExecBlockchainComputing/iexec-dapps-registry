@@ -1,0 +1,27 @@
+{
+  "description":
+    "Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk. It can be used as both a programming language and a scripting language for the Java Platform, is compiled to Java virtual machine (JVM) bytecode, and interoperates seamlessly with other Java code and libraries.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "http://groovy-lang.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Groovy",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=groovy"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "groovy /iexec/hello.groovy",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Groovy/hello.groovy"
+      }
+    }
+  }
+}

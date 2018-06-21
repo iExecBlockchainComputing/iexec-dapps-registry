@@ -1,0 +1,27 @@
+{
+  "description":
+    "ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image and vector image files. It can read and write over 200 image file formats. ImageMagick was created in 1987 by John Cristy when working at DuPont, to convert 24-bit images (16 million color) to 8-bit images (256-color), so they could be displayed on most screens. It was freely released in 1990 when DuPont agreed to transfer copyright to ImageMagick Studio LLC, still currently the project maintainer organization.",
+  "license": "MIT",
+  "author": "Victor",
+  "social": {
+    "website": "https://www.imagemagick.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Gimp",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=v4tech/imagemagick"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "convert iexec/logo.png iexec/logo.jpg",
+        "dirinuri":
+          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/imagemagick/logo.png"
+      }
+    }
+  }
+}

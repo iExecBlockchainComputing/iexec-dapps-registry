@@ -1,0 +1,102 @@
+[
+  {
+    "type": "custom",
+    "button": false,
+    "org": "undefined",
+    "name": "2 NEW DAPPS",
+    "description":
+      "undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined",
+    "social": {
+      "website": "undefined"
+    },
+    "logo": "https://image.ibb.co/kJQDn6/new_partenership.png",
+    "created": "2019-01-01T19:45:33.044Z"
+  },
+  {
+    "type": "custom",
+    "org": "undefined",
+    "name": "The Dapp Challenge",
+    "description":
+      "undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined undefined",
+    "buttonText": "READ MORE",
+    "theme": "blackCard",
+    "social": {
+      "website":
+        "https://medium.com/iex-ec/the-iexec-%C3%B0app-challenge-150k-of-grants-to-win-abf6798b31ee"
+    },
+    "logo": "https://image.ibb.co/hXKVKm/150k.jpg",
+    "created": "2019-01-02T19:45:33.044Z"
+  },
+  {
+    "type": "partner",
+    "name": "Request Network",
+    "org": "Request Network Foundation",
+    "license": "MIT",
+    "description":
+      "Request is a decentralized network that allows anyone to request a payment (a Request Invoice)for which the recipient can pay in a secure way. All of the information is stored in a decentralized authentic ledger. This results in cheaper, easier, and more secure payments, and it allows for a wide range of automation possibilities.",
+    "social": {
+      "website": "https://request.network",
+      "github": "https://github.com/RequestNetwork",
+      "twitter": "https://twitter.com/requestnetwork",
+      "medium": "https://blog.request.network/"
+    },
+    "created": "2017-12-02T19:45:33.044Z",
+    "logo": "https://image.ibb.co/nMuVjb/request.png"
+  },
+  {
+    "type": "partner",
+    "name": "Signals Network",
+    "org": "Signals Network Inc",
+    "license": "MIT",
+    "description":
+      "Signals is an easy to use platform where you can assemble crypto trading strategies driven by machine learning - with zero programming skills needed. You can also offer your strategy for copytrading or discover other successful strategies. The crypto currency market is booming and becomes more and more complex. At the same time, more and more people are becoming cryptotraders. Most people nowadays rely on nothing but their gut. We’re big fans of crypto trading, however we’re not gamblers. We don’t want to rely on human emotions and cognitive bias when we know that machine intelligence can solve this problem. Therefore we want to connect data science commmunity with developers and cryptocurrency traders and build a platform that would be easy to use for anyone.",
+    "social": {
+      "website": "https://signals.network/",
+      "github": "https://github.com/signalsnetwork",
+      "linkedin": "https://www.linkedin.com/company/18227093/",
+      "twitter": "https://twitter.com/signals_network",
+      "medium": "https://blog.signals.network/"
+    },
+    "created": "2017-12-03T19:45:33.044Z",
+    "logo": "https://image.ibb.co/kZeKcw/signals.png"
+  },
+  {
+    "type": "partner",
+    "name": "TandemX",
+    "org": "Synergy Crowds",
+    "license": "MIT",
+    "description":
+      "TandemX is an application that builds groups of digital currencies that have similar behavior, like price evolution. The user can watch 3 groups of currencies, based on their behavior: ascending, flat, descending. In the next future, the users will be able to configure the application through a wide range of parameters. This application was created and is proudly provided within the SynergyCrowds project initiative.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/synergycrowds-blockchain"
+    },
+    "created": "2017-12-08T19:45:33.044Z",
+    "logo": "https://image.ibb.co/nP0gqG/synergy_crowds.png"
+  },
+  {
+    "type": "partner",
+    "name": "Flixxo",
+    "org": "Flixxo",
+    "license": "MIT",
+    "description":
+      "Flixxo is a a decentralized video distribution network, where users will be the owners and beneficiaries of their content. The platform eliminates intermediaries by letting advertisers, viewers, and content creators engage with each other directly.",
+    "social": {
+      "website": "https://www.flixxo.com/"
+    },
+    "created": "2017-12-10T19:45:33.044Z",
+    "logo": "https://image.ibb.co/h6WSnw/flixxo.jpg"
+  },
+  {
+    "type": "partner",
+    "name": "Shopin",
+    "org": "Shopin",
+    "license": "MIT",
+    "description":
+      "Shopin is a universal shopper profile that delivers the most personal shopping experience on retailers' websites based on shoppers' preferences and purchase history data. Shopin empowers retailers to offer better product recommendations, easier and more secure transactions, and more valuable customer rewards using blockchain and artificial intelligence (AI) technology. Shopin's vision is to create a more sustainable retail economy where retailers become stronger by working together and shoppers get rewarded based on the value of data that they fully own, share, and control. The company's AI-powered product recommendation engine benefits all retailers in the Shopin network by updating purchase history data in real-time. Unlike other loyalty point systems that expire, Shopin's cryptocurrency enables retailers to offer universal loyalty rewards at multiple retailers across the globe. Headquartered in New York, Shopin has raised $4.6M to date from Deep Fork Capital, Outbound Ventures, and angel investors from Google, ZocDoc and others. In early 2018, Shopin will hold a token sale to fully develop its product and scale operations. To learn more about Shopin and its upcoming token sale, visit www.shopin.com.",
+    "social": {
+      "website": "https://www.shopin.com/"
+    },
+    "created": "2018-01-15T16:05:05.120Z",
+    "logo": "https://image.ibb.co/kY4iNR/shopin.jpg"
+  }
+]

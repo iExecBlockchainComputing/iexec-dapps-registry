@@ -1,0 +1,27 @@
+{
+  "description":
+    "Hy (alternately, Hylang) is a dialect of the Lisp programming language designed to interact with Python by translating expressions into Python's abstract syntax tree (AST). Hy was introduced at PyCon 2013 by Paul Tagliamonte.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "http://hylang.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Hylang",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=hylang:0.10"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "hy /iexec/hello.hy",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Hylang/hello.hy"
+      }
+    }
+  }
+}

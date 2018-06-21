@@ -1,0 +1,27 @@
+{
+  "description":
+    "Gnuplot is a portable command-line driven graphing utility.  It was originally created to allow scientists and students to visualize mathematical functions and data interactively, but has grown to support many non-interactive uses such as web scripting. It is also used as a plotting engine by third-party applications like Octave",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "http://gnuplot.info/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Gnuplot",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/gnuplot"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "/iexec/script.gp",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Gnuplot/script.gp"
+      }
+    }
+  }
+}

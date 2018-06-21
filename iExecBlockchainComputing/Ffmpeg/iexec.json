@@ -1,0 +1,27 @@
+{
+  "description": "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card. The project publishes a new release every three months on average. While release versions are available from the website for download, FFmpeg developers recommend that users compile the software from source using the latest build from their source code Git version control system.",
+  "license": "MIT",
+  "author": "Jeremy James T",
+  "social": {
+    "website": "http://ffmpeg.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Ffmpeg",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=jrottenberg/ffmpeg:scratch"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0xdf2a14b28edc6b5de88af813ebf5eecc782d7e11",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": "-i /iexec/small.mp4 /iexec/small.avi",
+        "dirinuri": "http://techslides.com/demos/sample-videos/small.mp4"
+      }
+    }
+  }
+}
