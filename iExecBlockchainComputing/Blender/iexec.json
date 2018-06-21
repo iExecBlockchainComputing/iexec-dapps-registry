@@ -1,0 +1,27 @@
+{
+  "description":
+    "Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.",
+  "license": "MIT",
+  "author": "Ugo",
+  "social": {
+    "website": "https://www.blender.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Blender",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ikester/blender"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "iexec/iexec-rlc.blend -o iexec/iexec-rlc -f 1",
+        "dirinuri":
+          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend"
+      }
+    }
+  }
+}

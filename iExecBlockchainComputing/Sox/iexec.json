@@ -1,0 +1,25 @@
+{
+  "description":
+    "SoX is a cross-platform (Windows, Linux, MacOS X, etc.) command line utility that can convert various formats of computer audio files in to other formats. It can also apply various effects to these sound files, and, as an added bonus, SoX can play and record audio files on most platforms.",
+  "license": "MIT",
+  "author": "Victor",
+  "social": {
+    "website": "http://sox.sourceforge.net/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Sox",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=bigpapoo/sox"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "mysox --help"
+      }
+    }
+  }
+}

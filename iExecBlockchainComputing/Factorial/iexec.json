@@ -1,0 +1,26 @@
+{
+  "description":
+    "The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. n! is the product of all positive integers less than or equal to n.",
+  "license": "MIT",
+  "author": "François Branciard",
+  "social": {
+    "website": "https://en.wikipedia.org/wiki/Factorial"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Factorial",
+    "price": 1,
+    "params": {
+      "type": "BINARY",
+      "cpu": "AMD64",
+      "os": "LINUX"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "10"
+      }
+    }
+  }
+}

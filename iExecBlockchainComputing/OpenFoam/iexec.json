@@ -1,0 +1,25 @@
+{
+  "description":
+    "OpenFOAM (for Open source Field Operation And Manipulation) is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems, including computational fluid dynamics (CFD). The code is released as free and open-source software under the GNU General Public License. The OpenFOAM name was registered by OpenCFD Ltd in 2007 and non-exclusively licensed to the OpenFOAM Foundation Ltd in 2011.",
+  "license": "MIT",
+  "author": "Victor",
+  "social": {
+    "website": "https://openfoam.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "OpenFOAM",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=openfoam/openfoam5-paraview54"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "--version"
+      }
+    }
+  }
+}

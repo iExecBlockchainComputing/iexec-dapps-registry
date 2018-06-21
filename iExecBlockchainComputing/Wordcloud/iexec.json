@@ -1,0 +1,28 @@
+{
+  "description":
+    "In the language of visual design, a tag cloud (or word cloud) is one kind of 'weighted list', as commonly used on geographic maps to represent the relative size of cities in terms of relative typeface size. An early printed example of a weighted list of English keywords was the 'subconscious files' in Douglas Coupland's Microserfs (1995). A German appearance occurred in 1992.",
+  "license": "MIT",
+  "author": "Francois Branciard",
+  "social": {
+    "website": "https://datascienceplus.com/building-wordclouds-in-r/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Wordcloud",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/r-wordcloud"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline":
+          "Rscript iexec/iExecWordcloud.R https://iex.ec/app/uploads/2017/04/iExec-WPv2.0-English.pdf",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Wordcloud/iExecWordcloud.R"
+      }
+    }
+  }
+}
