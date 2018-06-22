@@ -11,10 +11,9 @@
     "name": "Factorial",
     "price": 1,
     "params": {
-      "type": "BINARY",
-      "cpu": "AMD64",
-      "os": "LINUX"
-    }
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/factorial"
+     }  
   },
   "order": {
     "buy": {
