@@ -12,13 +12,13 @@
     "price": 1,
     "params": {
       "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=ikester/blender"
+      "envvars": "XWDOCKERIMAGE=iexechub/blender-images:latest"
     }
   },
   "order": {
     "buy": {
       "params": {
-        "cmdline": "iexec/iexec-rlc.blend -o iexec/iexec-rlc -f 1",
+        "cmdline": "iexec/iexec-rlc.blend",
         "dirinuri":
           "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend"
       }
