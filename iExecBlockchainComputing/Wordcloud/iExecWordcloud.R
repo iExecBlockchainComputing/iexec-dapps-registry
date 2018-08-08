@@ -59,7 +59,7 @@ dtm = t(dtm)
 number_occurances = rowSums(dtm)
 number_occurances = sort(number_occurances,decreasing = TRUE)
 
-write.table(number_occurances, "/iexec/consensus.iexec", append = FALSE, sep = " ", dec = ".",row.names = TRUE, col.names = TRUE)
+write.table(dtm, "/iexec/consensus.iexec", append = FALSE, sep = " ", dec = ".",row.names = TRUE, col.names = TRUE)
 
 #plot
 png("iexec/wordcloudResult.png", width=1280,height=800)
