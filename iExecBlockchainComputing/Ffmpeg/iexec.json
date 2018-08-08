@@ -11,12 +11,12 @@
     "price": 1,
     "params": {
       "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=jrottenberg/ffmpeg:scratch"
+      "envvars": "XWDOCKERIMAGE=iexechub/ffmpeg"
     }
   },
   "order": {
     "buy": {
-      "app": "0xdf2a14b28edc6b5de88af813ebf5eecc782d7e11",
+      "app": "0x3963bda97176b25c9abd0ab828b7f128ba6a6407",
       "dataset": "0x0000000000000000000000000000000000000000",
       "params": {
         "cmdline": "-i /iexec/small.mp4 /iexec/small.avi",
