@@ -14,15 +14,15 @@ if (length(args) != 4) {
   stop("4 arguments needed : a b c d", call.=FALSE)
 }
 
- 
+
 opt = theme(legend.position  = "none",
             panel.background = element_rect(fill="white"),
             axis.ticks       = element_blank(),
             panel.grid       = element_blank(),
             axis.title       = element_blank(),
             axis.text        = element_blank())
- 
-cppFunction('DataFrame createTrajectory(int n, double x0, double y0, 
+
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0,
             double a, double b, double c, double d) {
             // create the columns
             NumericVector x(n);
@@ -44,9 +44,11 @@ a=as.double(args[1])
 b=as.double(args[2])
 c=as.double(args[3])
 d=as.double(args[4])
- 
+
 df=createTrajectory(9500000, 0, 0, a, b, c, d)
- 
+
+write.table(df, "/iexec/consensus.iexec", append = FALSE, sep = " ", dec = ".",row.names = TRUE, col.names = TRUE)
+
 png("/iexec/Clifford.png", units="px", width=1600, height=1600, res=300)
 ggplot(df, aes(x, y)) + geom_point(color="black", shape=46, alpha=.01) + opt
 dev.off()
