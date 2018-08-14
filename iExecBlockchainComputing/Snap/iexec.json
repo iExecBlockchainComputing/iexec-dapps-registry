@@ -1,6 +1,5 @@
 {
-  "description":
-    "A common architecture for all Sentinel Toolboxes is being jointly developed by Brockmann Consult, Array Systems Computing and C-S called the Sentinel Application Platform (SNAP). The SNAP architecture is ideal for Earth Observation processing and analysis due to the following technological innovations: Extensibility, Portability, Modular Rich Client Platform, Generic EO Data Abstraction, Tiled Memory Management, and a Graph Processing Framework.",
+  "description": "A common architecture for all Sentinel Toolboxes is being jointly developed by Brockmann Consult, Array Systems Computing and C-S called the Sentinel Application Platform (SNAP). The SNAP architecture is ideal for Earth Observation processing and analysis due to the following technological innovations: Extensibility, Portability, Modular Rich Client Platform, Generic EO Data Abstraction, Tiled Memory Management, and a Graph Processing Framework.",
   "license": "GPL",
   "author": "",
   "social": {
@@ -19,6 +18,7 @@
     "buy": {
       "params": {
         "cmdline": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_s2.xml https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_20m.properties https://s3.amazonaws.com/esa-snap-poc/S2A_MSIL1C_20180807T101021_N0206_R022_T32TQR_20180809T104755.zip"
+      }
     }
   }
 }
