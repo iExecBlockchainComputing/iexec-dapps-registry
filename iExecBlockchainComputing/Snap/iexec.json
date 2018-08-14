@@ -8,7 +8,7 @@
   "logo": "logo.png",
   "app": {
     "name": "Snap-esa",
-    "price": 1,
+    "price": 0,
     "params": {
       "type": "DOCKER",
       "envvars": "XWDOCKERIMAGE=iexechub/snap-esa"
