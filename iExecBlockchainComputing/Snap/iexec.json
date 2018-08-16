@@ -19,7 +19,7 @@
       "params": {
         "app": "0x57ac20118894686f4b38bdb579ecfd298dd5ec25",
         "dataset": "0x0000000000000000000000000000000000000000",
-        "cmdline": "snapParams https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_s2.xml https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_20m.properties https://s3.amazonaws.com/esa-snap-poc/S2A_MSIL1C_20180807T101021_N0206_R022_T32TQR_20180809T104755.zip"
+        "cmdline": "snapParams https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_s2.xml https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/snap/iExecBlockchainComputing/Snap/resample/resample_20m.properties https://s3.amazonaws.com/esa-snap-poc/S2B_MSIL1C_20180816T044659_N0206_R076_T46UEG_20180816T072815.zip"
       }
     }
   }
