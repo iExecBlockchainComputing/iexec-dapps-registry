@@ -59,6 +59,8 @@ dtm = t(dtm)
 number_occurances = rowSums(dtm)
 number_occurances = sort(number_occurances,decreasing = TRUE)
 
+write.table(number_occurances, "/iexec/consensus.iexec", append = FALSE, sep = " ", dec = ".",row.names = TRUE, col.names = TRUE)
+
 #plot
 png("iexec/wordcloudResult.png", width=1280,height=800)
 wordcloud(names(number_occurances),number_occurances,scale=c(8,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=brewer.pal(8, "Dark2"))

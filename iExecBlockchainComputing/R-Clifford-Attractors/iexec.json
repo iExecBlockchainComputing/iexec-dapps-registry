@@ -21,7 +21,7 @@
         "cmdline":
           "Rscript /iexec/CliffordAttractors.R -1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054",
         "dirinuri":
-          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R"
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/master/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R"
       }
     }
   }
