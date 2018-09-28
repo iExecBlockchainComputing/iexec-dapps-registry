@@ -34,7 +34,7 @@ Once the validation is successful, you can commit & push your app config.
 
 ## 5. Github Pull Request
 
-clic on this button to create a Pull Request (from your **forked master branch** TO \*_iexec-dapps-registry master branch_):
+clic on this button to create a Pull Request (from your **forked master branch** TO **iexec-dapps-registry master branch**):
 
 [![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
 
