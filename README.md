@@ -6,61 +6,35 @@ Once you created and deployed your iExec Dapp using the [iExec SDK](https://gith
 
 ## 1. Github Fork this repo
 
-clic on the github "Fork" button
+clic on the github "Fork" button and `git clone` the **forked** repository on your local machine.
 
 [![github fork](./github-fork.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2#fork-destination-box)
 
 ## 2. Create 2 new folders
 
-* **One** personal folder at the root **[MUST match your github user or organization name]**. Ex: `/iExecBlockchainComputing`.
+Inside the `iexec-dapps-registry` folder, create:
 
-* **One** folder for your dapp **[MUST match your dapp name]**. Ex: `/iExecBlockchainComputing/VanityGen`.
+- **One** organization folder at the root **[MUST match your github user or github org name]**. Ex: `/iExecBlockchainComputing`.
 
-## 3. Commit `iexec.json`
+- **One** folder for your dapp inside your org folder **[MUST match your dapp name]**. Ex: `/iExecBlockchainComputing/VanityGen`.
 
-Check that `iexec.json` respects below format:
+## 3. Validate
 
-* **description**: Must be at least 150 letters long
-* **logo.png**: Must be 180px by 180px, square shape
+Enter your dapp folder, and run the below command to check your config:
 
-```json
-{
-  "description": "Dapp description should be at least 150 letters long",
-  "license": "ex: MIT",
-  "author": "ex: Dupont",
-  "social": {
-    "website": "ex: https://super.dapp.io",
-    "github": "ex: https://github.com/samr7/vanitygen"
-  },
-  "logo": "ex: logo.png [must be 180px by 180px, square shape]",
-  "app": {
-    "name": "Vanitygen",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/vanitygen"
-    }
-  }
-}
-```
+- `iexec registry validate app`
 
-## 4. Commit `deployed.json`
+## 4. Commit
 
-Check that `deployed.json` respects below format:
+Once the validation is successful, you can commit & push your app config.
 
-* **Kovan ID only => "42"**
-
-```json
-{
-  "app": {
-    "42": "0xfd3753bc4e4c5624a5fbc41c2632bd731d7e96fb"
-  }
-}
-```
+- `git add iexec.json deployed.json logo.png README.md`
+- `git commit -m 'adding my Vanitygen app'`
+- `git push`
 
 ## 5. Github Pull Request
 
-clic on this button to create a Pull Request:
+clic on this button to create a Pull Request (from your **forked master branch** TO \*_iexec-dapps-registry master branch_):
 
 [![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
 
