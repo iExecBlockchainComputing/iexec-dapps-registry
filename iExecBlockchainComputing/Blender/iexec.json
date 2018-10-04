@@ -18,9 +18,9 @@
   "order": {
     "buy": {
       "params": {
-        "cmdline": "iexec/iexec-rlc.blend",
+        "cmdline": "iexec/test.blend,
         "dirinuri":
-          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend"
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/alex-test-blender/iExecBlockchainComputing/Blender/test.blend"
       }
     }
   }
