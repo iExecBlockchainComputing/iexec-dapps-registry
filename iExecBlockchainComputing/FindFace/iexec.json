@@ -6,7 +6,7 @@
     "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/master/iExecBlockchainComputing/FindFace",
     "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/master/iExecBlockchainComputing/FindFace"
   },
-  "logo": "logo.webp",
+  "logo": "logo.png",
   "app": {
     "name": "FindFace",
     "price": 1,

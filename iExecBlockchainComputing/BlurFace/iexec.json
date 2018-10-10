@@ -6,7 +6,7 @@
     "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace",
     "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace"
   },
-  "logo": "logo.webp",
+  "logo": "logo.png",
   "app": {
     "name": "BlurFace",
     "price": 1,

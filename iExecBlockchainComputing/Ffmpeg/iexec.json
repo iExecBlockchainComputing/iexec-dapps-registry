@@ -5,7 +5,7 @@
   "social": {
     "website": "http://ffmpeg.org/"
   },
-  "logo": "logo.webp",
+  "logo": "logo.png",
   "app": {
     "name": "Ffmpeg",
     "price": 1,

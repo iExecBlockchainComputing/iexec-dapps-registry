@@ -6,7 +6,7 @@
     "website": "https://en.bitcoin.it/wiki/Vanitygen",
     "github": "https://github.com/samr7/vanitygen"
   },
-  "logo": "logo.webp",
+  "logo": "logo.png",
   "app": {
     "name": "VanityGen",
     "price": 1,

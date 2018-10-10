@@ -6,7 +6,7 @@
   "social": {
     "website": "http://www.erlang.org/"
   },
-  "logo": "logo.webp",
+  "logo": "logo.png",
   "app": {
     "name": "Erlang",
     "price": 1,
