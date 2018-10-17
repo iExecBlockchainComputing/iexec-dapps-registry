@@ -1,0 +1,25 @@
+{
+  "description":
+    "test sgx",
+  "license": "",
+  "author": "",
+  "social": {
+    "website": ""
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Sox",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=reckey/signature:test"
+    }
+  },
+  "order": {
+    "buy": {
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+       }
+    }
+  }
+}
