@@ -1,0 +1,18 @@
+{
+  "description": "DeepDetect CPU is a CPU-based machine learning API (http://www.deepdetect.com/api) and server written in C++11. It makes state of the art machine learning easy to work with and integrate into existing applications.",
+  "license": "GNU LGPL",
+  "author": "Bill Gleim",
+  "social": {
+    "twitter": "@billgleim",
+    "github": "gleim"
+  },
+  "logo": "CAI_logo.png",
+  "app": {
+    "name": "DeepDetectCpu",
+    "price": 5,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=deepdetect_cpu"
+    }
+  }
+}
