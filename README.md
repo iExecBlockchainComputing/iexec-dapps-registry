@@ -49,3 +49,4 @@ Finally, start a [Pull Request](https://github.com/iExecBlockchainComputing/iexe
 ## How to be listed on the [iExec dapp store](https://dapps.iex.ec/)?
 
 Once your dapp is merged into this repo, next step is to submit a pull request to the [iExec dapp store DB repository](https://github.com/iExecBlockchainComputing/iexec-dapps-store-db).
+nilearn
