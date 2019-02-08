@@ -1,0 +1,25 @@
+{
+  "description":
+    "GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with MATLAB. It may also be used as a batch-oriented language. Since it is part of the GNU Project, it is free software under the terms of the GNU General Public License. Octave is one of the major free alternatives to MATLAB, others being Scilab and FreeMat. Scilab, however, puts less emphasis on (bidirectional) syntactic compatibility with MATLAB than Octave does.",
+  "license": "MIT",
+  "author": "Eric",
+  "social": {
+    "website": "https://www.gnu.org/software/octave/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Octave",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=openmicroscopy/octave"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "--version"
+      }
+    }
+  }
+}

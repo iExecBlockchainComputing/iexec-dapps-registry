@@ -1,0 +1,27 @@
+{
+  "description":
+    "LAME is a software encoder that converts audio to the MP3 file format. LAME is a free software project was first released in 1998, and has incorporated many improvements since then, including an improved psychoacoustic model. The LAME encoder outperforms early encoders like L3enc. LAME is required by some programs. In many programs released as free software (e.g., Audacity), LAME must be linked for MP3 support. This avoided including LAME itself, which used patented techniques, and so required patent licenses in many countries.",
+  "license": "MIT",
+  "author": "Victor",
+  "social": {
+    "website": "http://lame.sourceforge.net/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Lame",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=renyufu/lame"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "--help",
+        "dirinuri":
+          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/logo.png"
+      }
+    }
+  }
+}

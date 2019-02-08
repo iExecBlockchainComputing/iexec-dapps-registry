@@ -1,0 +1,27 @@
+{
+  "description":
+    "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "http://www.erlang.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Erlang",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=erlang"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "escript /iexec/hello.erl",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Erlang/hello.erl"
+      }
+    }
+  }
+}

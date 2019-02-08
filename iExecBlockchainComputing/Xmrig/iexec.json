@@ -1,0 +1,27 @@
+{
+  "description":
+    "XMRig is a high performance Monero (XMR) CPU miner. Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.",
+  "license": "GPL-3.0",
+  "author": "Hugo",
+  "social": {
+    "website": "https://github.com/xmrig/xmrig"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "XMRig",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/xmrig"
+    }
+  },
+ "order": {
+   "buy": {
+      "app": "0xbef3923a7c861956172a8a82a9e5159b6c2d30b3",
+      "dataset": "0x0000000000000000000000000000000000000000",
+     "params": {
+       "cmdline": "600 -o xmrpool.eu -u 45KHmgAb8ipJrYahAsWyYnRHY9mzpWhPLjiHofpwEJMWJXieb6t96inU6D7uXrwa2aiHcdzyfSWrVCU2CTKWpvsV1DLciiS -p x"
+        }
+   }
+ }
+}

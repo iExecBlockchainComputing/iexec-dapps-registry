@@ -1,0 +1,26 @@
+{
+  "description": "NeuroData's MR Graphs package, ndmg (pronounced 'nutmeg'), is a turn-key pipeline which combines structrual, diffusion, and functional* MRI data to estimate multi-resolution connectomes reliably and scalably.",
+  "license": "Apache License 2.0",
+  "author": "Francois",
+  "social": {
+    "website": "https://github.com/neurodata/ndmg"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "ndmg",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/ndmg-demo"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0x466ff7cb6c55b1cc1d716a385150ec5864f8879e",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": ""
+      }
+    }
+  }
+}

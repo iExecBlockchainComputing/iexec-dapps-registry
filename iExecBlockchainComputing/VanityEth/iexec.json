@@ -1,0 +1,27 @@
+{
+  "description": "Can't remember what your ETH wallet address looks like? Customize your personal wallet by choosing the very beginning of the address. VanityEth accepts as input an hexa pattern such as 'f00d', 'ace777', 'b0b',.. Now find yours!",
+  "license": "MIT",
+  "author": "Jeremy James T",
+  "social": {
+    "website": "https://www.myetherwallet.com/",
+    "github": "https://github.com/MyEtherWallet/VanityEth#readme"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "VanityEth",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/vanityeth"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0xab6f80a41ede28d55716b93faff54918e87ef28e",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": "ace"
+      }
+    }
+  }
+}

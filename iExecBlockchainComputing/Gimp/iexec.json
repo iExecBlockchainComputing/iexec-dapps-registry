@@ -1,0 +1,27 @@
+{
+  "description":
+    "GIMP (GNU Image Manipulation Program) is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.",
+  "license": "MIT",
+  "author": "Victor",
+  "social": {
+    "website": "https://www.gimp.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "Gimp",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=jamesnetherton/gimp"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "--version",
+        "dirinuri":
+          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/gimp/apps/make-logo.scm"
+      }
+    }
+  }
+}

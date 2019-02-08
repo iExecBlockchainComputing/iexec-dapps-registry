@@ -1,0 +1,27 @@
+{
+  "description":
+    "This application can run python script using the following libraries: numpy and scipy(scientific computing), pandas (data analysis tool) and matplotlib (2D plotting library).",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://www.python.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Scinumpy",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/scinumpy"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "iexec/example.py",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Scinumpy/example.py"
+      }
+    }
+  }
+}

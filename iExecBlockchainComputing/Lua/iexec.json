@@ -1,0 +1,27 @@
+{
+  "description":
+    "Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. It provided the basic facilities of most procedural programming languages, but more complicated or domain-specific features were not included; rather, it included mechanisms for extending the language, allowing programmers to implement such features. As Lua was intended to be a general embeddable extension language, the designers of Lua focused on improving its speed, portability, extensibility, and ease-of-use in development.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://www.lua.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Lua",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=superpaintman/lua"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "lua /iexec/hello.lua",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Lua/hello.lua"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Slam-Rebot is developed by iExec's partner -- Shanghai Institute of Fog Computing Technology (SHIFT), ShanghaiTech University. This application is based on robots deployed in SHIFT, the robots are based on ROS (a commonly used robot distributed operating system) with four-wheel drive sites, equipped with a variety of sensors such as lidar,odometer, IMU (inertial measurement units), camera, temperature and humidity sensor, microphone, etc. This application allows generating the local map explored automatically by the robots",
+  "license": "BSD License",
+  "author": "SHIFT",
+  "social": {
+    "website": "http://shift.shanghaitech.edu.cn/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "slamrobot",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=daleshen/remote_slam:latest"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": ""
+      }
+    }
+  }
+}

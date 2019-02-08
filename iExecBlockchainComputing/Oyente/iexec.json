@@ -1,0 +1,27 @@
+{
+  "description":
+    "Oyente is an analysis tool for smart contract. It helps you to write a better contract by detecting the bugs that might threaten the stability of the contract potentially. There are different standards including Parity Multisig Bug 2, Callstack Depth Attack Vulnerability,  Transaction-Ordering Dependence (TOD), Timestamp Dependency and Re-Entrancy Vulnerability.",
+  "license": "GPLv3",
+  "author": "Hantong",
+  "social": {
+    "website": "https://github.com/melonproject/oyente"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Oyente",
+    "price": 0,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/iexec-dapp-oyente"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "bash /oyente/customScript.sh",
+        "dirinuri":
+          "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/oyente/apps/contracts.zip?raw=true"
+      }
+    }
+  }
+}
