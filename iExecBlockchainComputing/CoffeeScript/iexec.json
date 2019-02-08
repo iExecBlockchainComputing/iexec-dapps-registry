@@ -1,0 +1,27 @@
+{
+  "description":
+    "CoffeeScript is a programming language that transcompiles to JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "http://coffeescript.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "CoffeeScript",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=shouldbee/coffeescript"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": "coffee /iexec/hello.coffee",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/CoffeeScript/hello.coffee"
+      }
+    }
+  }
+}

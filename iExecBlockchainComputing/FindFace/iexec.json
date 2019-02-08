@@ -1,0 +1,28 @@
+{
+  "description": "FindFace is a simple application that is able to tell from a picture how many faces there are. It also returns a set of pictures of the different faces that have been found in the picture that has been submitted.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/master/iExecBlockchainComputing/FindFace",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/master/iExecBlockchainComputing/FindFace"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "FindFace",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/find-face"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0xff84550fb109a9a8a02f8b1a465105e7b906ab8a",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": "iexec/team.jpg",
+        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/FindFace/team.jpg"
+      }
+    }
+  }
+}

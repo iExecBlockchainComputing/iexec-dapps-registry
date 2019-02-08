@@ -1,52 +1,41 @@
-# iExec dapps registry
+# iExec Dapps Registry
 
-## 1 branch = 1 dapp
+In order to list your dapp on the [iExec Dapp Store](https://dapps.iex.ec/), you need to make it into the iExec Dapp Registry FIRST. But relax, it's very easy:
 
-## How to add my dapp to the iExec dapps registry?
+Once you created and deployed your iExec Dapp using the [iExec SDK](https://github.com/iExecBlockchainComputing/iexec-sdk), here are the 5 steps that remain to enter this registry:
 
-To create your own iExec dapp, use the [iExec sdk cli](https://github.com/iExecBlockchainComputing/iexec-sdk) to [init](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/init) a new project:
+## 1. Github Fork this repo
 
-```bash
-iexec init
-```
+clic on the github "Fork" button and `git clone` the **forked** repository on your local machine.
 
-Then, edit with care both `iexec.js` and `package.json`:
+[![github fork](./github-fork.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2#fork-destination-box)
 
-```js
-// iexec.js
-{
-  name: '', // project name
-  app: {}, // app description
-  work: {} // work description
-}
-```
+## 2. Create 2 new folders
 
-```json
-// package.json
-{
-  "name": "?",
-  "version": "?",
-  "description": "?",
-  "author": {
-    "name": "?"
-  },
-  "license": "?",
-  "homepage": "?",
-  "logo": "?"
-}
-```
+Inside the `iexec-dapps-registry` folder, create:
 
-After running `iexec deploy`, commit these files/folders **to a public repository on your github account**:
+- **One** organization folder at the root **[MUST match your github user or github org name]**. Ex: `/iExecBlockchainComputing`.
 
-* `iexec.js`
-* `package.json`
-* `./contracts/`
-* `./build/contracts/name.json`
-* `./apps/`
+- **One** folder for your dapp inside your org folder **[MUST match your dapp name]**. Ex: `/iExecBlockchainComputing/VanityGen`.
 
-Finally, start a [Pull Request](https://github.com/iExecBlockchainComputing/iexec-dapp-samples/pulls) to add your dapp to this repo.
+## 3. Validate
 
-## How to be listed on the [iExec dapp store](https://dapps.iex.ec/)?
+Enter your dapp folder, and run the below command to check your config:
 
-Once your dapp is merged into this repo, next step is to submit a pull request to the [iExec dapp store DB repository](https://github.com/iExecBlockchainComputing/iexec-dapps-store-db).
-nilearn
+- `iexec registry validate app`
+
+## 4. Commit
+
+Once the validation is successful, you can commit & push your app config.
+
+- `git add iexec.json deployed.json logo.png README.md`
+- `git commit -m 'adding my Vanitygen app'`
+- `git push`
+
+## 5. Github Pull Request
+
+clic on this button to create a Pull Request (from your **forked master branch** TO **iexec-dapps-registry master branch**):
+
+[![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
+
+**We'll review you Dapp and if it meets all the above criteria, it will be added to the iExec Dapp Regsitry!**

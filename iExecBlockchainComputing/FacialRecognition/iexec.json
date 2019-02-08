@@ -1,0 +1,25 @@
+{
+  "description":
+    "Facial recognition algorithm based on Scikit-learn. Each picture is centered on a single face. The typical task is called Face Verification: given a pair of two pictures, a binary classifier must predict whether the two images are from the same person. An alternative task, Face Recognition or Face Identification is: given the picture of the face of an unknown person, identify the name of the person by referring to a gallery of previously seen pictures of identified persons.",
+  "license": "MIT",
+  "author": "Eric",
+  "social": {
+    "website": "http://scikit-learn.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "FacialRecognition",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ericro/face-recognition"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": ""
+      }
+    }
+  }
+}

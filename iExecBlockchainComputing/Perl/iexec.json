@@ -1,0 +1,27 @@
+{
+  "description":
+    "Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The languages in this family include Perl 5 and Perl 6. Though Perl is not officially an acronym, there are various backronyms in use, including \"Practical Extraction and Reporting Language\". Perl was originally developed by Larry Wall in 1987 as a general-purpose Unix scripting language to make report processing easier.[11] Since then, it has undergone many changes and revisions. Perl 6, which began as a redesign of Perl 5 in 2000, eventually evolved into a separate language. Both languages continue to be developed independently by different development teams and liberally borrow ideas from one another.",
+  "license": "MIT",
+  "author": "Ugo Plouviez",
+  "social": {
+    "website": "https://www.perl.org/"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "Perl",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=perl:5.20"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": " perl /iexec/hello.pl",
+        "dirinuri":
+          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/Perl/hello.pl"
+      }
+    }
+  }
+}

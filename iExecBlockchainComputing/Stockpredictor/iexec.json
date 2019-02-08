@@ -1,0 +1,26 @@
+{
+  "description":
+    "Stockpredictor allows predicting the stock performance in the following 6 months. It retrieve financial data from third party data service (QUANDL) with a key which is encrypted and protected by Intel SGX.",
+  "license": "BSD License",
+  "author": "Lei Zhang",
+  "social": {
+    "website": "http://scikit-learn.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "stockpredictor",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=reckey/iexecsgx_stockpredictor:demo_ibm",
+      "neededpackages": "sgx"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": ""
+      }
+    }
+  }
+}

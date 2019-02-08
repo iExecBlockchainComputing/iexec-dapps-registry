@@ -1,0 +1,25 @@
+{
+  "description":
+    "Scikit-learn (formerly scikits.learn) is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.",
+  "license": "BSD License",
+  "author": "Eric",
+  "social": {
+    "website": "http://scikit-learn.org/"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "scikit-learn",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=ericro/scikit-learn"
+    }
+  },
+  "order": {
+    "buy": {
+      "params": {
+        "cmdline": ""
+      }
+    }
+  }
+}

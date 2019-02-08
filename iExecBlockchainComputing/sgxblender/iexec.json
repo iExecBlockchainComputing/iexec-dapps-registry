@@ -1,0 +1,26 @@
+{
+  "description": "Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. SgxBlender application adds SGX based security service which allows running the legacy Blender application inside a SGX enclave and provides full data protection (i.e. application input/embedded/output data).",
+  "license": "MIT",
+  "author": "Lei Zhang",
+  "social": {
+    "website": "https://iex.ec"
+  },
+  "logo": "logo.jpg",
+  "app": {
+    "name": "sgxblender",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=iexechub/sgx-scone:blender"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0x2f3422f2805693cf741ee32707d57923ef6fa55f",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": "--sessionID <sessionID> --secretManagementService <IP>  --url <url>"
+      }
+    }
+  }
+}
