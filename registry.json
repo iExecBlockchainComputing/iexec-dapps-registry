@@ -2,27 +2,32 @@
   {
     "name": "Ffmpeg",
     "org": "iExecBlockchainComputing",
-    "created": "2017-12-06T19:45:33.044Z"
+    "created": "2017-12-06T19:45:33.044Z",
+    "rank": 70
   },
   {
     "name": "VanityGen",
     "org": "iExecBlockchainComputing",
-    "created": "2017-12-09T19:45:33.044Z"
+    "created": "2017-12-09T19:45:33.044Z",
+    "rank": 70
   },
   {
     "name": "VanityEth",
     "org": "iExecBlockchainComputing",
-    "created": "2017-12-09T19:45:33.044Z"
+    "created": "2017-12-09T19:45:33.044Z",
+    "rank": 70
   },
   {
     "name": "Blender",
     "org": "iExecBlockchainComputing",
-    "created": "2018-02-01T19:45:33.044Z"
+    "created": "2018-02-01T19:45:33.044Z",
+    "rank": 70
   },
   {
     "name": "BlurFace",
     "org": "iExecBlockchainComputing",
-    "created": "2018-02-01T19:45:33.044Z"
+    "created": "2018-02-01T19:45:33.044Z",
+    "rank": 60
   },
   {
     "name": "CoffeeScript",
@@ -37,12 +42,14 @@
   {
     "name": "FacialRecognition",
     "org": "iExecBlockchainComputing",
-    "created": "2018-02-01T19:45:33.044Z"
+    "created": "2018-02-01T19:45:33.044Z",
+    "rank": 60
   },
   {
     "name": "FindFace",
     "org": "iExecBlockchainComputing",
-    "created": "2018-02-01T19:45:33.044Z"
+    "created": "2018-02-01T19:45:33.044Z",
+    "rank": 60
   },
   {
     "name": "Factorial",
@@ -52,7 +59,8 @@
   {
     "name": "R",
     "org": "iExecBlockchainComputing",
-    "created": "2018-02-15T19:45:33.044Z"
+    "created": "2018-02-15T19:45:33.044Z",
+    "rank": 80
   },
   {
     "name": "R-Clifford-Attractors",
@@ -132,12 +140,14 @@
   {
     "name": "Python",
     "org": "iExecBlockchainComputing",
-    "created": "2018-04-24T13:45:33.044Z"
+    "created": "2018-04-24T13:45:33.044Z",
+    "rank": 80
   },
   {
     "name": "Stockpredictor",
     "org": "iExecBlockchainComputing",
-    "created": "2018-04-17T13:45:33.044Z"
+    "created": "2018-04-17T13:45:33.044Z",
+    "rank": 80
   },
   {
     "name": "Groovy",
@@ -157,7 +167,8 @@
   {
     "name": "Scikit-learn",
     "org": "iExecBlockchainComputing",
-    "created": "2018-04-26T16:45:33.044Z"
+    "created": "2018-04-26T16:45:33.044Z",
+    "rank": 90
   },
   {
     "name": "Oyente",
@@ -167,21 +178,25 @@
   {
     "name": "maskrcnn",
     "org": "trancept",
-    "created": "2018-08-27T10:45:33.044Z"
+    "created": "2018-08-27T10:45:33.044Z",
+    "rank": 90
   },
   {
     "name": "SlamRobot",
     "org": "ShiftLab",
-    "created": "2018-09-27T10:45:33.044Z"
+    "created": "2018-09-27T10:45:33.044Z",
+    "rank": 90
   },
   {
     "name": "sgxblender",
     "org": "iExecBlockchainComputing",
-    "created": "2018-10-23T10:45:33.044Z"
+    "created": "2018-10-23T10:45:33.044Z",
+    "rank": 90
   },
   {
     "name": "nilearn",
     "org": "iExecBlockchainComputing",
-    "created": "2019-02-08T10:45:33.044Z"
+    "created": "2019-02-08T10:45:33.044Z",
+    "rank": 100
   }
 ]
