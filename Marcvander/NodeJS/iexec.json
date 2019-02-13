@@ -1,0 +1,27 @@
+{
+  "description": "This Dapp allows you to run some Node.js code. Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser",
+  "license": "MIT",
+  "author": "Marc Vanderstigel",
+  "social": {
+    "website": "https://nodejs.org/en/",
+    "github": "https://github.com/nodejs"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "NodeJS",
+    "price": 1,
+    "params": {
+      "type": "DOCKER",
+      "envvars": "XWDOCKERIMAGE=node"
+    }
+  },
+  "order": {
+    "buy": {
+      "app": "0x150c2bc1845294ab963c5e547863b942ec2e9845",
+      "dataset": "0x0000000000000000000000000000000000000000",
+      "params": {
+        "cmdline": "node /iexec/test.js","dirinuri":"https://gist.githubusercontent.com/Marcvander/2e2c9b6b432f491bbb5e99cc94d1c59d/raw/aa808e8ec40fcb5778adc2654bb47b10895134e0/test.js"
+      }
+    }
+  }
+}
