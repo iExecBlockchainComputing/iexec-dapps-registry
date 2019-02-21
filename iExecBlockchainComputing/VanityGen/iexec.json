@@ -8,20 +8,17 @@
   },
   "logo": "logo.png",
   "app": {
+    "owner": "0xF048eF3d7E3B33A465E0599E641BB29421f7Df92",
     "name": "VanityGen",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/vanitygen"
-    }
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/vanitygen:latest",
+    "checksum": "0x762a451c05e0d8097b35d6376e748798b5dc6a13290439cf67d5202f7c6f695f",
+    "mrenclave": ""
   },
-  "order": {
-    "buy": {
-      "app": "0x2bcc53b7d48718d70cfc8b08ea986ce761ab5e0c",
-      "dataset": "0x0000000000000000000000000000000000000000",
-      "params": {
-        "cmdline": "1iEx"
-      }
-    }
+  "buy": {
+    "params": {
+      "0": "1iEx"
+    },
+    "trust": 0
   }
 }
