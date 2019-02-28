@@ -9,19 +9,17 @@
   "logo": "logo.png",
   "app": {
     "name": "VanityEth",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/vanityeth"
-    }
+    "owner": "0xF048eF3d7E3B33A465E0599E641BB29421f7Df92",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/vanityeth:1.0.0",
+    "checksum": "0x7a0a6b6e903e3d5fbfe17c4262c5d7b80028ed44b39605e412792fcb38cdcede",
+    "mrenclave": ""
   },
-  "order": {
-    "buy": {
-      "app": "0xab6f80a41ede28d55716b93faff54918e87ef28e",
-      "dataset": "0x0000000000000000000000000000000000000000",
-      "params": {
-        "cmdline": "ace"
-      }
-    }
+  "buyConf": {
+    "params": {
+      "0": "ace"
+    },
+    "trust": 0,
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
   }
 }
