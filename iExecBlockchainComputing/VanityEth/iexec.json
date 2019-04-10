@@ -9,7 +9,7 @@
   "logo": "logo.png",
   "app": {
     "name": "VanityEth",
-    "owner": "0xF048eF3d7E3B33A465E0599E641BB29421f7Df92",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
     "multiaddr": "registry.hub.docker.com/iexechub/vanityeth:1.1.0",
     "checksum": "0x61ff3da945920334a031220807a2db3124beeb734e3111e110ce093cd032c5b5",

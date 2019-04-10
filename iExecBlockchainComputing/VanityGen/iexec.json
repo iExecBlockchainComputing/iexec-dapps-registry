@@ -8,7 +8,7 @@
   },
   "logo": "logo.png",
   "app": {
-    "owner": "0xF048eF3d7E3B33A465E0599E641BB29421f7Df92",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "name": "VanityGen",
     "type": "DOCKER",
     "multiaddr": "registry.hub.docker.com/iexechub/vanitygen:1.0.1",
