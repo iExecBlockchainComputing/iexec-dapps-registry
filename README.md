@@ -6,7 +6,7 @@ Once you created and deployed your iExec Dapp using the [iExec SDK](https://gith
 
 ## 1. Github Fork this repo
 
-clic on the github "Fork" button and `git clone` the **forked** repository on your local machine.
+clic on the github "Fork" button and `git clone` the **forked** repository on your local machine and `git checkout v3` the v3 branch.
 
 [![github fork](./github-fork.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v3)
 
