@@ -11,8 +11,8 @@
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "name": "VanityGen",
     "type": "DOCKER",
-    "multiaddr": "registry.hub.docker.com/iexechub/vanitygen:1.0.1",
-    "checksum": "0xfa69ce67286e5f2d209ee91a1e7a7ada7e3b1c63be6982024769221ea8c316c0",
+    "multiaddr": "registry.hub.docker.com/iexechub/vanitygen:1.0.2",
+    "checksum": "0xca5c1efc6002395f48d2fb1dc2c1d2b48626812067de890214026a74515b9d4f",
     "mrenclave": ""
   },
   "buyConf": {
