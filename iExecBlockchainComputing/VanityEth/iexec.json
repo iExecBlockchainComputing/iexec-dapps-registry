@@ -11,8 +11,8 @@
     "name": "VanityEth",
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
-    "multiaddr": "registry.hub.docker.com/iexechub/vanityeth:1.1.0",
-    "checksum": "0x61ff3da945920334a031220807a2db3124beeb734e3111e110ce093cd032c5b5",
+    "multiaddr": "registry.hub.docker.com/iexechub/vanityeth:1.1.1",
+    "checksum": "0x00f51494d7a42a3c1c43464d9f09e06b2a99968e3b978f6cd11ab3410b7bcd14",
     "mrenclave": ""
   },
   "buyConf": {
