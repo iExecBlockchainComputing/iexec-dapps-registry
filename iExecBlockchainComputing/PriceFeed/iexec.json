@@ -9,7 +9,7 @@
   "logo": "logo.png",
   "app": {
     "name": "PriceFeed",
-    "owner": "0xE01bCcBcaB54C42F999B6Ce88d63d3a5e96cfdB7",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
     "multiaddr": "docker.io/iexechub/app-price-oracle:0.0.3",
     "checksum": "0x3afd31fcc76e1ae14a18f85a8502d5c50c309d6ff3af06b5ebb02f347e73064e",
