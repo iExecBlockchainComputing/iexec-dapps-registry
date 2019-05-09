@@ -1,0 +1,25 @@
+{
+  "description": "The PriceFeed app powering the PriceFeedDOracle. Retrieves crypto prices from the coinapi.io API and formats them to be certified by the PoCo and processed onchain.",
+  "license": "MIT",
+  "author": "Hadrien Croubois",
+  "social": {
+    "website": "https://price-feed-doracle.iex.ec/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-doracle-contracts"
+  },
+  "logo": "logo.png",
+  "app": {
+    "name": "PriceFeed",
+    "owner": "0xE01bCcBcaB54C42F999B6Ce88d63d3a5e96cfdB7",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/app-price-oracle:0.0.3",
+    "checksum": "0x3afd31fcc76e1ae14a18f85a8502d5c50c309d6ff3af06b5ebb02f347e73064e",
+    "mrenclave": ""
+  },
+  "buyConf": {
+    "params": {
+      "0": "BTC USD 2019-05-01T00:00:00.00"
+    },
+    "trust": 0,
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}
