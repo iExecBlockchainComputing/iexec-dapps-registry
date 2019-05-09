@@ -1,5 +1,11 @@
 [
   {
+    "name": "PriceFeed",
+    "org": "iExecBlockchainComputing",
+    "created": "2019-05-08T00:00:00.000Z",
+    "rank": 100
+  },
+  {
     "name": "Ffmpeg",
     "org": "iExecBlockchainComputing",
     "created": "2017-12-06T19:45:33.044Z",
