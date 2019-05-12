@@ -7,21 +7,18 @@
     "github": "https://github.com/ericr6/nilearn"
   },
   "logo": "logo.png",
-  "app": {
-    "name": "nilearn",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=ericro/nilearn"
-    }
+  "buyConf": {
+    "params": "{ \"0\": \"\" }",
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": 0
   },
-  "order": {
-     "buy": {
-       "app" :"0x94248a158E30056395Fa411540f8460010bf777D",
-       "dataset": "0x0000000000000000000000000000000000000000",
-       "params": {
-         "cmdline": ""
-      }
-    }
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "Nilearn",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/nilearn:1.0",
+    "checksum": "0xe99d4b1cd590c82373e96f382c808afa8803f46b2e38e827968d0f1774e1dc52",
+    "mrenclave": ""
   }
 }
+
