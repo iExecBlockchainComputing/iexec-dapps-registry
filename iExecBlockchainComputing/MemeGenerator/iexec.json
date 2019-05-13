@@ -1,0 +1,22 @@
+{
+  "description": "MemeGenerator, an application that uses relies on datasets templates to produce memes. Have a look at the datastore to search for compatible templates",
+  "license": "MIT",
+  "author": "Hadrien Croubois",
+  "social": {},
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+			"0": "[\"text1\",\"text2\",\"text3\",\"...\"]"
+		},
+    "trust": 0,
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "app": {
+    "name": "MemeGenerator",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/meme-generator:0.0.1",
+    "checksum": "0x878fdea8720c3ebf63c085b1dc2cbf97accdaf60cd536523b4759a3505063b08",
+    "mrenclave": ""
+  }
+}
