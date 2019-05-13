@@ -1,0 +1,23 @@
+{
+  "description": "Analysis of the 3 main cryptocurrencies offering a cloud computing solution GOLEM, SONM, IEXEC and also Bitcoin. It providess analysis within plots and a market prediction",
+  "license": "MIT",
+  "author": "er@iex.ec",
+  "social": {
+    "website": "https://github.com/iExecBlockchainComputing/apps/tree/master/CloudCoinAnalysis",
+    "github": "https://github.com/iExecBlockchainComputing/apps/tree/master/CloudCoinAnalysis"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "0": ""
+    }
+  },
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "CloudCoin",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/cloudcoin",
+    "checksum": "0x5496bd85e2b787b3a84dc7fb53e4d2c952f9eab13419e0f496be7eeefcc66bd6",
+    "mrenclave": ""
+  }
+}
