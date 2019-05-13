@@ -1,5 +1,5 @@
 {
-  "description": "MemeGenerator, an application that relies on datasets templates to produce memes. Have a look at the datastore to search for compatible templates.",
+  "description": "MemeGenerator, an application that relies on datasets templates to produce memes. Have a look at the datastore to search for your favorite meme template.",
   "license": "MIT",
   "author": "Hadrien Croubois",
   "social": {},
