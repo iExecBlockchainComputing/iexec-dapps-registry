@@ -16,10 +16,10 @@
   },
   "app": {
     "name": "MemeGenerator",
-    "owner": "0x7bd4783FDCAD405A28052a0d1f11236A741da593",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
     "multiaddr": "docker.io/iexechub/meme-generator:0.0.1",
-    "checksum": "0x272a2b72202108f96fd9f6d8a821ad7e0c226d3489d831f2b8b1e4f4e212bc91",
+    "checksum": "0x878fdea8720c3ebf63c085b1dc2cbf97accdaf60cd536523b4759a3505063b08",
     "mrenclave": ""
   }
 }
