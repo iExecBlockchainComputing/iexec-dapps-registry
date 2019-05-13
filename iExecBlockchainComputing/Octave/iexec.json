@@ -1,25 +1,22 @@
 {
-  "description":
-    "GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with MATLAB. It may also be used as a batch-oriented language. Since it is part of the GNU Project, it is free software under the terms of the GNU General Public License. Octave is one of the major free alternatives to MATLAB, others being Scilab and FreeMat. Scilab, however, puts less emphasis on (bidirectional) syntactic compatibility with MATLAB than Octave does.",
+  "description": "GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with MATLAB. It may also be used as a batch-oriented language. Since it is part of the GNU Project, it is free software under the terms of the GNU General Public License. Octave is one of the major free alternatives to MATLAB, others being Scilab and FreeMat. Scilab, however, puts less emphasis on (bidirectional) syntactic compatibility with MATLAB than Octave does.",
   "license": "MIT",
   "author": "Eric",
   "social": {
     "website": "https://www.gnu.org/software/octave/"
   },
   "logo": "logo.jpg",
-  "app": {
-    "name": "Octave",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=openmicroscopy/octave"
-    }
+  "buyConf": {
+    "params": "{ \"0\": \" --version \" }",
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": 0
   },
-  "order": {
-    "buy": {
-      "params": {
-        "cmdline": "--version"
-      }
-    }
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "Octave",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/openmicroscopy/octave",
+    "checksum": "0x6547e8d83fbad795805f514b6a5f977a70fa5d3c6e7f62bf7c9785b0042d6e26",
+    "mrenclave": ""
   }
 }
