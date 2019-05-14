@@ -6,9 +6,11 @@
     "website": "https://hub.docker.com/r/iexechub/faceswap/tags",
     "github": "https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/face-swap"
   },
-  "logo": "logo.svg",
+  "logo": "logo.png",
   "buyConf": {
-    "params": { "0": "" },
+    "params": {
+      "0": ""
+    },
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "trust": 0
   },
