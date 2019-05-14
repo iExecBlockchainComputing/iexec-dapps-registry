@@ -1,28 +1,23 @@
 {
-  "description":
-    "In mathematics, a fractal is an abstract object used to describe and simulate naturally occurring objects. Artificially created fractals commonly exhibit similar patterns at increasingly small scales. It is also known as expanding symmetry or evolving symmetry. If the replication is exactly the same at every scale, it is called a self-similar pattern. An example of this is the Clifford Attractor.",
+  "description": "In mathematics, a fractal is an abstract object used to describe and simulate naturally occurring objects. Artificially created fractals commonly exhibit similar patterns at increasingly small scales. It is also known as expanding symmetry or evolving symmetry. If the replication is exactly the same at every scale, it is called a self-similar pattern. An example of this is the Clifford Attractor.",
   "license": "MIT",
   "author": "Francois Branciard",
   "social": {
-    "website": "http://paulbourke.net/fractals/clifford/"
+    "website": "http://paulbourke.net/fractals/clifford/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/blob/v3/iExecBlockchainComputing/R-Clifford-Attractors"
   },
   "logo": "logo.png",
-  "app": {
-    "name": "CliffordAttractors",
-    "price": 1,
+  "buyConf": {
     "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/r-clifford-attractors"
+      "0": "-1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054"
     }
   },
-  "order": {
-    "buy": {
-      "params": {
-        "cmdline":
-          "Rscript /iexec/CliffordAttractors.R -1.24458046630025 -1.25191834103316 -1.81590817030519 -1.90866735205054",
-        "dirinuri":
-          "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/master/iExecBlockchainComputing/R-Clifford-Attractors/CliffordAttractors.R"
-      }
-    }
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "CliffordAttractors",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/r-clifford-attractors:1.0.2",
+    "checksum": "0xf6a45ba4b357f52d5f49e508cc71d498066b3a2f93f240c79ff26dfa42ea280b",
+    "mrenclave": ""
   }
 }
