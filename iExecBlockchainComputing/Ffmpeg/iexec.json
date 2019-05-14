@@ -8,7 +8,9 @@
   },
   "logo": "logo.png",
   "buyConf": {
-    "params": "{ \"cmdline\": \"-i /iexec_in/QmYCPEXXiwp8zSHuUPsogb2W3wShoCFuqVGH7s3KAnNchj /iexec_out/small.avi\"}",
+    "params": {
+      "0": "-i /iexec_in/QmYCPEXXiwp8zSHuUPsogb2W3wShoCFuqVGH7s3KAnNchj /iexec_out/small.avi"
+    },
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "trust": 0
   },
