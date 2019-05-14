@@ -1,0 +1,23 @@
+{
+  "description": "Swap two faces with this app. You should provide two JPG image URLs such as \"https://somewhere.io/img1.jpg https://somewhere.io/img2.jpg\". If successful, an output.jpg file with <image2> face on <image1> head will be produced. If you don't provide theses two image URLs, two other default images will be swap.",
+  "license": "MIT",
+  "author": "James Toussaint",
+  "social": {
+    "website": "https://hub.docker.com/r/iexechub/faceswap/tags",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/face-swap"
+  },
+  "logo": "logo.svg",
+  "buyConf": {
+    "params": { "0": "" },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": 0
+  },
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "FaceSwap",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/faceswap:1.0.0",
+    "checksum": "0x27f594c299b6479691150e3734d3a24858dbc7e28ef2da4cdefcc053610dc98e",
+    "mrenclave": ""
+  }
+}
