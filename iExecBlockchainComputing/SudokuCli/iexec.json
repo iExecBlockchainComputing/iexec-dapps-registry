@@ -1,0 +1,22 @@
+{
+  "description": "A Sudoku Solver. Given a grid represented as a 81 char long string, with empty spots being represented using 0 or dots, returns the first solution (in lexicographical order)",
+  "license": "MIT",
+  "author": "Hadrien Croubois",
+  "social": {},
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "0": "53..7....6..195....98....6.8...6...34..8.3..17...2...6.6....28....419..5....8..79"
+    },
+    "trust": 0,
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "app": {
+    "name": "SudokuSolver",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "type": "DOCKER",
+    "multiaddr": "iexechub/sudoku-solver-cli:0.0.1",
+    "checksum": "0x9adff7cf60194cb5d57a102d5ef1619db8876046dee32c378c3b3ea65c05c225",
+    "mrenclave": ""
+  }
+}
