@@ -3,26 +3,19 @@
   "license": "MIT",
   "author": "Ugo Plouviez",
   "social": {
-    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/master/iExecBlockchainComputing/BlurFace"
+    "website": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/BlurFace",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry/tree/v2/iExecBlockchainComputing/BlurFace"
   },
   "logo": "logo.png",
-  "app": {
-    "name": "BlurFace",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/blur-face"
-    }
+  "buyConf": {
+    "params": "{ \"0\": \"\" }"
   },
-  "order": {
-    "buy": {
-      "app": "0xabb3404aa42af18d041224bea118a06f55a45de0",
-      "dataset": "0x0000000000000000000000000000000000000000",
-      "params": {
-        "cmdline": "iexec/victor.mp4",
-        "dirinuri": "https://raw.githubusercontent.com/iExecBlockchainComputing/iexec-dapps-registry/v2/iExecBlockchainComputing/BlurFace/victor.mp4"
-      }
-    }
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "BlurFace",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/blur-face:1.0.3",
+    "checksum": "0x7447595c38ae5b68a54162d7ca6ea337ba0d9e8a5d3874ad0afbfe73611f66ba",
+    "mrenclave": ""
   }
 }
