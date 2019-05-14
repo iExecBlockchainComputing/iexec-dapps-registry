@@ -12,7 +12,7 @@
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
   },
   "app": {
-    "name": "MemeGenerator",
+    "name": "SudokuSolver",
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
     "multiaddr": "iexechub/sudoku-solver-cli:0.0.1",
