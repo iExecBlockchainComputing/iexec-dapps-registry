@@ -1,0 +1,18 @@
+{
+  "description": "Object-detector uses a deep learning trained model along with OpenCV to detect objects and return their positions in a given image. It can detect up to 20 objects including airplanes, bicycles, birds, boats, bottles, buses, cars, cats, chairs, cows, dining tables, dogs, horses, motorbikes, people, potted plants, sheep, sofas, trains, and tv monitors.",
+  "license": "MIT",
+  "author": "Zied Guesmi",
+  "social": {},
+  "logo": "logo.png",
+  "buyConf": {
+    "params": "{\"0\":\"https://raw.githubusercontent.com/zied-guesmi/object-detector/master/images/chatting-dog-faces.jpg\"}"
+  },
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "object-detector",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/object-detector:1.0.0",
+    "checksum": "0xf923d74a34547bd02a2fb9fb845ea26b8cf3900166a95d834d5a0cc8f04ef438",
+    "mrenclave": ""
+  }
+}
