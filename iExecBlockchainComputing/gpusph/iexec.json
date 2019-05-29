@@ -6,7 +6,7 @@
     "website": "http://www.gpusph.org/",
     "github": "https://github.com/gpusph/gpusph"
   },
-  "logo": "logo.png",
+  "logo": "logo.jpg",
   "buyConf": {
     "params": {
       "0": "OpenChannel"
