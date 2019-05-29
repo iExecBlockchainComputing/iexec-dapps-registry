@@ -1,7 +1,7 @@
 {
   "description": "GPUSPH is the first implementation of Weakly-Compressible Smoothed Particle Hydrodynamics (WCSPH), for Lagrangian method for fluid flow simulation, to run entirely on GPU with CUDA.",
   "license": "GPLv3",
-  "author": "er@iex.ec",
+  "author": "EDF",
   "social": {
     "website": "http://www.gpusph.org/",
     "github": "https://github.com/gpusph/gpusph"
