@@ -19,16 +19,5 @@
     "multiaddr": "iexechub/app-web-notary:0.0.1",
     "checksum": "0xc7a6ec359e1cea30772818f57af2dd1e77d762dbadf2e486ab28008938850d8c",
     "mrenclave": ""
-  },
-  "order": {
-    "apporder": {
-      "app": "0xF22b917aFfde7883e981279F58300cf9044d70d5",
-      "appprice": 0,
-      "volume": 1000000,
-      "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "datasetrestrict": "0x0000000000000000000000000000000000000000",
-      "workerpoolrestrict": "0x0000000000000000000000000000000000000000",
-      "requesterrestrict": "0x0000000000000000000000000000000000000000"
-    }
   }
 }
