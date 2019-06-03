@@ -1,0 +1,23 @@
+{
+  "description": "WebNotary: create cryptographially certified snapshots of web2 ressources. Snapshots will be pushed to IPFS and checksum are registered by iExec's PoCo. Wget flags options can be forwarded to this app.",
+  "license": "MIT",
+  "author": "Hadrien Croubois",
+  "social": {},
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "0": "https://iex.ec/wp-content/uploads/pdf/iExec-WPv3.0-English.pdf"
+    },
+    "trust": 0,
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "beneficiary": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "name": "WebNotary",
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "type": "DOCKER",
+    "multiaddr": "iexechub/app-web-notary:0.0.1",
+    "checksum": "0xc7a6ec359e1cea30772818f57af2dd1e77d762dbadf2e486ab28008938850d8c",
+    "mrenclave": ""
+  }
+}
