@@ -16,7 +16,7 @@
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
     "multiaddr": "iexechub/app-web-notary:0.0.1",
-    "checksum": "0xc7a6ec359e1cea30772818f57af2dd1e77d762dbadf2e486ab28008938850d8c",
+    "checksum": "0xb4b607d677517e756f2f6f9336c8a78ca1feb18f3be84d6b64036a8cddc32ed6",
     "mrenclave": ""
   }
 }
