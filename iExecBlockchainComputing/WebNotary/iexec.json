@@ -15,7 +15,7 @@
     "name": "WebNotary",
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
     "type": "DOCKER",
-    "multiaddr": "iexechub/app-web-notary:0.0.1",
+    "multiaddr": "docker.io/iexechub/app-web-notary:0.0.1",
     "checksum": "0xb4b607d677517e756f2f6f9336c8a78ca1feb18f3be84d6b64036a8cddc32ed6",
     "mrenclave": ""
   }
