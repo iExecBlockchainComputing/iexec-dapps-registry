@@ -1,0 +1,26 @@
+{
+  "description": "WebsensorsDoracle is a Dapp for Artificial Intelligence-based Oracles. Users can train a classifier using a sample of reference events (georeferenced texts with facts about some phenomena of interest). WebsensorsDoracle verifies that new events similar to the training set have occurred and the output is stored in Blockchain for Smart Contracts decision making.",
+  "license": "MIT",
+  "author": "Websensors",
+  "social": {
+    "website": "https://websensors.net.br/",
+    "github": "https://github.com/rmarcacini/websensors-iexec"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "0": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": 0,
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x4C66344710b740473e5a989FB7D5Cb3ebE95eceB",
+    "name": "WebsensorsDoracle",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/websensors/iexec:latest",
+    "checksum": "0x00f51494d7a42a3c1c43464d9f09e06b2a99968e3b978f6cd11ab3410b7bcd14",
+    "mrenclave": ""
+  }
+}
