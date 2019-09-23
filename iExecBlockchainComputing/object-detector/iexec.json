@@ -5,9 +5,7 @@
   "social": {},
   "logo": "logo.png",
   "buyConf": {
-    "params": {
-      "0": "https://raw.githubusercontent.com/zied-guesmi/object-detector/master/images/chatting-dog-faces.jpg"
-    }
+    "params": "https://raw.githubusercontent.com/zied-guesmi/object-detector/master/images/chatting-dog-faces.jpg"
   },
   "app": {
     "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",

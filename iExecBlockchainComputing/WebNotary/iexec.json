@@ -5,9 +5,7 @@
   "social": {},
   "logo": "logo.png",
   "buyConf": {
-    "params": {
-      "0": "https://iex.ec/wp-content/uploads/pdf/iExec-WPv3.0-English.pdf"
-    },
+    "params": "https://iex.ec/wp-content/uploads/pdf/iExec-WPv3.0-English.pdf",
     "trust": 0,
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000"
   },
