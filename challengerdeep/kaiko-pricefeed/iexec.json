@@ -1,0 +1,24 @@
+{
+  "description": "Prices and exchange rates from Kaiko Market Data API. Requires existing Kaiko API Key. Contact hello@kaiko.com for inquiries. Refer to https://docs.kaiko.com/#aggregated-price-direct-exchange-rate and https://docs.kaiko.com/#usd-exchange-rate for details on spot_direct_exchange_rate and spot_exchange_rate parameters and results.",
+  "license": "MIT",
+  "author": "Robert Edstrom",
+  "social": {
+    "website": "https://www.kaiko.com",
+    "github": "https://github.com/challengerdeep/iexec-marketdata-adapter"
+  },
+  "logo": "kaiko-logo.png",
+  "buyConf": {
+    "params": "",
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0xA5581e22e7E80cDA4B10E6dD99F5E59e914D15e1",
+    "name": "kaiko-pricefeed",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/kaikodata/iexec-marketdata-adapter:0.1.1",
+    "checksum": "0x5f09b2f4874e457b726b4062c2f920999666fec5b97b67c10864e6e331107e44",
+    "mrenclave": ""
+  }
+}
