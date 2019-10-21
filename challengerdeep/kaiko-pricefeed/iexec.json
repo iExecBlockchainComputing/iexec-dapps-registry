@@ -17,8 +17,8 @@
     "owner": "0xA5581e22e7E80cDA4B10E6dD99F5E59e914D15e1",
     "name": "kaiko-pricefeed",
     "type": "DOCKER",
-    "multiaddr": "registry.hub.docker.com/kaikodata/iexec-marketdata-adapter:0.1.1",
-    "checksum": "0x5f09b2f4874e457b726b4062c2f920999666fec5b97b67c10864e6e331107e44",
+    "multiaddr": "registry.hub.docker.com/kaikodata/iexec-pricefeed:0.1.2",
+    "checksum": "0x215602727fe336feb597076cf23755a84d8c07b599bcf8ab1f313d84b223dd0f",
     "mrenclave": ""
   }
 }
