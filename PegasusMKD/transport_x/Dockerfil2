@@ -1,0 +1,106 @@
+FROM iexechub/python-scone
+
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.5/community" >> /etc/apk/repositories \
+    && apk --no-cache --update-cache add python3 python3-dev py3-pip \
+    && apk update \
+    && apk add --no-cache --update-cache libgcc libstdc++ musl openblas py3-numpy-f2py\
+#    && apk add --no-cache --update-cache py3-scipy \
+    && apk --no-cache --update-cache add gfortran build-base wget freetype-dev libpng-dev \
+    && apk add --no-cache --virtual .build-deps gcc musl-dev 
+
+RUN apk add --no-cache cmake gcc libxml2 \
+       automake g++ subversion python3-dev \
+       libxml2-dev libxslt-dev lapack-dev gfortran
+
+
+#RUN wget https://github.com/xianyi/OpenBLAS/archive/v0.3.6.tar.gz \
+#	&& tar -xf v0.3.6.tar.gz \
+#	&& cd OpenBLAS-0.3.6/ \
+#	&& make BINARY=64 FC=$(which gfortran) USE_THREAD=1 \
+#	&& make PREFIX=/usr/lib/openblas install
+
+
+    
+RUN apk --no-cache --update-cache add git
+
+##########ADD PYTHON PACKAGES HERE:#######################
+
+#RUN SCONE_MODE=sim pip install scipy
+
+RUN SCONE_MODE=sim pip install --upgrade Cython
+
+#RUN SCONE_MODE=sim pip install --upgrade git+git://github.com/cython/cython@master
+
+#RUN SCONE_MODE=sim pip install --upgrade pip setuptools wheel
+
+#RUN SCONE_MODE=sim pip3 install python-language-server
+
+#RUN ATLAS=/usr/lib/openblas/lib/libopenblas.so LAPACK=/usr/lib/openblas/lib/libopenblas.so pip install scipy==1.3
+
+#RUN export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/lib/openblas/lib/
+
+RUN SCONE_MODE=sim pip install attrdict python-gnupg web3
+
+RUN SCONE_MODE=sim pip install numpy
+
+RUN SCONE_MODE=sim pip install pandas
+
+RUN SCONE_MODE=sim pip install geopy
+
+#RUN apk --no-cache --update-cache add py3-cython
+
+#RUN apk --no-cache --update-cache add scipy
+
+#RUN SCONE_MODE=sim pip install Cython==0.29.12
+
+#RUN SCONE_MODE=sim pip install --upgrade pip
+
+#RUN apk add cython
+
+RUN SCONE_MODE=sim python
+
+
+RUN SCONE_MODE=sim pip install  scipy
+
+RUN SCONE_MODE=sim pip install sklearn
+
+RUN SCONE_MODE=sim pip install keras
+
+
+#RUN SCONE_MODE=sim pip install attrdict python-gnupg web3 sklearn geopy pandas numpy keras
+
+#CMD ["pip","install","sklearn"]
+
+RUN cp /usr/bin/python3.6 /usr/bin/python3
+
+COPY src /app
+
+RUN SCONE_MODE=sim SCONE_HASH=1 SCONE_HEAP=1G SCONE_ALPINE=1		    \
+	&& mkdir conf							    \
+	&& scone fspf create fspf.pb 					    \
+	&& scone fspf addr fspf.pb /  --not-protected --kernel /            \
+	&& scone fspf addr fspf.pb /usr --authenticated --kernel /usr       \
+	&& scone fspf addf fspf.pb /usr /usr 			            \
+	&& scone fspf addr fspf.pb /bin --authenticated --kernel /bin       \
+	&& scone fspf addf fspf.pb /bin /bin 			            \
+	&& scone fspf addr fspf.pb /lib --authenticated --kernel /lib       \
+	&& scone fspf addf fspf.pb /lib /lib 			            \
+	&& scone fspf addr fspf.pb /etc --authenticated --kernel /etc       \
+	&& scone fspf addf fspf.pb /etc /etc 			            \
+	&& scone fspf addr fspf.pb /sbin --authenticated --kernel /sbin     \
+	&& scone fspf addf fspf.pb /sbin /sbin 			            \
+	&& scone fspf addr fspf.pb /signer --authenticated --kernel /signer \
+	&& scone fspf addf fspf.pb /signer /signer 			    \
+	&& scone fspf addr fspf.pb /app --authenticated --kernel /app 	    \
+	&& scone fspf addf fspf.pb /app /app 				    \
+	&& scone fspf encrypt ./fspf.pb > /conf/keytag 			    \
+	&& MRENCLAVE="$(SCONE_HASH=1 python)"			            \
+	&& FSPF_TAG=$(cat conf/keytag | awk '{print $9}') 	            \
+	&& FSPF_KEY=$(cat conf/keytag | awk '{print $11}')		    \
+	&& FINGERPRINT="$FSPF_KEY|$FSPF_TAG|$MRENCLAVE"			    \
+	&& echo $FINGERPRINT > conf/fingerprint.txt			    \
+	&& printf "\n########################################################\nMREnclave: $FINGERPRINT\n########################################################\n\n"
+
+
+##########CHANGE ENTRYPOINT HERE:#######################
+ENTRYPOINT unzip -o /iexec_in/$DATASET_FILENAME -d /iexec_in && python3 /app/main.py
