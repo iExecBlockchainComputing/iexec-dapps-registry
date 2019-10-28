@@ -3,3 +3,5 @@ data.json
 chain.json
 orders.json
 ./.wallet/*
+UTC-*
+wallet
