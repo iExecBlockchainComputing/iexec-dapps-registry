@@ -18,7 +18,7 @@
     "name": "kaiko-pricefeed",
     "type": "DOCKER",
     "multiaddr": "registry.hub.docker.com/kaikodata/iexec-pricefeed:0.1.2",
-    "checksum": "0x215602727fe336feb597076cf23755a84d8c07b599bcf8ab1f313d84b223dd0f",
+    "checksum": "0x66437b0d450e9c9ed172299805ad2ad16c6ba59031fb5ebaac3c93516b066d4b",
     "mrenclave": ""
   }
 }
