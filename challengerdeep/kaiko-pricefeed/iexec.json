@@ -8,7 +8,7 @@
   },
   "logo": "kaiko-logo.png",
   "buyConf": {
-    "params": "",
+    "params": "btc usd spot_direct_exchange_rate 1d 9 2019-11-10T13:51:00",
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "trust": "0",
     "callback": "0x0000000000000000000000000000000000000000"
