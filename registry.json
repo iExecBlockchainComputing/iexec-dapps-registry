@@ -1,5 +1,11 @@
 [
   {
+    "name": "kaiko-pricefeed",
+    "org": "challengerdeep",
+    "created": "2019-10-30T00:00:00.000Z",
+    "rank": 100
+  },
+  {
     "name": "PriceFeed",
     "org": "iExecBlockchainComputing",
     "created": "2019-05-08T00:00:00.000Z",
