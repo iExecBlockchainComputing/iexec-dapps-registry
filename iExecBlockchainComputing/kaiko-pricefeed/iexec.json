@@ -1,0 +1,26 @@
+{
+  "description": "We are proud to offer an innovative price feed that combines the high level of security brought in by TEE technology (Trusted Execution Environment), the most complete choice of crypto pairs provided by Kaiko (hundreds of them), and the flexibility of the iExec platform (any kind of logic can be implemented to override the default behavior).",
+  "license": "MIT",
+  "author": "iExec",
+  "social": {
+    "website": "https://price-feed-doracle.iex.ec/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/offchain-computing/offchain-tee-kaiko-pricefeed"
+  },
+  "logo": "kaiko-logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": "btc usd 9"
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "trust": "0",
+    "callback": "0x3eF657EC7f51B18e69B00a8F8F2752Ee90493c3b"
+  },
+  "app": {
+    "owner": "0x15Bd06807eF0F2284a9C5baeAA2EF4d5a88eB72A",
+    "name": "offchain-tee-kaiko-pricefeed",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/offchain-tee-kaiko-pricefeed:5.0.1",
+    "checksum": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "mrenclave": "4a39755a6a07cf885d7d3c7358bef277c7233746d283f4a48491b87d772b4199|958742b031be41d52d4f11ab2afc063a|2a421b3b7a6f771c3a602f49ce05b6a75793312b8e2c61c673fe7085a16cf138|python /app/app.py"
+  }
+}
