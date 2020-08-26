@@ -1,27 +1,21 @@
-{
-  "description":
-    "Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.",
+0x526937F28B31b9BaFA4e72477f88c75784836375{
+  "description": "Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.",
   "license": "MIT",
-  "author": "Ugo",
+  "author": "er@iex.ec",
   "social": {
-    "website": "https://www.blender.org/"
+    "website": "https://www.blender.org/",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/blender-images"
   },
   "logo": "logo.png",
-  "app": {
-    "name": "Blender",
-    "price": 1,
-    "params": {
-      "type": "DOCKER",
-      "envvars": "XWDOCKERIMAGE=iexechub/blender-images:latest"
-    }
+  "buyConf": {
+    "params": "{ \"0\": \"https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend\" }"
   },
-  "order": {
-    "buy": {
-      "params": {
-        "cmdline": "iexec/iexec-rlc.blend",
-        "dirinuri":
-          "https://github.com/iExecBlockchainComputing/iexec-dapp-samples/raw/blender/apps/iexec-rlc.blend"
-      }
-    }
+  "app": {
+    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "name": "Blender",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/blender:1.0",
+    "checksum": "0x4f7b67bc4dbb0080b8a14b9c9ab5a65f5cc4db1c7fdac0b8a54ebb37852a0abd",
+    "mrenclave": ""
   }
 }
