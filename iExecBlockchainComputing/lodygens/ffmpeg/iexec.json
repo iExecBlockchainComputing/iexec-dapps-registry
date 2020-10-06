@@ -1,0 +1,27 @@
+{
+  "description": "FFmpeg is a command-line tool that converts audio or video formats. It can also capture and encode in real-time from various hardware and software sources such as a TV capture card. The project publishes a new release every three months on average. While release versions are available from the website for download, FFmpeg developers recommend that users compile the software from source using the latest build from their source code Git version control system.",
+  "license": "MIT",
+  "author": "Oleg Lodygensky",
+  "social": {
+    "website": "https://iex.ec",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-dapps-registry"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x5d0bB9e7E69f047b98BE869f740c6d9196d34982",
+    "name": "ffmpeg-v5",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/ffmmpeg-v5:0.0.1",
+    "checksum": "0x706a0aae11ccbc49f1b5fddd15c9b05c2a492161bf3771f19aa98bc693e87e89",
+    "mrenclave": ""
+  }
+}
+
