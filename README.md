@@ -2,7 +2,21 @@
 
 In order to list your dapp on the [iExec Dapp Store](https://dapps.iex.ec/), you need to make it into the iExec Dapp Registry FIRST. But relax, it's very easy:
 
-Once you created and deployed your iExec Dapp using the [iExec SDK](https://github.com/iExecBlockchainComputing/iexec-sdk/tree/next), here are the 5 steps that remain to enter this registry:
+Once you created, deployed and published your iExec Dapp using the [iExec SDK](https://github.com/iExecBlockchainComputing/iexec-sdk/tree/next), here are the 5 steps that remain to enter this registry:
+
+## Before beginning
+
+Make sure your app runs smoothly on iExec
+
+Make sure your app is published on the marketplace:
+- run `iexec orderbook app <appAddress>`
+- if the orderbook is empty, run `iexec app publish <appAddress>` to publish an apporder
+
+Make sure the following keys of `iexec.json` are filled:
+- description: a description of your app to display in the store (at least 150 chars)
+- license
+- author
+- additionally, if your app accept args, you can fill in `buyConf.params.iexec_args` to provide default args
 
 ## 1. Github Fork this repo
 
@@ -37,5 +51,7 @@ Once the validation is successful, you can commit & push your app config.
 clic on this button to create a Pull Request (from your **forked v5 branch** TO **iexec-dapps-registry v5 branch**):
 
 [![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
+
+One last thing... it will be helpfull if you provide the taskid of a successfully executed task in the comments! 
 
 **We'll review you Dapp and if it meets all the above criteria, it will be added to the iExec Dapp Regsitry!**
