@@ -1,23 +1,26 @@
 {
-  "description": "Swap two faces with this app. You should provide two JPG image URLs such as \"https://somewhere.io/img1.jpg https://somewhere.io/img2.jpg\". If successful, an output.jpg file with <image2> face on <image1> head will be produced. If you don't provide theses two image URLs, two other default images will be swap.",
+  "description": "FaceSwap: merge 2 faces to create an original one, using OpenCV and NUMPY, define your inputs files in the advanced parameters when you fill the order in the marketplace",
   "license": "MIT",
-  "author": "James Toussaint",
+  "author": "iExec",
   "social": {
-    "website": "https://hub.docker.com/r/iexechub/faceswap/tags",
-    "github": "https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/face-swap"
+    "website": "iex.ec",
+    "github": "https://github.com/iExecBlockchainComputing/iexec-face-swap"
   },
   "logo": "logo.png",
   "buyConf": {
-    "params": "",
+    "params": {
+      "iexec_args": "",
+    },
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "trust": 0
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
   },
   "app": {
-    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
+    "owner": "0x7800885445a481315Fac90A8e8BDb62a0e538b71",
     "name": "FaceSwap",
     "type": "DOCKER",
-    "multiaddr": "docker.io/iexechub/faceswap:1.0.0",
-    "checksum": "0x27f594c299b6479691150e3734d3a24858dbc7e28ef2da4cdefcc053610dc98e",
+    "multiaddr": "docker.io/iexechub/iexec-face-swap:1.0.0",
+    "checksum": "0x8a682cce5175358b3cd53f3a8a084365bc9ed0c3474cc3d047008db65541c0f0",
     "mrenclave": ""
   }
 }
