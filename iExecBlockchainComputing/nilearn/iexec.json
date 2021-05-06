@@ -1,23 +1,26 @@
 {
   "description": "Nilearn: Machine learning for Neuro-Imaging in Python, Nilearn is a Python module for fast and easy statistical learning on NeuroImaging data. It leverages the scikit-learn Python toolbox for multivariate statistics with applications such as predictive modelling, classification, decoding, or connectivity analysis.",
-  "license": " BSD license (3 clause).",
-  "author": "er@iex.ec",
+  "license": "MIT",
+  "author": "iExec",
   "social": {
     "website": "https://nilearn.github.io/",
     "github": "https://github.com/ericr6/nilearn"
   },
   "logo": "logo.png",
   "buyConf": {
-    "params": "",
+    "params": {
+      "iexec_args": ""
+    },
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "trust": 0
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
   },
   "app": {
-    "owner": "0xA1162f07afC3e45Ae89D2252706eB355F6349641",
-    "name": "Nilearn",
+    "owner": "0x7800885445a481315Fac90A8e8BDb62a0e538b71",
+    "name": "nilearn",
     "type": "DOCKER",
-    "multiaddr": "registry.hub.docker.com/iexechub/nilearn:1.0",
-    "checksum": "0xe99d4b1cd590c82373e96f382c808afa8803f46b2e38e827968d0f1774e1dc52",
+    "multiaddr": "docker.io/ericro/nilearn:1.0",
+    "checksum": "0xcd6e90a8ce4fc50a811ab2ab5d09dc7d6ade2ea1d7137a69c190e48a0ae41d23",
     "mrenclave": ""
   }
 }
