@@ -1,0 +1,26 @@
+{
+  "description": "Crawl and download all images of a webpage, that will be stored on ipfs, and save a part of a webpage history. set the page url in argument, ex http://www.coindesk.com,http://iew.ec",
+  "license": "MIT",
+  "author": "iExec",
+  "social": {
+    "website": "",
+    "github": "https://github.com/ericr6/imagedownload.git"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": "http://www.coindesk.com"
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x7800885445a481315Fac90A8e8BDb62a0e538b71",
+    "name": "imagedownload",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/ericro/imagedownload:1.5",
+    "checksum": "0x8ebcd738f7f838c6ab80a8bcf5f3a26fdeed4f54ccf34cfa390d53b67ebbbd5d",
+    "mrenclave": ""
+  }
+}
