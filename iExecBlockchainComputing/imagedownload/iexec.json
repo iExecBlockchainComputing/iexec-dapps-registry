@@ -1,5 +1,5 @@
 {
-  "description": "Crawl and download all images of a webpage, that will be stored on ipfs, and save a part of a webpage history. set the page url in argument, ex http://www.coindesk.com,http://iew.ec",
+  "description": "Crawl and download all images of a webpage, that will be stored on ipfs, and save a part of a webpage history. set the page url in argument, ex http://www.coindesk.com,http://www.iex.ec",
   "license": "MIT",
   "author": "iExec",
   "social": {
