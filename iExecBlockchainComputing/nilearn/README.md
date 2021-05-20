@@ -1,1 +1,0 @@
-![dapp logo](./logo.png)
