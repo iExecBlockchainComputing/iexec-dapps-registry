@@ -3,8 +3,7 @@
   "license": "MIT",
   "author": "iExec",
   "social": {
-    "website": "https://docs.openvinotoolkit.org/",
-    "github": "https://github.com/tobedefined"
+    "website": "https://docs.openvinotoolkit.org/"
   },
   "logo": "logo.png",
   "buyConf": {
