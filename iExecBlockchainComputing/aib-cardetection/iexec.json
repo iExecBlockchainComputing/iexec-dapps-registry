@@ -1,0 +1,25 @@
+{
+  "description": "Rent or protect your ai model, with openvino, the ai framework developped by intel, rents a trained model for car detection saved in confidential dataset, running in enclaves, dataset: 0x367C793e7221cEb4d4c09ee45bc679573dB053fa, args: /security_barrier_camera_demo -no_show -i /samples/images/car_1.bmp -m /iexec_in/models/vehicle-license-plate-detection-barrier-0106.xml",
+  "license": "MIT",
+  "author": "iExec",
+  "social": {
+    "website": "https://docs.openvinotoolkit.org/"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": "/security_barrier_camera_demo -no_show -i /samples/images/car_1.bmp -m /iexec_in/models/vehicle-license-plate-detection-barrier-0106.xml"
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x29F24f67dDBa77616A4da01e409AD20623594B62",
+    "name": "aib-cardetection",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/reckey/aib-cardetection:v1.5",
+    "checksum": "0x962d571e1fd84d9fe90ea638a1285c36823e6c8fcdc4fce11c6df7378c07737c",
+    "mrenclave": "4f8736faeb26c8710c5e08afee8b3c897347f992ba7945b353e702366f9b247d|56d0c8875a0692d54a7ac57c068a8503|560f34484cde9b0f531945f97c24de7974152c3cb1d7af6924fabf3ba1c15986|sh /samples/run.sh"
+  }
+}
