@@ -1,5 +1,5 @@
 {
-  "description": "Rent or protect your ai model, with openvino, the ai framework developped by intel, rents a trained model for car detection saved in confidential dataset, running in enclaves, dataset: 0x367C793e7221cEb4d4c09ee45bc679573dB053fa, args: /security_barrier_camera_demo -no_show -i /samples/images/car_1.bmp -m /iexec_in/models/vehicle-license-plate-detection-barrier-0106.xml",
+  "description": "Rent and/or protect your AI model, with openvino, the AI framework developed by Intel, the trained model for car detection is stored in confidential dataset, the prediction model is only authorized to be decrypted and processed in a secure enclaves.",
   "license": "MIT",
   "author": "iExec",
   "social": {
@@ -11,6 +11,7 @@
     "params": {
       "iexec_args": "/security_barrier_camera_demo -no_show -i /samples/images/car_1.bmp -m /iexec_in/models/vehicle-license-plate-detection-barrier-0106.xml"
     },
+    "dataset": "0x367C793e7221cEb4d4c09ee45bc679573dB053fa",
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
     "trust": "0",
     "callback": "0x0000000000000000000000000000000000000000"
