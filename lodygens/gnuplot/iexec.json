@@ -1,0 +1,26 @@
+{
+  "description": "My iExec ressource description, must be at least 150 chars long in order to pass the validation checks. Describe your application, dataset or workerpool to your users",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x5d0bB9e7E69f047b98BE869f740c6d9196d34982",
+    "name": "gnuplot-v5",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/iexechub/gnuplot-v5:0.0.1",
+    "checksum": "0x483fd179029c518e84af586a218947a87b259b401e950178847eaf8694a5e6b0",
+    "mrenclave": ""
+  }
+}
