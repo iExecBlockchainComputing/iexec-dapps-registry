@@ -1,0 +1,27 @@
+{
+  "description": "Generate a random number between given boundaries. If no minimal boundary is given, 0 is used instead. Boundaries are included in the possible results.",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0xd8DA71D0302499ACB098Ef815234867897C034fE",
+    "name": "PythonRandomGenerator",
+    "price": 1,
+    "type": "DOCKER",
+    "multiaddr": "docker.io/mcornaton/python-random-generator:latest",
+    "checksum": "0x15bed530c76f1f3b05b2db8d44c417128b8934899bc85804a655a01b441bfa78",
+    "mrenclave": "6660bd72614d91b25308bc6f20cbb00c0d3da8a60ccd5c72c0f03b5fe18f1d3f"
+  }
+}
