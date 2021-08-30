@@ -22,6 +22,12 @@
     "type": "DOCKER",
     "multiaddr": "docker.io/mcornaton/python-random-generator:latest",
     "checksum": "0x15bed530c76f1f3b05b2db8d44c417128b8934899bc85804a655a01b441bfa78",
-    "mrenclave": "6660bd72614d91b25308bc6f20cbb00c0d3da8a60ccd5c72c0f03b5fe18f1d3f"
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v6",
+      "entrypoint": "python /app/app.py",
+      "heapSize": 1073741824,
+      "fingerprint": "6660bd72614d91b25308bc6f20cbb00c0d3da8a60ccd5c72c0f03b5fe18f1d3f"
+    }
   }
 }
