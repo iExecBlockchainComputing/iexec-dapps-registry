@@ -11,7 +11,7 @@
     "params": {
       "iexec_args": ""
     },
-    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
     "trust": "0",
     "callback": "0x0000000000000000000000000000000000000000"
   },
@@ -20,8 +20,8 @@
     "name": "PythonRandomGenerator",
     "price": 1,
     "type": "DOCKER",
-    "multiaddr": "docker.io/mcornaton/python-random-generator:latest",
-    "checksum": "0x15bed530c76f1f3b05b2db8d44c417128b8934899bc85804a655a01b441bfa78",
+    "multiaddr": "docker.io/iexechub/python-random-generator:6.0.0",
+    "checksum": "0x000b7fff576d95d2246bc1c42fb76f362fbec7702c186f5a6bd0618e0bff5340",
     "mrenclave": {
       "provider": "SCONE",
       "version": "v6",
