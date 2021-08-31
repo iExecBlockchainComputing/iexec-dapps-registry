@@ -16,7 +16,7 @@
     "callback": "0x0000000000000000000000000000000000000000"
   },
   "app": {
-    "owner": "0xd8DA71D0302499ACB098Ef815234867897C034fE",
+    "owner": "0xeceb534CEbE1016deb8dc46a0D0eE0408D6fE8Db",
     "name": "PythonRandomGenerator",
     "price": 1,
     "type": "DOCKER",
