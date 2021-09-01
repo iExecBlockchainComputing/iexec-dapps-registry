@@ -20,13 +20,13 @@
     "name": "offchain-tee-kaiko-pricefeed",
     "type": "DOCKER",
     "multiaddr": "docker.io/iexechub/offchain-tee-kaiko-pricefeed:6.0.0",
-    "checksum": "0x15bed530c76f1f3b05b2db8d44c417128b8934899bc85804a655a01b441bfa78", // FIXME
+    "checksum": "0x7e5cfabf27eb0439d858db100c35c82453318cfbdf7d26e0792729ae70623447",
     "mrenclave": {
       "provider": "SCONE",
       "version": "v5",
       "entrypoint": "python /app/app.py",
       "heapSize": 1073741824,
-      "fingerprint": "89b888f4288fd966b56598e9f4cc7f47dc5b6c98ee8c4ff62ef2beff54cdf4cb"
+      "fingerprint": "2a283635b6d9e9ca1ae28ac3c090859672aeaf1c7d2e625e31977dac86620acb"
     }
   }
 }
