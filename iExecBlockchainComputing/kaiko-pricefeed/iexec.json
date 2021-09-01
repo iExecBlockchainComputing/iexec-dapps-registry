@@ -16,11 +16,17 @@
     "callback": "0x3eF657EC7f51B18e69B00a8F8F2752Ee90493c3b"
   },
   "app": {
-    "owner": "0x15Bd06807eF0F2284a9C5baeAA2EF4d5a88eB72A",
+    "owner": "0xeceb534CEbE1016deb8dc46a0D0eE0408D6fE8Db",
     "name": "offchain-tee-kaiko-pricefeed",
     "type": "DOCKER",
-    "multiaddr": "docker.io/iexechub/offchain-tee-kaiko-pricefeed:5.0.1",
-    "checksum": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "mrenclave": "4a39755a6a07cf885d7d3c7358bef277c7233746d283f4a48491b87d772b4199|958742b031be41d52d4f11ab2afc063a|2a421b3b7a6f771c3a602f49ce05b6a75793312b8e2c61c673fe7085a16cf138|python /app/app.py"
+    "multiaddr": "docker.io/iexechub/offchain-tee-kaiko-pricefeed:6.0.0",
+    "checksum": "0x7e5cfabf27eb0439d858db100c35c82453318cfbdf7d26e0792729ae70623447",
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v5",
+      "entrypoint": "python /app/app.py",
+      "heapSize": 1073741824,
+      "fingerprint": "2a283635b6d9e9ca1ae28ac3c090859672aeaf1c7d2e625e31977dac86620acb"
+    }
   }
 }
