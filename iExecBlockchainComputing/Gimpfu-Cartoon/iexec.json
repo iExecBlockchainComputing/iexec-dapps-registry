@@ -1,0 +1,25 @@
+{
+  "description": "iExec decentralized application for distributing the computation of gimp's batch mode image processing. The gimpfu script applies a color propagate filter on an image to give it a cartoonish look",
+  "license": "Apache-2.0",
+  "author": "iExec",
+  "social": {
+    "website": "https://iex.ec/",
+    "github": "https://github.com/iExecBlockchainComputing/gimpfu-cartoon"
+  },
+  "logo": "gimpcartoon.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x026aD6ECd5124809d5f3b393F6a94ac195CA55b9",
+    "name": "gimpfu-cartoon",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/gimpfu-cartoon:1.0.0",
+    "checksum": "0x4267a9c1e309cb18a60d7b0f2ec39aa172c6f3ee73b6351c3c904786fc9a1886"
+  }
+}
