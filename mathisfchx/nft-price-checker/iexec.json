@@ -1,0 +1,32 @@
+{
+  "description": "Check the Opensea floor price of the NFTs you own, and calculate the total estimate of your NFT portfolio in $eth and $usd. You can use as an input file : either your ethereum address or a detailled description of the NFTs you own. (+ If you pass \"web3\" as an arg (web2 is the default arg), the dapp will output the $usd total value as a callback). Detailled documentation is on Github.",
+  "license": "MIT",
+  "author": "iExec",
+  "social": {
+    "website": "?",
+    "github": "https://github.com/iExecBlockchainComputing/nft-price-checker"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": "web2"
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x1af04204013F3E5F7A0dAB40aA1A56f81cf2d674",
+    "name": "nft-price-checker",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/iexechub/nft-price-checker:4.0.1",
+    "checksum": "0x6408b0e607b4549478c79c56e03e590506220b76a09d38b14ff0a45724b8b989",
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v5",
+      "entrypoint": "/app/nft-price-checker",
+      "heapSize": 1073741824,
+      "fingerprint": "5fb3ed01173a56e02886d1cab792684c90bcc43c18663986b4cad24c1785c835"
+    }
+  }
+}
