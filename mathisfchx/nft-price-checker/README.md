@@ -102,9 +102,17 @@ cat /tmp/iexec_out/computed.json
 ### Deploy
 To deploy your app, follow the instructions on the IExec Documentation : https://docs.iex.ec/for-developers/your-first-app
 
-Then, you can run your dApp with the `iexec app run` command (you can add as much parameters and options as you want, follow the SDK and CLI documentation to do so) :  
+Then, you can run your dApp with the `iexec app run` command (you can add as much parameters and options as needed, follow the SDK and CLI documentation to do so) :  
 ```
-iexec app run --watch
+iexec app run --watch ...
+```
+Here are two successfull tasks (performed on v7 viviani debug workerpools), respectively for the `web2` and the `web3` args :
+command_line_arg = "web2" : 0xc5acfa4ad5aa90f0f60c5c4c5b7bf3253ac34aad87aca733bbc075217b28576d
+command_line_arg = "web3" : 0xb0b2edeed53f72283c29d2b0704636653fdbf3e73244efeb98d87ff36fed4bcc
+
+Lastly, here is an example of web3 debug command line run :
+```
+iexec app run 0x0C7701aaB4b9aBa22509CFFd9683379fFCcDd311 --tag tee --workerpool 0x5210cD9C57546159Ac60DaC17B3e6cDF48674FBD --watch --chain viviani --args web3 --callback 0x000000000000000000000000000000000000dEaD --input-files https://raw.githubusercontent.com/mathisfchx/iexec_tests/main/input.json --params '{"iexec_developer_logger":"True"}'  
 ```
 
 ### Confidential Computing and TEE
