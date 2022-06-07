@@ -107,8 +107,8 @@ Then, you can run your dApp with the `iexec app run` command (you can add as muc
 iexec app run --watch ...
 ```
 Here are two successfull tasks (performed on v7 viviani debug workerpools), respectively for the `web2` and the `web3` args :
-command_line_arg = "web2" : 0xc5acfa4ad5aa90f0f60c5c4c5b7bf3253ac34aad87aca733bbc075217b28576d  
-command_line_arg = "web3" : 0xb0b2edeed53f72283c29d2b0704636653fdbf3e73244efeb98d87ff36fed4bcc
+command_line_arg = "web2" : `0xc5acfa4ad5aa90f0f60c5c4c5b7bf3253ac34aad87aca733bbc075217b28576d`  
+command_line_arg = "web3" : `0xb0b2edeed53f72283c29d2b0704636653fdbf3e73244efeb98d87ff36fed4bcc`  
 
 Lastly, here is an example of web3 debug command line run :
 ```
