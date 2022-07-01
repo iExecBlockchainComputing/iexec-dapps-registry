@@ -21,12 +21,6 @@
     "type": "DOCKER",
     "multiaddr": "docker.io/iexechub/nft-price-checker:4.0.1",
     "checksum": "0x6408b0e607b4549478c79c56e03e590506220b76a09d38b14ff0a45724b8b989",
-    "mrenclave": {
-      "provider": "SCONE",
-      "version": "v5",
-      "entrypoint": "/app/nft-price-checker",
-      "heapSize": 1073741824,
-      "fingerprint": "5fb3ed01173a56e02886d1cab792684c90bcc43c18663986b4cad24c1785c835"
-    }
+    "mrenclave": "{\"provider\":\"SCONE\",\"version\":\"v5\",\"entrypoint\":\"/app/nft-price-checker\",\"heapSize\":1073741824,\"fingerprint\":\"675338647313f9bf060112487fb8cf2b237feaf7ad9f89faccbafa7031523bf7\"}"
   }
 }
