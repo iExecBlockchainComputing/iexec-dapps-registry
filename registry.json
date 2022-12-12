@@ -1,11 +1,5 @@
 [
   {
-    "name": "kaiko-pricefeed",
-    "org": "iExecBlockchainComputing",
-    "created": "2020-07-22T00:00:00.000Z",
-    "rank": 100
-  },
-  {
     "name": "openvino",
     "org": "iExecBlockchainComputing",
     "created": "2021-05-05T00:00:00.000Z",
