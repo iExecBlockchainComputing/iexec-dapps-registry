@@ -100,6 +100,10 @@ cat /tmp/iexec_out/computed.json
 ```
 
 ### Deploy
+
+**_NOTE:_** the former Test Side chain, Viviani, is not available anymore;
+the tutorial should be reproduced similarly on the iExec Sidechain.
+
 To deploy your app, follow the instructions on the IExec Documentation : https://docs.iex.ec/for-developers/your-first-app
 
 Then, you can run your dApp with the `iexec app run` command (you can add as much parameters and options as needed, follow the SDK and CLI documentation to do so) :  
