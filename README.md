@@ -22,7 +22,7 @@ Make sure the following keys of `iexec.json` are filled:
 
 ## 1. Github Fork this repo
 
-click on the github "Fork" button and `git clone` the **forked** repository on your local machine and `git checkout v7` the v7 branch.
+click on the github "Fork" button and `git clone` the **forked** repository on your local machine and `git checkout v8` the v8 branch.
 
 [![github fork](./github-fork.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry)
 
@@ -50,7 +50,7 @@ Once the validation is successful, you can commit & push your app config.
 
 ## 5. Github Pull Request
 
-click on this button to create a Pull Request (from your **forked v7 branch** TO **iexec-dapps-registry v7 branch**):
+click on this button to create a Pull Request (from your **forked v8 branch** TO **iexec-dapps-registry v8 branch**):
 
 [![github pull request](./github-pr.png)](https://github.com/iExecBlockchainComputing/iexec-dapps-registry/compare)
 
