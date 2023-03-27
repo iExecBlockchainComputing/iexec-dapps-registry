@@ -1,0 +1,30 @@
+{
+  "description": "salary-estimator is an app that try to estimate  a person's salary based on a dataset that provided real salary informations of people (job,city,education,years exp,salary). This app is built in debug mode. Detailled documentation is on Github.",
+  "license": "MIT",
+  "author": "F.CORDIER",
+  "social": {
+    "website": "?",
+    "github": "https://github.com/thewhitewizard/salary-estimator"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {},
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x6c1b288403eB6396aCed25063b2942A7448c594D",
+    "name": "salary-estimator",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/frederic1206/salary-estimator:0.2-tee-debug",
+    "checksum": "0x2df8b27e5510ee4d3e3a4f7c989aa3909a7b55b478b0a89148449ffb9c8ce42e",
+    "mrenclave": {
+      "framework": "SCONE",
+      "version": "v5",
+      "entrypoint": "/app/salary-estimator",
+      "heapSize": 1073741824,
+      "fingerprint": "8f6b0a4290cb6971e3a15d193100b6d225303e92866c249f4def4b9b099bc0e1"
+    }
+  }
+}
