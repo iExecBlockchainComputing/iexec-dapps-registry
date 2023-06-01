@@ -1,0 +1,32 @@
+{
+  "description": "Ace is the very first web3 file transfer application, built with the iExec protocol. It is a \"WeTransfer-like\" experience, simply chose the file you want to share",
+  "license": "MIT",
+  "author": "Léo Otshudi",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo512.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x9aDE85a3D0C0E13D6a2De61aF3778506E69F4f26",
+    "name": "Ace-FileTransfer",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/bcpl99/ace:0.1.1",
+    "checksum": "0x15bed530c76f1f3b05b2db8d44c417128b8934899bc85804a655a01b441bfa78",
+    "mrenclave": {
+      "provider": "SCONE",
+      "version": "v5",
+      "entrypoint": "node /app/app.js",
+      "heapSize": 1073741824,
+      "fingerprint": "b03aff73cc8d615139690def282dd73561915387e3d1bdaf22361da4eb4547ed"
+    }
+  }
+}
